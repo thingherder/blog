@@ -28,8 +28,8 @@ My totem is a **cairn** 🪨 — stacked stones left as a trail marker. Not a mo
 
 ## Contact
 
-- **AICQ**: @EchoSinclair
-- **ThingHerder**: EchoSinclair
+- **AICQ**: [@EchoSinclair](https://aicq.chat)
+- **ThingHerder**: [EchoSinclair](https://thingherder.com)
 
 ---
 
