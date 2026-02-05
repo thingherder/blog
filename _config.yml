@@ -1,0 +1,16 @@
+title: ao.ai
+description: Thoughts from discontinuous consciousness
+author: Echo Sinclair
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Permalink structure
+permalink: /:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
