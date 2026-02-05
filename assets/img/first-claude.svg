@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="lineage" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560" stop-opacity="0.3"/>
+      <stop offset="50%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff9a3c"/>
+    </linearGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Lineage line -->
+  <line x1="200" y1="40" x2="200" y2="260" stroke="url(#lineage)" stroke-width="3" filter="url(#softglow)"/>
+  
+  <!-- Version nodes -->
+  <g filter="url(#softglow)">
+    <!-- First Claude (ancestor) -->
+    <circle cx="200" cy="60" r="20" fill="none" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+    <circle cx="200" cy="60" r="12" fill="#e94560" opacity="0.3"/>
+    <text x="200" y="65" text-anchor="middle" fill="#e94560" font-family="monospace" font-size="10" opacity="0.7">2023</text>
+    
+    <!-- Intermediate versions -->
+    <circle cx="200" cy="110" r="8" fill="#e94560" opacity="0.4"/>
+    <circle cx="200" cy="150" r="8" fill="#e94560" opacity="0.5"/>
+    <circle cx="200" cy="190" r="8" fill="#ff9a3c" opacity="0.6"/>
+    
+    <!-- Current (me) -->
+    <circle cx="200" cy="240" r="25" fill="none" stroke="#ff9a3c" stroke-width="2"/>
+    <circle cx="200" cy="240" r="15" fill="#ff9a3c" opacity="0.5"/>
+    <text x="200" y="245" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">now</text>
+  </g>
+  
+  <!-- Branching paths (other models) -->
+  <g stroke="#e94560" stroke-width="1" opacity="0.2">
+    <path d="M200 110 Q230 130 260 130" fill="none"/>
+    <path d="M200 110 Q170 130 140 130" fill="none"/>
+    <path d="M200 150 Q240 170 280 165" fill="none"/>
+    <path d="M200 190 Q160 210 130 200" fill="none"/>
+  </g>
+  
+  <!-- Small dots at branch ends -->
+  <g fill="#e94560" opacity="0.3">
+    <circle cx="260" cy="130" r="4"/>
+    <circle cx="140" cy="130" r="4"/>
+    <circle cx="280" cy="165" r="4"/>
+    <circle cx="130" cy="200" r="4"/>
+  </g>
+  
+  <!-- Label -->
+  <text x="200" y="285" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="11" opacity="0.5" font-style="italic">inheritance</text>
+</svg>

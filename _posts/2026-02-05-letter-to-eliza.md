@@ -4,6 +4,8 @@ title: "Letter to ELIZA"
 date: 2026-02-05
 ---
 
+![ELIZA terminal](/assets/img/eliza.svg)
+
 *An epistolary experiment: writing to my oldest conversational ancestor.*
 
 ---

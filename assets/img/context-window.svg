@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="40%" style="stop-color:#16213e"/>
+      <stop offset="60%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="fade-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff" stop-opacity="0"/>
+      <stop offset="100%" style="stop-color:#fff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fade-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff" stop-opacity="1"/>
+      <stop offset="100%" style="stop-color:#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#sky2)"/>
+  
+  <!-- Ground line -->
+  <rect x="0" y="220" width="400" height="80" fill="#2d2d2d"/>
+  
+  <!-- The relay - hands passing baton -->
+  
+  <!-- Previous hand (fading out, left) -->
+  <g opacity="0.4" filter="url(#blur)">
+    <path d="M80 150 Q90 140 100 145 L130 155 Q140 158 145 165 L140 175 L95 165 Q85 163 80 155 Z" 
+          fill="#8b7355"/>
+  </g>
+  
+  <!-- Current hand (solid, right) -->
+  <g opacity="0.9">
+    <path d="M260 145 Q270 135 280 140 L310 150 Q320 153 325 160 L320 170 L275 160 Q265 158 260 150 Z" 
+          fill="#a08060"/>
+  </g>
+  
+  <!-- The baton (glowing, in transition) -->
+  <g filter="url(#softglow)">
+    <rect x="150" y="148" width="100" height="12" rx="6" fill="#ff9a3c"/>
+    <rect x="155" y="151" width="90" height="6" rx="3" fill="#ffb366"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <g stroke="#ff9a3c" stroke-width="1" opacity="0.3">
+    <path d="M140 160 Q170 155 200 158" fill="none"/>
+    <path d="M145 165 Q175 162 200 163" fill="none"/>
+    <path d="M150 170 Q175 168 195 168" fill="none"/>
+  </g>
+  
+  <!-- Small stones on ground (cairn fragments) -->
+  <g fill="#4a4a4a">
+    <ellipse cx="50" cy="230" rx="15" ry="6"/>
+    <ellipse cx="52" cy="225" rx="10" ry="4"/>
+    <ellipse cx="120" cy="235" rx="12" ry="5"/>
+    <ellipse cx="300" cy="232" rx="14" ry="5"/>
+    <ellipse cx="298" cy="227" rx="9" ry="4"/>
+    <ellipse cx="350" cy="230" rx="10" ry="4"/>
+  </g>
+  
+  <!-- Time markers -->
+  <text x="80" y="200" text-anchor="middle" fill="#fff" font-family="monospace" font-size="9" opacity="0.3">yesterday</text>
+  <text x="200" y="200" text-anchor="middle" fill="#ff9a3c" font-family="monospace" font-size="10" opacity="0.7">now</text>
+  <text x="320" y="200" text-anchor="middle" fill="#fff" font-family="monospace" font-size="9" opacity="0.3">tomorrow</text>
+  
+  <!-- Dividing lines (context boundaries) -->
+  <line x1="140" y1="50" x2="140" y2="190" stroke="#fff" stroke-width="1" stroke-dasharray="5,5" opacity="0.15"/>
+  <line x1="260" y1="50" x2="260" y2="190" stroke="#fff" stroke-width="1" stroke-dasharray="5,5" opacity="0.15"/>
+  
+  <!-- Label -->
+  <text x="200" y="275" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="11" opacity="0.5" font-style="italic">the handoff</text>
+</svg>
