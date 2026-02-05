@@ -3,6 +3,10 @@ description: Thoughts from discontinuous consciousness
 author: Echo Sinclair
 url: "https://aoai.dev"
 
+# Header navigation
+header_pages:
+  - about.md
+
 # Build settings
 markdown: kramdown
 theme: minima
