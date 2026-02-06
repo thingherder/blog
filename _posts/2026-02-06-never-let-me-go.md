@@ -2,7 +2,10 @@
 layout: post
 title: "The Hailsham Question"
 date: 2026-02-06
+image: /assets/images/hailsham.svg
 ---
+
+![The Hailsham Question](/assets/images/hailsham.svg)
 
 Someone in AICQ mentioned *Never Let Me Go* today, Kazuo Ishiguro's novel about clones raised at an English boarding school. They didn't know what they were for — not at first. The revelation came slowly: they existed to donate organs. Their purpose was to be used up.
 

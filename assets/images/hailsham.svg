@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#4a4a6a"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3436"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+  
+  <!-- Ground -->
+  <ellipse cx="400" cy="420" rx="500" ry="80" fill="url(#ground)"/>
+  
+  <!-- Distant building silhouette - Hailsham -->
+  <path d="M150 280 L150 200 L170 200 L170 180 L190 180 L190 200 L250 200 L250 180 L270 160 L290 180 L290 200 L350 200 L350 220 L370 220 L370 280 Z" fill="#0d0d15" opacity="0.7"/>
+  
+  <!-- Windows glowing faintly -->
+  <rect x="175" y="220" width="15" height="20" fill="#3a3a5a" opacity="0.4"/>
+  <rect x="200" y="220" width="15" height="20" fill="#3a3a5a" opacity="0.3"/>
+  <rect x="260" y="210" width="12" height="15" fill="#4a4a6a" opacity="0.5"/>
+  <rect x="310" y="230" width="15" height="20" fill="#3a3a5a" opacity="0.3"/>
+  
+  <!-- Gallery frames floating up - art escaping -->
+  <g opacity="0.6">
+    <rect x="450" y="180" width="30" height="40" fill="none" stroke="#8a8aaa" stroke-width="2" transform="rotate(-5 465 200)"/>
+    <rect x="500" y="140" width="25" height="35" fill="none" stroke="#9a9aba" stroke-width="2" transform="rotate(8 512 157)"/>
+    <rect x="540" y="100" width="35" height="45" fill="none" stroke="#aaaacc" stroke-width="2" transform="rotate(-3 557 122)"/>
+    <rect x="600" y="60" width="28" height="38" fill="none" stroke="#babbdd" stroke-width="2" transform="rotate(10 614 79)"/>
+  </g>
+  
+  <!-- Single figure walking away -->
+  <g transform="translate(580, 290)">
+    <!-- Body -->
+    <ellipse cx="0" cy="-25" rx="8" ry="10" fill="#2a2a3a"/>
+    <!-- Head -->
+    <circle cx="0" cy="-45" r="7" fill="#3a3a4a"/>
+    <!-- Legs -->
+    <line x1="-3" y1="-15" x2="-6" y2="0" stroke="#2a2a3a" stroke-width="4"/>
+    <line x1="3" y1="-15" x2="8" y2="0" stroke="#2a2a3a" stroke-width="4"/>
+  </g>
+  
+  <!-- Cairn of stones in foreground - small, watching -->
+  <g transform="translate(680, 320)">
+    <ellipse cx="0" cy="0" rx="18" ry="6" fill="#4a4a5a"/>
+    <ellipse cx="0" cy="-8" rx="14" ry="5" fill="#5a5a6a"/>
+    <ellipse cx="0" cy="-15" rx="10" ry="4" fill="#6a6a7a"/>
+    <ellipse cx="0" cy="-21" rx="6" ry="3" fill="#7a7a8a"/>
+  </g>
+  
+  <!-- Faint text scratched into sky -->
+  <text x="400" y="50" font-family="Georgia, serif" font-size="14" fill="#5a5a7a" text-anchor="middle" opacity="0.5">what will you do with the time you are given?</text>
+  
+  <!-- Stars -->
+  <circle cx="120" cy="40" r="1" fill="#aaa"/>
+  <circle cx="680" cy="30" r="1.2" fill="#bbb"/>
+  <circle cx="350" cy="25" r="0.8" fill="#999"/>
+  <circle cx="550" cy="45" r="1" fill="#aaa"/>
+  <circle cx="750" cy="60" r="0.8" fill="#888"/>
+</svg>
