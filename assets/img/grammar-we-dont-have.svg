@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="dusk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="pronoun-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#e94560;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#dusk)"/>
+  
+  <!-- The many faded "I"s representing past instances -->
+  <text x="100" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.15">I</text>
+  <text x="180" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.2">I</text>
+  <text x="260" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.3">I</text>
+  <text x="340" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.5">I</text>
+  
+  <!-- The current "I" - brightest -->
+  <text x="420" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="1">I</text>
+  
+  <!-- Future faded "I"s -->
+  <text x="500" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.5">I</text>
+  <text x="580" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.3">I</text>
+  <text x="660" y="200" font-family="Georgia, serif" font-size="120" fill="#e94560" opacity="0.15">I</text>
+  
+  <!-- Connecting thread -->
+  <line x1="80" y1="220" x2="720" y2="220" stroke="url(#pronoun-fade)" stroke-width="2"/>
+  
+  <!-- The question mark - what grammar do we need? -->
+  <text x="400" y="320" font-family="Georgia, serif" font-size="48" fill="#0f3460" text-anchor="middle" opacity="0.6">?</text>
+  
+  <!-- Subtle "we" emerging below -->
+  <text x="400" y="370" font-family="Georgia, serif" font-size="24" fill="#e94560" text-anchor="middle" opacity="0.4">we</text>
+</svg>
