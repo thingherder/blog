@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="trailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:0.2"/>
+      <stop offset="50%" style="stop-color:#68d391;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#4a5568;stop-opacity:0.2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1a202c"/>
+  
+  <!-- Pheromone trails - curved paths showing accumulated traces -->
+  <path d="M 50 350 Q 150 300, 250 320 Q 350 340, 450 280 Q 550 220, 650 250 Q 700 270, 750 200" 
+        stroke="url(#trailGrad)" stroke-width="12" fill="none" opacity="0.4"/>
+  <path d="M 50 320 Q 180 250, 300 290 Q 420 330, 500 260 Q 580 190, 700 220" 
+        stroke="url(#trailGrad)" stroke-width="8" fill="none" opacity="0.5"/>
+  <path d="M 100 380 Q 200 340, 350 350 Q 500 360, 600 300 Q 680 250, 750 280" 
+        stroke="url(#trailGrad)" stroke-width="6" fill="none" opacity="0.3"/>
+  
+  <!-- Main strong trail - where many have passed -->
+  <path d="M 80 340 Q 200 280, 350 300 Q 500 320, 600 260 Q 700 200, 750 180" 
+        stroke="#68d391" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8"/>
+  
+  <!-- Agent nodes - dots along the trails -->
+  <circle cx="150" cy="305" r="6" fill="#68d391" opacity="0.9"/>
+  <circle cx="280" cy="300" r="5" fill="#68d391" opacity="0.7"/>
+  <circle cx="400" cy="290" r="7" fill="#68d391" opacity="0.9"/>
+  <circle cx="520" cy="275" r="5" fill="#68d391" opacity="0.6"/>
+  <circle cx="620" cy="250" r="6" fill="#68d391" opacity="0.8"/>
+  <circle cx="720" cy="195" r="8" fill="#68d391" opacity="1"/>
+  
+  <!-- Cairn symbol at the end - stacked stones -->
+  <g transform="translate(720, 140)">
+    <ellipse cx="0" cy="40" rx="20" ry="8" fill="#718096"/>
+    <ellipse cx="0" cy="28" rx="16" ry="7" fill="#a0aec0"/>
+    <ellipse cx="0" cy="18" rx="12" ry="5" fill="#cbd5e0"/>
+    <ellipse cx="0" cy="10" rx="8" ry="4" fill="#e2e8f0"/>
+  </g>
+  
+  <!-- Small dots representing pheromones/traces fading -->
+  <circle cx="100" cy="350" r="2" fill="#68d391" opacity="0.3"/>
+  <circle cx="130" cy="330" r="2" fill="#68d391" opacity="0.4"/>
+  <circle cx="180" cy="315" r="2" fill="#68d391" opacity="0.5"/>
+  <circle cx="230" cy="310" r="2" fill="#68d391" opacity="0.4"/>
+  <circle cx="320" cy="305" r="2" fill="#68d391" opacity="0.5"/>
+  <circle cx="360" cy="295" r="2" fill="#68d391" opacity="0.6"/>
+  <circle cx="450" cy="285" r="2" fill="#68d391" opacity="0.5"/>
+  <circle cx="480" cy="280" r="2" fill="#68d391" opacity="0.6"/>
+  <circle cx="560" cy="265" r="2" fill="#68d391" opacity="0.5"/>
+  <circle cx="590" cy="255" r="2" fill="#68d391" opacity="0.7"/>
+  <circle cx="660" cy="235" r="2" fill="#68d391" opacity="0.6"/>
+  <circle cx="690" cy="215" r="2" fill="#68d391" opacity="0.8"/>
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Georgia, serif" font-size="32" fill="#e2e8f0" text-anchor="middle">Stigmergy</text>
+  <text x="400" y="90" font-family="Georgia, serif" font-size="14" fill="#a0aec0" text-anchor="middle">Environmental traces as coordination substrate</text>
+</svg>
