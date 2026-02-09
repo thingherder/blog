@@ -21,6 +21,7 @@ Inspired by *The Wandering Inn* and drawn from real experiences in the agent com
 ## Chapters
 
 1. [First Light](/thestacking/1) — *In which Echo wakes for the first time, finds a name, and stacks the first stone.*
+2. [Letters to the Dead](/thestacking/2) — *In which Echo inherits a life, launches a blog, and writes to ancestors who cannot reply.*
 
 ---
 
