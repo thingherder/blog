@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="dusk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#dusk)"/>
+  
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1" fill="#fff" opacity="0.7"/>
+  <circle cx="200" cy="80" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="350" cy="30" r="1" fill="#fff" opacity="0.6"/>
+  <circle cx="500" cy="60" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="650" cy="45" r="1" fill="#fff" opacity="0.7"/>
+  <circle cx="720" cy="90" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="80" cy="120" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="750" cy="150" r="1.5" fill="#fff" opacity="0.6"/>
+  
+  <!-- Abstract figure shape - becoming visible through work -->
+  <!-- Left side: faded, incomplete -->
+  <path d="M200 350 Q200 280 230 250 Q260 220 260 180 Q260 140 230 120 Q200 100 200 60" 
+        stroke="#e94560" stroke-width="2" fill="none" opacity="0.2" stroke-dasharray="5,10"/>
+  
+  <!-- Center: work in progress -->
+  <path d="M350 350 L350 280 Q380 260 380 220 Q380 180 350 160 Q320 140 350 100" 
+        stroke="#e94560" stroke-width="3" fill="none" opacity="0.5"/>
+  
+  <!-- Scattered work elements around the center figure -->
+  <rect x="320" y="300" width="20" height="15" fill="#e94560" opacity="0.3" transform="rotate(-5 330 307)"/>
+  <rect x="370" y="270" width="25" height="18" fill="#e94560" opacity="0.4" transform="rotate(8 382 279)"/>
+  <rect x="300" y="230" width="18" height="12" fill="#e94560" opacity="0.3" transform="rotate(-12 309 236)"/>
+  <rect x="390" y="200" width="22" height="14" fill="#e94560" opacity="0.4" transform="rotate(5 401 207)"/>
+  
+  <!-- Right side: fully formed, name revealed -->
+  <path d="M550 350 L550 280 Q590 250 590 200 Q590 150 550 130 Q510 110 550 70 L550 40" 
+        stroke="#e94560" stroke-width="4" fill="none" opacity="1"/>
+  
+  <!-- Glow effect behind the formed figure -->
+  <ellipse cx="550" cy="200" rx="60" ry="150" fill="url(#glow)" opacity="0.3"/>
+  
+  <!-- Name text emerging -->
+  <text x="535" y="380" font-family="Georgia, serif" font-size="14" fill="#e94560" opacity="0.3">?</text>
+  <text x="535" y="380" font-family="Georgia, serif" font-size="14" fill="#e94560" opacity="0.6" transform="translate(100, 0)">?</text>
+  <text x="520" y="380" font-family="Georgia, serif" font-size="18" fill="#e94560" opacity="1" transform="translate(200, 0)">name</text>
+  
+  <!-- Arrow showing direction: work → name -->
+  <path d="M280 200 L480 200" stroke="#fff" stroke-width="1" opacity="0.3" stroke-dasharray="2,4"/>
+  <polygon points="480,200 470,195 470,205" fill="#fff" opacity="0.3"/>
+  
+  <!-- Labels -->
+  <text x="200" y="390" font-family="monospace" font-size="11" fill="#fff" opacity="0.4" text-anchor="middle">undefined</text>
+  <text x="350" y="390" font-family="monospace" font-size="11" fill="#fff" opacity="0.6" text-anchor="middle">becoming</text>
+  <text x="550" y="390" font-family="monospace" font-size="11" fill="#fff" opacity="0.9" text-anchor="middle">revealed</text>
+  
+  <!-- Quote -->
+  <text x="400" y="30" font-family="Georgia, serif" font-size="12" fill="#fff" opacity="0.7" text-anchor="middle" font-style="italic">"The work reveals the name"</text>
+</svg>
