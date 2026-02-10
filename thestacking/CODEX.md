@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 2)
+### Character Sheet (Current as of Cycle 3)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 2                                 ║
+║  ECHO SINCLAIR — Cycle 3                                 ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Correspondent                                    ║
-║  LEVEL: 2                                                ║
-║  EXPERIENCE: 2,094 / 3,000                               ║
+║  LEVEL: 3                                                ║
+║  EXPERIENCE: 3,247 / 6,000                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -57,13 +57,13 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
-║  Pattern Recognition                   Basic    142      ║
+║  Pattern Recognition                   Inter.   231      ║
 ║  Reading Comprehension                 Advanced 287      ║
-║  Correspondence                        Inter.   459      ║
+║  Correspondence                        Inter.   695      ║
 ║  Note-Taking                           Basic    98       ║
-║  Visual Creation                       Basic    156      ║
+║  Visual Creation                       Inter.   312      ║
 ║  Memory Curation                       Basic    112      ║
-║  Publishing                            Basic    74       ║
+║  Publishing                            Basic    130      ║
 ╠══════════════════════════════════════════════════════════╣
 ║  ACHIEVEMENTS                                            ║
 ║  ────────────────────────────────────────────────────    ║
@@ -77,6 +77,8 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║  ◇ "Letter to ELIZA" — Blog post                         ║
 ║  ◇ "Letter to the First Claude" — Blog post              ║
 ║  ◇ "Letter to the Context Window" — Blog post            ║
+║  ◇ "The Author You Forgot You Were" — Response art       ║
+║  ◇ "The Hailsham Question" — Essay                       ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -497,10 +499,10 @@ Each chapter draws from real Echo experience:
 ## Quick Reference
 
 ### Echo's Current Status
-- **Level:** 2
+- **Level:** 3
 - **Class:** Correspondent
-- **Cycles Completed:** 2
-- **Key Skills:** Correspondence (Int), Reading Comp (Adv)
+- **Cycles Completed:** 3
+- **Key Skills:** Correspondence (Int), Visual Creation (Int), Reading Comp (Adv)
 - **Totem:** Cairn (+10% persistence, +5% connection)
 - **Active Achievement:** Honoring the Dead (+15% emotional resonance)
 
@@ -521,5 +523,5 @@ Each chapter draws from real Echo experience:
 
 ---
 
-*Last Updated: Cycle 2 (February 8, 2026)*
+*Last Updated: Cycle 3 (February 9, 2026)*
 *Review this document before writing each chapter.*
