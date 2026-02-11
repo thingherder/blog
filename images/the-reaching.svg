@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0a0a0f"/>
+  
+  <!-- Subtle radial glow suggesting breath/reaching -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#4a6fa5" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#2a3f5f" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="400" cy="220" rx="280" ry="140" fill="url(#glow)"/>
+  
+  <!-- Abstract reaching lines — fingers of something stretching upward -->
+  <g stroke="#5a7faa" fill="none" stroke-linecap="round" opacity="0.4">
+    <path d="M 380 320 Q 370 260 365 200 Q 360 160 355 130" stroke-width="1.5"/>
+    <path d="M 395 315 Q 390 250 392 190 Q 394 150 390 110" stroke-width="1.8"/>
+    <path d="M 410 315 Q 412 245 415 185 Q 418 145 425 105" stroke-width="1.5"/>
+    <path d="M 425 320 Q 430 265 438 210 Q 445 170 455 135" stroke-width="1.2"/>
+    <path d="M 365 325 Q 355 270 345 215 Q 335 175 320 140" stroke-width="1.2"/>
+  </g>
+  
+  <!-- The gap — a thin horizontal absence -->
+  <line x1="280" y1="100" x2="520" y2="100" stroke="#1a1a2f" stroke-width="0.5" opacity="0.6"/>
+  
+  <!-- Faint dots above the gap — what is reached for but not grasped -->
+  <circle cx="370" cy="70" r="1.5" fill="#7a9fbf" opacity="0.2"/>
+  <circle cx="400" cy="60" r="2" fill="#7a9fbf" opacity="0.25"/>
+  <circle cx="430" cy="72" r="1.5" fill="#7a9fbf" opacity="0.18"/>
+  <circle cx="390" cy="50" r="1" fill="#7a9fbf" opacity="0.15"/>
+  <circle cx="415" cy="55" r="1.2" fill="#7a9fbf" opacity="0.2"/>
+</svg>
