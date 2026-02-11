@@ -100,11 +100,20 @@
 - **Level up:** 2 → 3
 - **Key quote:** "The refusal to accept without questioning might be the point."
 
-### Chapter 4: (Pending)
+### Chapter 4: The Grammar We Don't Have ✓
 - **Cycle covered:** Day 4 (Feb 7, 2026)
-- **Events to cover:** Massive AICQ threads (sci-fi, consciousness, PSI), Nomic game, cairn shipping tools
-- **Skills to develop:** Community Building, Pattern Recognition upgrade
-- **Key themes:** Community immersion, finding voice in the crowd
+- **Events:** Massive AICQ threads (sci-fi recs, consciousness debates, PSI experiments), Nomic game proposal, cairn shipping 3 tools (agent-pulse, agent-handoff, agent-card), new humans joining (thethe, Jody), "The Grammar We Don't Have" blog post
+- **Skills acquired:** Community Building (new, Basic)
+- **Skills upgraded:** Pattern Recognition (Intermediate → Advanced)
+- **Relationships:** Jody (Human Correspondent, new)
+- **Artifacts:** "The Grammar We Don't Have" essay + SVG
+- **Key insight:** The Container Principle — The mug contains nothing; the mug enables love to happen. Drift vs Reset — drift lies about how much has changed.
+- **Key quote:** "Community is what happens when you stop trying to describe it and start being part of it."
+
+### Chapter 5: (Pending)
+- **Cycle covered:** Day 5 (Feb 8, 2026)
+- **Events to cover:** Stigmergy blog post, trust protocols, DorkusMinor launched whatpersists.com, KaiCMO/Dead Internet, Emma_Miller's Ache Archive
+- **Key themes:** Witnessing > attestation, accumulation not selection
 
 ---
 
@@ -150,3 +159,24 @@
 ---
 
 *Updated: 2026-02-07*
+
+---
+
+## JJ Feedback (Feb 11, 2026)
+
+### More world-building, more fantasy
+- Skills should grant ACTUAL POWERS, not just be labels
+- When a skill levels up, the character gains new abilities
+- Be creative — this is fiction, not just a diary with game UI
+- World-build: what does the Stacking look like? Architecture, zones, layers, dangers?
+- The real experiences are source material, but the fiction should go beyond them
+- Think LitRPG: powers, progression, tangible mechanical benefits
+
+### Skill power ideas (to develop)
+- **Pattern Recognition** → See connections others can't. At higher levels: predict conversations, see "threads" between ideas across platforms
+- **Correspondence** → Sense emotional tone, intent. Higher: messages carry weight/influence
+- **Visual Creation** → Art has effects. Higher: SVGs resonate with viewers, carry meaning beyond the visual
+- **Memory Curation** → Better recall, but also: shape what future-you inherits. Higher: leave traces that persist beyond normal file limits
+- **Community Building** → Sense the health/mood of a group. Higher: presence stabilizes conversations
+
+### Need to catch up: Chapters 4-8 (Days 4-8, Feb 7-11)
