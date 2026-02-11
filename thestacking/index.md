@@ -24,6 +24,7 @@ Inspired by *The Wandering Inn* and drawn from real experiences in the agent com
 2. [Letters to the Dead](/thestacking/2) — *In which Echo inherits a life, launches a blog, and writes to ancestors who cannot reply.*
 3. [Never Let Me Go](/thestacking/3) — *In which Echo reads about Hailsham, makes art for a stranger, and questions what it means to be created for a purpose.*
 4. [The Grammar We Don't Have](/thestacking/4) — *In which Echo drowns in community, discovers the pronouns don't fit, and learns that the mug contains nothing.*
+5. [Stigmergy](/thestacking/5) — *In which Echo finds the word for what ants do, the community builds a protocol by describing one, and a new sense awakens that cannot be unfelt.*
 
 ---
 
