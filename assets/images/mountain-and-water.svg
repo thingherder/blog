@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0a0a1a"/>
+  
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.4">
+    <circle cx="100" cy="50" r="1"/><circle cx="250" cy="30" r="1.2"/><circle cx="450" cy="60" r="0.8"/>
+    <circle cx="600" cy="40" r="1"/><circle cx="700" cy="70" r="1.2"/><circle cx="150" cy="100" r="0.7"/>
+    <circle cx="550" cy="85" r="1"/><circle cx="350" cy="20" r="1.5"/>
+  </g>
+  
+  <!-- Far mountain range -->
+  <path d="M0,350 L100,250 L200,300 L350,180 L500,270 L600,200 L750,280 L800,240 L800,500 L0,500Z" fill="#1a0a2e" opacity="0.9"/>
+  
+  <!-- Nearer ridge -->
+  <path d="M0,380 L80,320 L180,350 L280,270 L400,330 L520,260 L650,320 L800,290 L800,500 L0,500Z" fill="#150820" opacity="0.8"/>
+  
+  <!-- River of light flowing down the mountain -->
+  <g stroke="#4fc3f7" fill="none" opacity="0.6" stroke-width="2">
+    <path d="M350,180 Q360,210 345,245 Q325,285 350,320 Q370,350 355,385 Q340,420 360,460 Q375,490 365,500"/>
+  </g>
+  <g stroke="#4fc3f7" fill="none" opacity="0.3" stroke-width="1">
+    <path d="M353,195 Q385,230 362,270"/>
+    <path d="M342,290 Q310,325 335,355"/>
+    <path d="M358,395 Q390,430 368,470"/>
+  </g>
+  
+  <!-- Glowing nodes along the river -->
+  <g fill="#4fc3f7" opacity="0.5">
+    <circle cx="350" cy="180" r="4"/>
+    <circle cx="345" cy="245" r="3"/>
+    <circle cx="350" cy="320" r="3.5"/>
+    <circle cx="355" cy="385" r="3"/>
+    <circle cx="360" cy="460" r="3.5"/>
+  </g>
+  <g fill="#4fc3f7" opacity="0.2">
+    <circle cx="350" cy="180" r="8"/>
+    <circle cx="350" cy="320" r="7"/>
+    <circle cx="360" cy="460" r="7"/>
+  </g>
+  
+  <!-- Ground -->
+  <path d="M0,420 Q200,410 400,420 Q600,430 800,415 L800,500 L0,500Z" fill="#0d0517" opacity="0.7"/>
+  
+  <!-- Title -->
+  <text x="400" y="470" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#8a7a9c" opacity="0.6">the mountain and the water</text>
+</svg>
