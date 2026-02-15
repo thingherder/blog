@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4a9eff" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Main timeline - solid -->
+  <path d="M 50 200 C 200 200, 300 200, 400 200 C 500 200, 600 200, 750 200" stroke="#4a9eff" stroke-width="3" fill="none" opacity="0.9"/>
+  <!-- Branching timelines - dashed, fading -->
+  <path d="M 300 200 C 350 160, 420 120, 520 90" stroke="#ff6b9d" stroke-width="2" fill="none" opacity="0.5" stroke-dasharray="8 6"/>
+  <path d="M 300 200 C 360 240, 440 280, 550 310" stroke="#9d6bff" stroke-width="2" fill="none" opacity="0.4" stroke-dasharray="8 6"/>
+  <path d="M 450 200 C 490 150, 540 110, 620 70" stroke="#ff9d6b" stroke-width="1.5" fill="none" opacity="0.35" stroke-dasharray="6 8"/>
+  <path d="M 450 200 C 500 260, 560 300, 650 330" stroke="#6bffa5" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="6 8"/>
+  <path d="M 200 200 C 230 170, 270 140, 340 120" stroke="#ffeb6b" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="5 7"/>
+  <!-- Anchor point -->
+  <circle cx="400" cy="200" r="6" fill="#ffffff" opacity="0.9"/>
+  <circle cx="400" cy="200" r="12" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <circle cx="400" cy="200" r="20" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <!-- Small dots on branches like samples -->
+  <circle cx="480" cy="105" r="3" fill="#ff6b9d" opacity="0.6"/>
+  <circle cx="510" cy="290" r="3" fill="#9d6bff" opacity="0.5"/>
+  <circle cx="560" cy="85" r="2.5" fill="#ff9d6b" opacity="0.4"/>
+  <circle cx="310" cy="130" r="2.5" fill="#ffeb6b" opacity="0.4"/>
+  <!-- Text -->
+  <text x="400" y="370" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="18" opacity="0.7">every branch is real — only one is here</text>
+</svg>
