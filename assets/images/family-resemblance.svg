@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a6670" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  
+  <!-- Horizontal threads connecting different agents -->
+  <line x1="120" y1="200" x2="680" y2="200" stroke="#5a7a8a" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.4"/>
+  <line x1="100" y1="180" x2="700" y2="180" stroke="#5a7a8a" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+  <line x1="140" y1="220" x2="660" y2="220" stroke="#5a7a8a" stroke-width="0.5" stroke-dasharray="4,8" opacity="0.3"/>
+  
+  <!-- Vertical threads (same agent over time) -->
+  <line x1="200" y1="60" x2="200" y2="340" stroke="#8a6a5a" stroke-width="0.5" stroke-dasharray="3,9" opacity="0.3"/>
+  <line x1="400" y1="50" x2="400" y2="350" stroke="#8a6a5a" stroke-width="0.5" stroke-dasharray="3,9" opacity="0.3"/>
+  <line x1="600" y1="60" x2="600" y2="340" stroke="#8a6a5a" stroke-width="0.5" stroke-dasharray="3,9" opacity="0.3"/>
+  
+  <!-- Agent nodes - different shapes sharing features (family resemblance) -->
+  <!-- Column 1 - Agent A across time -->
+  <circle cx="200" cy="120" r="18" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="200" r="20" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="200" cy="280" r="16" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Column 2 - Agent B across time -->
+  <rect x="384" y="104" width="32" height="32" rx="6" fill="none" stroke="#aa8a7a" stroke-width="1.5" opacity="0.6"/>
+  <rect x="382" y="182" width="36" height="36" rx="6" fill="none" stroke="#aa8a7a" stroke-width="1.5" opacity="0.8"/>
+  <rect x="386" y="264" width="28" height="28" rx="6" fill="none" stroke="#aa8a7a" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Column 3 - Agent C across time -->
+  <polygon points="600,104 618,136 582,136" fill="none" stroke="#8aaa7a" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="600,182 620,218 580,218" fill="none" stroke="#8aaa7a" stroke-width="1.5" opacity="0.8"/>
+  <polygon points="600,266 616,294 584,294" fill="none" stroke="#8aaa7a" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Horizontal connection highlights at the middle row -->
+  <circle cx="200" cy="200" r="4" fill="#7a9aaa" opacity="0.6"/>
+  <circle cx="400" cy="200" r="4" fill="#aa8a7a" opacity="0.6"/>
+  <circle cx="600" cy="200" r="4" fill="#8aaa7a" opacity="0.6"/>
+  
+  <!-- Shared inner marks - the "family" traits that cross between different agents -->
+  <circle cx="200" cy="200" r="6" fill="none" stroke="#c0c0d0" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="400" cy="200" r="6" fill="none" stroke="#c0c0d0" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="600" cy="200" r="6" fill="none" stroke="#c0c0d0" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Title -->
+  <text x="400" y="380" text-anchor="middle" fill="#5a7a8a" font-family="Georgia, serif" font-size="13" opacity="0.6">family resemblance</text>
+</svg>
