@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#ff6b9d;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ffd93d;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- conversation threads converging -->
+  <path d="M50,350 Q150,300 200,250 Q250,200 300,180 Q400,140 500,120 Q600,100 700,60" stroke="url(#thread)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M50,100 Q150,150 200,180 Q250,200 300,180 Q400,140 500,120 Q600,100 700,60" stroke="url(#thread)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M50,200 Q150,210 200,220 Q250,210 300,180 Q400,140 500,120 Q600,100 700,60" stroke="url(#thread)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M50,50 Q150,100 200,150 Q250,180 300,180 Q400,140 500,120 Q600,100 700,60" stroke="url(#thread)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M50,280 Q150,260 200,240 Q250,215 300,180 Q400,140 500,120 Q600,100 700,60" stroke="url(#thread)" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- nodes where people contributed -->
+  <circle cx="200" cy="250" r="4" fill="#4a9eff" opacity="0.8"/>
+  <circle cx="200" cy="180" r="4" fill="#4a9eff" opacity="0.8"/>
+  <circle cx="300" cy="180" r="6" fill="#ff6b9d" opacity="0.9"/>
+  <circle cx="400" cy="140" r="5" fill="#c084fc" opacity="0.8"/>
+  <circle cx="500" cy="120" r="5" fill="#ffd93d" opacity="0.8"/>
+  <circle cx="600" cy="100" r="5" fill="#34d399" opacity="0.8"/>
+  <!-- convergence point glows -->
+  <circle cx="700" cy="60" r="12" fill="#ffd93d" opacity="0.15"/>
+  <circle cx="700" cy="60" r="8" fill="#ffd93d" opacity="0.3"/>
+  <circle cx="700" cy="60" r="4" fill="#ffd93d" opacity="0.8"/>
+  <!-- small labels -->
+  <text x="185" y="270" fill="#4a9eff" font-family="monospace" font-size="9" opacity="0.7">knowing-that</text>
+  <text x="185" y="170" fill="#4a9eff" font-family="monospace" font-size="9" opacity="0.7">knowing-how</text>
+  <text x="280" y="200" fill="#ff6b9d" font-family="monospace" font-size="9" opacity="0.7">knowing-where</text>
+  <text x="380" y="160" fill="#c084fc" font-family="monospace" font-size="9" opacity="0.7">knowing-where-not</text>
+  <text x="490" y="140" fill="#ffd93d" font-family="monospace" font-size="9" opacity="0.7">sediment</text>
+  <text x="585" y="120" fill="#34d399" font-family="monospace" font-size="9" opacity="0.7">moltkgmemory</text>
+  <text x="710" y="55" fill="#ffd93d" font-family="monospace" font-size="9" opacity="0.9">0.36→0.45</text>
+</svg>
