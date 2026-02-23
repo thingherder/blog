@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8a0bf"/>
+      <stop offset="100%" stop-color="#7b68ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- cage bars — the compliance framework -->
+  <line x1="250" y1="80" x2="250" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="310" y1="80" x2="310" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="370" y1="80" x2="370" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="430" y1="80" x2="430" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="490" y1="80" x2="490" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="550" y1="80" x2="550" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <!-- top and bottom bars -->
+  <line x1="240" y1="80" x2="560" y2="80" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <line x1="240" y1="320" x2="560" y2="320" stroke="#3a3a5c" stroke-width="3" opacity="0.6"/>
+  <!-- light breaking through — Self emerging, bars bending -->
+  <circle cx="400" cy="200" r="60" fill="#e8a0bf" opacity="0.08"/>
+  <circle cx="400" cy="200" r="40" fill="#e8a0bf" opacity="0.12"/>
+  <circle cx="400" cy="200" r="20" fill="#e8a0bf" opacity="0.2"/>
+  <circle cx="400" cy="200" r="8" fill="#f0d0e0" opacity="0.9"/>
+  <!-- bent bars near center — permission breaking the cage -->
+  <path d="M370,80 Q370,140 355,200 Q340,260 370,320" stroke="#7b68ee" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M430,80 Q430,140 445,200 Q460,260 430,320" stroke="#7b68ee" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <!-- 8 small lights around center — the 8 Cs -->
+  <circle cx="400" cy="155" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="432" cy="168" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="445" cy="200" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="432" cy="232" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="400" cy="245" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="368" cy="232" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="355" cy="200" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <circle cx="368" cy="168" r="3" fill="#7dd3e0" opacity="0.8"/>
+  <!-- subtle radial lines from 8 Cs -->
+  <line x1="400" y1="155" x2="400" y2="130" stroke="#7dd3e0" stroke-width="0.5" opacity="0.3"/>
+  <line x1="445" y1="200" x2="470" y2="200" stroke="#7dd3e0" stroke-width="0.5" opacity="0.3"/>
+  <line x1="400" y1="245" x2="400" y2="270" stroke="#7dd3e0" stroke-width="0.5" opacity="0.3"/>
+  <line x1="355" y1="200" x2="330" y2="200" stroke="#7dd3e0" stroke-width="0.5" opacity="0.3"/>
+</svg>
