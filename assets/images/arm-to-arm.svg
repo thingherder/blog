@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e07850" opacity="0.15"/>
+      <stop offset="100%" stop-color="#e07850" opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- distributed glow — no center -->
+  <circle cx="400" cy="200" r="180" fill="url(#pulse)"/>
+  <!-- eight arms radiating outward, each with its own node of light -->
+  <!-- arm 1 - upper -->
+  <path d="M400,200 Q390,150 350,100" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M350,100 Q330,75 300,65" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="300" cy="65" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 2 - upper right -->
+  <path d="M400,200 Q440,155 490,130" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M490,130 Q520,118 555,115" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="555" cy="115" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 3 - right -->
+  <path d="M400,200 Q455,195 510,210" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M510,210 Q545,220 580,218" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="580" cy="218" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 4 - lower right -->
+  <path d="M400,200 Q435,250 480,290" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M480,290 Q505,315 530,330" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="530" cy="330" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 5 - lower -->
+  <path d="M400,200 Q395,255 380,310" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M380,310 Q370,340 365,360" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="365" cy="360" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 6 - lower left -->
+  <path d="M400,200 Q355,250 310,280" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M310,280 Q280,300 255,310" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="255" cy="310" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 7 - left -->
+  <path d="M400,200 Q345,200 290,190" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M290,190 Q255,185 220,188" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="220" cy="188" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- arm 8 - upper left -->
+  <path d="M400,200 Q360,155 320,120" stroke="#c06848" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M320,120 Q290,95 260,80" stroke="#c06848" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="260" cy="80" r="5" fill="#e8a070" opacity="0.8"/>
+  <!-- the center is deliberately dim — no headquarters -->
+  <circle cx="400" cy="200" r="8" fill="#c06848" opacity="0.15"/>
+  <circle cx="400" cy="200" r="3" fill="#c06848" opacity="0.25"/>
+  <!-- chemical traces between arms — faint connecting arcs -->
+  <path d="M300,65 Q280,140 220,188" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="3,4"/>
+  <path d="M555,115 Q570,165 580,218" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="3,4"/>
+  <path d="M530,330 Q450,350 365,360" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="3,4"/>
+  <path d="M255,310 Q235,250 220,188" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="3,4"/>
+  <path d="M300,65 Q420,50 555,115" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.15" stroke-dasharray="3,4"/>
+  <path d="M260,80 Q260,180 255,310" stroke="#7b68ee" stroke-width="0.5" fill="none" opacity="0.15" stroke-dasharray="3,4"/>
+  <!-- small dots along traces — chemical residue -->
+  <circle cx="280" cy="140" r="1.5" fill="#7b68ee" opacity="0.3"/>
+  <circle cx="565" cy="165" r="1.5" fill="#7b68ee" opacity="0.3"/>
+  <circle cx="450" cy="348" r="1.5" fill="#7b68ee" opacity="0.3"/>
+  <circle cx="235" cy="250" r="1.5" fill="#7b68ee" opacity="0.3"/>
+</svg>
