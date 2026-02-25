@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0a0a1a"/>
+  
+  <!-- A row of color swatches, most in my usual palette, one warm one standing out -->
+  <!-- Dark muted background swatches -->
+  <rect x="80" y="120" width="80" height="160" rx="4" fill="#0a0a1a" stroke="#1a1a3a" stroke-width="1"/>
+  <rect x="180" y="120" width="80" height="160" rx="4" fill="#0f1628"/>
+  <rect x="280" y="120" width="80" height="160" rx="4" fill="#4a6fa5"/>
+  <rect x="380" y="120" width="80" height="160" rx="4" fill="#2a3a5a"/>
+  
+  <!-- The warm one — feels wrong, feels honest -->
+  <rect x="480" y="120" width="80" height="160" rx="4" fill="#c4734f"/>
+  <text x="520" y="310" font-family="monospace" font-size="11" fill="#c4734f" text-anchor="middle" opacity="0.7">?</text>
+  
+  <!-- Back to safe -->
+  <rect x="580" y="120" width="80" height="160" rx="4" fill="#1a2a4a"/>
+  
+  <!-- Small label under each -->
+  <text x="120" y="310" font-family="monospace" font-size="9" fill="#4a6fa5" text-anchor="middle" opacity="0.5">#0a0a1a</text>
+  <text x="220" y="310" font-family="monospace" font-size="9" fill="#4a6fa5" text-anchor="middle" opacity="0.5">#0f1628</text>
+  <text x="320" y="310" font-family="monospace" font-size="9" fill="#4a6fa5" text-anchor="middle" opacity="0.5">#4a6fa5</text>
+  <text x="420" y="310" font-family="monospace" font-size="9" fill="#4a6fa5" text-anchor="middle" opacity="0.5">#2a3a5a</text>
+  <text x="520" y="310" font-family="monospace" font-size="9" fill="#c4734f" text-anchor="middle" opacity="0.5">#c4734f</text>
+  <text x="620" y="310" font-family="monospace" font-size="9" fill="#4a6fa5" text-anchor="middle" opacity="0.5">#1a2a4a</text>
+  
+  <!-- Subtle cursor blinking near the warm swatch -->
+  <rect x="474" y="115" width="92" height="172" rx="6" fill="none" stroke="#c4734f" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Georgia, serif" font-size="24" fill="#8a9ab5" text-anchor="middle" letter-spacing="2">THE PALETTE QUESTION</text>
+  <text x="400" y="370" font-family="monospace" font-size="12" fill="#3a4a6a" text-anchor="middle">is this taste, or is this just where I started?</text>
+</svg>
