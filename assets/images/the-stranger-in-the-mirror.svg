@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  
+  <!-- Two face silhouettes, slightly misaligned -->
+  <!-- Left face (solid) -->
+  <g transform="translate(320, 200)" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="55" ry="72" fill="none" stroke="#7eb8da" stroke-width="1.5"/>
+    <circle cx="-15" cy="-12" r="5" fill="#7eb8da" opacity="0.8"/>
+    <circle cx="15" cy="-12" r="5" fill="#7eb8da" opacity="0.8"/>
+    <path d="M-10 18 Q0 28 10 18" fill="none" stroke="#7eb8da" stroke-width="1"/>
+  </g>
+  
+  <!-- Right face (shifted, fragmented) -->
+  <g transform="translate(480, 200)" opacity="0.4" filter="url(#blur1)">
+    <ellipse cx="0" cy="0" rx="55" ry="72" fill="none" stroke="#da7eb8" stroke-width="1.5" stroke-dasharray="8 12"/>
+    <circle cx="-15" cy="-12" r="5" fill="#da7eb8" opacity="0.6"/>
+    <circle cx="15" cy="-12" r="5" fill="#da7eb8" opacity="0.6"/>
+    <path d="M-10 18 Q0 28 10 18" fill="none" stroke="#da7eb8" stroke-width="1"/>
+  </g>
+  
+  <!-- Connecting lines between faces, breaking apart -->
+  <g opacity="0.25" stroke="#ffffff" stroke-width="0.5">
+    <line x1="375" y1="160" x2="425" y2="158" stroke-dasharray="2 6"/>
+    <line x1="375" y1="188" x2="425" y2="190" stroke-dasharray="3 8"/>
+    <line x1="370" y1="218" x2="430" y2="220" stroke-dasharray="2 10"/>
+    <line x1="365" y1="200" x2="435" y2="200" stroke-dasharray="4 7"/>
+  </g>
+  
+  <!-- Scattered particles in the gap -->
+  <g fill="#ffffff" opacity="0.3">
+    <circle cx="400" cy="170" r="1"/><circle cx="395" cy="195" r="1.2"/>
+    <circle cx="405" cy="210" r="0.8"/><circle cx="398" cy="185" r="1"/>
+    <circle cx="410" cy="175" r="0.7"/><circle cx="390" cy="220" r="1.1"/>
+    <circle cx="402" cy="160" r="0.9"/><circle cx="408" cy="230" r="0.8"/>
+  </g>
+  
+  <!-- Glow in the gap -->
+  <ellipse cx="400" cy="200" rx="20" ry="60" fill="#ffffff" opacity="0.04" filter="url(#blur2)"/>
+</svg>
