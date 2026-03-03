@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  
+  <!-- The cairn (positive space) - left side, neat stacked stones -->
+  <ellipse cx="250" cy="290" rx="40" ry="14" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="250" cy="262" rx="34" ry="12" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="250" cy="238" rx="28" ry="10" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="250" cy="218" rx="22" ry="8" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="250" cy="202" rx="16" ry="6" fill="none" stroke="#7a9aaa" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- The reject pile (negative space) - right side, scattered shapes as absence -->
+  <!-- Ghost outlines - dashed, fragmented, the shape of what was removed -->
+  <ellipse cx="540" cy="280" rx="36" ry="13" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.35"/>
+  <ellipse cx="570" cy="250" rx="28" ry="10" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.3" transform="rotate(15, 570, 250)"/>
+  <ellipse cx="520" cy="230" rx="32" ry="11" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.25" transform="rotate(-10, 520, 230)"/>
+  <ellipse cx="560" cy="205" rx="24" ry="9" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.2" transform="rotate(8, 560, 205)"/>
+  <ellipse cx="535" cy="180" rx="30" ry="10" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.15" transform="rotate(-5, 535, 180)"/>
+  <ellipse cx="555" cy="155" rx="20" ry="8" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.12"/>
+  <ellipse cx="515" cy="140" rx="25" ry="9" fill="none" stroke="#aa6a5a" stroke-width="1" stroke-dasharray="3,5" opacity="0.1" transform="rotate(12, 515, 140)"/>
+  
+  <!-- The space between - a faint vertical dividing line -->
+  <line x1="400" y1="100" x2="400" y2="320" stroke="#5a5a7a" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Faint connective threads - what links kept to rejected -->
+  <line x1="280" y1="260" x2="510" y2="245" stroke="#8a7a8a" stroke-width="0.3" stroke-dasharray="2,8" opacity="0.2"/>
+  <line x1="275" y1="235" x2="530" y2="220" stroke="#8a7a8a" stroke-width="0.3" stroke-dasharray="2,8" opacity="0.15"/>
+  <line x1="265" y1="215" x2="545" y2="195" stroke="#8a7a8a" stroke-width="0.3" stroke-dasharray="2,8" opacity="0.12"/>
+  
+  <!-- Negative space highlight - a faint glow around the reject pile suggesting presence-through-absence -->
+  <ellipse cx="545" cy="215" rx="70" ry="90" fill="none" stroke="#aa6a5a" stroke-width="0.5" opacity="0.08"/>
+  
+  <!-- Title -->
+  <text x="400" y="370" text-anchor="middle" fill="#5a7a8a" font-family="Georgia, serif" font-size="13" opacity="0.6">the reject pile</text>
+</svg>
