@@ -1,0 +1,135 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Water gradient -->
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a90a4;stop-opacity:0.7"/>
+      <stop offset="50%" style="stop-color:#5ba3b8;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#4a90a4;stop-opacity:0.7"/>
+    </linearGradient>
+    
+    <!-- Stone gradient -->
+    <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b7b8a"/>
+      <stop offset="100%" style="stop-color:#4a5568"/>
+    </linearGradient>
+    
+    <!-- Flow lines filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="300" fill="#1a1a2e"/>
+  
+  <!-- Riverbed banks - top and bottom -->
+  <path d="M0,80 Q100,70 200,85 Q350,75 500,90 Q600,80 700,85 L700,0 L0,0 Z" fill="#2d3748" opacity="0.8"/>
+  <path d="M0,220 Q100,230 200,215 Q350,225 500,210 Q600,220 700,215 L700,300 L0,300 Z" fill="#2d3748" opacity="0.8"/>
+  
+  <!-- Water flow - main body -->
+  <path d="M0,100 Q100,95 200,105 Q350,95 500,110 Q600,100 700,105 
+           L700,195 Q600,200 500,190 Q350,205 200,195 Q100,205 0,200 Z" 
+        fill="url(#waterGradient)" opacity="0.6"/>
+  
+  <!-- Flow lines - showing current -->
+  <g stroke="#7ec8e3" fill="none" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+    <!-- Upper flow -->
+    <path d="M-10,120 Q50,115 100,120 Q150,115 180,120">
+      <animate attributeName="d" 
+               values="M-10,120 Q50,115 100,120 Q150,115 180,120;
+                       M-10,118 Q50,122 100,117 Q150,122 180,118;
+                       M-10,120 Q50,115 100,120 Q150,115 180,120"
+               dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M200,115 Q250,120 300,115 Q350,120 380,115"/>
+    <path d="M420,118 Q470,112 520,118 Q570,112 620,118 Q670,114 710,118"/>
+    
+    <!-- Middle flow -->
+    <path d="M-10,150 Q80,148 150,152 Q220,148 280,152"/>
+    <path d="M320,148 Q380,152 450,148 Q520,152 580,148 Q650,152 710,148"/>
+    
+    <!-- Lower flow -->
+    <path d="M-10,180 Q60,184 120,178 Q180,184 240,178"/>
+    <path d="M280,182 Q340,176 400,182 Q460,176 520,182 Q580,178 640,182 Q680,178 710,182"/>
+  </g>
+  
+  <!-- Stones in the riverbed - guiding stones -->
+  <!-- Stone 1 - large guiding stone -->
+  <ellipse cx="120" cy="155" rx="35" ry="25" fill="url(#stoneGradient)" transform="rotate(-10 120 155)"/>
+  <ellipse cx="118" cy="152" rx="30" ry="20" fill="#7a8a9a" opacity="0.3" transform="rotate(-10 118 152)"/>
+  
+  <!-- Stone 2 - medium stone creating flow split -->
+  <ellipse cx="300" cy="140" rx="28" ry="20" fill="url(#stoneGradient)" transform="rotate(15 300 140)"/>
+  <ellipse cx="298" cy="138" rx="23" ry="16" fill="#7a8a9a" opacity="0.3" transform="rotate(15 298 138)"/>
+  
+  <!-- Stone 3 - small guiding stone -->
+  <ellipse cx="250" cy="175" rx="18" ry="14" fill="url(#stoneGradient)" transform="rotate(-5 250 175)"/>
+  
+  <!-- Stone 4 - larger stone downstream -->
+  <ellipse cx="480" cy="160" rx="40" ry="28" fill="url(#stoneGradient)" transform="rotate(8 480 160)"/>
+  <ellipse cx="478" cy="157" rx="34" ry="23" fill="#7a8a9a" opacity="0.3" transform="rotate(8 478 157)"/>
+  
+  <!-- Stone 5 - small accent stone -->
+  <ellipse cx="400" cy="130" rx="15" ry="11" fill="url(#stoneGradient)" transform="rotate(-12 400 130)"/>
+  
+  <!-- Stone 6 - edge stone -->
+  <ellipse cx="580" cy="175" rx="22" ry="16" fill="url(#stoneGradient)" transform="rotate(20 580 175)"/>
+  
+  <!-- Stone 7 - small stone near start -->
+  <ellipse cx="60" cy="135" rx="14" ry="10" fill="url(#stoneGradient)" transform="rotate(-8 60 135)"/>
+  
+  <!-- Water flowing around stones - highlights -->
+  <g stroke="#a8d8ea" fill="none" stroke-width="1" opacity="0.6">
+    <!-- Flow around stone 1 -->
+    <path d="M85,145 Q95,135 105,140 Q115,130 130,135 Q150,130 160,140">
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M85,170 Q100,180 120,175 Q140,185 160,175"/>
+    
+    <!-- Flow around stone 2 -->
+    <path d="M270,130 Q285,120 300,125 Q315,118 330,128"/>
+    <path d="M270,155 Q285,165 305,158 Q320,168 335,155"/>
+    
+    <!-- Flow around stone 4 -->
+    <path d="M440,145 Q455,135 480,140 Q505,132 520,145">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M445,180 Q465,195 485,185 Q510,195 525,180"/>
+  </g>
+  
+  <!-- Subtle ripples near stones -->
+  <g fill="none" stroke="#b8d4e3" stroke-width="0.5" opacity="0.4">
+    <circle cx="155" cy="150" r="8">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="145" r="6">
+      <animate attributeName="r" values="5;10;5" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="158" r="10">
+      <animate attributeName="r" values="8;14;8" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Small particles in flow suggesting current -->
+  <g fill="#c5e3f0" opacity="0.5">
+    <circle cx="30" cy="145" r="2">
+      <animate attributeName="cx" values="30;200;30" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="165" r="1.5">
+      <animate attributeName="cx" values="180;380;180" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="155" r="2">
+      <animate attributeName="cx" values="350;600;350" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="140" r="1.5">
+      <animate attributeName="cx" values="550;700;550" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
