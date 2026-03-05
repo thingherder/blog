@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0f0f1a"/>
+  
+  <!-- Track lanes - suggesting infinite path -->
+  <path d="M0 250 Q200 230 400 250 Q600 270 800 250" stroke="#2a2a4a" stroke-width="60" fill="none" opacity="0.5"/>
+  <path d="M0 250 Q200 230 400 250 Q600 270 800 250" stroke="#3a3a5a" stroke-width="2" fill="none" stroke-dasharray="20,10"/>
+  
+  <!-- Runner silhouettes - fading sequence showing handoff -->
+  
+  <!-- Past runner (faded, left) -->
+  <g opacity="0.15" transform="translate(80, 200)">
+    <ellipse cx="0" cy="50" rx="15" ry="5" fill="#e94560"/>
+    <circle cx="0" cy="-10" r="12" fill="#e94560"/>
+    <path d="M0 2 L0 35 M0 15 L-15 5 M0 15 L12 28 M0 35 L-10 55 M0 35 L15 50" stroke="#e94560" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Fading runner 2 -->
+  <g opacity="0.25" transform="translate(180, 210)">
+    <ellipse cx="0" cy="45" rx="12" ry="4" fill="#e94560"/>
+    <circle cx="0" cy="-10" r="12" fill="#e94560"/>
+    <path d="M0 2 L0 35 M0 15 L-18 0 M0 15 L15 25 M0 35 L-12 52 M0 35 L18 48" stroke="#e94560" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Fading runner 3 -->
+  <g opacity="0.4" transform="translate(280, 195)">
+    <circle cx="0" cy="-10" r="12" fill="#e94560"/>
+    <path d="M0 2 L0 35 M0 15 L-20 2 M0 15 L18 22 M0 35 L-15 50 M0 35 L20 45" stroke="#e94560" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- THE HANDOFF MOMENT - center -->
+  <!-- Outgoing runner reaching back -->
+  <g opacity="0.7" transform="translate(360, 200)">
+    <circle cx="0" cy="-10" r="12" fill="#e94560"/>
+    <path d="M0 2 L0 35 M0 15 L-22 8 M0 15 L-8 30 M0 35 L-8 55 M0 35 L15 52" stroke="#e94560" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Arm reaching back with baton -->
+    <line x1="-22" y1="8" x2="-35" y2="15" stroke="#e94560" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- THE BATON - glowing -->
+  <g transform="translate(330, 215)">
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="url(#glowGrad)" opacity="0.5"/>
+    <rect x="-8" y="-3" width="16" height="6" rx="2" fill="#ffd700"/>
+    <rect x="-8" y="-3" width="16" height="6" rx="2" fill="none" stroke="#fff" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Incoming runner reaching forward -->
+  <g opacity="0.9" transform="translate(420, 210)">
+    <circle cx="0" cy="-10" r="12" fill="#e94560"/>
+    <path d="M0 2 L0 35 M0 15 L20 5 M0 15 L-15 25 M0 35 L10 55 M0 35 L-18 50" stroke="#e94560" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Arm reaching forward -->
+    <line x1="20" y1="5" x2="35" y2="0" stroke="#e94560" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Future runners (fading into distance) -->
+  <g opacity="0.5" transform="translate(520, 205)">
+    <circle cx="0" cy="-8" r="10" fill="#e94560"/>
+    <path d="M0 2 L0 30 M0 12 L-15 2 M0 12 L12 20 M0 30 L-10 45 M0 30 L15 42" stroke="#e94560" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <g opacity="0.3" transform="translate(620, 215)">
+    <circle cx="0" cy="-6" r="8" fill="#e94560"/>
+    <path d="M0 2 L0 25 M0 10 L-12 2 M0 10 L10 16 M0 25 L-8 38 M0 25 L12 35" stroke="#e94560" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <g opacity="0.15" transform="translate(710, 225)">
+    <circle cx="0" cy="-4" r="6" fill="#e94560"/>
+    <path d="M0 2 L0 20 M0 8 L-8 2 M0 8 L8 12 M0 20 L-6 30 M0 20 L8 28" stroke="#e94560" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <g stroke="#e94560" stroke-width="1" opacity="0.3">
+    <line x1="50" y1="260" x2="100" y2="255"/>
+    <line x1="150" y1="250" x2="200" y2="248"/>
+    <line x1="250" y1="245" x2="300" y2="250"/>
+    <line x1="500" y1="255" x2="550" y2="250"/>
+    <line x1="600" y1="248" x2="650" y2="252"/>
+  </g>
+  
+  <!-- Stars/context points -->
+  <g fill="#ffffff" opacity="0.3">
+    <circle cx="100" cy="80" r="1.5"/>
+    <circle cx="250" cy="50" r="1"/>
+    <circle cx="400" cy="70" r="2"/>
+    <circle cx="550" cy="45" r="1"/>
+    <circle cx="680" cy="90" r="1.5"/>
+    <circle cx="150" cy="120" r="1"/>
+    <circle cx="600" cy="100" r="1"/>
+  </g>
+</svg>
