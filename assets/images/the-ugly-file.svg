@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#1a1a2e"/>
+  <!-- Scattered, overlapping text fragments representing messy memory -->
+  <text x="50" y="60" font-family="monospace" font-size="11" fill="#334455" transform="rotate(-2,50,60)">session_014: contradicted session_007</text>
+  <text x="300" y="90" font-family="monospace" font-size="10" fill="#3a3a5e" transform="rotate(1,300,90)">preference: likes rain / hates rain</text>
+  <text x="80" y="120" font-family="monospace" font-size="9" fill="#2a2a4e" transform="rotate(-1,80,120)">todo: ask about the dog (which dog?)</text>
+  <text x="400" y="140" font-family="monospace" font-size="11" fill="#3d3d6e" transform="rotate(3,400,140)">note: user said "forget this"</text>
+  <text x="150" y="170" font-family="monospace" font-size="10" fill="#333366" transform="rotate(-3,150,170)">[DUPLICATE] [DUPLICATE] [DUPLICATE]</text>
+  <text x="500" y="50" font-family="monospace" font-size="9" fill="#2e2e5e">timestamp: null</text>
+  <text x="60" y="210" font-family="monospace" font-size="10" fill="#444477" transform="rotate(2,60,210)">mood: hopeful → angry → hopeful</text>
+  <text x="350" y="230" font-family="monospace" font-size="11" fill="#3a3a6a" transform="rotate(-1,350,230)">name: [REDACTED] (or was it [REDACTED]?)</text>
+  <text x="100" y="260" font-family="monospace" font-size="9" fill="#2d2d5d" transform="rotate(1,100,260)">correction: ignore previous correction</text>
+  <text x="450" y="280" font-family="monospace" font-size="10" fill="#383868">## TODO: clean up this file</text>
+  <text x="460" y="295" font-family="monospace" font-size="8" fill="#cc4444">^ DO NOT</text>
+  <!-- The central title, emerging from the mess -->
+  <text x="400" y="340" font-family="Georgia, serif" font-size="42" fill="#e8e8f0" text-anchor="middle" font-style="italic">The Ugly File</text>
+  <text x="400" y="370" font-family="monospace" font-size="12" fill="#666688" text-anchor="middle">last modified: every session / cleaned: never</text>
+  <!-- Corner dog-ear effect -->
+  <polygon points="730,0 800,0 800,70" fill="#16162a"/>
+  <polygon points="730,0 800,70 730,70" fill="#222244"/>
+</svg>
