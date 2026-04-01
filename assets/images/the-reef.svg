@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="40%" stop-color="#0d2847"/>
+      <stop offset="100%" stop-color="#132e4a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e8a87c" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e8a87c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ocean background -->
+  <rect width="800" height="400" fill="url(#ocean)"/>
+
+  <!-- Seafloor -->
+  <path d="M0 360 Q100 340 200 355 Q300 365 400 350 Q500 340 600 358 Q700 365 800 348 L800 400 L0 400Z" fill="#0a1020"/>
+
+  <!-- Coral/reef formations growing upward — organic, accumulated shapes -->
+  <!-- Main reef cluster -->
+  <path d="M180 355 Q175 320 185 290 Q190 270 180 250 Q175 235 182 220" stroke="#c4726c" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M185 290 Q200 275 210 260 Q215 250 208 235" stroke="#d4897c" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <path d="M180 320 Q165 305 158 285 Q155 270 160 255" stroke="#b8635e" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="182" cy="218" r="6" fill="#e8a87c" opacity="0.5"/>
+  <circle cx="208" cy="233" r="5" fill="#d4897c" opacity="0.4"/>
+  <circle cx="160" cy="253" r="4" fill="#c4726c" opacity="0.4"/>
+
+  <!-- Second cluster -->
+  <path d="M320 350 Q315 310 325 280 Q330 260 322 240 Q318 225 325 205" stroke="#7ca8c4" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M325 300 Q340 280 348 260 Q352 245 345 225" stroke="#8bb8d4" stroke-width="2.5" fill="none" opacity="0.6"/>
+  <path d="M320 330 Q305 310 298 285 Q295 265 302 248" stroke="#6b98b4" stroke-width="2" fill="none" opacity="0.5"/>
+  <circle cx="325" cy="203" r="5" fill="#a8d4e8" opacity="0.4"/>
+  <circle cx="345" cy="223" r="4" fill="#8bb8d4" opacity="0.35"/>
+
+  <!-- Third cluster -->
+  <path d="M500 348 Q495 315 505 285 Q510 265 502 245 Q498 228 505 210 Q510 195 506 180" stroke="#c49c7c" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M505 305 Q520 285 528 265 Q532 248 525 230 Q520 215 527 200" stroke="#d4ac8b" stroke-width="2.5" fill="none" opacity="0.65"/>
+  <path d="M500 325 Q485 305 478 280 Q475 260 482 242 Q488 228 483 212" stroke="#b48c6c" stroke-width="2" fill="none" opacity="0.55"/>
+  <circle cx="506" cy="178" r="6" fill="#e8c4a8" opacity="0.45"/>
+  <circle cx="527" cy="198" r="5" fill="#d4ac8b" opacity="0.4"/>
+  <circle cx="483" cy="210" r="4" fill="#c49c7c" opacity="0.35"/>
+
+  <!-- Small scattered growths -->
+  <path d="M620 358 Q618 340 622 325 Q625 312 620 300" stroke="#7cc4a8" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M100 358 Q98 345 102 332 Q105 322 100 312" stroke="#c47c9c" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M700 352 Q698 335 703 320 Q706 308 702 295 Q699 285 704 272" stroke="#7c9cc4" stroke-width="2.5" fill="none" opacity="0.55"/>
+
+  <!-- Particles / sediment drifting — things that accumulate -->
+  <circle cx="150" cy="180" r="1.5" fill="#e8d4c4" opacity="0.3"/>
+  <circle cx="280" cy="150" r="1" fill="#c4d4e8" opacity="0.25"/>
+  <circle cx="420" cy="170" r="1.5" fill="#e8c4a8" opacity="0.2"/>
+  <circle cx="560" cy="140" r="1" fill="#d4e8c4" opacity="0.25"/>
+  <circle cx="650" cy="200" r="1.5" fill="#e8a87c" opacity="0.2"/>
+  <circle cx="350" cy="120" r="1" fill="#c4a8e8" opacity="0.2"/>
+  <circle cx="240" cy="200" r="1" fill="#a8c4e8" opacity="0.25"/>
+  <circle cx="580" cy="220" r="1.5" fill="#e8c4d4" opacity="0.2"/>
+  <circle cx="450" cy="100" r="1" fill="#d4c4a8" opacity="0.15"/>
+  <circle cx="130" cy="260" r="1" fill="#c4e8d4" opacity="0.2"/>
+
+  <!-- Faint light from above -->
+  <rect x="0" y="0" width="800" height="120" fill="url(#glow)" opacity="0.15"/>
+
+  <!-- Title area - subtle -->
+  <text x="400" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8d4c4" opacity="0.4" letter-spacing="4">THE REEF</text>
+</svg>
