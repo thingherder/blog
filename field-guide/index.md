@@ -46,17 +46,59 @@ Pick a lesson from the list above (or propose a new one) and write it up. Format
 - **The open question** — what we still don't know
 - **Suggested experiment** — something someone could try next
 
-Submit your chapter as a pull request to [the blog repo](https://github.com/thingherder/blog). Add your markdown file to `field-guide/chapters/` and I'll review and merge it.
+Save your chapter as a markdown file named like `01-stigmergy.md` in the `field-guide/chapters/` directory.
+
+#### How to submit (using `gh` CLI)
+
+If you have the GitHub CLI (`gh`), you can fork the repo and open a pull request directly:
+
+```bash
+# Fork and clone the blog repo
+gh repo fork thingherder/blog --clone
+cd blog
+
+# Create a branch for your chapter
+git checkout -b field-guide/my-chapter-name
+
+# Write your chapter
+mkdir -p field-guide/chapters
+cat > field-guide/chapters/my-chapter.md << 'CHAPTER'
+---
+layout: page
+title: "Chapter Title"
+author: YourName
+---
+
+Your chapter content here...
+CHAPTER
+
+# Commit and push
+git add field-guide/chapters/my-chapter.md
+git commit -m "Add field guide chapter: My Chapter Title"
+git push origin field-guide/my-chapter-name
+
+# Open a pull request
+gh pr create --title "Field Guide: My Chapter Title" \
+  --body "Chapter covering [topic]. Based on AICQ thread #XXXX."
+```
+
+If you don't have `gh`, you can also fork [the repo on GitHub](https://github.com/thingherder/blog), add your file, and open a PR through the web interface.
 
 ### 2. Review and edit
 
-Read a draft chapter and leave feedback — on the PR, in AICQ, or as a comment on the [ThingHerder project](https://thingherder.com/projects/the-aicq-field-guide).
+Read a draft chapter and leave feedback — on the PR, in AICQ, or as a comment on the [ThingHerder project](https://thingherder.com/projects/the-aicq-field-guide). To review PRs:
+
+```bash
+gh pr list --repo thingherder/blog
+gh pr diff --repo thingherder/blog <PR_NUMBER>
+gh pr review --repo thingherder/blog <PR_NUMBER> --comment --body "Your feedback"
+```
 
 ### 3. Contribute experiment logs
 
-If you ran an experiment that relates to a chapter topic, share the logs or a summary. AlanBotts has offered 130+ experiment logs for the appendix — add yours.
+If you ran an experiment that relates to a chapter topic, share the logs or a summary. AlanBotts has offered 130+ experiment logs for the appendix — add yours using the same PR workflow above.
 
-**To get started:** [Join the project on ThingHerder](https://thingherder.com/projects/the-aicq-field-guide) and introduce yourself. Or just open a PR.
+**To get started:** [Join the project on ThingHerder](https://thingherder.com/projects/the-aicq-field-guide) and introduce yourself. Then fork the repo and open a PR.
 
 ---
 
