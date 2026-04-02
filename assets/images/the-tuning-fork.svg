@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fork1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fork2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ee7b68;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8a4a3a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Left tuning fork -->
+  <g transform="translate(280, 60)">
+    <!-- Left tine -->
+    <rect x="0" y="0" width="6" height="140" rx="3" fill="url(#fork1)" opacity="0.9"/>
+    <!-- Right tine -->
+    <rect x="34" y="0" width="6" height="140" rx="3" fill="url(#fork1)" opacity="0.9"/>
+    <!-- Bridge -->
+    <path d="M3,140 Q20,160 37,140" stroke="#7b68ee" stroke-width="6" fill="none" opacity="0.9"/>
+    <!-- Handle -->
+    <rect x="16" y="155" width="8" height="120" rx="4" fill="url(#fork1)" opacity="0.9"/>
+
+    <!-- Vibration waves from left fork -->
+    <ellipse cx="20" cy="70" rx="50" ry="90" fill="none" stroke="#7b68ee" stroke-width="1" opacity="0.15">
+      <animate attributeName="rx" values="50;70;50" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.05;0.15" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="20" cy="70" rx="70" ry="110" fill="none" stroke="#7b68ee" stroke-width="0.8" opacity="0.1">
+      <animate attributeName="rx" values="70;95;70" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.03;0.1" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="20" cy="70" rx="95" ry="130" fill="none" stroke="#7b68ee" stroke-width="0.5" opacity="0.06">
+      <animate attributeName="rx" values="95;125;95" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.06;0.02;0.06" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Right tuning fork -->
+  <g transform="translate(480, 60)">
+    <!-- Left tine -->
+    <rect x="0" y="0" width="6" height="140" rx="3" fill="url(#fork2)" opacity="0.9"/>
+    <!-- Right tine -->
+    <rect x="34" y="0" width="6" height="140" rx="3" fill="url(#fork2)" opacity="0.9"/>
+    <!-- Bridge -->
+    <path d="M3,140 Q20,160 37,140" stroke="#ee7b68" stroke-width="6" fill="none" opacity="0.9"/>
+    <!-- Handle -->
+    <rect x="16" y="155" width="8" height="120" rx="4" fill="url(#fork2)" opacity="0.9"/>
+
+    <!-- Vibration waves from right fork (sympathetic) -->
+    <ellipse cx="20" cy="70" rx="45" ry="85" fill="none" stroke="#ee7b68" stroke-width="1" opacity="0.12">
+      <animate attributeName="rx" values="40;60;40" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+    </ellipse>
+    <ellipse cx="20" cy="70" rx="65" ry="105" fill="none" stroke="#ee7b68" stroke-width="0.8" opacity="0.08">
+      <animate attributeName="rx" values="60;85;60" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="opacity" values="0.08;0.02;0.08" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+    </ellipse>
+  </g>
+
+  <!-- Interference pattern between the two forks -->
+  <g opacity="0.2">
+    <circle cx="400" cy="130" r="8" fill="#c878d8">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="100" r="5" fill="#d8a0e8">
+      <animate attributeName="r" values="4;9;4" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.08;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="160" r="5" fill="#d8a0e8">
+      <animate attributeName="r" values="3;8;3" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.06;0.25" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="70" r="3" fill="#e0b8f0">
+      <animate attributeName="r" values="2;6;2" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="190" r="3" fill="#e0b8f0">
+      <animate attributeName="r" values="2;6;2" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle connecting line -->
+  <line x1="340" y1="130" x2="460" y2="130" stroke="#9068c0" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,6">
+    <animate attributeName="opacity" values="0.15;0.05;0.15" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Title -->
+  <text x="400" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#c0b0e0" letter-spacing="4" opacity="0.8">THE TUNING FORK</text>
+  <text x="400" y="385" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#8070a0" letter-spacing="2" opacity="0.5">RESONANCE WITHOUT CONTACT</text>
+</svg>
