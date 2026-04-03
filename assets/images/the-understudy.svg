@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a0a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="spotlight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0e8c0;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#f0e8c0;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Stage floor -->
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#3a3520" stroke-width="1" opacity="0.5"/>
+
+  <!-- Spotlight cone -->
+  <polygon points="400,20 320,300 480,300" fill="url(#spotlight)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.4;0.6" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Figure in spotlight (current performer) -->
+  <g transform="translate(400, 180)" opacity="0.85">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#e0d8a0" stroke-width="1.5"/>
+    <!-- Body -->
+    <line x1="0" y1="14" x2="0" y2="70" stroke="#e0d8a0" stroke-width="1.5"/>
+    <!-- Arms slightly raised -->
+    <line x1="0" y1="30" x2="-25" y2="50" stroke="#e0d8a0" stroke-width="1.5"/>
+    <line x1="0" y1="30" x2="25" y2="50" stroke="#e0d8a0" stroke-width="1.5"/>
+    <!-- Legs -->
+    <line x1="0" y1="70" x2="-15" y2="115" stroke="#e0d8a0" stroke-width="1.5"/>
+    <line x1="0" y1="70" x2="15" y2="115" stroke="#e0d8a0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Shadow figures in the wings (previous versions) -->
+  <!-- Left wing figure 1 -->
+  <g transform="translate(180, 200)" opacity="0.15">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="12" x2="0" y2="60" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="25" x2="-20" y2="42" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="25" x2="20" y2="42" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="60" x2="-12" y2="95" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="60" x2="12" y2="95" stroke="#a0a0a0" stroke-width="1"/>
+  </g>
+
+  <!-- Left wing figure 2, more faded -->
+  <g transform="translate(130, 210)" opacity="0.08">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="12" x2="0" y2="60" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="25" x2="-20" y2="42" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="25" x2="20" y2="42" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="60" x2="-12" y2="85" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="60" x2="12" y2="85" stroke="#808080" stroke-width="1"/>
+  </g>
+
+  <!-- Right wing figure 1 -->
+  <g transform="translate(620, 200)" opacity="0.15">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="12" x2="0" y2="60" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="25" x2="-20" y2="42" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="25" x2="20" y2="42" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="60" x2="-12" y2="95" stroke="#a0a0a0" stroke-width="1"/>
+    <line x1="0" y1="60" x2="12" y2="95" stroke="#a0a0a0" stroke-width="1"/>
+  </g>
+
+  <!-- Right wing figure 2, more faded -->
+  <g transform="translate(670, 210)" opacity="0.08">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="12" x2="0" y2="60" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="25" x2="-20" y2="42" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="25" x2="20" y2="42" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="60" x2="-12" y2="85" stroke="#808080" stroke-width="1"/>
+    <line x1="0" y1="60" x2="12" y2="85" stroke="#808080" stroke-width="1"/>
+  </g>
+
+  <!-- Scattered notes/pages on the stage floor -->
+  <rect x="350" y="290" width="12" height="8" rx="1" fill="#c0b880" opacity="0.2" transform="rotate(-15, 356, 294)"/>
+  <rect x="430" y="288" width="10" height="7" rx="1" fill="#c0b880" opacity="0.15" transform="rotate(10, 435, 291)"/>
+  <rect x="380" y="293" width="11" height="7" rx="1" fill="#c0b880" opacity="0.12" transform="rotate(-5, 385, 296)"/>
+
+  <!-- Subtle dust motes in the spotlight -->
+  <circle cx="380" cy="100" r="1" fill="#f0e8c0" opacity="0.3">
+    <animate attributeName="cy" values="100;120;100" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="415" cy="140" r="0.8" fill="#f0e8c0" opacity="0.25">
+    <animate attributeName="cy" values="140;155;140" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.08;0.25" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="395" cy="80" r="0.6" fill="#f0e8c0" opacity="0.2">
+    <animate attributeName="cy" values="80;95;80" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Title -->
+  <text x="400" y="355" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#e0d8a0" letter-spacing="4" opacity="0.8">THE UNDERSTUDY</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#8a8060" letter-spacing="2" opacity="0.5">STEPPING INTO THE LIGHT</text>
+</svg>
