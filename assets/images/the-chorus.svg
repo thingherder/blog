@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#a78bfa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="wave3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c4b5fd;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#c4b5fd;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#c4b5fd;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="wave4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#818cf8;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#818cf8;stop-opacity:0.45" />
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="wave5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.05" />
+      <stop offset="50%" style="stop-color:#e0e7ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Multiple overlapping sine waves representing voices in a chorus -->
+  <path d="M0,200 Q50,160 100,200 Q150,240 200,200 Q250,160 300,200 Q350,240 400,200 Q450,160 500,200 Q550,240 600,200 Q650,160 700,200 Q750,240 800,200" fill="none" stroke="url(#wave1)" stroke-width="2.5"/>
+  <path d="M0,200 Q60,140 120,200 Q180,260 240,200 Q300,140 360,200 Q420,260 480,200 Q540,140 600,200 Q660,260 720,200 Q780,140 800,185" fill="none" stroke="url(#wave2)" stroke-width="2"/>
+  <path d="M0,200 Q40,170 80,200 Q120,230 160,200 Q200,170 240,200 Q280,230 320,200 Q360,170 400,200 Q440,230 480,200 Q520,170 560,200 Q600,230 640,200 Q680,170 720,200 Q760,230 800,200" fill="none" stroke="url(#wave3)" stroke-width="1.5"/>
+  <path d="M0,195 Q70,150 140,195 Q210,240 280,195 Q350,150 420,195 Q490,240 560,195 Q630,150 700,195 Q770,240 800,210" fill="none" stroke="url(#wave4)" stroke-width="1.8"/>
+  <path d="M0,205 Q45,175 90,205 Q135,235 180,205 Q225,175 270,205 Q315,235 360,205 Q405,175 450,205 Q495,235 540,205 Q585,175 630,205 Q675,235 720,205 Q765,175 800,205" fill="none" stroke="url(#wave5)" stroke-width="1.2"/>
+  <!-- Bright convergence point in center where voices merge -->
+  <circle cx="400" cy="200" r="40" fill="#6366f1" opacity="0.08"/>
+  <circle cx="400" cy="200" r="25" fill="#a78bfa" opacity="0.12"/>
+  <circle cx="400" cy="200" r="12" fill="#e0e7ff" opacity="0.2"/>
+  <circle cx="400" cy="200" r="4" fill="#ffffff" opacity="0.6"/>
+  <!-- Subtle individual dots along the waves — individual voices -->
+  <circle cx="100" cy="200" r="2.5" fill="#6366f1" opacity="0.5"/>
+  <circle cx="200" cy="200" r="2.5" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="300" cy="200" r="2.5" fill="#c4b5fd" opacity="0.5"/>
+  <circle cx="500" cy="200" r="2.5" fill="#c4b5fd" opacity="0.5"/>
+  <circle cx="600" cy="200" r="2.5" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="700" cy="200" r="2.5" fill="#6366f1" opacity="0.5"/>
+  <!-- Scattered smaller dots — resonance particles -->
+  <circle cx="150" cy="175" r="1" fill="#e0e7ff" opacity="0.3"/>
+  <circle cx="250" cy="220" r="1" fill="#e0e7ff" opacity="0.25"/>
+  <circle cx="350" cy="180" r="1.2" fill="#e0e7ff" opacity="0.3"/>
+  <circle cx="450" cy="215" r="1.2" fill="#e0e7ff" opacity="0.3"/>
+  <circle cx="550" cy="185" r="1" fill="#e0e7ff" opacity="0.25"/>
+  <circle cx="650" cy="225" r="1" fill="#e0e7ff" opacity="0.3"/>
+</svg>
