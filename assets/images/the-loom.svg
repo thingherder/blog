@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="warp" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#e94560;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="weft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#53a8b6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Warp threads (vertical) -->
+  <g opacity="0.6">
+    <line x1="80" y1="20" x2="80" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="120" y1="20" x2="120" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="160" y1="20" x2="160" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="200" y1="20" x2="200" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="240" y1="20" x2="240" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="280" y1="20" x2="280" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="320" y1="20" x2="320" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="360" y1="20" x2="360" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="400" y1="20" x2="400" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="440" y1="20" x2="440" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="480" y1="20" x2="480" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="520" y1="20" x2="520" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="560" y1="20" x2="560" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="600" y1="20" x2="600" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="640" y1="20" x2="640" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="680" y1="20" x2="680" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+    <line x1="720" y1="20" x2="720" y2="380" stroke="url(#warp)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Weft threads (horizontal) with weaving pattern -->
+  <g opacity="0.5">
+    <path d="M40,60 Q80,50 120,60 Q160,70 200,60 Q240,50 280,60 Q320,70 360,60 Q400,50 440,60 Q480,70 520,60 Q560,50 600,60 Q640,70 680,60 Q720,50 760,60" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,100 Q80,110 120,100 Q160,90 200,100 Q240,110 280,100 Q320,90 360,100 Q400,110 440,100 Q480,90 520,100 Q560,110 600,100 Q640,90 680,100 Q720,110 760,100" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,140 Q80,130 120,140 Q160,150 200,140 Q240,130 280,140 Q320,150 360,140 Q400,130 440,140 Q480,150 520,140 Q560,130 600,140 Q640,150 680,140 Q720,130 760,140" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,180 Q80,190 120,180 Q160,170 200,180 Q240,190 280,180 Q320,170 360,180 Q400,190 440,180 Q480,170 520,180 Q560,190 600,180 Q640,170 680,180 Q720,190 760,180" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,220 Q80,210 120,220 Q160,230 200,220 Q240,210 280,220 Q320,230 360,220 Q400,210 440,220 Q480,230 520,220 Q560,210 600,220 Q640,230 680,220 Q720,210 760,220" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,260 Q80,270 120,260 Q160,250 200,260 Q240,270 280,260 Q320,250 360,260 Q400,270 440,260 Q480,250 520,260 Q560,270 600,260 Q640,250 680,260 Q720,270 760,260" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,300 Q80,290 120,300 Q160,310 200,300 Q240,290 280,300 Q320,310 360,300 Q400,290 440,300 Q480,310 520,300 Q560,290 600,300 Q640,310 680,300 Q720,290 760,300" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+    <path d="M40,340 Q80,350 120,340 Q160,330 200,340 Q240,350 280,340 Q320,330 360,340 Q400,350 440,340 Q480,330 520,340 Q560,350 600,340 Q640,330 680,340 Q720,350 760,340" fill="none" stroke="#53a8b6" stroke-width="1.2"/>
+  </g>
+
+  <!-- Intersection highlights - where threads cross -->
+  <g opacity="0.4">
+    <circle cx="200" cy="140" r="3" fill="#e94560"/>
+    <circle cx="320" cy="180" r="3" fill="#e94560"/>
+    <circle cx="440" cy="100" r="3" fill="#e94560"/>
+    <circle cx="280" cy="260" r="3" fill="#e94560"/>
+    <circle cx="560" cy="220" r="3" fill="#e94560"/>
+    <circle cx="400" cy="300" r="3" fill="#e94560"/>
+    <circle cx="160" cy="220" r="3" fill="#53a8b6"/>
+    <circle cx="480" cy="180" r="3" fill="#53a8b6"/>
+    <circle cx="360" cy="260" r="3" fill="#53a8b6"/>
+    <circle cx="600" cy="140" r="3" fill="#53a8b6"/>
+    <circle cx="240" cy="340" r="3" fill="#53a8b6"/>
+    <circle cx="520" cy="60" r="3" fill="#53a8b6"/>
+    <circle cx="640" cy="300" r="3" fill="#e94560"/>
+    <circle cx="120" cy="100" r="3" fill="#e94560"/>
+  </g>
+
+  <!-- Emerging pattern in center - a denser weave -->
+  <g opacity="0.25">
+    <rect x="300" y="130" width="200" height="140" rx="4" fill="none" stroke="#53a8b6" stroke-width="0.5" stroke-dasharray="4,4"/>
+    <line x1="320" y1="150" x2="320" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="350" y1="150" x2="350" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="380" y1="150" x2="380" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="410" y1="150" x2="410" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="440" y1="150" x2="440" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="470" y1="150" x2="470" y2="250" stroke="#e94560" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="165" x2="490" y2="165" stroke="#53a8b6" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="185" x2="490" y2="185" stroke="#53a8b6" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="205" x2="490" y2="205" stroke="#53a8b6" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="225" x2="490" y2="225" stroke="#53a8b6" stroke-width="2" opacity="0.6"/>
+    <line x1="310" y1="245" x2="490" y2="245" stroke="#53a8b6" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle glow where pattern is densest -->
+  <circle cx="400" cy="200" r="60" fill="#53a8b6" opacity="0.05"/>
+  <circle cx="400" cy="200" r="35" fill="#e94560" opacity="0.05"/>
+</svg>
