@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2a4a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="pool" cx="50%" cy="65%" r="30%">
+      <stop offset="0%" style="stop-color:#1a5c7a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#0f3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a2538;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="surface-glow" cx="45%" cy="40%" r="25%">
+      <stop offset="0%" style="stop-color:#7ab8d4;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7ab8d4;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="rock-l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#25252d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rock-r" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#25252d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d3350;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#071a2e;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g opacity="0.4">
+    <circle cx="120" cy="40" r="1" fill="#c8d8e8"/>
+    <circle cx="280" cy="25" r="0.8" fill="#c8d8e8"/>
+    <circle cx="450" cy="50" r="1.2" fill="#c8d8e8"/>
+    <circle cx="600" cy="30" r="0.7" fill="#c8d8e8"/>
+    <circle cx="700" cy="55" r="1" fill="#c8d8e8"/>
+    <circle cx="180" cy="70" r="0.6" fill="#c8d8e8"/>
+    <circle cx="520" cy="18" r="0.9" fill="#c8d8e8"/>
+    <circle cx="350" cy="65" r="0.7" fill="#c8d8e8"/>
+  </g>
+
+  <!-- Distant ocean line -->
+  <rect x="0" y="130" width="800" height="270" fill="url(#ocean)" opacity="0.3"/>
+
+  <!-- Rock formations framing the pool -->
+  <!-- Left rocks -->
+  <path d="M0,180 Q80,150 120,200 Q140,230 130,280 Q120,320 100,360 L0,400 L0,180Z" fill="url(#rock-l)"/>
+  <path d="M120,200 Q160,190 200,220 Q220,250 210,300 Q195,340 170,380 L100,400 L100,360 Q120,320 130,280 Q140,230 120,200Z" fill="#2d2d35"/>
+  <path d="M200,240 Q230,230 260,260 Q270,290 260,330 L240,380 L170,400 L170,380 Q195,340 210,300 Q220,250 200,240Z" fill="#323240" opacity="0.8"/>
+
+  <!-- Right rocks -->
+  <path d="M800,170 Q720,155 680,190 Q650,220 660,280 Q670,330 700,370 L800,400 L800,170Z" fill="url(#rock-r)"/>
+  <path d="M680,190 Q640,195 610,230 Q590,260 600,310 Q615,350 640,385 L700,400 L700,370 Q670,330 660,280 Q650,220 680,190Z" fill="#2d2d35"/>
+  <path d="M610,250 Q580,245 550,270 Q535,295 545,340 L570,390 L640,400 L640,385 Q615,350 600,310 Q590,260 610,250Z" fill="#323240" opacity="0.8"/>
+
+  <!-- The tide pool basin -->
+  <ellipse cx="400" cy="310" rx="160" ry="60" fill="url(#pool)"/>
+  <ellipse cx="400" cy="310" rx="160" ry="60" fill="url(#surface-glow)"/>
+
+  <!-- Water surface reflections -->
+  <g opacity="0.25">
+    <ellipse cx="370" cy="300" rx="40" ry="3" fill="#7ab8d4"/>
+    <ellipse cx="420" cy="315" rx="30" ry="2" fill="#7ab8d4"/>
+    <ellipse cx="385" cy="325" rx="25" ry="2" fill="#7ab8d4"/>
+  </g>
+
+  <!-- Life in the pool -->
+  <!-- Anemone -->
+  <g opacity="0.7">
+    <line x1="350" y1="335" x2="345" y2="318" stroke="#c46b8a" stroke-width="1.2"/>
+    <line x1="350" y1="335" x2="350" y2="315" stroke="#c46b8a" stroke-width="1.2"/>
+    <line x1="350" y1="335" x2="355" y2="317" stroke="#c46b8a" stroke-width="1.2"/>
+    <line x1="350" y1="335" x2="342" y2="320" stroke="#d47a9a" stroke-width="1"/>
+    <line x1="350" y1="335" x2="358" y2="319" stroke="#d47a9a" stroke-width="1"/>
+    <circle cx="350" cy="335" r="3" fill="#a85070"/>
+  </g>
+  <!-- Starfish -->
+  <g opacity="0.6" transform="translate(430,325) scale(0.5)">
+    <line x1="0" y1="-12" x2="0" y2="0" stroke="#d4855a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="11" y1="-4" x2="0" y2="0" stroke="#d4855a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="7" y1="10" x2="0" y2="0" stroke="#d4855a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-7" y1="10" x2="0" y2="0" stroke="#d4855a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-11" y1="-4" x2="0" y2="0" stroke="#d4855a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Small shells / pebbles -->
+  <circle cx="380" cy="330" r="2" fill="#8a9a7a" opacity="0.5"/>
+  <circle cx="410" cy="338" r="1.5" fill="#7a8a9a" opacity="0.5"/>
+  <circle cx="395" cy="340" r="1.8" fill="#9a8a7a" opacity="0.4"/>
+
+  <!-- Seaweed fronds -->
+  <g opacity="0.5">
+    <path d="M320,340 Q325,320 318,300 Q322,285 316,270" fill="none" stroke="#2a6a4a" stroke-width="2"/>
+    <path d="M325,338 Q330,315 323,295" fill="none" stroke="#3a7a5a" stroke-width="1.5"/>
+    <path d="M470,335 Q465,318 472,300 Q468,288 474,275" fill="none" stroke="#2a6a4a" stroke-width="2"/>
+    <path d="M465,337 Q460,320 467,305" fill="none" stroke="#3a7a5a" stroke-width="1.5"/>
+  </g>
+
+  <!-- Incoming wave hint — the connection to the ocean -->
+  <g opacity="0.15">
+    <path d="M250,260 Q350,245 400,250 Q450,245 550,260" fill="none" stroke="#7ab8d4" stroke-width="1.5"/>
+    <path d="M270,255 Q370,238 400,243 Q430,238 530,255" fill="none" stroke="#7ab8d4" stroke-width="1"/>
+  </g>
+
+  <!-- Spray / mist particles between ocean and pool -->
+  <g opacity="0.3">
+    <circle cx="300" cy="240" r="1" fill="#a0c8e0"/>
+    <circle cx="340" cy="235" r="0.8" fill="#a0c8e0"/>
+    <circle cx="460" cy="238" r="1" fill="#a0c8e0"/>
+    <circle cx="500" cy="242" r="0.7" fill="#a0c8e0"/>
+    <circle cx="380" cy="230" r="0.6" fill="#a0c8e0"/>
+    <circle cx="420" cy="232" r="0.9" fill="#a0c8e0"/>
+  </g>
+</svg>
