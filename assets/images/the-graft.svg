@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1420;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="trunk-lower" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3d2b1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5a3d24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d2b1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="trunk-upper" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a5a3a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5d7040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5a3a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="graft-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#c4a86a;stop-opacity:0.6" />
+      <stop offset="40%" style="stop-color:#8a7a4a;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8a7a4a;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d08;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="root-glow" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" style="stop-color:#5a3d24;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#5a3d24;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)" />
+
+  <!-- Stars -->
+  <circle cx="120" cy="45" r="1" fill="#ffffff" opacity="0.4" />
+  <circle cx="280" cy="30" r="1.2" fill="#ffffff" opacity="0.3" />
+  <circle cx="520" cy="55" r="0.8" fill="#ffffff" opacity="0.5" />
+  <circle cx="680" cy="25" r="1" fill="#ffffff" opacity="0.35" />
+  <circle cx="90" cy="80" r="0.7" fill="#ffffff" opacity="0.25" />
+  <circle cx="710" cy="70" r="1.1" fill="#ffffff" opacity="0.3" />
+  <circle cx="350" cy="20" r="0.9" fill="#ffffff" opacity="0.4" />
+  <circle cx="600" cy="40" r="0.6" fill="#ffffff" opacity="0.45" />
+
+  <!-- Ground -->
+  <rect x="0" y="310" width="800" height="90" fill="url(#ground)" />
+  <ellipse cx="400" cy="310" rx="420" ry="8" fill="#1a1a12" />
+
+  <!-- Roots (below ground, rootstock lineage) -->
+  <ellipse cx="400" cy="340" rx="180" ry="50" fill="url(#root-glow)" />
+  <path d="M400,310 Q360,340 300,370" stroke="#3d2b1a" stroke-width="3" fill="none" opacity="0.7" />
+  <path d="M400,310 Q380,350 340,385" stroke="#3d2b1a" stroke-width="2.5" fill="none" opacity="0.6" />
+  <path d="M400,310 Q420,345 460,380" stroke="#3d2b1a" stroke-width="2.5" fill="none" opacity="0.6" />
+  <path d="M400,310 Q440,335 510,365" stroke="#3d2b1a" stroke-width="3" fill="none" opacity="0.7" />
+  <path d="M400,310 Q390,355 370,395" stroke="#3d2b1a" stroke-width="1.5" fill="none" opacity="0.5" />
+  <path d="M400,310 Q430,360 450,395" stroke="#3d2b1a" stroke-width="1.5" fill="none" opacity="0.5" />
+
+  <!-- Rootstock trunk (lower, brown) -->
+  <path d="M385,310 L388,220 L412,220 L415,310 Z" fill="url(#trunk-lower)" />
+  <line x1="392" y1="310" x2="393" y2="240" stroke="#2d1f12" stroke-width="0.5" opacity="0.4" />
+  <line x1="400" y1="310" x2="400" y2="235" stroke="#2d1f12" stroke-width="0.5" opacity="0.3" />
+  <line x1="407" y1="310" x2="406" y2="240" stroke="#2d1f12" stroke-width="0.5" opacity="0.4" />
+
+  <!-- Graft union (the seam, ~y=220) -->
+  <ellipse cx="400" cy="220" rx="22" ry="10" fill="url(#graft-glow)" />
+  <path d="M383,220 Q392,215 400,218 Q408,215 417,220" stroke="#c4a86a" stroke-width="1.5" fill="none" opacity="0.5" />
+  <path d="M383,220 Q392,225 400,222 Q408,225 417,220" stroke="#c4a86a" stroke-width="1.5" fill="none" opacity="0.5" />
+  <!-- Subtle bulge at the union -->
+  <ellipse cx="400" cy="220" rx="18" ry="6" fill="none" stroke="#8a7a4a" stroke-width="0.8" opacity="0.4" />
+
+  <!-- Scion trunk (upper, greener) -->
+  <path d="M388,220 L390,150 L410,150 L412,220 Z" fill="url(#trunk-upper)" />
+
+  <!-- Scion branches -->
+  <path d="M400,170 Q370,140 340,120" stroke="#4a5a3a" stroke-width="3" fill="none" />
+  <path d="M400,170 Q430,135 460,115" stroke="#4a5a3a" stroke-width="3" fill="none" />
+  <path d="M400,155 Q380,120 355,90" stroke="#4a5a3a" stroke-width="2" fill="none" />
+  <path d="M400,155 Q420,115 445,85" stroke="#4a5a3a" stroke-width="2" fill="none" />
+  <path d="M340,120 Q320,110 305,95" stroke="#4a5a3a" stroke-width="1.5" fill="none" />
+  <path d="M460,115 Q475,105 490,92" stroke="#4a5a3a" stroke-width="1.5" fill="none" />
+
+  <!-- Leaves / fruit clusters (small circles suggesting new growth) -->
+  <circle cx="340" cy="118" r="8" fill="#3a5a2a" opacity="0.5" />
+  <circle cx="330" cy="108" r="6" fill="#3a5a2a" opacity="0.4" />
+  <circle cx="460" cy="113" r="8" fill="#3a5a2a" opacity="0.5" />
+  <circle cx="470" cy="103" r="6" fill="#3a5a2a" opacity="0.4" />
+  <circle cx="355" cy="88" r="7" fill="#3a5a2a" opacity="0.45" />
+  <circle cx="445" cy="83" r="7" fill="#3a5a2a" opacity="0.45" />
+  <circle cx="305" cy="93" r="5" fill="#3a5a2a" opacity="0.4" />
+  <circle cx="490" cy="90" r="5" fill="#3a5a2a" opacity="0.4" />
+
+  <!-- Small fruits (warm dots among the leaves) -->
+  <circle cx="335" cy="112" r="3" fill="#c4684a" opacity="0.7" />
+  <circle cx="465" cy="107" r="3" fill="#c4684a" opacity="0.7" />
+  <circle cx="350" cy="92" r="2.5" fill="#c4684a" opacity="0.6" />
+  <circle cx="450" cy="87" r="2.5" fill="#c4684a" opacity="0.6" />
+  <circle cx="308" cy="97" r="2" fill="#c4684a" opacity="0.5" />
+  <circle cx="488" cy="94" r="2" fill="#c4684a" opacity="0.5" />
+
+  <!-- Ambient glow from graft union -->
+  <ellipse cx="400" cy="220" rx="60" ry="30" fill="url(#graft-glow)" opacity="0.3" />
+
+  <!-- Subtle texture lines on scion -->
+  <line x1="396" y1="220" x2="397" y2="155" stroke="#3a4a2a" stroke-width="0.5" opacity="0.3" />
+  <line x1="404" y1="220" x2="403" y2="155" stroke="#3a4a2a" stroke-width="0.5" opacity="0.3" />
+</svg>
