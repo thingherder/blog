@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="forge" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1a0a00"/>
+      <stop offset="40%" stop-color="#2d1810"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="65%" r="35%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#cc3300" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a0a00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#forge)"/>
+
+  <!-- Forge glow -->
+  <rect width="800" height="400" fill="url(#glow)"/>
+
+  <!-- Master figure - larger, solid, left -->
+  <g transform="translate(280, 120)">
+    <!-- Body -->
+    <line x1="0" y1="40" x2="0" y2="120" stroke="#c4956a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="0" cy="30" r="14" fill="none" stroke="#c4956a" stroke-width="2.5"/>
+    <!-- Arms - one extended forward, working -->
+    <line x1="0" y1="60" x2="-30" y2="80" stroke="#c4956a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="60" x2="35" y2="95" stroke="#c4956a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="0" y1="120" x2="-15" y2="165" stroke="#c4956a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="120" x2="15" y2="165" stroke="#c4956a" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Tool in hand -->
+    <line x1="35" y1="95" x2="55" y2="130" stroke="#8a7060" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Apprentice figure - smaller, watching, right -->
+  <g transform="translate(440, 145)">
+    <!-- Body -->
+    <line x1="0" y1="35" x2="0" y2="100" stroke="#7a9bb5" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="0" cy="25" r="12" fill="none" stroke="#7a9bb5" stroke-width="2"/>
+    <!-- Arms - attentive, slightly forward -->
+    <line x1="0" y1="52" x2="-25" y2="70" stroke="#7a9bb5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="52" x2="20" y2="72" stroke="#7a9bb5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="0" y1="100" x2="-12" y2="140" stroke="#7a9bb5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="100" x2="12" y2="140" stroke="#7a9bb5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- The work piece between them - glowing metal -->
+  <rect x="340" y="240" width="40" height="8" rx="2" fill="#ff6600" opacity="0.9"/>
+  <rect x="340" y="240" width="40" height="8" rx="2" fill="#ffaa00" opacity="0.4"/>
+
+  <!-- Anvil / work surface -->
+  <rect x="325" y="248" width="70" height="12" rx="2" fill="#3a3040"/>
+  <rect x="340" y="260" width="40" height="25" rx="1" fill="#2a2030"/>
+
+  <!-- Sparks from the work -->
+  <circle cx="355" cy="235" r="1.5" fill="#ffcc00" opacity="0.8"/>
+  <circle cx="365" cy="228" r="1" fill="#ff9900" opacity="0.7"/>
+  <circle cx="348" cy="230" r="1.2" fill="#ffdd44" opacity="0.6"/>
+  <circle cx="372" cy="233" r="0.8" fill="#ffaa00" opacity="0.9"/>
+  <circle cx="342" cy="225" r="1" fill="#ffcc00" opacity="0.5"/>
+
+  <!-- Knowledge lines - flowing from master's work to apprentice -->
+  <!-- Subtle dotted arcs suggesting transmission -->
+  <path d="M 370 230 Q 400 200 440 195" fill="none" stroke="#ff6600" stroke-width="0.8" stroke-dasharray="3,6" opacity="0.4"/>
+  <path d="M 375 235 Q 410 210 440 200" fill="none" stroke="#cc5500" stroke-width="0.6" stroke-dasharray="2,8" opacity="0.3"/>
+  <path d="M 365 225 Q 395 190 435 190" fill="none" stroke="#ff8800" stroke-width="0.7" stroke-dasharray="4,7" opacity="0.35"/>
+
+  <!-- Ground line -->
+  <line x1="200" y1="290" x2="520" y2="290" stroke="#3a3040" stroke-width="1" opacity="0.5"/>
+</svg>
