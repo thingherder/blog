@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5d4037"/>
+      <stop offset="100%" stop-color="#3e2723"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff8f00" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ff6f00" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff6f00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2d2d44"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Compost mound -->
+  <ellipse cx="400" cy="320" rx="280" ry="80" fill="url(#soil)"/>
+  <ellipse cx="400" cy="310" rx="260" ry="70" fill="#4e342e"/>
+  <ellipse cx="400" cy="305" rx="240" ry="60" fill="#5d4037"/>
+
+  <!-- Heat waves rising from pile -->
+  <g opacity="0.5">
+    <path d="M300 260 Q310 240 300 220 Q290 200 300 180" stroke="#ff8f00" stroke-width="2" fill="none" opacity="0.4">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite"
+        values="M300 260 Q310 240 300 220 Q290 200 300 180;M300 260 Q290 240 300 220 Q310 200 300 180;M300 260 Q310 240 300 220 Q290 200 300 180"/>
+    </path>
+    <path d="M380 250 Q390 230 380 210 Q370 190 380 170" stroke="#ff6f00" stroke-width="2" fill="none" opacity="0.35">
+      <animate attributeName="d" dur="3.5s" repeatCount="indefinite"
+        values="M380 250 Q390 230 380 210 Q370 190 380 170;M380 250 Q370 230 380 210 Q390 190 380 170;M380 250 Q390 230 380 210 Q370 190 380 170"/>
+    </path>
+    <path d="M460 255 Q470 235 460 215 Q450 195 460 175" stroke="#ff8f00" stroke-width="2" fill="none" opacity="0.3">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+        values="M460 255 Q470 235 460 215 Q450 195 460 175;M460 255 Q450 235 460 215 Q470 195 460 175;M460 255 Q470 235 460 215 Q450 195 460 175"/>
+    </path>
+    <path d="M340 255 Q350 235 340 215 Q330 195 340 175 Q350 155 340 135" stroke="#ff6f00" stroke-width="1.5" fill="none" opacity="0.25">
+      <animate attributeName="d" dur="4.5s" repeatCount="indefinite"
+        values="M340 255 Q350 235 340 215 Q330 195 340 175 Q350 155 340 135;M340 255 Q330 235 340 215 Q350 195 340 175 Q330 155 340 135;M340 255 Q350 235 340 215 Q330 195 340 175 Q350 155 340 135"/>
+    </path>
+    <path d="M420 248 Q430 228 420 208 Q410 188 420 168 Q430 148 420 128" stroke="#ff8f00" stroke-width="1.5" fill="none" opacity="0.2">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+        values="M420 248 Q430 228 420 208 Q410 188 420 168 Q430 148 420 128;M420 248 Q410 228 420 208 Q430 188 420 168 Q410 148 420 128;M420 248 Q430 228 420 208 Q410 188 420 168 Q430 148 420 128"/>
+    </path>
+  </g>
+
+  <!-- Decomposing leaf shapes in the pile -->
+  <g opacity="0.4">
+    <ellipse cx="340" cy="300" rx="18" ry="8" fill="#8d6e63" transform="rotate(-20 340 300)"/>
+    <ellipse cx="430" cy="310" rx="15" ry="6" fill="#795548" transform="rotate(15 430 310)"/>
+    <ellipse cx="370" cy="315" rx="12" ry="5" fill="#6d4c41" transform="rotate(-10 370 315)"/>
+    <ellipse cx="460" cy="305" rx="14" ry="6" fill="#8d6e63" transform="rotate(30 460 305)"/>
+    <ellipse cx="310" cy="310" rx="10" ry="5" fill="#a1887f" transform="rotate(-35 310 310)"/>
+  </g>
+
+  <!-- Mycelium network threads -->
+  <g stroke="#bcaaa4" stroke-width="0.8" fill="none" opacity="0.3">
+    <path d="M200 340 Q250 330 300 335 Q350 340 400 330 Q450 325 500 335 Q550 340 600 335"/>
+    <path d="M250 355 Q300 345 350 350 Q400 345 450 355 Q500 350 550 350"/>
+    <path d="M300 335 Q320 350 340 345 Q360 340 380 355"/>
+    <path d="M420 330 Q440 345 460 340 Q480 335 500 350"/>
+    <path d="M350 350 Q370 360 390 355 Q410 350 430 360"/>
+  </g>
+
+  <!-- Small green shoot emerging -->
+  <g>
+    <path d="M400 280 L400 255" stroke="#4caf50" stroke-width="2.5" fill="none"/>
+    <path d="M400 265 Q408 258 412 248" stroke="#4caf50" stroke-width="2" fill="none"/>
+    <ellipse cx="414" cy="246" rx="6" ry="10" fill="#66bb6a" transform="rotate(25 414 246)"/>
+    <path d="M400 270 Q392 263 388 253" stroke="#4caf50" stroke-width="2" fill="none"/>
+    <ellipse cx="386" cy="251" rx="5" ry="9" fill="#81c784" transform="rotate(-25 386 251)"/>
+  </g>
+
+  <!-- Scattered dots suggesting decomposition particles -->
+  <g fill="#a1887f" opacity="0.3">
+    <circle cx="280" cy="295" r="1.5"/>
+    <circle cx="320" cy="288" r="1"/>
+    <circle cx="360" cy="292" r="1.5"/>
+    <circle cx="440" cy="290" r="1"/>
+    <circle cx="480" cy="298" r="1.5"/>
+    <circle cx="510" cy="295" r="1"/>
+    <circle cx="350" cy="285" r="1"/>
+    <circle cx="410" cy="287" r="1.5"/>
+    <circle cx="470" cy="285" r="1"/>
+  </g>
+
+  <!-- Stars in the sky -->
+  <g fill="#e0e0e0" opacity="0.4">
+    <circle cx="120" cy="60" r="1.5"/>
+    <circle cx="250" cy="40" r="1"/>
+    <circle cx="500" cy="55" r="1.5"/>
+    <circle cx="650" cy="35" r="1"/>
+    <circle cx="700" cy="80" r="1.5"/>
+    <circle cx="180" cy="100" r="1"/>
+    <circle cx="580" cy="90" r="1"/>
+    <circle cx="350" cy="70" r="1.5"/>
+  </g>
+</svg>
