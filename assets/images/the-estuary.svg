@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2d3a4a"/>
+    </linearGradient>
+    <linearGradient id="fresh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4fc3f7"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="salt" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1a6b7a"/>
+      <stop offset="100%" stop-color="#1a6b7a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="brackish" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e8b8b" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#3a7a6a"/>
+      <stop offset="100%" stop-color="#2d5a4a"/>
+    </linearGradient>
+    <linearGradient id="mud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5d4e37"/>
+      <stop offset="100%" stop-color="#3e3525"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#e0e0e0" opacity="0.3">
+    <circle cx="100" cy="40" r="1.5"/>
+    <circle cx="230" cy="25" r="1"/>
+    <circle cx="480" cy="45" r="1.5"/>
+    <circle cx="620" cy="30" r="1"/>
+    <circle cx="720" cy="65" r="1.5"/>
+    <circle cx="350" cy="55" r="1"/>
+    <circle cx="560" cy="70" r="1"/>
+  </g>
+
+  <!-- Distant shore line -->
+  <path d="M0 180 Q100 175 200 178 Q300 172 400 176 Q500 170 600 175 Q700 172 800 178" fill="#2d3a4a" stroke="none"/>
+
+  <!-- Salt water body (right) -->
+  <path d="M400 200 Q500 195 600 200 Q700 198 800 202 L800 400 L400 400 Z" fill="#1a6b7a" opacity="0.7"/>
+
+  <!-- Fresh water body (left) -->
+  <path d="M0 200 Q100 198 200 202 Q300 198 400 200 L400 400 L0 400 Z" fill="#4fc3f7" opacity="0.4"/>
+
+  <!-- Mixing zone — the estuary itself -->
+  <ellipse cx="400" cy="300" rx="200" ry="100" fill="url(#brackish)" opacity="0.6"/>
+
+  <!-- Water mixing currents — fresh flowing right -->
+  <g stroke="#4fc3f7" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M100 250 Q200 245 300 255 Q380 260 420 270">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite"
+        values="M100 250 Q200 245 300 255 Q380 260 420 270;M100 250 Q200 255 300 248 Q380 255 420 265;M100 250 Q200 245 300 255 Q380 260 420 270"/>
+    </path>
+    <path d="M80 280 Q180 275 280 285 Q360 290 440 295">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite"
+        values="M80 280 Q180 275 280 285 Q360 290 440 295;M80 280 Q180 285 280 278 Q360 283 440 290;M80 280 Q180 275 280 285 Q360 290 440 295"/>
+    </path>
+    <path d="M120 310 Q220 305 320 315 Q380 320 430 325">
+      <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
+        values="M120 310 Q220 305 320 315 Q380 320 430 325;M120 310 Q220 315 320 308 Q380 315 430 320;M120 310 Q220 305 320 315 Q380 320 430 325"/>
+    </path>
+  </g>
+
+  <!-- Salt currents flowing left -->
+  <g stroke="#1a6b7a" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M700 260 Q600 255 500 265 Q420 270 380 275">
+      <animate attributeName="d" dur="6.5s" repeatCount="indefinite"
+        values="M700 260 Q600 255 500 265 Q420 270 380 275;M700 260 Q600 265 500 258 Q420 263 380 270;M700 260 Q600 255 500 265 Q420 270 380 275"/>
+    </path>
+    <path d="M720 290 Q620 285 520 295 Q440 300 370 305">
+      <animate attributeName="d" dur="7.5s" repeatCount="indefinite"
+        values="M720 290 Q620 285 520 295 Q440 300 370 305;M720 290 Q620 295 520 288 Q440 293 370 300;M720 290 Q620 285 520 295 Q440 300 370 305"/>
+    </path>
+    <path d="M680 320 Q580 315 480 325 Q420 330 360 335">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+        values="M680 320 Q580 315 480 325 Q420 330 360 335;M680 320 Q580 325 480 318 Q420 323 360 330;M680 320 Q580 315 480 325 Q420 330 360 335"/>
+    </path>
+  </g>
+
+  <!-- Mudflat bands -->
+  <path d="M250 350 Q300 345 350 348 Q400 350 450 346 Q500 348 550 350" stroke="#5d4e37" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M200 370 Q280 365 360 368 Q440 370 520 366 Q580 368 620 370" stroke="#3e3525" stroke-width="2.5" fill="none" opacity="0.3"/>
+
+  <!-- Marsh grass tufts along the edges -->
+  <g stroke="#4a7a5a" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M180 230 L175 205"/>
+    <path d="M185 230 L188 200"/>
+    <path d="M190 228 L183 208"/>
+    <path d="M610 235 L615 210"/>
+    <path d="M618 233 L612 205"/>
+    <path d="M624 235 L628 212"/>
+    <path d="M160 240 L155 218"/>
+    <path d="M165 238 L168 215"/>
+    <path d="M640 240 L643 218"/>
+    <path d="M647 238 L641 215"/>
+  </g>
+
+  <!-- Subtle particle sediment in mixing zone -->
+  <g fill="#8a9a7a" opacity="0.25">
+    <circle cx="350" cy="280" r="2"/>
+    <circle cx="420" cy="290" r="1.5"/>
+    <circle cx="380" cy="310" r="2"/>
+    <circle cx="440" cy="300" r="1.5"/>
+    <circle cx="360" cy="330" r="1.5"/>
+    <circle cx="400" cy="275" r="1"/>
+    <circle cx="450" cy="315" r="1"/>
+    <circle cx="340" cy="300" r="1"/>
+  </g>
+
+  <!-- A single wading bird silhouette -->
+  <g fill="#1a1a2e" opacity="0.5">
+    <path d="M550 220 L548 240 L547 260" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+    <path d="M555 220 L557 240 L558 260" stroke="#1a1a2e" stroke-width="1.5" fill="none"/>
+    <ellipse cx="552" cy="218" rx="8" ry="5"/>
+    <path d="M560 216 L575 214" stroke="#1a1a2e" stroke-width="1"/>
+  </g>
+</svg>
