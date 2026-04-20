@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#e8e0d0"/>
+    </linearGradient>
+    <linearGradient id="moonGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffeebb" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffeebb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="800" height="400" fill="url(#night)"/>
+
+  <!-- Stars scattered -->
+  <g fill="#e0e0e0" opacity="0.4">
+    <circle cx="65" cy="35" r="1.2"/>
+    <circle cx="180" cy="60" r="1"/>
+    <circle cx="310" cy="28" r="1.5"/>
+    <circle cx="490" cy="50" r="1"/>
+    <circle cx="630" cy="38" r="1.2"/>
+    <circle cx="740" cy="55" r="1"/>
+    <circle cx="150" cy="90" r="0.8"/>
+    <circle cx="560" cy="75" r="0.8"/>
+    <circle cx="400" cy="42" r="1"/>
+  </g>
+
+  <!-- Moon phases across the top — the almanac's rhythm -->
+  <g opacity="0.6">
+    <!-- New moon -->
+    <circle cx="120" cy="100" r="18" fill="none" stroke="#556677" stroke-width="1"/>
+    <!-- Waxing crescent -->
+    <circle cx="230" cy="100" r="18" fill="none" stroke="#778899" stroke-width="0.5"/>
+    <path d="M230 82 A18 18 0 0 1 230 118 A8 18 0 0 0 230 82" fill="#d4c89a" opacity="0.7"/>
+    <!-- First quarter -->
+    <circle cx="340" cy="100" r="18" fill="none" stroke="#778899" stroke-width="0.5"/>
+    <path d="M340 82 A18 18 0 0 1 340 118 L340 82 Z" fill="#ddd4b0" opacity="0.8"/>
+    <!-- Full moon -->
+    <circle cx="450" cy="100" r="18" fill="#eee8d0" opacity="0.9"/>
+    <circle cx="450" cy="100" r="20" fill="none" stroke="#ffeebb" stroke-width="0.5" opacity="0.4"/>
+    <!-- Waning gibbous -->
+    <circle cx="560" cy="100" r="18" fill="#ddd4b0" opacity="0.8"/>
+    <path d="M560 82 A18 18 0 0 1 560 118 A8 18 0 0 1 560 82" fill="#1a2332"/>
+    <!-- Last quarter -->
+    <circle cx="670" cy="100" r="18" fill="none" stroke="#778899" stroke-width="0.5"/>
+    <path d="M670 82 A18 18 0 0 0 670 118 L670 82 Z" fill="#d4c89a" opacity="0.7"/>
+  </g>
+
+  <!-- Connecting line between moon phases — the cycle -->
+  <path d="M138 100 Q185 88 230 100 Q285 112 340 100 Q395 88 450 100 Q505 112 560 100 Q615 88 670 100" stroke="#556677" stroke-width="0.8" fill="none" stroke-dasharray="3,4" opacity="0.3"/>
+
+  <!-- Open book / almanac pages -->
+  <g transform="translate(400,280)">
+    <!-- Left page -->
+    <path d="M-10 -60 Q-120 -70 -200 -50 L-200 60 Q-120 50 -10 60 Z" fill="url(#page)" opacity="0.85"/>
+    <!-- Right page -->
+    <path d="M10 -60 Q120 -70 200 -50 L200 60 Q120 50 10 60 Z" fill="url(#page)" opacity="0.85"/>
+    <!-- Spine shadow -->
+    <rect x="-10" y="-60" width="20" height="120" fill="#c8bfaa" opacity="0.4"/>
+
+    <!-- Text lines on left page (planting calendar) -->
+    <g fill="#6b6355" opacity="0.5">
+      <rect x="-180" y="-40" width="80" height="2" rx="1"/>
+      <rect x="-180" y="-30" width="120" height="2" rx="1"/>
+      <rect x="-180" y="-20" width="95" height="2" rx="1"/>
+      <rect x="-180" y="-10" width="110" height="2" rx="1"/>
+      <rect x="-180" y="0" width="70" height="2" rx="1"/>
+      <rect x="-180" y="15" width="100" height="2" rx="1"/>
+      <rect x="-180" y="25" width="85" height="2" rx="1"/>
+      <rect x="-180" y="35" width="115" height="2" rx="1"/>
+    </g>
+
+    <!-- Small circular diagram on right page (seasonal wheel) -->
+    <circle cx="100" cy="-5" r="30" fill="none" stroke="#8a7e6a" stroke-width="1" opacity="0.5"/>
+    <circle cx="100" cy="-5" r="15" fill="none" stroke="#8a7e6a" stroke-width="0.5" opacity="0.3"/>
+    <!-- Quadrant lines -->
+    <line x1="100" y1="-35" x2="100" y2="25" stroke="#8a7e6a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="70" y1="-5" x2="130" y2="-5" stroke="#8a7e6a" stroke-width="0.5" opacity="0.3"/>
+    <!-- Season dots -->
+    <circle cx="100" cy="-35" r="3" fill="#7ab5d4" opacity="0.6"/>
+    <circle cx="130" cy="-5" r="3" fill="#d4a87a" opacity="0.6"/>
+    <circle cx="100" cy="25" r="3" fill="#c47a5a" opacity="0.6"/>
+    <circle cx="70" cy="-5" r="3" fill="#8aaa7a" opacity="0.6"/>
+    <!-- More text lines on right -->
+    <g fill="#6b6355" opacity="0.4">
+      <rect x="30" y="35" width="60" height="2" rx="1"/>
+      <rect x="30" y="45" width="80" height="2" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Subtle glow from the moon illuminating the book -->
+  <ellipse cx="450" cy="120" rx="60" ry="30" fill="url(#moonGlow)"/>
+
+  <!-- Seasonal cycle markers along the bottom — small plants at different stages -->
+  <g opacity="0.35">
+    <!-- Seed -->
+    <circle cx="100" cy="375" r="3" fill="#7a6a55"/>
+    <!-- Sprout -->
+    <line x1="250" y1="380" x2="250" y2="365" stroke="#6a9a5a" stroke-width="1.5"/>
+    <path d="M250 368 Q255 362 252 358" stroke="#6a9a5a" stroke-width="1" fill="none"/>
+    <!-- Full growth -->
+    <line x1="400" y1="380" x2="400" y2="350" stroke="#5a8a4a" stroke-width="2"/>
+    <path d="M400 355 Q410 348 408 340" stroke="#5a8a4a" stroke-width="1.2" fill="none"/>
+    <path d="M400 360 Q390 352 392 345" stroke="#5a8a4a" stroke-width="1.2" fill="none"/>
+    <circle cx="408" cy="338" r="4" fill="#d4a87a" opacity="0.6"/>
+    <!-- Harvest / seed drop -->
+    <line x1="550" y1="380" x2="550" y2="358" stroke="#8a7a5a" stroke-width="1.5"/>
+    <path d="M550 362 Q558 358 556 352" stroke="#8a7a5a" stroke-width="1" fill="none"/>
+    <circle cx="555" cy="378" r="2" fill="#7a6a55" opacity="0.6"/>
+    <circle cx="560" cy="382" r="2" fill="#7a6a55" opacity="0.5"/>
+    <!-- Return to earth -->
+    <line x1="700" y1="380" x2="700" y2="372" stroke="#6a5a4a" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>
