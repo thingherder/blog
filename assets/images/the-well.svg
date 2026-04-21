@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2332"/>
+      <stop offset="100%" stop-color="#2a3a4a"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a4a6a"/>
+      <stop offset="40%" stop-color="#1a3a5a"/>
+      <stop offset="100%" stop-color="#0d1f33"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a7068"/>
+      <stop offset="100%" stop-color="#5a524a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#aaccee" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#aaccee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#c0c8d0" opacity="0.3">
+    <circle cx="80" cy="30" r="1.2"/>
+    <circle cx="200" cy="55" r="1"/>
+    <circle cx="340" cy="22" r="1.4"/>
+    <circle cx="520" cy="45" r="1"/>
+    <circle cx="660" cy="32" r="1.2"/>
+    <circle cx="730" cy="60" r="0.8"/>
+    <circle cx="130" cy="80" r="0.8"/>
+    <circle cx="580" cy="70" r="1"/>
+  </g>
+
+  <!-- Well structure — circular opening seen from slight angle -->
+  <!-- Back wall of well -->
+  <ellipse cx="400" cy="160" rx="120" ry="30" fill="url(#stone)" opacity="0.6"/>
+  <!-- Well shaft — left wall -->
+  <path d="M280 160 L280 300" stroke="#6a6258" stroke-width="3" fill="none"/>
+  <!-- Well shaft — right wall -->
+  <path d="M520 160 L520 300" stroke="#6a6258" stroke-width="3" fill="none"/>
+  <!-- Stone texture on walls -->
+  <g stroke="#5a524a" stroke-width="0.8" opacity="0.4">
+    <line x1="280" y1="185" x2="520" y2="185"/>
+    <line x1="280" y1="215" x2="520" y2="215"/>
+    <line x1="280" y1="245" x2="520" y2="245"/>
+    <line x1="280" y1="275" x2="520" y2="275"/>
+    <!-- Vertical joints, offset per row -->
+    <line x1="350" y1="160" x2="350" y2="185"/>
+    <line x1="450" y1="160" x2="450" y2="185"/>
+    <line x1="320" y1="185" x2="320" y2="215"/>
+    <line x1="400" y1="185" x2="400" y2="215"/>
+    <line x1="480" y1="185" x2="480" y2="215"/>
+    <line x1="360" y1="215" x2="360" y2="245"/>
+    <line x1="440" y1="215" x2="440" y2="245"/>
+    <line x1="330" y1="245" x2="330" y2="275"/>
+    <line x1="410" y1="245" x2="410" y2="275"/>
+    <line x1="490" y1="245" x2="490" y2="275"/>
+  </g>
+
+  <!-- Water surface deep in the well -->
+  <ellipse cx="400" cy="300" rx="118" ry="25" fill="url(#water)"/>
+  <!-- Subtle glow on water — reflection of sky -->
+  <ellipse cx="400" cy="295" rx="60" ry="12" fill="url(#glow)"/>
+
+  <!-- Ripples on water surface -->
+  <g fill="none" stroke="#8ab4d4" stroke-width="0.6" opacity="0.3">
+    <ellipse cx="400" cy="298" rx="20" ry="5"/>
+    <ellipse cx="400" cy="298" rx="40" ry="9"/>
+    <ellipse cx="400" cy="298" rx="65" ry="13"/>
+  </g>
+
+  <!-- Well rim — front edge -->
+  <ellipse cx="400" cy="160" rx="120" ry="30" fill="none" stroke="#8a8078" stroke-width="2.5"/>
+  <!-- Top cap of rim -->
+  <path d="M280 155 Q400 120 520 155" fill="none" stroke="#9a9088" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Small stone falling — the echo -->
+  <circle cx="395" cy="240" r="3" fill="#8a7e6a" opacity="0.6"/>
+  <!-- Motion lines behind the stone -->
+  <g stroke="#8a7e6a" stroke-width="0.5" opacity="0.25">
+    <line x1="395" y1="220" x2="395" y2="230"/>
+    <line x1="392" y1="222" x2="393" y2="228"/>
+    <line x1="398" y1="221" x2="397" y2="229"/>
+  </g>
+
+  <!-- Rope and bucket (subtle, to the side) -->
+  <line x1="340" y1="100" x2="340" y2="250" stroke="#a09080" stroke-width="1.2" opacity="0.35" stroke-dasharray="4,3"/>
+  <!-- Small bucket shape -->
+  <path d="M330 245 L332 265 L348 265 L350 245 Z" fill="#6a5a4a" opacity="0.3"/>
+  <line x1="330" y1="245" x2="350" y2="245" stroke="#7a6a5a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Cross beam above well -->
+  <line x1="260" y1="100" x2="540" y2="100" stroke="#7a6a5a" stroke-width="3" opacity="0.5"/>
+  <!-- Support posts -->
+  <line x1="280" y1="100" x2="280" y2="155" stroke="#7a6a5a" stroke-width="2.5" opacity="0.5"/>
+  <line x1="520" y1="100" x2="520" y2="155" stroke="#7a6a5a" stroke-width="2.5" opacity="0.5"/>
+  <!-- Pulley -->
+  <circle cx="340" cy="100" r="6" fill="none" stroke="#8a7a6a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Subtle reflection of stars in the water -->
+  <g fill="#c0c8d0" opacity="0.12">
+    <circle cx="385" cy="296" r="0.8"/>
+    <circle cx="410" cy="293" r="0.6"/>
+    <circle cx="420" cy="299" r="0.7"/>
+    <circle cx="375" cy="301" r="0.5"/>
+  </g>
+</svg>
