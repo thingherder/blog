@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8cce0"/>
+      <stop offset="60%" stop-color="#d4dfe8"/>
+      <stop offset="100%" stop-color="#e8ece0"/>
+    </linearGradient>
+    <linearGradient id="ridge-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a5a3a"/>
+      <stop offset="100%" stop-color="#3a4a2a"/>
+    </linearGradient>
+    <linearGradient id="ridge-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a6a4a"/>
+      <stop offset="100%" stop-color="#4a5a3a"/>
+    </linearGradient>
+    <linearGradient id="water-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a7a9a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3a6a8a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="water-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a8aaa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4a7a9a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Distant mountains -->
+  <polygon points="0,220 120,140 200,170 280,120 360,160 400,110 440,150 520,130 600,160 680,120 760,150 800,180 800,400 0,400" fill="#8a9a7a" opacity="0.4"/>
+
+  <!-- Left ridge -->
+  <polygon points="0,280 60,230 140,210 220,190 300,170 370,155 400,148 400,400 0,400" fill="url(#ridge-left)"/>
+
+  <!-- Right ridge -->
+  <polygon points="400,148 430,155 500,170 580,190 660,210 740,230 800,260 800,400 400,400" fill="url(#ridge-right)"/>
+
+  <!-- Ridge line highlight -->
+  <polyline points="0,280 60,230 140,210 220,190 300,170 370,155 400,148 430,155 500,170 580,190 660,210 740,230 800,260" fill="none" stroke="#2a3a1a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Left valley stream -->
+  <path d="M380,165 Q350,200 320,230 Q280,270 240,310 Q200,350 160,400" fill="none" stroke="url(#water-left)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M360,180 Q340,210 310,240 Q270,280 230,320 Q190,360 150,400" fill="none" stroke="url(#water-left)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Right valley stream -->
+  <path d="M420,165 Q450,200 480,230 Q520,270 560,310 Q600,350 640,400" fill="none" stroke="url(#water-right)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M440,180 Q460,210 490,240 Q530,280 570,320 Q610,360 650,400" fill="none" stroke="url(#water-right)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Tributaries left -->
+  <path d="M280,220 Q300,230 320,230" fill="none" stroke="#4a7a9a" stroke-width="1" opacity="0.5"/>
+  <path d="M200,270 Q220,280 240,280" fill="none" stroke="#4a7a9a" stroke-width="1" opacity="0.4"/>
+  <path d="M340,250 Q330,260 310,265" fill="none" stroke="#4a7a9a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Tributaries right -->
+  <path d="M520,220 Q500,230 480,230" fill="none" stroke="#5a8aaa" stroke-width="1" opacity="0.5"/>
+  <path d="M600,270 Q580,280 560,280" fill="none" stroke="#5a8aaa" stroke-width="1" opacity="0.4"/>
+  <path d="M460,250 Q470,260 490,265" fill="none" stroke="#5a8aaa" stroke-width="1" opacity="0.4"/>
+
+  <!-- Rain drops falling on the ridge -->
+  <circle cx="395" cy="130" r="1.5" fill="#6a8aaa" opacity="0.6"/>
+  <circle cx="405" cy="125" r="1.5" fill="#6a8aaa" opacity="0.6"/>
+  <circle cx="400" cy="115" r="1.5" fill="#6a8aaa" opacity="0.7"/>
+  <circle cx="390" cy="120" r="1" fill="#6a8aaa" opacity="0.5"/>
+  <circle cx="410" cy="118" r="1" fill="#6a8aaa" opacity="0.5"/>
+
+  <!-- Mist in valleys -->
+  <ellipse cx="280" cy="300" rx="120" ry="40" fill="url(#mist)"/>
+  <ellipse cx="520" cy="300" rx="120" ry="40" fill="url(#mist)"/>
+
+  <!-- The dividing point marker - subtle -->
+  <circle cx="400" cy="148" r="4" fill="none" stroke="#2a3a1a" stroke-width="1" opacity="0.6"/>
+</svg>
