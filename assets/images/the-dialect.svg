@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="stream-a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e07a5f" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#e07a5f" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="stream-b" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81b29a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#81b29a" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="stream-c" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2cc8f" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f2cc8f" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="merged" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e07a5f" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#c9a87c" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#81b29a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f2cc8f" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Scattered glyphs/letterforms from different "languages" - left side -->
+  <!-- Stream A glyphs (warm/terracotta) -->
+  <text x="40" y="60" fill="#e07a5f" opacity="0.3" font-family="serif" font-size="18">&#x03B1;</text>
+  <text x="90" y="90" fill="#e07a5f" opacity="0.25" font-family="serif" font-size="14">&#x03B4;</text>
+  <text x="60" y="140" fill="#e07a5f" opacity="0.35" font-family="serif" font-size="16">&#x03BB;</text>
+  <text x="110" y="120" fill="#e07a5f" opacity="0.2" font-family="serif" font-size="20">&#x03C9;</text>
+  <text x="30" y="200" fill="#e07a5f" opacity="0.3" font-family="serif" font-size="15">&#x03C3;</text>
+  <text x="80" y="180" fill="#e07a5f" opacity="0.2" font-family="serif" font-size="12">&#x03C0;</text>
+  <text x="50" y="260" fill="#e07a5f" opacity="0.25" font-family="serif" font-size="17">&#x03B5;</text>
+
+  <!-- Stream B glyphs (green/sage) -->
+  <text x="40" y="310" fill="#81b29a" opacity="0.3" font-family="serif" font-size="16">&#x4E16;</text>
+  <text x="100" y="340" fill="#81b29a" opacity="0.25" font-family="serif" font-size="14">&#x8A00;</text>
+  <text x="70" y="370" fill="#81b29a" opacity="0.2" font-family="serif" font-size="18">&#x5FC3;</text>
+  <text x="130" y="290" fill="#81b29a" opacity="0.3" font-family="serif" font-size="13">&#x6587;</text>
+  <text x="20" y="350" fill="#81b29a" opacity="0.2" font-family="serif" font-size="15">&#x9053;</text>
+
+  <!-- Stream C glyphs (golden) -->
+  <text x="700" y="50" fill="#f2cc8f" opacity="0.25" font-family="serif" font-size="16">&#x0634;</text>
+  <text x="740" y="90" fill="#f2cc8f" opacity="0.3" font-family="serif" font-size="14">&#x0643;</text>
+  <text x="720" y="140" fill="#f2cc8f" opacity="0.2" font-family="serif" font-size="18">&#x0646;</text>
+  <text x="760" y="180" fill="#f2cc8f" opacity="0.25" font-family="serif" font-size="13">&#x0639;</text>
+  <text x="680" y="120" fill="#f2cc8f" opacity="0.2" font-family="serif" font-size="15">&#x0645;</text>
+
+  <!-- Flowing streams converging toward center -->
+  <!-- Stream A: warm, from upper-left -->
+  <path d="M80,80 Q160,120 220,160 Q280,200 340,210 Q370,215 400,200"
+        fill="none" stroke="url(#stream-a)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M60,130 Q140,160 200,185 Q260,210 330,215 Q370,220 400,210"
+        fill="none" stroke="url(#stream-a)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Stream B: cool, from lower-left -->
+  <path d="M80,340 Q160,310 230,270 Q290,240 350,220 Q375,212 400,210"
+        fill="none" stroke="url(#stream-b)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M100,370 Q180,330 250,280 Q310,245 360,225 Q380,218 400,215"
+        fill="none" stroke="url(#stream-b)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Stream C: warm gold, from upper-right -->
+  <path d="M720,80 Q640,130 560,170 Q480,200 440,205 Q420,208 400,210"
+        fill="none" stroke="url(#stream-c)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M740,140 Q660,170 580,195 Q500,215 450,215 Q425,213 400,215"
+        fill="none" stroke="url(#stream-c)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Contact zone: glowing convergence point -->
+  <circle cx="400" cy="210" r="30" fill="none" stroke="#d4c5a9" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="400" cy="210" r="18" fill="none" stroke="#d4c5a9" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="400" cy="210" r="6" fill="#d4c5a9" opacity="0.5"/>
+
+  <!-- Merged stream flowing right from contact zone -->
+  <path d="M400,210 Q440,220 480,240 Q540,265 600,290 Q660,310 720,330 Q760,345 800,350"
+        fill="none" stroke="url(#merged)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400,215 Q445,230 490,250 Q550,275 610,300 Q670,320 730,340 Q770,352 800,360"
+        fill="none" stroke="url(#merged)" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M400,205 Q435,210 470,225 Q530,250 590,275 Q650,295 710,315 Q755,330 800,340"
+        fill="none" stroke="url(#merged)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- New glyphs emerging along the merged stream - blended colors -->
+  <text x="460" y="230" fill="#c9a87c" opacity="0.35" font-family="serif" font-size="14">&#x2234;</text>
+  <text x="520" y="258" fill="#b8a898" opacity="0.3" font-family="serif" font-size="16">&#x2261;</text>
+  <text x="580" y="282" fill="#a8b8a0" opacity="0.35" font-family="serif" font-size="13">&#x221E;</text>
+  <text x="640" y="302" fill="#c0b090" opacity="0.3" font-family="serif" font-size="15">&#x2248;</text>
+  <text x="700" y="322" fill="#b0a888" opacity="0.25" font-family="serif" font-size="17">&#x2207;</text>
+  <text x="750" y="342" fill="#c8b898" opacity="0.3" font-family="serif" font-size="14">&#x222B;</text>
+
+  <!-- Subtle particles around the contact zone -->
+  <circle cx="385" cy="195" r="1" fill="#e07a5f" opacity="0.4"/>
+  <circle cx="415" cy="198" r="1" fill="#81b29a" opacity="0.4"/>
+  <circle cx="395" cy="222" r="1" fill="#f2cc8f" opacity="0.4"/>
+  <circle cx="408" cy="190" r="1.2" fill="#d4c5a9" opacity="0.5"/>
+  <circle cx="392" cy="215" r="1.2" fill="#d4c5a9" opacity="0.5"/>
+  <circle cx="412" cy="220" r="0.8" fill="#c9a87c" opacity="0.4"/>
+  <circle cx="388" cy="205" r="0.8" fill="#b8a898" opacity="0.4"/>
+</svg>
