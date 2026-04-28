@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="soil-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a1f14" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#3d2b1a" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#3d2b1a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2a1f14" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="node-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8a87c" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c8a87c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Soil horizon line -->
+  <line x1="0" y1="140" x2="800" y2="140" stroke="url(#soil-line)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Above-ground: minimal tree silhouettes -->
+  <line x1="150" y1="140" x2="150" y2="70" stroke="#4a6741" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="150" cy="55" r="22" fill="#4a6741" opacity="0.25"/>
+  <circle cx="150" cy="50" r="16" fill="#5a7a50" opacity="0.2"/>
+
+  <line x1="400" y1="140" x2="400" y2="50" stroke="#4a6741" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="400" cy="35" r="30" fill="#4a6741" opacity="0.25"/>
+  <circle cx="400" cy="28" r="22" fill="#5a7a50" opacity="0.2"/>
+
+  <line x1="650" y1="140" x2="650" y2="75" stroke="#4a6741" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="650" cy="60" r="20" fill="#4a6741" opacity="0.25"/>
+  <circle cx="650" cy="55" r="14" fill="#5a7a50" opacity="0.2"/>
+
+  <!-- Small seedling -->
+  <line x1="280" y1="140" x2="280" y2="120" stroke="#6a8a5a" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="280" cy="115" r="6" fill="#6a8a5a" opacity="0.2"/>
+
+  <!-- Root zones below soil line -->
+  <path d="M150,140 Q150,160 140,175 M150,140 Q155,165 160,180 M150,140 Q145,158 135,170"
+        fill="none" stroke="#5a4a35" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M400,140 Q395,170 385,195 M400,140 Q405,175 415,200 M400,140 Q400,165 390,185 M400,140 Q402,168 412,190"
+        fill="none" stroke="#5a4a35" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M650,140 Q650,158 642,175 M650,140 Q653,162 660,178 M650,140 Q647,155 638,168"
+        fill="none" stroke="#5a4a35" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M280,140 Q278,150 275,158 M280,140 Q282,148 285,155"
+        fill="none" stroke="#5a4a35" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Mycelial network: fine threads connecting everything underground -->
+  <!-- Main highways -->
+  <path d="M140,175 Q180,210 220,230 Q260,245 300,250 Q340,252 385,200"
+        fill="none" stroke="#c8a87c" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M160,180 Q200,220 250,250 Q300,270 350,275 Q400,278 450,265 Q500,250 550,240 Q600,230 642,175"
+        fill="none" stroke="#c8a87c" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  <path d="M415,200 Q460,230 510,250 Q560,260 610,250 Q640,240 660,178"
+        fill="none" stroke="#c8a87c" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M275,158 Q290,200 320,230 Q360,255 400,260"
+        fill="none" stroke="#c8a87c" stroke-width="0.8" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Secondary threads -->
+  <path d="M135,170 Q110,210 100,250 Q95,280 110,310 Q130,340 180,355"
+        fill="none" stroke="#a08060" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+  <path d="M180,355 Q240,365 310,358 Q380,350 420,330 Q460,310 500,295"
+        fill="none" stroke="#a08060" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+  <path d="M500,295 Q550,280 600,270 Q640,260 660,250 Q680,240 700,220"
+        fill="none" stroke="#a08060" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+  <path d="M390,185 Q420,250 430,300 Q435,330 420,355 Q400,375 370,380"
+        fill="none" stroke="#a08060" stroke-width="0.6" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Tertiary threads - finest -->
+  <path d="M220,230 Q210,260 205,290 Q200,310 210,330"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+  <path d="M510,250 Q530,280 525,310 Q520,340 510,360"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+  <path d="M300,250 Q280,280 270,310 Q265,340 275,365"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+  <path d="M550,240 Q570,270 580,300 Q585,330 575,355"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+  <path d="M350,275 Q340,300 345,330 Q350,355 365,375"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+  <path d="M450,265 Q470,290 475,320 Q472,345 460,365"
+        fill="none" stroke="#8a7050" stroke-width="0.4" stroke-linecap="round" opacity="0.15"/>
+
+  <!-- Connection nodes: where threads meet roots -->
+  <circle cx="140" cy="175" r="3" fill="#c8a87c" opacity="0.4"/>
+  <circle cx="140" cy="175" r="8" fill="url(#node-glow)" opacity="0.3"/>
+
+  <circle cx="385" cy="200" r="4" fill="#c8a87c" opacity="0.5"/>
+  <circle cx="385" cy="200" r="10" fill="url(#node-glow)" opacity="0.35"/>
+
+  <circle cx="642" cy="175" r="3" fill="#c8a87c" opacity="0.4"/>
+  <circle cx="642" cy="175" r="8" fill="url(#node-glow)" opacity="0.3"/>
+
+  <circle cx="275" cy="158" r="2.5" fill="#c8a87c" opacity="0.35"/>
+  <circle cx="275" cy="158" r="6" fill="url(#node-glow)" opacity="0.25"/>
+
+  <!-- Nutrient transfer particles: tiny dots moving along threads -->
+  <circle cx="200" cy="218" r="1.2" fill="#e8c87c" opacity="0.6"/>
+  <circle cx="320" cy="252" r="1" fill="#e8c87c" opacity="0.5"/>
+  <circle cx="480" cy="258" r="1.2" fill="#e8c87c" opacity="0.6"/>
+  <circle cx="580" cy="245" r="1" fill="#e8c87c" opacity="0.5"/>
+  <circle cx="250" cy="242" r="0.8" fill="#e8c87c" opacity="0.4"/>
+  <circle cx="540" cy="252" r="0.8" fill="#e8c87c" opacity="0.4"/>
+  <circle cx="360" cy="270" r="1" fill="#e8c87c" opacity="0.5"/>
+  <circle cx="420" cy="310" r="0.8" fill="#e8c87c" opacity="0.4"/>
+  <circle cx="170" cy="340" r="0.8" fill="#e8c87c" opacity="0.35"/>
+
+  <!-- Subtle soil texture dots -->
+  <circle cx="80" cy="200" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="720" cy="300" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="350" cy="380" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="600" cy="350" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="200" cy="370" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="500" cy="180" r="0.5" fill="#4a3a28" opacity="0.3"/>
+  <circle cx="100" cy="290" r="0.5" fill="#4a3a28" opacity="0.3"/>
+</svg>
