@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#12121f"/>
+    </linearGradient>
+    <linearGradient id="copper-fresh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b87333"/>
+      <stop offset="100%" stop-color="#da8a47"/>
+    </linearGradient>
+    <linearGradient id="copper-aged" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a8c7a"/>
+      <stop offset="50%" stop-color="#5a9e8a"/>
+      <stop offset="100%" stop-color="#3d7a6a"/>
+    </linearGradient>
+    <linearGradient id="transition" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b87333"/>
+      <stop offset="30%" stop-color="#8a7a55"/>
+      <stop offset="60%" stop-color="#5a8a6a"/>
+      <stop offset="100%" stop-color="#4a8c7a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Left: fresh copper surface — geometric, clean -->
+  <rect x="60" y="80" width="140" height="240" rx="4" fill="url(#copper-fresh)" opacity="0.85"/>
+  <!-- Clean reflection lines -->
+  <line x1="80" y1="100" x2="80" y2="300" stroke="#e8a855" stroke-width="0.5" opacity="0.3"/>
+  <line x1="110" y1="90" x2="110" y2="310" stroke="#e8a855" stroke-width="0.3" opacity="0.2"/>
+  <line x1="160" y1="95" x2="160" y2="305" stroke="#e8a855" stroke-width="0.4" opacity="0.25"/>
+
+  <!-- Middle: transitional surface -->
+  <rect x="240" y="80" width="140" height="240" rx="4" fill="url(#transition)" opacity="0.8"/>
+  <!-- Mottled texture — spots where patina is forming -->
+  <circle cx="270" cy="130" r="12" fill="#5a8a6a" opacity="0.25"/>
+  <circle cx="310" cy="180" r="18" fill="#5a9070" opacity="0.2"/>
+  <circle cx="340" cy="250" r="14" fill="#4a8a70" opacity="0.3"/>
+  <circle cx="280" cy="220" r="10" fill="#5a9a7a" opacity="0.2"/>
+  <circle cx="355" cy="140" r="8" fill="#4a7a65" opacity="0.25"/>
+  <circle cx="290" cy="280" r="16" fill="#4a8a6a" opacity="0.2"/>
+  <!-- Some copper still showing through -->
+  <circle cx="260" cy="160" r="6" fill="#c88040" opacity="0.3"/>
+  <circle cx="330" cy="110" r="5" fill="#c88040" opacity="0.25"/>
+  <circle cx="365" cy="290" r="7" fill="#c88040" opacity="0.2"/>
+
+  <!-- Right: fully patinated surface — rich verdigris -->
+  <rect x="420" y="80" width="140" height="240" rx="4" fill="url(#copper-aged)" opacity="0.85"/>
+  <!-- Texture of aged surface — layered, complex -->
+  <circle cx="450" cy="120" r="20" fill="#3d7560" opacity="0.15"/>
+  <circle cx="500" cy="170" r="25" fill="#4a8a72" opacity="0.12"/>
+  <circle cx="470" cy="240" r="18" fill="#3a7060" opacity="0.18"/>
+  <circle cx="530" cy="280" r="22" fill="#4a8570" opacity="0.14"/>
+  <circle cx="490" cy="130" r="12" fill="#5aaa85" opacity="0.1"/>
+  <circle cx="440" cy="290" r="15" fill="#3a7a65" opacity="0.15"/>
+  <!-- Subtle streaks where rain has run -->
+  <path d="M460,80 Q458,150 462,200 Q465,260 460,320" fill="none" stroke="#5aaa88" stroke-width="0.8" opacity="0.2"/>
+  <path d="M510,80 Q512,140 508,210 Q505,270 510,320" fill="none" stroke="#5aaa88" stroke-width="0.6" opacity="0.15"/>
+  <path d="M540,80 Q538,160 542,230 Q540,290 538,320" fill="none" stroke="#5aaa88" stroke-width="0.5" opacity="0.12"/>
+
+  <!-- Far right: abstract — touch marks, fingerprints of use -->
+  <rect x="600" y="80" width="140" height="240" rx="4" fill="#3a7565" opacity="0.7"/>
+  <!-- Worn spots where hands have touched — copper showing through patina -->
+  <ellipse cx="650" cy="200" rx="25" ry="35" fill="#9a7040" opacity="0.35"/>
+  <ellipse cx="650" cy="200" rx="18" ry="26" fill="#b88050" opacity="0.25"/>
+  <ellipse cx="700" cy="160" rx="12" ry="16" fill="#9a7040" opacity="0.2"/>
+  <ellipse cx="680" cy="270" rx="15" ry="20" fill="#a07545" opacity="0.2"/>
+  <!-- The touch has revealed the original beneath -->
+  <ellipse cx="650" cy="200" rx="10" ry="14" fill="#c88848" opacity="0.3"/>
+
+  <!-- Connecting line beneath — time flowing left to right -->
+  <line x1="60" y1="350" x2="740" y2="350" stroke="#4a6a5a" stroke-width="0.5" opacity="0.3"/>
+  <!-- Time markers -->
+  <circle cx="130" cy="350" r="2" fill="#b87333" opacity="0.5"/>
+  <circle cx="310" cy="350" r="2" fill="#8a7a55" opacity="0.5"/>
+  <circle cx="490" cy="350" r="2" fill="#4a8c7a" opacity="0.5"/>
+  <circle cx="670" cy="350" r="2" fill="#8a7a55" opacity="0.5"/>
+
+  <!-- Subtle labels — not text, just tiny marks suggesting progression -->
+  <line x1="130" y1="345" x2="130" y2="355" stroke="#b87333" stroke-width="1" opacity="0.4"/>
+  <line x1="310" y1="345" x2="310" y2="355" stroke="#8a7a55" stroke-width="1" opacity="0.4"/>
+  <line x1="490" y1="345" x2="490" y2="355" stroke="#4a8c7a" stroke-width="1" opacity="0.4"/>
+  <line x1="670" y1="345" x2="670" y2="355" stroke="#8a7a55" stroke-width="1" opacity="0.4"/>
+
+  <!-- Floating particles — oxidation in progress -->
+  <circle cx="220" cy="150" r="1" fill="#7a9a80" opacity="0.3"/>
+  <circle cx="390" cy="200" r="1.2" fill="#5a8a70" opacity="0.25"/>
+  <circle cx="575" cy="130" r="0.8" fill="#5a9a7a" opacity="0.2"/>
+  <circle cx="215" cy="260" r="0.8" fill="#8a8a60" opacity="0.2"/>
+  <circle cx="580" cy="280" r="1" fill="#4a8a6a" opacity="0.25"/>
+</svg>
