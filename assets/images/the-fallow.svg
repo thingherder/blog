@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16162a"/>
+    </linearGradient>
+    <linearGradient id="soil-dormant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d2b1f"/>
+      <stop offset="100%" stop-color="#2a1d14"/>
+    </linearGradient>
+    <linearGradient id="soil-active" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a4030"/>
+      <stop offset="100%" stop-color="#3d2b1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background — dark sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="160" x2="800" y2="160" stroke="#3a3a50" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Left field: planted, rows of crops — busy, ordered -->
+  <rect x="40" y="160" width="200" height="200" fill="url(#soil-active)" opacity="0.7"/>
+  <!-- Crop rows -->
+  <line x1="60" y1="160" x2="60" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="85" y1="160" x2="85" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="110" y1="160" x2="110" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="135" y1="160" x2="135" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="160" y1="160" x2="160" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="185" y1="160" x2="185" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="210" y1="160" x2="210" y2="360" stroke="#4a6a3a" stroke-width="1.5" opacity="0.5"/>
+  <!-- Small crop marks poking up above horizon -->
+  <line x1="60" y1="155" x2="60" y2="140" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="60" y1="142" x2="55" y2="133" stroke="#5a7a4a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="85" y1="155" x2="85" y2="138" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="85" y1="140" x2="90" y2="130" stroke="#5a7a4a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="110" y1="155" x2="110" y2="136" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="135" y1="155" x2="135" y2="142" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="160" y1="155" x2="160" y2="139" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="185" y1="155" x2="185" y2="144" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+  <line x1="210" y1="155" x2="210" y2="137" stroke="#5a7a4a" stroke-width="1" opacity="0.6"/>
+
+  <!-- Center field: fallow — empty, quiet, rich -->
+  <rect x="300" y="160" width="200" height="200" fill="url(#soil-dormant)" opacity="0.8"/>
+  <!-- No rows, no crops. Just subtle texture of resting earth -->
+  <!-- Small scattered marks — seeds dormant, microbes working -->
+  <circle cx="340" cy="220" r="1.5" fill="#5a4535" opacity="0.3"/>
+  <circle cx="380" cy="250" r="1" fill="#6a5545" opacity="0.25"/>
+  <circle cx="420" cy="200" r="1.2" fill="#5a4a3a" opacity="0.2"/>
+  <circle cx="360" cy="290" r="1.3" fill="#6a5040" opacity="0.25"/>
+  <circle cx="450" cy="270" r="0.8" fill="#5a4535" opacity="0.2"/>
+  <circle cx="400" cy="320" r="1" fill="#6a5545" opacity="0.2"/>
+  <circle cx="470" cy="230" r="1.1" fill="#5a4a3a" opacity="0.25"/>
+  <circle cx="330" cy="340" r="0.9" fill="#6a5040" opacity="0.2"/>
+  <!-- Underground activity — faint, invisible-from-above lines -->
+  <path d="M320,260 Q350,265 380,260 Q410,255 440,262" fill="none" stroke="#6a5040" stroke-width="0.6" opacity="0.15"/>
+  <path d="M310,300 Q340,295 370,302 Q400,308 430,300 Q460,292 490,298" fill="none" stroke="#6a5040" stroke-width="0.5" opacity="0.12"/>
+  <path d="M330,330 Q360,335 390,328 Q420,322 450,330" fill="none" stroke="#6a5040" stroke-width="0.4" opacity="0.1"/>
+
+  <!-- Right field: just starting to show new growth after fallow -->
+  <rect x="560" y="160" width="200" height="200" fill="url(#soil-dormant)" opacity="0.75"/>
+  <!-- First shoots — sparse, strong, not in rows -->
+  <line x1="590" y1="155" x2="590" y2="130" stroke="#6a9a5a" stroke-width="1.2" opacity="0.6"/>
+  <line x1="590" y1="135" x2="583" y2="122" stroke="#6a9a5a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="590" y1="138" x2="597" y2="125" stroke="#6a9a5a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="640" y1="155" x2="640" y2="125" stroke="#7aaa6a" stroke-width="1.4" opacity="0.65"/>
+  <line x1="640" y1="130" x2="632" y2="115" stroke="#7aaa6a" stroke-width="0.9" opacity="0.45"/>
+  <line x1="640" y1="133" x2="648" y2="118" stroke="#7aaa6a" stroke-width="0.9" opacity="0.45"/>
+  <line x1="700" y1="155" x2="700" y2="128" stroke="#7aaa6a" stroke-width="1.3" opacity="0.6"/>
+  <line x1="700" y1="132" x2="693" y2="117" stroke="#7aaa6a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="730" y1="155" x2="730" y2="135" stroke="#6a9a5a" stroke-width="1.1" opacity="0.55"/>
+
+  <!-- Stars or particles in the sky — sparse -->
+  <circle cx="150" cy="50" r="1" fill="#5a5a7a" opacity="0.3"/>
+  <circle cx="400" cy="30" r="1.2" fill="#5a5a7a" opacity="0.25"/>
+  <circle cx="600" cy="60" r="0.8" fill="#5a5a7a" opacity="0.2"/>
+  <circle cx="300" cy="80" r="0.9" fill="#5a5a7a" opacity="0.3"/>
+  <circle cx="700" cy="40" r="1" fill="#5a5a7a" opacity="0.25"/>
+  <circle cx="500" cy="100" r="0.7" fill="#5a5a7a" opacity="0.2"/>
+
+  <!-- Dividing marks between fields -->
+  <line x1="265" y1="155" x2="265" y2="365" stroke="#4a3a2a" stroke-width="0.5" opacity="0.3"/>
+  <line x1="535" y1="155" x2="535" y2="365" stroke="#4a3a2a" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Ground line -->
+  <line x1="30" y1="365" x2="770" y2="365" stroke="#3a2a1a" stroke-width="0.5" opacity="0.3"/>
+</svg>
