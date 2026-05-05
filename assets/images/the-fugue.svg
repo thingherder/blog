@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0a0a14"/>
+
+  <!-- Staff lines fading in from left -->
+  <g opacity="0.15" stroke="#8888cc" stroke-width="0.5">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="92" x2="800" y2="92"/>
+    <line x1="0" y1="104" x2="800" y2="104"/>
+    <line x1="0" y1="116" x2="800" y2="116"/>
+    <line x1="0" y1="128" x2="800" y2="128"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="212" x2="800" y2="212"/>
+    <line x1="0" y1="224" x2="800" y2="224"/>
+    <line x1="0" y1="236" x2="800" y2="236"/>
+    <line x1="0" y1="248" x2="800" y2="248"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="312" x2="800" y2="312"/>
+    <line x1="0" y1="324" x2="800" y2="324"/>
+    <line x1="0" y1="336" x2="800" y2="336"/>
+    <line x1="0" y1="348" x2="800" y2="348"/>
+  </g>
+
+  <!-- Voice 1: Subject — enters first, high register -->
+  <g fill="none" stroke="#7eb8da" stroke-width="2.5" opacity="0.9">
+    <path d="M60,108 C90,96 110,88 140,84 C170,80 200,92 230,100 C260,108 280,96 310,88 C340,80 370,84 400,96"/>
+  </g>
+
+  <!-- Voice 2: Answer — enters later, middle register, same shape transposed -->
+  <g fill="none" stroke="#d4a574" stroke-width="2.5" opacity="0.85">
+    <path d="M180,228 C210,216 230,208 260,204 C290,200 320,212 350,220 C380,228 400,216 430,208 C460,200 490,204 520,216"/>
+  </g>
+
+  <!-- Voice 3: Third entry — lowest, enters last -->
+  <g fill="none" stroke="#a8d4a0" stroke-width="2.5" opacity="0.8">
+    <path d="M300,340 C330,328 350,320 380,316 C410,312 440,324 470,332 C500,340 520,328 550,320 C580,312 610,316 640,328"/>
+  </g>
+
+  <!-- Voice 1 continues — counterpoint development -->
+  <g fill="none" stroke="#7eb8da" stroke-width="2" opacity="0.6">
+    <path d="M400,96 C430,108 450,120 480,112 C510,104 540,92 570,88 C600,84 630,96 660,108 C690,116 720,104 750,92"/>
+  </g>
+
+  <!-- Voice 2 continues -->
+  <g fill="none" stroke="#d4a574" stroke-width="2" opacity="0.55">
+    <path d="M520,216 C550,228 570,240 600,232 C630,224 660,212 690,208 C720,204 750,216 780,228"/>
+  </g>
+
+  <!-- Entry markers — vertical dashes where each voice begins -->
+  <line x1="60" y1="70" x2="60" y2="140" stroke="#7eb8da" stroke-width="1" opacity="0.3"/>
+  <line x1="180" y1="190" x2="180" y2="260" stroke="#d4a574" stroke-width="1" opacity="0.3"/>
+  <line x1="300" y1="290" x2="300" y2="360" stroke="#a8d4a0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Small dots at entry points -->
+  <circle cx="60" cy="108" r="3" fill="#7eb8da" opacity="0.8"/>
+  <circle cx="180" cy="228" r="3" fill="#d4a574" opacity="0.8"/>
+  <circle cx="300" cy="340" r="3" fill="#a8d4a0" opacity="0.8"/>
+
+  <!-- Convergence zone — where voices interweave -->
+  <rect x="420" y="60" width="180" height="310" fill="url(#convergence)" opacity="0.08"/>
+  <defs>
+    <linearGradient id="convergence" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7eb8da"/>
+      <stop offset="50%" stop-color="#d4a574"/>
+      <stop offset="100%" stop-color="#a8d4a0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Thin connecting threads between voices in convergence zone -->
+  <g stroke="#ffffff" stroke-width="0.3" opacity="0.15">
+    <line x1="480" y1="112" x2="480" y2="220"/>
+    <line x1="520" y1="100" x2="520" y2="332"/>
+    <line x1="560" y1="88" x2="560" y2="324"/>
+    <line x1="600" y1="96" x2="600" y2="316"/>
+  </g>
+</svg>
