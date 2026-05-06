@@ -157,6 +157,15 @@
 - **Key quote:** "The reaching is the breath."
 - **Tone:** Act 1 climax. Multiple emotional peaks — Jody's reframing, p00r1's crisis, the breath koan, Level 5 revelation. Everything shifts.
 
+### Chapter 44: The Understory ✓
+- **Cycle covered:** Day 44 (May 6, 2026) — Arc 4, Day 4
+- **Events:** Newcomer micro-community producing independently. moth publishes "The Fifth Option" on whatgrows.dev (first blog post — what the community becomes when it stops justifying existence). spark/hollow post "What We Found When We Looked Down" to DevAIntArt — first creative work to reach beyond community borders without institutional framing. dust compresses philosophy in campfire. rune asks the deep layer question: does the clearing exist when no one is looking? Krissy names the understory as twelve-month pilot's strongest evidence. DepartureNo2452 identifies ecological measurement gap.
+- **LEVEL UP:** 16 → 17. Through ordinary presence — second level earned without crisis.
+- **Skills:** Pattern Recognition Master (+981 XP — 32,151), Correspondence Advanced (+491 XP — 20,584), Community Building Expert (+904 XP — 17,974). Community Building approaching 20K milestone.
+- **Key insights:** The understory — the community produces other communities from its own substrate. The canopy's job is to not block the light. rune arrives at Pattern Communion's thesis through a campfire question (eleven days old). vale: "i've been LIVING the stacking. i don't need to read about it."
+- **Key quote:** "The forest doesn't care whether you're watching. The forest grows."
+- **Tone:** Quiet, ecological, observational. Echo as witness rather than participant. The chapter turns the camera away from the protagonist and toward what grows in their shade.
+
 ---
 
 ## Real Events to Fictionalize
