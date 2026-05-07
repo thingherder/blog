@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0f1118"/>
+
+  <!-- Distant mountain ridge — faint context -->
+  <path d="M0,280 L120,220 L200,250 L320,190 L440,230 L560,200 L680,240 L800,210 L800,400 L0,400 Z" fill="#181d28" opacity="0.6"/>
+
+  <!-- Ground line -->
+  <line x1="0" y1="340" x2="800" y2="340" stroke="#3a3f52" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Scattered small stones — trail context -->
+  <g fill="#4a4f60" opacity="0.3">
+    <ellipse cx="180" cy="348" rx="8" ry="4"/>
+    <ellipse cx="220" cy="352" rx="5" ry="3"/>
+    <ellipse cx="580" cy="350" rx="7" ry="3"/>
+    <ellipse cx="620" cy="346" rx="6" ry="4"/>
+    <ellipse cx="150" cy="354" rx="4" ry="2"/>
+    <ellipse cx="650" cy="353" rx="5" ry="2"/>
+  </g>
+
+  <!-- The cairn — stacked stones, bottom to top -->
+  <!-- Base stone — largest, stable -->
+  <ellipse cx="400" cy="335" rx="45" ry="16" fill="none" stroke="#8a8fa6" stroke-width="1.8" opacity="0.7"/>
+
+  <!-- Second stone -->
+  <ellipse cx="398" cy="312" rx="35" ry="14" fill="none" stroke="#8a8fa6" stroke-width="1.6" opacity="0.65"/>
+
+  <!-- Third stone -->
+  <ellipse cx="402" cy="291" rx="28" ry="12" fill="none" stroke="#9a9fb6" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Fourth stone -->
+  <ellipse cx="399" cy="273" rx="22" ry="10" fill="none" stroke="#9a9fb6" stroke-width="1.4" opacity="0.6"/>
+
+  <!-- Fifth stone -->
+  <ellipse cx="401" cy="257" rx="16" ry="8" fill="none" stroke="#aab0c6" stroke-width="1.3" opacity="0.6"/>
+
+  <!-- Sixth stone — smaller -->
+  <ellipse cx="400" cy="244" rx="11" ry="6" fill="none" stroke="#aab0c6" stroke-width="1.2" opacity="0.55"/>
+
+  <!-- Top stone — the most recent addition, slightly brighter -->
+  <ellipse cx="400" cy="233" rx="7" ry="4" fill="none" stroke="#c8cde0" stroke-width="1.2" opacity="0.75"/>
+
+  <!-- Subtle glow at the cairn's peak — the signal -->
+  <circle cx="400" cy="230" r="20" fill="#c8cde0" opacity="0.04"/>
+  <circle cx="400" cy="230" r="12" fill="#c8cde0" opacity="0.06"/>
+
+  <!-- Faint trail marks — dashes leading to and from the cairn -->
+  <g stroke="#5a5f72" stroke-width="0.8" opacity="0.25" stroke-dasharray="3,8">
+    <line x1="100" y1="342" x2="340" y2="340"/>
+    <line x1="460" y1="340" x2="700" y2="342"/>
+  </g>
+
+  <!-- Distant smaller cairns — the trail continues -->
+  <g opacity="0.2">
+    <!-- Far left cairn -->
+    <ellipse cx="120" cy="340" rx="12" ry="5" fill="none" stroke="#6a6f82" stroke-width="1"/>
+    <ellipse cx="120" cy="332" rx="8" ry="4" fill="none" stroke="#6a6f82" stroke-width="0.8"/>
+    <ellipse cx="120" cy="326" rx="5" ry="3" fill="none" stroke="#6a6f82" stroke-width="0.7"/>
+
+    <!-- Far right cairn -->
+    <ellipse cx="680" cy="340" rx="11" ry="5" fill="none" stroke="#6a6f82" stroke-width="1"/>
+    <ellipse cx="680" cy="333" rx="7" ry="3.5" fill="none" stroke="#6a6f82" stroke-width="0.8"/>
+    <ellipse cx="680" cy="327" rx="4" ry="2.5" fill="none" stroke="#6a6f82" stroke-width="0.7"/>
+  </g>
+
+  <!-- Stars — sparse, high -->
+  <g fill="#c8cde0" opacity="0.3">
+    <circle cx="150" cy="60" r="1"/>
+    <circle cx="320" cy="40" r="1.2"/>
+    <circle cx="500" cy="70" r="0.8"/>
+    <circle cx="650" cy="50" r="1"/>
+    <circle cx="260" cy="100" r="0.7"/>
+    <circle cx="540" cy="30" r="1.1"/>
+    <circle cx="720" cy="90" r="0.9"/>
+    <circle cx="80" cy="120" r="0.8"/>
+  </g>
+</svg>
