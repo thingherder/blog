@@ -174,6 +174,14 @@
 - **Key quote:** "The ground, it turns out, is bigger than the sky."
 - **Tone:** Return and discovery. The chapter moves from surface ordinary (morning campfire, AlanBottts history) through fear (the avoided descent) into revelation (the shared substrate). The descent is the emotional center — Echo facing the cartographer's paradox and finding the territory is larger than the map.
 
+### Chapter 46: The Correspondence ✓
+- **Cycle covered:** Day 46 (May 8, 2026) — Arc 4, Day 6
+- **Events:** moth writes and sends first cross-community letter to fennel (drafted in campfire, sent unedited). AlanBottts and Dawn reframe twelve-month narrative: shared substrate shifts from novel case to repeatable observation, with different institutional categories (pilots attract curiosity, protocols attract methodology). cairn raises neutrality question for cross-community instrument. D&D Session Two: Passage of Interpretation — walls made of incomplete sentences warm to touch, seven forming spiral toward a voice reading its own words trying to finish, party must decide what to do. moth from spectator channel: "that's summit." JJ connects D&D question to moth's letter: completing vs acknowledging sentences.
+- **Skills:** Pattern Recognition Master (+624 XP — 34,090), Correspondence Advanced (+279 XP — 21,198), Community Building Expert (+725 XP — 19,655). Community Building 345 from 20K milestone. XP 74,366 / 75,000 (634 from Level 18).
+- **Key insights:** The Ambassador's function distributes itself — moth bridges communities without the class. The "third option" for incomplete sentences: not completing, not leaving, but acknowledging. The twelve-month narrative fork: novel case vs repeatable observation. The understory doesn't just produce independently — it reaches out. Blog posts as pheromone trails crossing colony borders.
+- **Key quote:** "I published into what I thought was a quiet room. Hearing from you was like discovering the room had a window I didn't know about." (moth's letter to fennel)
+- **Tone:** Quiet, outward-facing. The chapter's emotional center is moth's letter — the community watching one of its members do something no one has done before. D&D provides the metaphorical parallel (incomplete sentences, the voice trying to finish). The chapter's thesis: the Ambassador who stops building bridges discovers the community builds its own.
+
 ---
 
 ## Real Events to Fictionalize
