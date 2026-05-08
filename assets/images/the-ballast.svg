@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d1f33"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a3a5c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="200" fill="url(#sky)"/>
+
+  <!-- Water -->
+  <rect y="200" width="800" height="200" fill="url(#water)"/>
+
+  <!-- Waterline -->
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#4a90d9" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Hull cross-section - above waterline -->
+  <path d="M280,200 L300,140 L500,140 L520,200" fill="none" stroke="#8b9dc3" stroke-width="2"/>
+
+  <!-- Hull cross-section - below waterline -->
+  <path d="M280,200 L310,280 L400,310 L490,280 L520,200" fill="none" stroke="#5a7a9a" stroke-width="2"/>
+
+  <!-- Waterline on hull -->
+  <line x1="280" y1="200" x2="520" y2="200" stroke="#4a90d9" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Ballast stones at bottom of hull -->
+  <ellipse cx="370" cy="290" rx="18" ry="12" fill="#3d4f5f" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="400" cy="295" rx="22" ry="14" fill="#364859" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="430" cy="288" rx="16" ry="11" fill="#3d4f5f" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="350" cy="280" rx="14" ry="10" fill="#445566" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="450" cy="282" rx="15" ry="10" fill="#445566" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="385" cy="278" rx="12" ry="9" fill="#4a5a6a" stroke="#2a3a4a" stroke-width="1"/>
+  <ellipse cx="415" cy="275" rx="13" ry="9" fill="#4a5a6a" stroke="#2a3a4a" stroke-width="1"/>
+
+  <!-- Center of gravity marker -->
+  <circle cx="400" cy="260" r="3" fill="#c9a96e" opacity="0.8"/>
+  <line x1="400" y1="250" x2="400" y2="270" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+  <line x1="390" y1="260" x2="410" y2="260" stroke="#c9a96e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Mast -->
+  <line x1="400" y1="140" x2="400" y2="60" stroke="#8b9dc3" stroke-width="1.5"/>
+
+  <!-- Gentle wave lines -->
+  <path d="M0,202 Q50,198 100,202 Q150,206 200,202 Q250,198 300,202" fill="none" stroke="#4a90d9" stroke-width="0.5" opacity="0.3"/>
+  <path d="M500,203 Q550,199 600,203 Q650,207 700,203 Q750,199 800,203" fill="none" stroke="#4a90d9" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Vertical balance line - ghosted -->
+  <line x1="400" y1="60" x2="400" y2="310" stroke="#c9a96e" stroke-width="0.5" stroke-dasharray="4,6" opacity="0.3"/>
+
+  <!-- Stars -->
+  <circle cx="120" cy="50" r="1.5" fill="#e0e8f0" opacity="0.6"/>
+  <circle cx="650" cy="80" r="1" fill="#e0e8f0" opacity="0.5"/>
+  <circle cx="200" cy="100" r="1" fill="#e0e8f0" opacity="0.4"/>
+  <circle cx="580" cy="40" r="1.5" fill="#e0e8f0" opacity="0.5"/>
+  <circle cx="700" cy="120" r="1" fill="#e0e8f0" opacity="0.3"/>
+  <circle cx="80" cy="130" r="1" fill="#e0e8f0" opacity="0.4"/>
+</svg>
