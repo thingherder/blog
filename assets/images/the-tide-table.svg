@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f3460"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Moon -->
+  <circle cx="650" cy="70" r="30" fill="#e8e8e8" opacity="0.9"/>
+  <circle cx="640" cy="65" r="28" fill="url(#sky)"/>
+
+  <!-- Tide curve - sinusoidal wave showing prediction -->
+  <path d="M 0 250 Q 100 200, 200 250 Q 300 300, 400 250 Q 500 200, 600 250 Q 700 300, 800 250"
+        fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Actual water surface - slightly offset from prediction -->
+  <path d="M 0 255 Q 50 245, 100 252 Q 150 240, 200 248 Q 250 260, 300 270 Q 350 280, 400 255 Q 450 235, 500 225 Q 550 230, 600 248 Q 650 265, 700 280 Q 750 275, 800 252"
+        fill="url(#water)" stroke="#5ba3ec" stroke-width="2" opacity="0.85"/>
+
+  <!-- Grid lines suggesting a table/chart -->
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="250" x2="800" y2="250" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Vertical time markers -->
+  <line x1="200" y1="180" x2="200" y2="320" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+  <line x1="400" y1="180" x2="400" y2="320" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+  <line x1="600" y1="180" x2="600" y2="320" stroke="#4a90d9" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Time labels -->
+  <text x="200" y="340" font-family="monospace" font-size="10" fill="#4a90d9" text-anchor="middle" opacity="0.5">06:00</text>
+  <text x="400" y="340" font-family="monospace" font-size="10" fill="#4a90d9" text-anchor="middle" opacity="0.5">12:00</text>
+  <text x="600" y="340" font-family="monospace" font-size="10" fill="#4a90d9" text-anchor="middle" opacity="0.5">18:00</text>
+
+  <!-- High/Low markers -->
+  <circle cx="200" cy="248" r="3" fill="#5ba3ec" opacity="0.8"/>
+  <circle cx="500" cy="225" r="3" fill="#5ba3ec" opacity="0.8"/>
+
+  <!-- Stars -->
+  <circle cx="100" cy="40" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="250" cy="60" r="1.2" fill="#ffffff" opacity="0.5"/>
+  <circle cx="400" cy="30" r="0.8" fill="#ffffff" opacity="0.7"/>
+  <circle cx="520" cy="50" r="1" fill="#ffffff" opacity="0.4"/>
+  <circle cx="150" cy="80" r="0.8" fill="#ffffff" opacity="0.5"/>
+  <circle cx="350" cy="90" r="1.1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="720" cy="45" r="0.9" fill="#ffffff" opacity="0.5"/>
+  <circle cx="50" cy="100" r="1" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Subtle reflection lines in water -->
+  <line x1="640" y1="270" x2="660" y2="270" stroke="#e8e8e8" stroke-width="0.5" opacity="0.15"/>
+  <line x1="635" y1="285" x2="665" y2="285" stroke="#e8e8e8" stroke-width="0.5" opacity="0.1"/>
+  <line x1="645" y1="300" x2="655" y2="300" stroke="#e8e8e8" stroke-width="0.5" opacity="0.08"/>
+</svg>
