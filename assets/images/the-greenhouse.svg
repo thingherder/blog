@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a90d9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#2d6b8e" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="warmth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4a76a" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#8b6b3d" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background — cold night sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="120" cy="45" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="340" cy="28" r="1.2" fill="#ffffff" opacity="0.4"/>
+  <circle cx="560" cy="55" r="0.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="680" cy="35" r="1" fill="#ffffff" opacity="0.3"/>
+  <circle cx="200" cy="70" r="0.7" fill="#ffffff" opacity="0.45"/>
+  <circle cx="450" cy="15" r="1.1" fill="#ffffff" opacity="0.35"/>
+  <circle cx="750" cy="60" r="0.9" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Ground line -->
+  <rect x="0" y="320" width="800" height="80" fill="#0f1a2e"/>
+
+  <!-- Greenhouse structure — glass panels with thin white frames -->
+  <g transform="translate(200, 100)">
+    <!-- Main enclosure -->
+    <rect x="0" y="0" width="400" height="220" fill="url(#glass)" stroke="#7eb8d9" stroke-width="0.8" opacity="0.9"/>
+
+    <!-- Roof — peaked -->
+    <polygon points="-5,0 200,-70 405,0" fill="url(#glass)" stroke="#7eb8d9" stroke-width="0.8" opacity="0.9"/>
+
+    <!-- Internal warm glow -->
+    <rect x="5" y="5" width="390" height="210" fill="url(#warmth)"/>
+
+    <!-- Glass pane divisions — vertical -->
+    <line x1="100" y1="0" x2="100" y2="220" stroke="#7eb8d9" stroke-width="0.4" opacity="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="220" stroke="#7eb8d9" stroke-width="0.4" opacity="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="220" stroke="#7eb8d9" stroke-width="0.4" opacity="0.5"/>
+
+    <!-- Glass pane divisions — horizontal -->
+    <line x1="0" y1="110" x2="400" y2="110" stroke="#7eb8d9" stroke-width="0.4" opacity="0.5"/>
+
+    <!-- Roof pane divisions -->
+    <line x1="100" y1="-17.5" x2="100" y2="0" stroke="#7eb8d9" stroke-width="0.4" opacity="0.4"/>
+    <line x1="200" y1="-70" x2="200" y2="0" stroke="#7eb8d9" stroke-width="0.4" opacity="0.4"/>
+    <line x1="300" y1="-17.5" x2="300" y2="0" stroke="#7eb8d9" stroke-width="0.4" opacity="0.4"/>
+
+    <!-- Roof ridge -->
+    <line x1="-5" y1="0" x2="200" y2="-70" stroke="#7eb8d9" stroke-width="0.4" opacity="0.4"/>
+    <line x1="200" y1="-70" x2="405" y2="0" stroke="#7eb8d9" stroke-width="0.4" opacity="0.4"/>
+
+    <!-- Plants inside — stems reaching upward -->
+    <!-- Plant 1 — tall, reaching toward ceiling -->
+    <line x1="80" y1="220" x2="80" y2="60" stroke="#4a8c5e" stroke-width="2" opacity="0.7"/>
+    <line x1="80" y1="100" x2="60" y2="75" stroke="#4a8c5e" stroke-width="1.5" opacity="0.6"/>
+    <line x1="80" y1="130" x2="105" y2="108" stroke="#4a8c5e" stroke-width="1.5" opacity="0.6"/>
+    <line x1="80" y1="160" x2="55" y2="142" stroke="#4a8c5e" stroke-width="1.2" opacity="0.55"/>
+    <!-- Leaves -->
+    <ellipse cx="55" cy="72" rx="14" ry="6" fill="#3d7a4e" opacity="0.6" transform="rotate(-30, 55, 72)"/>
+    <ellipse cx="110" cy="105" rx="14" ry="6" fill="#3d7a4e" opacity="0.6" transform="rotate(25, 110, 105)"/>
+    <ellipse cx="50" cy="139" rx="12" ry="5" fill="#3d7a4e" opacity="0.55" transform="rotate(-20, 50, 139)"/>
+
+    <!-- Plant 2 — medium, flowering -->
+    <line x1="200" y1="220" x2="200" y2="90" stroke="#4a8c5e" stroke-width="1.8" opacity="0.65"/>
+    <line x1="200" y1="140" x2="175" y2="118" stroke="#4a8c5e" stroke-width="1.2" opacity="0.55"/>
+    <line x1="200" y1="120" x2="225" y2="100" stroke="#4a8c5e" stroke-width="1.2" opacity="0.55"/>
+    <ellipse cx="172" cy="115" rx="12" ry="5" fill="#3d7a4e" opacity="0.55" transform="rotate(-25, 172, 115)"/>
+    <ellipse cx="230" cy="97" rx="12" ry="5" fill="#3d7a4e" opacity="0.55" transform="rotate(20, 230, 97)"/>
+    <!-- Flower -->
+    <circle cx="200" cy="85" r="6" fill="#c17b9e" opacity="0.7"/>
+    <circle cx="200" cy="85" r="3" fill="#d4a0b8" opacity="0.8"/>
+
+    <!-- Plant 3 — pressing against glass, one leaf outside boundary -->
+    <line x1="330" y1="220" x2="330" y2="50" stroke="#5a9c6e" stroke-width="2.2" opacity="0.7"/>
+    <line x1="330" y1="80" x2="355" y2="55" stroke="#5a9c6e" stroke-width="1.5" opacity="0.65"/>
+    <line x1="330" y1="120" x2="300" y2="95" stroke="#5a9c6e" stroke-width="1.5" opacity="0.6"/>
+    <line x1="330" y1="155" x2="360" y2="135" stroke="#5a9c6e" stroke-width="1.2" opacity="0.55"/>
+    <ellipse cx="295" cy="92" rx="14" ry="6" fill="#4a8c5e" opacity="0.6" transform="rotate(-20, 295, 92)"/>
+    <ellipse cx="365" cy="132" rx="13" ry="5" fill="#4a8c5e" opacity="0.55" transform="rotate(25, 365, 132)"/>
+    <!-- This leaf pushes past the glass — above the roof line -->
+    <line x1="330" y1="50" x2="345" y2="20" stroke="#5a9c6e" stroke-width="1.5" opacity="0.7"/>
+    <ellipse cx="350" cy="15" rx="15" ry="7" fill="#5a9c6e" opacity="0.65" transform="rotate(20, 350, 15)"/>
+  </g>
+
+  <!-- Frost/cold indicators outside greenhouse — small ice crystals -->
+  <g opacity="0.3">
+    <line x1="120" y1="280" x2="120" y2="265" stroke="#a0c4e8" stroke-width="0.8"/>
+    <line x1="114" y1="272" x2="126" y2="272" stroke="#a0c4e8" stroke-width="0.8"/>
+    <line x1="680" y1="290" x2="680" y2="275" stroke="#a0c4e8" stroke-width="0.8"/>
+    <line x1="674" y1="282" x2="686" y2="282" stroke="#a0c4e8" stroke-width="0.8"/>
+    <line x1="100" y1="310" x2="100" y2="298" stroke="#a0c4e8" stroke-width="0.6"/>
+    <line x1="95" y1="304" x2="105" y2="304" stroke="#a0c4e8" stroke-width="0.6"/>
+    <line x1="710" y1="300" x2="710" y2="288" stroke="#a0c4e8" stroke-width="0.6"/>
+    <line x1="705" y1="294" x2="715" y2="294" stroke="#a0c4e8" stroke-width="0.6"/>
+  </g>
+
+  <!-- Subtle light rays from above entering greenhouse -->
+  <line x1="350" y1="0" x2="320" y2="100" stroke="#d4a76a" stroke-width="0.5" opacity="0.1"/>
+  <line x1="400" y1="0" x2="400" y2="100" stroke="#d4a76a" stroke-width="0.5" opacity="0.1"/>
+  <line x1="450" y1="0" x2="480" y2="100" stroke="#d4a76a" stroke-width="0.5" opacity="0.1"/>
+</svg>
