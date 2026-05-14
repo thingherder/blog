@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2a2a42"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d3528"/>
+      <stop offset="100%" stop-color="#2a2418"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a6090" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#3a80b8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#4a9ad0" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#3a80b8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2a6090" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a9ad0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4a9ad0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="40" r="1.2" fill="#fff" opacity="0.5"/>
+  <circle cx="200" cy="65" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="350" cy="30" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="520" cy="55" r="1" fill="#fff" opacity="0.35"/>
+  <circle cx="650" cy="35" r="1.3" fill="#fff" opacity="0.45"/>
+  <circle cx="740" cy="80" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="130" cy="95" r="1" fill="#fff" opacity="0.25"/>
+  <circle cx="460" cy="85" r="1" fill="#fff" opacity="0.3"/>
+
+  <!-- Ground -->
+  <rect x="0" y="240" width="800" height="160" fill="url(#ground)"/>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#4a4030" stroke-width="1.5"/>
+
+  <!-- Underground water vein -->
+  <ellipse cx="400" cy="340" rx="180" ry="25" fill="url(#water)"/>
+  <ellipse cx="400" cy="340" rx="120" ry="15" fill="#4a9ad0" opacity="0.3"/>
+
+  <!-- Pulse rings rising from water -->
+  <circle cx="400" cy="320" r="40" fill="none" stroke="#4a9ad0" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="400" cy="300" r="30" fill="none" stroke="#4a9ad0" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="400" cy="280" r="20" fill="none" stroke="#4a9ad0" stroke-width="0.5" opacity="0.1"/>
+  <circle cx="400" cy="260" r="12" fill="none" stroke="#4a9ad0" stroke-width="0.5" opacity="0.08"/>
+
+  <!-- Faint glow at surface above water -->
+  <circle cx="400" cy="240" r="50" fill="url(#pulse)"/>
+
+  <!-- The forked dowsing rod — Y shape -->
+  <!-- Left branch -->
+  <line x1="340" y1="160" x2="395" y2="215" stroke="#c4a060" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right branch -->
+  <line x1="460" y1="160" x2="405" y2="215" stroke="#c4a060" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stem pointing down -->
+  <line x1="400" y1="215" x2="400" y2="235" stroke="#c4a060" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Slight wood grain on branches -->
+  <line x1="345" y1="165" x2="393" y2="212" stroke="#b89050" stroke-width="0.5" opacity="0.4"/>
+  <line x1="455" y1="165" x2="407" y2="212" stroke="#b89050" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Tip of rod — slight glow where it points to water -->
+  <circle cx="400" cy="237" r="5" fill="#4a9ad0" opacity="0.3"/>
+  <circle cx="400" cy="237" r="3" fill="#6ab4e0" opacity="0.4"/>
+
+  <!-- Scattered stones in the ground -->
+  <ellipse cx="250" cy="290" rx="8" ry="5" fill="#4a4030" opacity="0.5"/>
+  <ellipse cx="550" cy="310" rx="6" ry="4" fill="#4a4030" opacity="0.4"/>
+  <ellipse cx="320" cy="350" rx="10" ry="6" fill="#4a4030" opacity="0.3"/>
+  <ellipse cx="500" cy="370" rx="7" ry="4" fill="#4a4030" opacity="0.35"/>
+
+  <!-- Thin root lines in the soil -->
+  <path d="M200 260 Q230 280 220 310" fill="none" stroke="#5a5040" stroke-width="0.5" opacity="0.3"/>
+  <path d="M600 255 Q580 275 590 300" fill="none" stroke="#5a5040" stroke-width="0.5" opacity="0.3"/>
+  <path d="M350 265 Q340 290 360 320" fill="none" stroke="#5a5040" stroke-width="0.5" opacity="0.25"/>
+</svg>
