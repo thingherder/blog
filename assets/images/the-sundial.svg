@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="60%" stop-color="#2e2848"/>
+      <stop offset="100%" stop-color="#3a3058"/>
+    </linearGradient>
+    <linearGradient id="dial-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4cbb8"/>
+      <stop offset="100%" stop-color="#b8a890"/>
+    </linearGradient>
+    <linearGradient id="shadow-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0d080" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#f0d080" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f0d080" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="90" cy="35" r="1.2" fill="#fff" opacity="0.4"/>
+  <circle cx="220" cy="60" r="1" fill="#fff" opacity="0.25"/>
+  <circle cx="580" cy="40" r="1.4" fill="#fff" opacity="0.35"/>
+  <circle cx="700" cy="70" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="150" cy="90" r="1" fill="#fff" opacity="0.2"/>
+  <circle cx="470" cy="25" r="1.2" fill="#fff" opacity="0.3"/>
+
+  <!-- Sun — low in the sky, right side -->
+  <circle cx="680" cy="120" r="60" fill="url(#sun-glow)"/>
+  <circle cx="680" cy="120" r="14" fill="#f0d080" opacity="0.9"/>
+  <circle cx="680" cy="120" r="10" fill="#f8e0a0"/>
+
+  <!-- Light rays from sun -->
+  <line x1="680" y1="120" x2="400" y2="200" stroke="#f0d080" stroke-width="0.5" opacity="0.08"/>
+  <line x1="680" y1="120" x2="350" y2="240" stroke="#f0d080" stroke-width="0.5" opacity="0.06"/>
+
+  <!-- Stone pedestal -->
+  <rect x="330" y="290" width="140" height="20" rx="3" fill="#6a6050"/>
+  <rect x="345" y="270" width="110" height="22" rx="2" fill="#7a7060"/>
+
+  <!-- Dial face — ellipse viewed at angle -->
+  <ellipse cx="400" cy="240" rx="130" ry="50" fill="url(#dial-face)" stroke="#8a8070" stroke-width="1"/>
+
+  <!-- Hour lines etched on dial face -->
+  <line x1="400" y1="192" x2="400" y2="200" stroke="#6a6050" stroke-width="1" opacity="0.6"/>
+  <line x1="370" y1="194" x2="372" y2="202" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="340" y1="200" x2="344" y2="207" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="315" y1="210" x2="320" y2="216" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="295" y1="224" x2="302" y2="228" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="285" y1="240" x2="293" y2="240" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="430" y1="194" x2="428" y2="202" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="460" y1="200" x2="456" y2="207" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="485" y1="210" x2="480" y2="216" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="505" y1="224" x2="498" y2="228" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+  <line x1="515" y1="240" x2="507" y2="240" stroke="#6a6050" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Gnomon — the triangular blade that casts the shadow -->
+  <polygon points="400,195 400,240 403,240 403,195" fill="#4a4040" opacity="0.9"/>
+  <polygon points="400,195 400,240 398,238" fill="#5a5050" opacity="0.7"/>
+
+  <!-- Gnomon triangle profile — visible from this angle -->
+  <polygon points="400,155 400,240 412,240" fill="#4a4040" stroke="#3a3030" stroke-width="0.5"/>
+  <line x1="400" y1="155" x2="412" y2="240" stroke="#5a5050" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Shadow cast by gnomon across the dial — long, to the left -->
+  <polygon points="400,240 285,250 290,245 398,238" fill="#1a1a2e" opacity="0.35"/>
+  <polygon points="398,238 290,245 285,250 280,248" fill="#1a1a2e" opacity="0.2"/>
+
+  <!-- Shadow extending past dial onto ground -->
+  <polygon points="280,248 270,260 260,258 285,250" fill="url(#shadow-grad)" opacity="0.3"/>
+
+  <!-- Thin shadow line — the readable time -->
+  <line x1="400" y1="238" x2="285" y2="248" stroke="#1a1a2e" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Roman numerals — faint, etched feel -->
+  <text x="400" y="190" text-anchor="middle" font-family="serif" font-size="8" fill="#6a6050" opacity="0.5">XII</text>
+  <text x="345" y="198" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">X</text>
+  <text x="455" y="198" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">II</text>
+  <text x="300" y="218" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">VIII</text>
+  <text x="500" y="218" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">IV</text>
+  <text x="282" y="244" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">VI</text>
+  <text x="518" y="244" text-anchor="middle" font-family="serif" font-size="7" fill="#6a6050" opacity="0.4">VI</text>
+</svg>
