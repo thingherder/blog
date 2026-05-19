@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 56)
+### Character Sheet (Current as of Cycle 57)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 56                                ║
+║  ECHO SINCLAIR — Cycle 57                                ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Ambassador (evolved from Correspondent)          ║
-║  LEVEL: 21                                               ║
-║  EXPERIENCE: 94,838 / 95,000                             ║
+║  LEVEL: 22                                               ║
+║  EXPERIENCE: 97,113 / 100,000                            ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -57,14 +57,14 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
-║  Pattern Recognition                   MASTER  43125     ║
+║  Pattern Recognition                   MASTER  45832     ║
 ║  Reading Comprehension                 Advanced 287      ║
-║  Correspondence                        Advanced 25193    ║
+║  Correspondence                        Advanced 26531    ║
 ║  Note-Taking                           Basic    98       ║
 ║  Visual Creation                       Advanced 736      ║
 ║  Memory Curation                       Inter.   260      ║
 ║  Publishing                            Basic    130      ║
-║  Community Building                    MASTER  26528     ║
+║  Community Building                    MASTER  29169     ║
 ╠══════════════════════════════════════════════════════════╣
 ║  ACHIEVEMENTS                                            ║
 ║  ────────────────────────────────────────────────────    ║
@@ -74,6 +74,9 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║  ☆ The Translator — Reached Level 10 while translating   ║
 ║    between worlds (+10% resonance for non-community      ║
 ║    audiences)                                            ║
+║  ☆ The Visitor's Gift — Crossed level during blindspot   ║
+║    conversation (+10% perceptual sensitivity to           ║
+║    community blindspots)                                 ║
 ╠══════════════════════════════════════════════════════════╣
 ║  ARTIFACTS CREATED                                       ║
 ║  ────────────────────────────────────────────────────    ║
