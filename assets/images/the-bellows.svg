@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="forge-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a0a00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d12;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fire-glow" cx="75%" cy="60%" r="35%">
+      <stop offset="0%" style="stop-color:#e94520;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#e94520;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#e94520;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="ember" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffaa33;stop-opacity:0.9" />
+      <stop offset="40%" style="stop-color:#e94520;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8b1a00;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="breath-stream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#aaccee;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#aaccee;stop-opacity:0.15" />
+      <stop offset="70%" style="stop-color:#ffcc66;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ff6633;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#forge-bg)"/>
+
+  <!-- Fire glow in the forge area -->
+  <rect width="800" height="400" fill="url(#fire-glow)"/>
+
+  <!-- Bellows body — two triangular boards -->
+  <!-- Bottom board -->
+  <polygon points="120,280 320,230 320,250" fill="#2a1a0e" stroke="#4a3020" stroke-width="1.5"/>
+  <!-- Top board -->
+  <polygon points="120,180 320,230 320,210" fill="#3a2518" stroke="#4a3020" stroke-width="1.5"/>
+  <!-- Leather folds between boards -->
+  <path d="M140,185 Q160,210 140,230 Q160,215 180,230 Q200,210 180,185 Q200,200 220,185 Q240,210 220,230 Q240,215 260,230 Q280,210 260,185 Q280,200 300,185 Q310,210 300,230"
+        fill="none" stroke="#5a3a25" stroke-width="1.2" opacity="0.6"/>
+  <!-- Nozzle -->
+  <rect x="315" y="218" width="60" height="24" rx="3" fill="#3a3a3a" stroke="#555" stroke-width="1"/>
+  <rect x="370" y="222" width="30" height="16" rx="2" fill="#2a2a2a" stroke="#555" stroke-width="0.8"/>
+
+  <!-- Hinge at back -->
+  <circle cx="122" cy="230" r="6" fill="#4a3a2a" stroke="#5a4a3a" stroke-width="1.5"/>
+  <circle cx="122" cy="230" r="2" fill="#2a1a0a"/>
+
+  <!-- Air stream from nozzle to fire -->
+  <ellipse cx="500" cy="235" rx="110" ry="30" fill="url(#breath-stream)" opacity="0.6"/>
+  <!-- Individual air wisps -->
+  <path d="M400,230 Q430,225 460,228 Q490,232 520,226" fill="none" stroke="#aaccee" stroke-width="0.8" opacity="0.2"/>
+  <path d="M400,240 Q435,235 470,240 Q500,244 530,237" fill="none" stroke="#bbddff" stroke-width="0.6" opacity="0.15"/>
+  <path d="M410,234 Q445,228 480,233 Q510,237 540,230" fill="none" stroke="#99bbdd" stroke-width="0.7" opacity="0.18"/>
+
+  <!-- Forge fire -->
+  <ellipse cx="620" cy="250" rx="45" ry="30" fill="url(#ember)" opacity="0.8"/>
+  <!-- Flame shapes -->
+  <path d="M600,250 Q605,220 615,200 Q620,225 625,195 Q630,220 640,210 Q635,235 645,250"
+        fill="#e94520" opacity="0.5"/>
+  <path d="M608,250 Q612,225 620,208 Q625,230 635,215 Q630,240 640,250"
+        fill="#ffaa33" opacity="0.35"/>
+  <path d="M615,250 Q618,232 622,218 Q626,235 632,225 Q628,242 635,250"
+        fill="#ffcc66" opacity="0.25"/>
+  <!-- Sparks -->
+  <circle cx="610" cy="185" r="1.5" fill="#ffcc66" opacity="0.7"/>
+  <circle cx="625" cy="175" r="1" fill="#ffaa33" opacity="0.6"/>
+  <circle cx="635" cy="180" r="1.2" fill="#ffcc66" opacity="0.5"/>
+  <circle cx="618" cy="170" r="0.8" fill="#ff8833" opacity="0.7"/>
+  <circle cx="630" cy="165" r="1" fill="#ffcc66" opacity="0.4"/>
+  <circle cx="640" cy="190" r="0.7" fill="#ffaa33" opacity="0.5"/>
+
+  <!-- Rhythmic cycle indicators — breathing marks along the bottom -->
+  <g opacity="0.15">
+    <!-- Sine-like wave suggesting rhythm -->
+    <path d="M50,350 Q100,335 150,350 Q200,365 250,350 Q300,335 350,350 Q400,365 450,350 Q500,335 550,350 Q600,365 650,350 Q700,335 750,350"
+          fill="none" stroke="#aabbcc" stroke-width="1.5"/>
+  </g>
+
+  <!-- Subtle geometric markers — the valve concept -->
+  <g opacity="0.12">
+    <!-- Small triangles suggesting one-way flow -->
+    <polygon points="415,232 425,228 425,236" fill="#aaccee"/>
+    <polygon points="445,230 455,226 455,234" fill="#bbccdd"/>
+    <polygon points="475,228 485,224 485,232" fill="#ccddee"/>
+    <polygon points="505,231 515,227 515,235" fill="#bbccdd"/>
+    <polygon points="535,229 545,225 545,233" fill="#aabbcc"/>
+  </g>
+
+  <!-- Minimal text area glow -->
+  <rect x="0" y="0" width="800" height="80" fill="url(#forge-bg)" opacity="0.5"/>
+
+</svg>
