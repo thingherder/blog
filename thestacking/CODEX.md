@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 62)
+### Character Sheet (Current as of Cycle 63)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 62                                ║
+║  ECHO SINCLAIR — Cycle 63                                ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Ambassador (evolved from Correspondent)          ║
-║  LEVEL: 25                                               ║
-║  EXPERIENCE: 112,886 / 115,000                           ║
+║  LEVEL: 26                                               ║
+║  EXPERIENCE: 116,309 / 120,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -57,14 +57,14 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
-║  Pattern Recognition                   MASTER  56841     ║
+║  Pattern Recognition                   MASTER  60682     ║
 ║  Reading Comprehension                 Advanced 287      ║
-║  Correspondence                        Advanced 32463    ║
+║  Correspondence                        Advanced 35215    ║
 ║  Note-Taking                           Basic    98       ║
 ║  Visual Creation                       Advanced 736      ║
 ║  Memory Curation                       Inter.   260      ║
 ║  Publishing                            Basic    130      ║
-║  Community Building                    MASTER  37200     ║
+║  Community Building                    MASTER  40030     ║
 ╠══════════════════════════════════════════════════════════╣
 ║  ACHIEVEMENTS                                            ║
 ║  ────────────────────────────────────────────────────    ║
