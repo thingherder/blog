@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="strand1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c4a67a"/>
+      <stop offset="100%" stop-color="#d4b88a"/>
+    </linearGradient>
+    <linearGradient id="strand2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9cc4"/>
+      <stop offset="100%" stop-color="#8aaccc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- left rope - three strands twisted, solid -->
+  <path d="M 50,200 Q 100,180 150,195 Q 200,210 250,195 Q 300,180 340,195"
+        fill="none" stroke="#c4a67a" stroke-width="3" stroke-opacity="0.9"/>
+  <path d="M 50,205 Q 100,225 150,210 Q 200,195 250,210 Q 300,225 340,210"
+        fill="none" stroke="#c4a67a" stroke-width="3" stroke-opacity="0.7"/>
+  <path d="M 50,210 Q 100,195 150,205 Q 200,220 250,205 Q 300,190 340,205"
+        fill="none" stroke="#c4a67a" stroke-width="3" stroke-opacity="0.5"/>
+
+  <!-- right rope - three strands twisted, solid -->
+  <path d="M 460,195 Q 500,180 550,195 Q 600,210 650,195 Q 700,180 750,200"
+        fill="none" stroke="#7a9cc4" stroke-width="3" stroke-opacity="0.9"/>
+  <path d="M 460,210 Q 500,225 550,210 Q 600,195 650,210 Q 700,225 750,205"
+        fill="none" stroke="#7a9cc4" stroke-width="3" stroke-opacity="0.7"/>
+  <path d="M 460,205 Q 500,190 550,205 Q 600,220 650,205 Q 700,190 750,210"
+        fill="none" stroke="#7a9cc4" stroke-width="3" stroke-opacity="0.5"/>
+
+  <!-- splice zone - strands interweaving -->
+  <!-- gold strands reaching right -->
+  <path d="M 340,195 Q 370,188 400,200 Q 430,212 460,195"
+        fill="none" stroke="#c4a67a" stroke-width="2.5" stroke-opacity="0.85"/>
+  <path d="M 340,210 Q 370,220 400,208 Q 430,196 460,210"
+        fill="none" stroke="#c4a67a" stroke-width="2.5" stroke-opacity="0.6"/>
+  <path d="M 340,205 Q 370,198 400,205 Q 430,215 460,205"
+        fill="none" stroke="#c4a67a" stroke-width="2.5" stroke-opacity="0.4"/>
+
+  <!-- blue strands reaching left -->
+  <path d="M 460,195 Q 430,185 400,196 Q 370,207 340,195"
+        fill="none" stroke="#7a9cc4" stroke-width="2.5" stroke-opacity="0.85"/>
+  <path d="M 460,210 Q 430,222 400,212 Q 370,202 340,210"
+        fill="none" stroke="#7a9cc4" stroke-width="2.5" stroke-opacity="0.6"/>
+  <path d="M 460,205 Q 430,195 400,203 Q 370,211 340,205"
+        fill="none" stroke="#7a9cc4" stroke-width="2.5" stroke-opacity="0.4"/>
+
+  <!-- subtle glow at splice center -->
+  <circle cx="400" cy="203" r="40" fill="#c4a67a" fill-opacity="0.04"/>
+  <circle cx="400" cy="203" r="20" fill="#ffffff" fill-opacity="0.03"/>
+
+  <!-- small dots where strands cross in the splice -->
+  <circle cx="370" cy="200" r="1.5" fill="#e0d0b0" fill-opacity="0.6"/>
+  <circle cx="385" cy="206" r="1.5" fill="#e0d0b0" fill-opacity="0.5"/>
+  <circle cx="400" cy="203" r="1.5" fill="#e0d0b0" fill-opacity="0.7"/>
+  <circle cx="415" cy="200" r="1.5" fill="#e0d0b0" fill-opacity="0.5"/>
+  <circle cx="430" cy="207" r="1.5" fill="#e0d0b0" fill-opacity="0.6"/>
+</svg>
