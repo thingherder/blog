@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4a882"/>
+      <stop offset="50%" style="stop-color:#8b7355"/>
+      <stop offset="100%" style="stop-color:#6b5740"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Left leaf (closed position, slightly angled) -->
+  <g transform="translate(400,200)">
+    <!-- Left plate -->
+    <rect x="-220" y="-60" width="200" height="120" rx="4" fill="url(#metal)" opacity="0.85"
+          transform="rotate(-8)"/>
+    <!-- Screw holes left -->
+    <circle cx="-170" cy="-25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(-8)"/>
+    <circle cx="-170" cy="25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(-8)"/>
+    <circle cx="-70" cy="-25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(-8)"/>
+    <circle cx="-70" cy="25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(-8)"/>
+
+    <!-- Right plate (angled open) -->
+    <rect x="20" y="-60" width="200" height="120" rx="4" fill="url(#metal)" opacity="0.85"
+          transform="rotate(12)"/>
+    <!-- Screw holes right -->
+    <circle cx="70" cy="-25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(12)"/>
+    <circle cx="70" cy="25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(12)"/>
+    <circle cx="170" cy="-25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(12)"/>
+    <circle cx="170" cy="25" r="6" fill="#1a1a2e" opacity="0.6" transform="rotate(12)"/>
+
+    <!-- The pin (center) -->
+    <circle cx="0" cy="0" r="14" fill="#c4a882" stroke="#6b5740" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#8b7355"/>
+    <circle cx="0" cy="0" r="3" fill="#c4a882"/>
+
+    <!-- Knuckles -->
+    <rect x="-8" y="-50" width="16" height="20" rx="8" fill="#8b7355" stroke="#6b5740" stroke-width="1"/>
+    <rect x="-8" y="-15" width="16" height="20" rx="8" fill="#a89070" stroke="#6b5740" stroke-width="1"/>
+    <rect x="-8" y="15" width="16" height="20" rx="8" fill="#8b7355" stroke="#6b5740" stroke-width="1"/>
+    <rect x="-8" y="35" width="16" height="20" rx="8" fill="#a89070" stroke="#6b5740" stroke-width="1"/>
+  </g>
+
+  <!-- Arc showing range of motion -->
+  <path d="M 520 130 A 120 120 0 0 1 560 310" fill="none" stroke="#c4a882" stroke-width="1"
+        stroke-dasharray="4,6" opacity="0.35"/>
+  <path d="M 280 130 A 120 120 0 0 0 240 310" fill="none" stroke="#c4a882" stroke-width="1"
+        stroke-dasharray="4,6" opacity="0.35"/>
+
+  <!-- Small decorative dots suggesting movement -->
+  <circle cx="540" cy="140" r="2" fill="#c4a882" opacity="0.3"/>
+  <circle cx="555" cy="180" r="2" fill="#c4a882" opacity="0.25"/>
+  <circle cx="560" cy="220" r="2" fill="#c4a882" opacity="0.2"/>
+  <circle cx="558" cy="260" r="2" fill="#c4a882" opacity="0.25"/>
+  <circle cx="548" cy="300" r="2" fill="#c4a882" opacity="0.3"/>
+
+  <circle cx="260" cy="140" r="2" fill="#c4a882" opacity="0.3"/>
+  <circle cx="245" cy="180" r="2" fill="#c4a882" opacity="0.25"/>
+  <circle cx="240" cy="220" r="2" fill="#c4a882" opacity="0.2"/>
+  <circle cx="242" cy="260" r="2" fill="#c4a882" opacity="0.25"/>
+  <circle cx="252" cy="300" r="2" fill="#c4a882" opacity="0.3"/>
+</svg>
