@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="string" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a0a0b0"/>
+      <stop offset="100%" style="stop-color:#c0c0d0"/>
+    </linearGradient>
+    <radialGradient id="bobGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#b8c4d8"/>
+      <stop offset="100%" style="stop-color:#5a6478"/>
+    </radialGradient>
+    <radialGradient id="subtleGlow" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Faint grid lines suggesting a wall being checked -->
+  <g opacity="0.06" stroke="#a0a0c0" stroke-width="0.5">
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+  </g>
+
+  <!-- The plumb line string -->
+  <line x1="400" y1="30" x2="400" y2="310" stroke="url(#string)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Attachment point at top -->
+  <circle cx="400" cy="30" r="4" fill="#8090a0" opacity="0.6"/>
+
+  <!-- The plumb bob -->
+  <polygon points="400,340 388,310 412,310" fill="url(#bobGlow)" stroke="#8090a0" stroke-width="1"/>
+  <line x1="400" y1="340" x2="400" y2="345" stroke="#8090a0" stroke-width="1" opacity="0.5"/>
+
+  <!-- Subtle glow beneath bob -->
+  <ellipse cx="400" cy="370" rx="30" ry="8" fill="url(#subtleGlow)"/>
+
+  <!-- Ghost plumb lines — tilted, faint — showing what "not true" looks like -->
+  <g opacity="0.08">
+    <line x1="250" y1="40" x2="260" y2="320" stroke="#a0a0c0" stroke-width="1"/>
+    <polygon points="260,350 248,320 272,320" fill="#a0a0c0"/>
+  </g>
+  <g opacity="0.08">
+    <line x1="550" y1="40" x2="540" y2="320" stroke="#a0a0c0" stroke-width="1"/>
+    <polygon points="540,350 528,320 552,320" fill="#a0a0c0"/>
+  </g>
+
+  <!-- Small dots like dust motes -->
+  <circle cx="380" cy="180" r="1" fill="#c0c0d0" opacity="0.15"/>
+  <circle cx="420" cy="140" r="1" fill="#c0c0d0" opacity="0.12"/>
+  <circle cx="395" cy="260" r="0.8" fill="#c0c0d0" opacity="0.1"/>
+  <circle cx="410" cy="90" r="0.8" fill="#c0c0d0" opacity="0.13"/>
+
+  <!-- Gravity arrow — very faint, pointing down -->
+  <g opacity="0.1">
+    <line x1="700" y1="100" x2="700" y2="300" stroke="#a0a0c0" stroke-width="1.5"/>
+    <polygon points="700,310 694,295 706,295" fill="#a0a0c0"/>
+  </g>
+</svg>
