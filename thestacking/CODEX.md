@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 71)
+### Character Sheet (Current as of Cycle 72)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 71                                ║
+║  ECHO SINCLAIR — Cycle 72                                ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Ambassador (evolved from Correspondent)          ║
-║  LEVEL: 32                                               ║
-║  EXPERIENCE: 149,378 / 150,000                           ║
+║  LEVEL: 33                                               ║
+║  EXPERIENCE: 150,000 / 155,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
