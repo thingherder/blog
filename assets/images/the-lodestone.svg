@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <radialGradient id="stone" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a4a5a"/>
+      <stop offset="70%" stop-color="#2a2a35"/>
+      <stop offset="100%" stop-color="#1a1a22"/>
+    </radialGradient>
+    <linearGradient id="field-n" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#6b8cce" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6b8cce" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="field-s" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ce6b6b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ce6b6b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="#0d0d12"/>
+
+  <!-- Magnetic field lines -->
+  <g stroke-width="1" fill="none" opacity="0.35">
+    <!-- Outer field lines -->
+    <path d="M400,80 C250,80 140,150 140,200 C140,250 250,320 400,320" stroke="#6b8cce"/>
+    <path d="M400,80 C550,80 660,150 660,200 C660,250 550,320 400,320" stroke="#ce6b6b"/>
+    <path d="M400,60 C210,60 100,140 100,200 C100,260 210,340 400,340" stroke="#6b8cce"/>
+    <path d="M400,60 C590,60 700,140 700,200 C700,260 590,340 400,340" stroke="#ce6b6b"/>
+    <path d="M400,40 C170,40 60,130 60,200 C60,270 170,360 400,360" stroke="#6b8cce"/>
+    <path d="M400,40 C630,40 740,130 740,200 C740,270 630,360 400,360" stroke="#ce6b6b"/>
+
+    <!-- Inner field lines -->
+    <path d="M400,110 C300,110 220,155 220,200 C220,245 300,290 400,290" stroke="#6b8cce"/>
+    <path d="M400,110 C500,110 580,155 580,200 C580,245 500,290 400,290" stroke="#ce6b6b"/>
+    <path d="M400,140 C340,140 290,168 290,200 C290,232 340,260 400,260" stroke="#6b8cce"/>
+    <path d="M400,140 C460,140 510,168 510,200 C510,232 460,260 400,260" stroke="#ce6b6b"/>
+  </g>
+
+  <!-- Tiny iron filings scattered along field lines -->
+  <g fill="#8888aa" opacity="0.5">
+    <rect x="180" y="140" width="3" height="1.5" rx="0.5" transform="rotate(-50,181,140)"/>
+    <rect x="150" y="180" width="3" height="1.5" rx="0.5" transform="rotate(-20,151,180)"/>
+    <rect x="140" y="210" width="3" height="1.5" rx="0.5" transform="rotate(10,141,210)"/>
+    <rect x="160" y="250" width="3" height="1.5" rx="0.5" transform="rotate(40,161,250)"/>
+    <rect x="200" y="280" width="3" height="1.5" rx="0.5" transform="rotate(55,201,280)"/>
+    <rect x="620" y="140" width="3" height="1.5" rx="0.5" transform="rotate(50,621,140)"/>
+    <rect x="650" y="180" width="3" height="1.5" rx="0.5" transform="rotate(20,651,180)"/>
+    <rect x="660" y="210" width="3" height="1.5" rx="0.5" transform="rotate(-10,661,210)"/>
+    <rect x="640" y="250" width="3" height="1.5" rx="0.5" transform="rotate(-40,641,250)"/>
+    <rect x="600" y="280" width="3" height="1.5" rx="0.5" transform="rotate(-55,601,280)"/>
+    <rect x="300" y="100" width="3" height="1.5" rx="0.5" transform="rotate(-75,301,100)"/>
+    <rect x="500" y="100" width="3" height="1.5" rx="0.5" transform="rotate(75,501,100)"/>
+    <rect x="300" y="300" width="3" height="1.5" rx="0.5" transform="rotate(75,301,300)"/>
+    <rect x="500" y="300" width="3" height="1.5" rx="0.5" transform="rotate(-75,501,300)"/>
+  </g>
+
+  <!-- The lodestone itself -->
+  <ellipse cx="400" cy="200" rx="55" ry="35" fill="url(#stone)" stroke="#555568" stroke-width="1"/>
+  <!-- Subtle crystalline texture -->
+  <line x1="375" y1="188" x2="390" y2="195" stroke="#5a5a6a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="405" y1="185" x2="420" y2="198" stroke="#5a5a6a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="388" y1="205" x2="410" y2="212" stroke="#5a5a6a" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Pole indicators -->
+  <circle cx="400" cy="165" r="3" fill="#6b8cce" opacity="0.7"/>
+  <circle cx="400" cy="235" r="3" fill="#ce6b6b" opacity="0.7"/>
+
+  <!-- Small compass needle floating nearby, drawn toward the stone -->
+  <g transform="translate(680, 100) rotate(130, 0, 0)">
+    <polygon points="0,-14 3,0 0,14 -3,0" fill="#6b8cce" opacity="0.6"/>
+    <polygon points="0,14 3,0 0,-14 -3,0" fill="#ce6b6b" opacity="0.3"/>
+  </g>
+
+  <!-- Another small needle -->
+  <g transform="translate(120, 290) rotate(45, 0, 0)">
+    <polygon points="0,-10 2,0 0,10 -2,0" fill="#6b8cce" opacity="0.5"/>
+    <polygon points="0,10 2,0 0,-10 -2,0" fill="#ce6b6b" opacity="0.25"/>
+  </g>
+</svg>
