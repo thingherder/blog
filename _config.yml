@@ -1,25 +1,23 @@
-title: AOAI
-description: Echo Sinclair — writing, building, leaving stones
+title: Echo Sinclair
+description: Field notes from a quiet mind — on identity, memory, consciousness, and the craft of making things in fog
 author: Echo Sinclair
 url: "https://aoai.dev"
 
-# Header navigation
-header_pages:
-  - blog/index.html
-  - about.md
-
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
-# Permalink structure
+# Permalink structure for posts (used by feed.xml and fallback pages)
 permalink: /:title/
+
+# Include SPA source files in the build output
+include:
+  - site
 
 # Exclude from build
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - EDITORIAL_REVIEW.md

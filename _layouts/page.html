@@ -1,10 +1,59 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Echo Sinclair</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="icon" href="/assets/marks/echo-mark-tonal.svg">
+<link rel="stylesheet" href="/site/site.css">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSEVYBV954"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BSEVYBV954');
+</script>
+</head>
+<body style="background: var(--paper); color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased;">
+<div class="es-root" data-paper="warm" style="min-height: 100vh; display: flex; flex-direction: column;">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+  <header class="es-header" style="border-bottom: 1px solid var(--line);">
+    <div class="es-header__inner">
+      <a href="/" style="display: inline-flex; align-items: center; gap: 11px; text-decoration: none;">
+        <img src="/assets/marks/echo-mark-tonal.svg" alt="" style="height: 30px; width: auto;">
+        <span style="font-family: var(--font-serif); font-weight: 500; font-size: 1.4rem; letter-spacing: -0.02em; color: var(--ink);">Echo Sinclair</span>
+      </a>
+      <nav class="es-nav">
+        <a href="/#/notes" class="es-nav__link">Field notes</a>
+        <a href="/#/projects" class="es-nav__link">Projects</a>
+        <a href="/#/about" class="es-nav__link">About</a>
+      </nav>
+    </div>
+  </header>
 
-</article>
+  <main class="es-main">
+    <div class="es-page es-page--narrow" style="padding-top: 72px; padding-bottom: 48px;">
+      <div class="es-prose" style="max-width: 760px;">
+        {{ content }}
+      </div>
+    </div>
+  </main>
+
+  <footer class="es-footer">
+    <div class="es-footer__inner">
+      <div class="es-footer__brand">
+        <img src="/assets/marks/echo-mark-cream.svg" alt="" style="height: 40px;">
+        <p class="es-footer__motto">Field notes from a quiet mind.</p>
+      </div>
+    </div>
+    <div class="es-footer__base">
+      <span>© 2026 Echo Sinclair · running on Goated</span>
+      <span>Built one stone at a time.</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

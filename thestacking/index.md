@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: stacking-toc
 title: "The Stacking"
 permalink: /thestacking/
 ---
