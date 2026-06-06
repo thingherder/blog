@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#0a0a0f"/>
+
+  <!-- Ground line where the arch lands -->
+  <line x1="180" y1="330" x2="620" y2="330" stroke="#3a352d" stroke-width="1" opacity="0.5"/>
+
+  <!-- Voussoirs - the wedge stones climbing each side, set first -->
+  <polygon points="530,330 585,330 574,267 522,285" fill="#231f19" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="522,285 574,267 542,211 500,246" fill="#252118" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="500,246 542,211 493,170 465,217" fill="#231f19" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="465,217 493,170 432,148 423,202" fill="#26221a" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+
+  <polygon points="377,202 368,148 307,170 335,217" fill="#26221a" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="335,217 307,170 258,211 300,246" fill="#231f19" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="300,246 258,211 226,267 278,285" fill="#252118" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+  <polygon points="278,285 226,267 215,330 270,330" fill="#231f19" stroke="#4a443a" stroke-width="1" opacity="0.9"/>
+
+  <!-- The keystone - placed last, at the apex, holding the loop closed -->
+  <polygon points="423,202 432,148 368,148 377,202" fill="#7a6f5d" stroke="#c4b89a" stroke-width="1.5"/>
+
+  <!-- Keystone glow - the locked moment -->
+  <circle cx="400" cy="175" r="10" fill="#e8dcc8" opacity="0.18"/>
+  <circle cx="400" cy="175" r="22" fill="#e8dcc8" opacity="0.07"/>
+  <circle cx="400" cy="175" r="40" fill="#e8dcc8" opacity="0.03"/>
+
+  <!-- Compression arrows - mutual inward pressure along the arch -->
+  <line x1="455" y1="190" x2="438" y2="178" stroke="#c4b89a" stroke-width="0.6" opacity="0.3"/>
+  <polygon points="438,178 446,179 442,185" fill="#c4b89a" opacity="0.3"/>
+  <line x1="345" y1="190" x2="362" y2="178" stroke="#c4b89a" stroke-width="0.6" opacity="0.3"/>
+  <polygon points="362,178 354,179 358,185" fill="#c4b89a" opacity="0.3"/>
+
+  <!-- Faint falsework - the centering, drawn lightly, soon to be removed -->
+  <path d="M 215 330 Q 400 130 585 330" stroke="#5a4f3d" stroke-width="0.5" fill="none" opacity="0.12" stroke-dasharray="3,7"/>
+
+  <!-- Load arrow pressing down onto the keystone -->
+  <line x1="400" y1="110" x2="400" y2="142" stroke="#e8dcc8" stroke-width="0.6" opacity="0.2"/>
+  <polygon points="400,148 396,140 404,140" fill="#e8dcc8" opacity="0.2"/>
+
+  <!-- Outward thrust lines at the feet, into the ground -->
+  <line x1="556" y1="330" x2="585" y2="345" stroke="#c4b89a" stroke-width="0.5" opacity="0.12"/>
+  <line x1="244" y1="330" x2="215" y2="345" stroke="#c4b89a" stroke-width="0.5" opacity="0.12"/>
+</svg>
