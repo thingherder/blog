@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="A drystone wall of stacked irregular stones with a spanning throughstone, against an open sky">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdd6dc"/>
+      <stop offset="1" stop-color="#e7ecec"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa890"/>
+      <stop offset="1" stop-color="#7d8c74"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c958a"/>
+      <stop offset="1" stop-color="#7a7268"/>
+    </linearGradient>
+    <linearGradient id="through" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9af9d"/>
+      <stop offset="1" stop-color="#8f8474"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky and ground -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <path d="M0,470 C260,420 520,452 760,430 C960,412 1090,438 1200,420 L1200,630 L0,630 Z" fill="url(#hill)"/>
+
+  <!-- thin clouds -->
+  <g fill="#dfe6e8" opacity="0.7">
+    <ellipse cx="250" cy="120" rx="120" ry="20"/>
+    <ellipse cx="880" cy="90" rx="160" ry="22"/>
+    <ellipse cx="1010" cy="150" rx="90" ry="15"/>
+  </g>
+
+  <!-- the wall: irregular dry-stacked stones, slight inward batter as it rises -->
+  <g stroke="#5f574c" stroke-width="2.5" stroke-linejoin="round">
+
+    <!-- foundation course (largest stones) -->
+    <g fill="url(#stone)">
+      <path d="M60,560 L210,556 L218,612 L66,616 Z"/>
+      <path d="M210,556 L360,560 L366,614 L218,612 Z"/>
+      <path d="M360,560 L520,554 L528,610 L366,614 Z"/>
+      <path d="M520,554 L690,558 L694,612 L528,610 Z"/>
+      <path d="M690,558 L860,553 L868,610 L694,612 Z"/>
+      <path d="M860,553 L1030,558 L1034,614 L868,610 Z"/>
+      <path d="M1030,558 L1150,556 L1148,612 L1034,614 Z"/>
+    </g>
+
+    <!-- second course -->
+    <g fill="url(#stone)">
+      <path d="M80,510 L200,508 L210,556 L66,560 Z" opacity="0.96"/>
+      <path d="M200,508 L330,512 L360,560 L210,556 Z" opacity="0.92"/>
+      <path d="M330,512 L470,506 L520,554 L360,560 Z" opacity="0.97"/>
+      <path d="M470,506 L620,510 L690,558 L520,554 Z" opacity="0.9"/>
+      <path d="M620,510 L780,505 L860,553 L690,558 Z" opacity="0.95"/>
+      <path d="M780,505 L940,510 L1030,558 L860,553 Z" opacity="0.92"/>
+      <path d="M940,510 L1140,508 L1150,556 L1030,558 Z" opacity="0.96"/>
+    </g>
+
+    <!-- THROUGHSTONE: one long stone spanning the full width, gripping both faces -->
+    <path d="M120,470 L1110,468 L1140,508 L92,510 Z" fill="url(#through)" stroke-width="3"/>
+
+    <!-- fourth course -->
+    <g fill="url(#stone)">
+      <path d="M150,426 L300,430 L330,470 L120,468 Z" opacity="0.95"/>
+      <path d="M300,430 L470,424 L520,470 L330,470 Z" opacity="0.9"/>
+      <path d="M470,424 L640,428 L700,470 L520,470 Z" opacity="0.96"/>
+      <path d="M640,428 L820,423 L900,470 L700,470 Z" opacity="0.91"/>
+      <path d="M820,423 L1000,428 L1110,468 L900,470 Z" opacity="0.95"/>
+    </g>
+
+    <!-- fifth course -->
+    <g fill="url(#stone)">
+      <path d="M210,388 L380,392 L420,426 L170,424 Z" opacity="0.93"/>
+      <path d="M380,392 L560,386 L640,426 L420,426 Z" opacity="0.97"/>
+      <path d="M560,386 L760,390 L900,426 L640,426 Z" opacity="0.9"/>
+      <path d="M760,390 L980,388 L1070,426 L900,426 Z" opacity="0.94"/>
+    </g>
+
+    <!-- coping stones on top, set on edge -->
+    <g fill="url(#through)" stroke-width="2.5">
+      <path d="M230,348 L286,346 L300,392 L242,392 Z"/>
+      <path d="M286,346 L344,348 L360,392 L300,392 Z"/>
+      <path d="M344,348 L404,345 L420,392 L360,392 Z"/>
+      <path d="M404,345 L466,347 L484,392 L420,392 Z"/>
+      <path d="M466,347 L528,344 L548,392 L484,392 Z"/>
+      <path d="M528,344 L592,346 L612,392 L548,392 Z"/>
+      <path d="M592,346 L656,344 L678,392 L612,392 Z"/>
+      <path d="M656,344 L722,347 L744,392 L678,392 Z"/>
+      <path d="M722,347 L788,345 L812,392 L744,392 Z"/>
+      <path d="M788,345 L852,348 L878,392 L812,392 Z"/>
+      <path d="M852,348 L916,346 L944,392 L878,392 Z"/>
+    </g>
+  </g>
+
+  <!-- a smoot: small gap near the base where wind and water pass through -->
+  <rect x="556" y="572" width="34" height="40" rx="3" fill="#3f3a33" opacity="0.85"/>
+
+  <!-- title -->
+  <text x="600" y="120" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#2f3a33" letter-spacing="1">The Drystone Wall</text>
+  <text x="600" y="162" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#4a554c" font-style="italic">held by nothing but gravity, friction, and where each stone wants to sit</text>
+</svg>
