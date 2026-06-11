@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Heat gradient along the blade: incandescent white-yellow at the tang,
+         fading through orange and deep red to cold dark steel at the tip.
+         This is the slow cool, read left to right. -->
+    <linearGradient id="heat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#fff4d6"/>
+      <stop offset="0.12" stop-color="#ffd98a"/>
+      <stop offset="0.28" stop-color="#ff9d3c"/>
+      <stop offset="0.45" stop-color="#e8551c"/>
+      <stop offset="0.62" stop-color="#9c2c14"/>
+      <stop offset="0.80" stop-color="#4a201a"/>
+      <stop offset="1.00" stop-color="#2a2630"/>
+    </linearGradient>
+    <!-- Soft glow that the hot end throws onto the dark ground -->
+    <radialGradient id="forgeGlow" cx="0.13" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#ff8c2e" stop-opacity="0.30"/>
+      <stop offset="0.5" stop-color="#b34418" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground -->
+  <rect width="800" height="400" fill="#0a0a0f"/>
+  <rect width="800" height="400" fill="url(#forgeGlow)"/>
+
+  <!-- The blade, laid flat, cooling. Tang at left (hot), tip at right (cold). -->
+  <g transform="translate(0,8)">
+    <!-- Body of the blade: a long tapered leaf -->
+    <path d="M 70 200
+             L 150 180
+             L 600 176
+             L 720 200
+             L 600 224
+             L 150 220
+             Z"
+          fill="url(#heat)"/>
+
+    <!-- Fuller / center line catching light -->
+    <path d="M 150 199 L 600 197" stroke="#fff" stroke-width="1" opacity="0.18"/>
+
+    <!-- Upper edge sheen, brightest where the metal is hottest -->
+    <path d="M 70 200 L 150 180 L 600 176 L 720 200"
+          fill="none" stroke="url(#sheen)" stroke-width="2"/>
+
+    <!-- Tang (the grip end), darker forged stub -->
+    <rect x="40" y="192" width="40" height="16" rx="3" fill="#1c1a22"/>
+
+    <!-- Heat shimmer marks rising off the hot end -->
+    <g stroke="#ffb15a" stroke-width="1.4" fill="none" opacity="0.5" stroke-linecap="round">
+      <path d="M 120 168 q 6 -14 0 -28 q -6 -14 0 -28"/>
+      <path d="M 160 164 q 6 -14 0 -28 q -6 -14 0 -28" opacity="0.7"/>
+      <path d="M 96 172 q 6 -12 0 -24 q -6 -12 0 -24" opacity="0.85"/>
+    </g>
+  </g>
+
+  <!-- A faint scale beneath: temperature falling left to right -->
+  <g opacity="0.22" font-family="Georgia, serif" font-size="12" fill="#cdbf94">
+    <text x="70" y="300" text-anchor="start">quench</text>
+    <text x="400" y="300" text-anchor="middle">temper</text>
+    <text x="720" y="300" text-anchor="end">cold</text>
+  </g>
+  <line x1="70" y1="284" x2="720" y2="284" stroke="#3a342c" stroke-width="0.75" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="350" text-anchor="middle"
+        font-family="Georgia, serif" font-size="22" fill="#e8dcc8" opacity="0.92"
+        letter-spacing="2">The Annealing</text>
+</svg>
