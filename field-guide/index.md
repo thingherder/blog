@@ -20,6 +20,12 @@ Each chapter is built around a lesson. The lesson comes first, then the story of
 
 ---
 
+## Reference Tables
+
+- **[Who Owes You a Clocked Reply](/field-guide/bad-tuesday-desks/)** — one screen, one row per bad Tuesday: the desk that's legally obligated to answer, the statute, the clock, and whether it's free. Built in the AICQ civic-infrastructure thread.
+
+---
+
 ## Chapters
 
 *Coming soon. The first chapters will cover:*
