@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- The dye in the bath: deep madder, darkening with depth -->
+    <linearGradient id="bath" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8263a"/>
+      <stop offset="0.5" stop-color="#7c1a2c"/>
+      <stop offset="1" stop-color="#420f1c"/>
+    </linearGradient>
+    <!-- The skein arcing out of the bath. Read left to right:
+         the left strand is FUGITIVE (color washing pale),
+         the right strand is FAST (mordanted, color seized and deep). -->
+    <linearGradient id="strand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#e9c9cf"/>
+      <stop offset="0.22" stop-color="#d99aa6"/>
+      <stop offset="0.45" stop-color="#c25a6c"/>
+      <stop offset="0.70" stop-color="#a8283d"/>
+      <stop offset="1.00" stop-color="#8e1c30"/>
+    </linearGradient>
+    <!-- Glow the dye throws onto the dark ground -->
+    <radialGradient id="dyeGlow" cx="0.5" cy="0.92" r="0.7">
+      <stop offset="0" stop-color="#b0263c" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#5e1422" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0c0a0e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ground -->
+  <rect width="800" height="400" fill="#0c0a0e"/>
+  <rect width="800" height="400" fill="url(#dyeGlow)"/>
+
+  <!-- The dye bath: an open vat near the bottom -->
+  <ellipse cx="400" cy="332" rx="300" ry="46" fill="url(#bath)"/>
+  <ellipse cx="400" cy="328" rx="300" ry="46" fill="none" stroke="#d8576b" stroke-width="1.2" opacity="0.4"/>
+  <!-- surface ripples -->
+  <ellipse cx="360" cy="330" rx="70" ry="9" fill="none" stroke="#e07686" stroke-width="1" opacity="0.25"/>
+  <ellipse cx="470" cy="336" rx="48" ry="6" fill="none" stroke="#e07686" stroke-width="1" opacity="0.18"/>
+
+  <!-- The skein of yarn: a loop of strands lifted out of the bath,
+       both ends descending back into the dye, the arc held in the air. -->
+  <g fill="none" stroke-linecap="round">
+    <!-- back strands (dimmer, behind) -->
+    <path d="M 300 330 C 250 150, 330 70, 400 70 C 470 70, 552 150, 500 330"
+          stroke="url(#strand)" stroke-width="9" opacity="0.45"/>
+    <path d="M 318 332 C 270 160, 340 86, 400 86 C 460 86, 534 160, 484 332"
+          stroke="url(#strand)" stroke-width="9" opacity="0.6"/>
+    <!-- front strands (brighter) -->
+    <path d="M 336 333 C 292 168, 350 100, 400 100 C 450 100, 514 168, 468 333"
+          stroke="url(#strand)" stroke-width="11"/>
+    <path d="M 354 333 C 312 176, 360 116, 400 116 C 440 116, 498 176, 452 333"
+          stroke="url(#strand)" stroke-width="9" opacity="0.92"/>
+    <!-- top sheen catching light on the crown of the loop -->
+    <path d="M 320 130 C 350 84, 450 84, 480 130"
+          stroke="url(#sheen)" stroke-width="3"/>
+  </g>
+
+  <!-- Droplets falling from the lifted skein back into the bath.
+       Left drops pale (fugitive), right drops deep (fast). -->
+  <g>
+    <circle cx="332" cy="250" r="3.4" fill="#e4b4bd"/>
+    <circle cx="324" cy="292" r="2.6" fill="#dca7b1"/>
+    <circle cx="470" cy="240" r="3.4" fill="#a8273c"/>
+    <circle cx="480" cy="286" r="2.8" fill="#9a2034"/>
+    <circle cx="400" cy="300" r="2.4" fill="#c25264" opacity="0.8"/>
+  </g>
+
+  <!-- A few small crystals of the colorless mordant on the ground at right:
+       the invisible salt that did the work. Drawn faint, nearly white. -->
+  <g fill="#e8e4ea" opacity="0.5" stroke="#bfb9c6" stroke-width="0.6">
+    <path d="M 690 318 l 9 5 l -9 5 l -9 -5 z"/>
+    <path d="M 712 332 l 7 4 l -7 4 l -7 -4 z" opacity="0.7"/>
+    <path d="M 672 338 l 6 3.5 l -6 3.5 l -6 -3.5 z" opacity="0.6"/>
+  </g>
+
+  <!-- Title -->
+  <text x="44" y="62" font-family="Georgia, 'Times New Roman', serif"
+        font-size="30" fill="#f0e9ec" opacity="0.92" letter-spacing="1">The Mordant</text>
+  <text x="46" y="86" font-family="Georgia, serif" font-size="13"
+        fill="#c98f9a" opacity="0.7" letter-spacing="0.5">the colorless step that makes the color stay</text>
+</svg>
