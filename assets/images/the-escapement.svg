@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Brass of the escape wheel -->
+    <radialGradient id="brass" cx="0.42" cy="0.40" r="0.75">
+      <stop offset="0" stop-color="#f4d98a"/>
+      <stop offset="0.45" stop-color="#caa341"/>
+      <stop offset="0.8" stop-color="#8a6e22"/>
+      <stop offset="1" stop-color="#4d3c10"/>
+    </radialGradient>
+    <!-- Steel of the pallet fork / anchor -->
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe6ee"/>
+      <stop offset="0.5" stop-color="#9aa7b6"/>
+      <stop offset="1" stop-color="#586677"/>
+    </linearGradient>
+    <linearGradient id="steel2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cdd6e0"/>
+      <stop offset="0.5" stop-color="#8794a3"/>
+      <stop offset="1" stop-color="#4a5663"/>
+    </linearGradient>
+    <!-- Warm interior glow, like lamplight off a clock movement -->
+    <radialGradient id="glow" cx="0.42" cy="0.42" r="0.7">
+      <stop offset="0" stop-color="#3a3320" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#17130d" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0a0a0c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground -->
+  <rect width="800" height="400" fill="#0b0b0d"/>
+  <rect width="800" height="400" fill="url(#glow)"/>
+
+  <!-- Escape wheel, centered left-of-middle -->
+  <g transform="translate(330,205)">
+    <!-- wheel body -->
+    <circle r="150" fill="none" stroke="#6f5a1e" stroke-width="2" opacity="0.5"/>
+    <circle r="120" fill="url(#brass)" stroke="#7a611d" stroke-width="2"/>
+    <!-- hub -->
+    <circle r="20" fill="#5a4715" stroke="#caa341" stroke-width="2"/>
+    <circle r="5" fill="#1a1408"/>
+    <!-- spokes -->
+    <g stroke="#7a611d" stroke-width="6" opacity="0.8">
+      <line x1="0" y1="0" x2="0" y2="-118"/>
+      <line x1="0" y1="0" x2="112" y2="37"/>
+      <line x1="0" y1="0" x2="-112" y2="37"/>
+      <line x1="0" y1="0" x2="69" y2="-95"/>
+      <line x1="0" y1="0" x2="-69" y2="-95"/>
+    </g>
+    <!-- the teeth: asymmetric, hooked, pointing clockwise -->
+    <g fill="url(#brass)" stroke="#5a4715" stroke-width="1.5">
+      <!-- 20 teeth drawn as a single repeated wedge via explicit paths -->
+      <g id="toothring">
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(0)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(18)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(36)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(54)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(72)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(90)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(108)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(126)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(144)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(162)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(180)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(198)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(216)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(234)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(252)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(270)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(288)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(306)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(324)"/>
+        <path d="M0,-150 L12,-122 L-6,-120 Z" transform="rotate(342)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- The anchor / pallet fork, pivoted above-right, one pallet engaging a tooth -->
+  <g transform="translate(500,70)">
+    <!-- pivot -->
+    <circle r="9" fill="#586677" stroke="#cdd6e0" stroke-width="2"/>
+    <circle r="3" fill="#11151b"/>
+    <!-- the fork body, an inverted shallow V reaching down to the wheel -->
+    <path d="M0,0
+             L-150,118
+             L-128,150
+             L-104,150
+             L-118,120
+             L0,28
+             L118,120
+             L104,150
+             L128,150
+             L150,118 Z"
+          fill="url(#steel2)" stroke="#3a4452" stroke-width="2"/>
+    <!-- entry pallet (left, locking a tooth) -->
+    <rect x="-138" y="118" width="22" height="34" rx="3" fill="url(#steel)" stroke="#2f3946" stroke-width="1.5" transform="rotate(-20 -127 135)"/>
+    <!-- exit pallet (right, lifted clear) -->
+    <rect x="116" y="118" width="22" height="34" rx="3" fill="url(#steel)" stroke="#2f3946" stroke-width="1.5" transform="rotate(20 127 135)"/>
+  </g>
+
+  <!-- A single tooth caught against the entry pallet: the locked moment -->
+  <circle cx="373" cy="205" r="0" />
+  <line x1="373" y1="55" x2="373" y2="100" stroke="#f4d98a" stroke-width="0" />
+
+  <!-- Tick marks: the metered beat, fading to the right -->
+  <g fill="#caa341">
+    <circle cx="600" cy="300" r="4" opacity="0.85"/>
+    <circle cx="640" cy="300" r="3.5" opacity="0.6"/>
+    <circle cx="676" cy="300" r="3" opacity="0.42"/>
+    <circle cx="708" cy="300" r="2.5" opacity="0.28"/>
+    <circle cx="736" cy="300" r="2" opacity="0.16"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="345" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e9dcb6" text-anchor="middle" letter-spacing="2">The Escapement</text>
+</svg>
