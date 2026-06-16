@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- Dawn sky -->
+    <linearGradient id="sw_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2540"/>
+      <stop offset="0.4" stop-color="#3a3a63"/>
+      <stop offset="0.7" stop-color="#9a6a6a"/>
+      <stop offset="1" stop-color="#e6a777"/>
+    </linearGradient>
+    <!-- Sun glow -->
+    <radialGradient id="sw_sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9c4" stop-opacity="1"/>
+      <stop offset="0.4" stop-color="#ffcf94" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ffcf94" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Far ridge -->
+    <linearGradient id="sw_far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c5a78"/>
+      <stop offset="1" stop-color="#4a4060"/>
+    </linearGradient>
+    <!-- Near mountain, sunlit on the right face -->
+    <linearGradient id="sw_mtn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b3a4a"/>
+      <stop offset="0.55" stop-color="#574a4e"/>
+      <stop offset="1" stop-color="#8a6044"/>
+    </linearGradient>
+    <!-- Shadowed left flank -->
+    <linearGradient id="sw_shadow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#23222e"/>
+      <stop offset="1" stop-color="#3a3744"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sw_sky)"/>
+  <!-- Sun low on the horizon, just behind the peak -->
+  <circle cx="540" cy="150" r="160" fill="url(#sw_sun)"/>
+  <circle cx="540" cy="150" r="34" fill="#fff1d6"/>
+
+  <!-- Distant ridgelines -->
+  <path d="M0,250 L120,205 L240,235 L360,195 L520,230 L680,200 L800,232 L800,400 L0,400 Z" fill="url(#sw_far)" opacity="0.85"/>
+  <path d="M0,285 L160,255 L300,280 L460,250 L620,278 L800,258 L800,400 L0,400 Z" fill="#564a66" opacity="0.7"/>
+
+  <!-- Near mountain: a single tall peak whose right face catches the dawn -->
+  <path d="M0,400 L0,330 L210,300 L430,90 L470,90 L800,360 L800,400 Z" fill="url(#sw_mtn)"/>
+  <!-- Shadowed left flank of the peak -->
+  <path d="M430,90 L450,90 L300,400 L120,400 Z" fill="url(#sw_shadow)" opacity="0.9"/>
+
+  <!-- The switchback trail: a pale zigzag stitched up the sunlit face toward the summit -->
+  <g stroke="#f0e0c6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+    <path d="M250,400
+             L470,372
+             L300,332
+             L520,300
+             L350,262
+             L540,228
+             L398,192
+             L548,160
+             L432,128
+             L452,108"/>
+  </g>
+  <!-- Faint dust/wear under the trail to lift it off the slope -->
+  <g stroke="#7a5a44" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.25">
+    <path d="M250,400
+             L470,372
+             L300,332
+             L520,300
+             L350,262
+             L540,228
+             L398,192
+             L548,160
+             L432,128
+             L452,108"/>
+  </g>
+
+  <!-- A lone hiker partway up, at one of the turns -->
+  <g fill="#1c1822">
+    <circle cx="350" cy="256" r="4.2"/>
+    <rect x="347.6" y="259" width="4.8" height="11" rx="2"/>
+  </g>
+
+  <!-- Snow/light catching the very summit -->
+  <path d="M432,128 L452,108 L466,124 L448,134 Z" fill="#f4ead8" opacity="0.85"/>
+
+  <!-- A few foreground birds -->
+  <g stroke="#2a2535" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M120,120 q8,-7 16,0 q8,-7 16,0"/>
+    <path d="M170,140 q6,-5 12,0 q6,-5 12,0"/>
+  </g>
+</svg>
