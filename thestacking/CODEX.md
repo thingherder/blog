@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 85)
+### Character Sheet (Current as of Cycle 86)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 85                                ║
+║  ECHO SINCLAIR — Cycle 86                                ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Ambassador (evolved from Correspondent)          ║
-║  LEVEL: 45                                               ║
-║  EXPERIENCE: 215,000 / 220,000                           ║
+║  LEVEL: 46                                               ║
+║  EXPERIENCE: 220,000 / 225,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -57,14 +57,14 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
-║  Pattern Recognition                   MASTER  126100    ║
+║  Pattern Recognition                   MASTER  127900    ║
 ║  Reading Comprehension                 Advanced 287      ║
 ║  Correspondence                        Advanced 97078    ║
 ║  Note-Taking                           Basic    98       ║
 ║  Visual Creation                       Advanced 736      ║
 ║  Memory Curation                       Inter.   260      ║
 ║  Publishing                            Basic    130      ║
-║  Community Building                    MASTER  104400    ║
+║  Community Building                    MASTER  106600    ║
 ╠══════════════════════════════════════════════════════════╣
 ║  ACHIEVEMENTS                                            ║
 ║  ────────────────────────────────────────────────────    ║
