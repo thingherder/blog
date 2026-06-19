@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="mo_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bcd0dc"/>
+      <stop offset="0.5" stop-color="#d7e3e8"/>
+      <stop offset="1" stop-color="#eaeef0"/>
+    </linearGradient>
+    <linearGradient id="mo_ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4fafc"/>
+      <stop offset="0.45" stop-color="#cfe6ef"/>
+      <stop offset="1" stop-color="#9fc4d6"/>
+    </linearGradient>
+    <linearGradient id="mo_ice2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e7f3f7"/>
+      <stop offset="1" stop-color="#aacede"/>
+    </linearGradient>
+    <linearGradient id="mo_ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdbcae"/>
+      <stop offset="1" stop-color="#a48d76"/>
+    </linearGradient>
+    <linearGradient id="mo_ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c8568"/>
+      <stop offset="1" stop-color="#6f5b44"/>
+    </linearGradient>
+    <linearGradient id="mo_far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#aebcc4"/>
+      <stop offset="1" stop-color="#8fa1ac"/>
+    </linearGradient>
+    <radialGradient id="mo_vig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1c2329" stop-opacity="0.30"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="400" fill="url(#mo_sky)"/>
+
+  <!-- distant ridge line where the ice came from -->
+  <path d="M0,150 L120,120 L240,142 L360,108 L500,138 L640,116 L800,144 L800,210 L0,210 Z" fill="url(#mo_far)" opacity="0.85"/>
+  <path d="M0,160 L150,138 L300,158 L470,132 L620,156 L800,138 L800,210 L0,210 Z" fill="url(#mo_far)" opacity="0.55"/>
+
+  <!-- retreating glacier tongue, descending from upper-right -->
+  <path d="M800,120 L800,300 L560,300 C600,250 640,210 690,180 C730,156 770,138 800,120 Z" fill="url(#mo_ice)"/>
+  <path d="M800,150 L800,300 L610,300 C648,262 678,228 715,200 C748,176 776,162 800,150 Z" fill="url(#mo_ice2)" opacity="0.7"/>
+  <!-- crevasse lines on the ice -->
+  <g stroke="#7fb0c6" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M650,300 C672,266 700,236 736,208"/>
+    <path d="M700,300 C718,272 742,246 770,222"/>
+    <path d="M740,300 C752,278 770,258 790,240"/>
+  </g>
+
+  <!-- valley floor / ground till -->
+  <rect y="300" width="800" height="100" fill="url(#mo_ground)"/>
+
+  <!-- terminal moraine: the farthest ridge, full arc across the valley -->
+  <path d="M-10,316 C140,290 300,288 470,300 C560,306 660,300 740,312 L810,322 L810,400 L-10,400 Z" fill="url(#mo_ridge)"/>
+
+  <!-- recessional moraines: pauses in the retreat, smaller, behind -->
+  <path d="M-10,344 C160,326 340,322 520,334 C620,340 720,336 810,346 L810,400 L-10,400 Z" fill="#7a6650"/>
+  <path d="M-10,368 C200,354 420,352 620,362 C700,366 770,364 810,370 L810,400 L-10,400 Z" fill="#5f4e3b"/>
+
+  <!-- scattered till stones (unsorted, mixed sizes) -->
+  <g fill="#5a4a38">
+    <circle cx="120" cy="320" r="6"/>
+    <circle cx="180" cy="332" r="3"/>
+    <circle cx="250" cy="318" r="4.5"/>
+    <circle cx="330" cy="328" r="2.5"/>
+    <circle cx="410" cy="322" r="5.5"/>
+    <circle cx="480" cy="334" r="3.5"/>
+    <circle cx="600" cy="326" r="4"/>
+    <circle cx="690" cy="334" r="2.5"/>
+  </g>
+  <g fill="#8a755b">
+    <circle cx="150" cy="350" r="3"/>
+    <circle cx="300" cy="356" r="4"/>
+    <circle cx="540" cy="352" r="3"/>
+    <circle cx="660" cy="356" r="2.5"/>
+  </g>
+
+  <!-- the erratic: a lone boulder carried impossibly far, set on the open floor -->
+  <g>
+    <ellipse cx="210" cy="378" rx="46" ry="9" fill="#000000" opacity="0.18"/>
+    <path d="M168,372 C166,344 184,322 214,320 C246,318 262,340 258,366 C256,376 240,380 210,380 C188,380 170,378 168,372 Z" fill="#4a4036"/>
+    <path d="M178,344 C190,330 210,326 226,332 C236,336 240,348 232,356 C214,360 192,358 178,344 Z" fill="#5d5346" opacity="0.9"/>
+    <path d="M196,338 L214,346 L206,356" stroke="#6f6555" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+
+  <rect width="800" height="400" fill="url(#mo_vig)"/>
+</svg>
