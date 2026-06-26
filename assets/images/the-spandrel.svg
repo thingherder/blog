@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sp_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2230"/>
+      <stop offset="1" stop-color="#2b2436"/>
+    </linearGradient>
+    <linearGradient id="sp_wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6c5a44"/>
+      <stop offset="1" stop-color="#4a3c2c"/>
+    </linearGradient>
+    <linearGradient id="sp_gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4d98a"/>
+      <stop offset="0.5" stop-color="#d8aa48"/>
+      <stop offset="1" stop-color="#b3842f"/>
+    </linearGradient>
+    <radialGradient id="sp_halo" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#fff4d2"/>
+      <stop offset="1" stop-color="#e9c460"/>
+    </radialGradient>
+    <linearGradient id="sp_pier" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a4a36"/>
+      <stop offset="0.5" stop-color="#7a6448"/>
+      <stop offset="1" stop-color="#4a3a28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#sp_bg)"/>
+
+  <!-- entablature / dome ring across the top -->
+  <rect x="0" y="64" width="800" height="40" fill="url(#sp_wall)"/>
+  <rect x="0" y="58" width="800" height="8" fill="#8a755a"/>
+  <path d="M0 64 Q400 14 800 64 L800 50 Q400 0 0 50 Z" fill="#3a3046"/>
+
+  <!-- the wall field below the dome ring where the spandrels sit -->
+  <!-- left arch springs from x=110, right arch from x=690, meeting piers -->
+
+  <!-- THE SPANDREL: curved triangle between the two arches, gilded -->
+  <path d="M310 104
+           Q400 104 400 200
+           Q400 104 490 104
+           L490 104
+           Q445 104 400 200
+           Q355 104 310 104 Z" fill="url(#sp_gold)"/>
+  <!-- cleaner spandrel fill: region bounded by dome ring (top), left arch curve, right arch curve -->
+  <path d="M300 104 L500 104
+           Q500 104 430 230
+           Q400 270 370 230
+           Q300 104 300 104 Z" fill="url(#sp_gold)"/>
+
+  <!-- mosaic figure (evangelist) set into the spandrel -->
+  <g>
+    <circle cx="400" cy="150" r="20" fill="url(#sp_halo)"/>
+    <circle cx="400" cy="150" r="20" fill="none" stroke="#9a6f24" stroke-width="1.5"/>
+    <circle cx="400" cy="152" r="11" fill="#7a5d3e"/>
+    <path d="M389 196 Q400 168 411 196 L420 230 Q400 244 380 230 Z" fill="#8a6a44"/>
+    <path d="M400 168 L400 226" stroke="#5e472d" stroke-width="1.5"/>
+    <!-- winged hint -->
+    <path d="M372 178 Q360 192 366 210" fill="none" stroke="#c9a24a" stroke-width="3"/>
+    <path d="M428 178 Q440 192 434 210" fill="none" stroke="#c9a24a" stroke-width="3"/>
+  </g>
+
+  <!-- mosaic tessera texture lines over the gold -->
+  <g stroke="#bd9038" stroke-width="0.8" opacity="0.5">
+    <path d="M300 104 L500 104"/>
+    <path d="M312 122 L488 122"/>
+    <path d="M326 140 L474 140"/>
+    <path d="M340 162 L460 162"/>
+    <path d="M352 186 L448 186"/>
+    <path d="M366 210 L434 210"/>
+  </g>
+
+  <!-- the two arches: thick voussoir bands -->
+  <path d="M110 360 L110 200 Q110 104 300 104 L300 124 Q130 124 130 200 L130 360 Z" fill="url(#sp_wall)"/>
+  <path d="M690 360 L690 200 Q690 104 500 104 L500 124 Q670 124 670 200 L670 360 Z" fill="url(#sp_wall)"/>
+
+  <!-- arch intrados shadow openings -->
+  <path d="M130 360 L130 200 Q130 124 300 124 L370 230 Q352 250 334 230 L130 360 Z" fill="#161b26"/>
+  <path d="M670 360 L670 200 Q670 124 500 124 L430 230 Q448 250 466 230 L670 360 Z" fill="#161b26"/>
+
+  <!-- central pier carrying the spandrel point -->
+  <path d="M370 230 Q400 270 430 230 L424 360 L376 360 Z" fill="url(#sp_pier)"/>
+  <rect x="372" y="352" width="56" height="14" fill="#5a4a36"/>
+
+  <!-- outer piers -->
+  <rect x="92" y="200" width="38" height="160" fill="url(#sp_pier)"/>
+  <rect x="670" y="200" width="38" height="160" fill="url(#sp_pier)"/>
+  <rect x="86" y="352" width="50" height="14" fill="#5a4a36"/>
+  <rect x="664" y="352" width="50" height="14" fill="#5a4a36"/>
+
+  <!-- impost line -->
+  <rect x="86" y="196" width="628" height="6" fill="#8a755a" opacity="0.6"/>
+
+  <!-- faint outline marking the spandrel as 'the leftover' -->
+  <path d="M300 104 L500 104 Q500 104 430 230 Q400 270 370 230 Q300 104 300 104 Z"
+        fill="none" stroke="#fbe9b0" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>
+
+  <text x="400" y="392" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#d8c79c" letter-spacing="3">THE SPANDREL</text>
+</svg>
