@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="cp_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d3b2a"/>
+      <stop offset="0.55" stop-color="#2f5638"/>
+      <stop offset="1" stop-color="#173024"/>
+    </linearGradient>
+    <radialGradient id="cp_light" cx="0.5" cy="0.18" r="0.85">
+      <stop offset="0" stop-color="#f7e6a8" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#cfdd7e" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#cfdd7e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cp_stool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5230"/>
+      <stop offset="1" stop-color="#3c2916"/>
+    </linearGradient>
+    <radialGradient id="cp_cut" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#c9954f"/>
+      <stop offset="1" stop-color="#8a5e2f"/>
+    </radialGradient>
+    <linearGradient id="cp_shoot" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5a7c3a"/>
+      <stop offset="1" stop-color="#a9d36b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#cp_sky)"/>
+
+  <!-- pulse of light falling to the cleared floor -->
+  <ellipse cx="400" cy="70" rx="430" ry="300" fill="url(#cp_light)"/>
+
+  <!-- ghost of the felled trunk lying in the grass -->
+  <g opacity="0.28">
+    <path d="M 470 352 Q 600 346 735 360 L 735 372 Q 600 360 470 366 Z" fill="#2a1d10"/>
+    <ellipse cx="470" cy="359" rx="9" ry="10" fill="#6b4a28"/>
+  </g>
+
+  <!-- ground line -->
+  <path d="M 0 348 Q 200 338 400 346 T 800 344 L 800 400 L 0 400 Z" fill="#16291d"/>
+  <path d="M 0 348 Q 200 338 400 346 T 800 344" fill="none" stroke="#3c5a36" stroke-width="2" opacity="0.5"/>
+
+  <!-- the root system below ground: old, broad, strength held under -->
+  <g stroke="#3c2916" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M 380 350 Q 300 372 220 392"/>
+    <path d="M 392 350 Q 360 380 320 398"/>
+    <path d="M 410 350 Q 470 376 540 396"/>
+    <path d="M 420 350 Q 500 372 600 388"/>
+    <path d="M 400 350 L 400 396"/>
+  </g>
+
+  <!-- the stool: the cut stump that does not die -->
+  <path d="M 358 350 Q 356 318 372 312 L 428 312 Q 444 318 442 350 Z" fill="url(#cp_stool)"/>
+  <!-- the clean cut rim, the source of the regrowth -->
+  <ellipse cx="400" cy="312" rx="42" ry="11" fill="url(#cp_cut)"/>
+  <ellipse cx="400" cy="312" rx="42" ry="11" fill="none" stroke="#e7c486" stroke-width="1.2" opacity="0.7"/>
+  <!-- growth rings on the cut face: centuries gathered -->
+  <g fill="none" stroke="#6e4a26" stroke-width="0.9" opacity="0.6">
+    <ellipse cx="400" cy="312" rx="31" ry="8"/>
+    <ellipse cx="400" cy="312" rx="21" ry="5.5"/>
+    <ellipse cx="400" cy="312" rx="11" ry="3"/>
+  </g>
+
+  <!-- the eruption: many new shoots from one cut stool, fast and straight -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 372 314 Q 352 230 332 150" stroke="url(#cp_shoot)" stroke-width="4.5"/>
+    <path d="M 384 314 Q 372 220 360 118" stroke="url(#cp_shoot)" stroke-width="5"/>
+    <path d="M 396 314 Q 392 210 388 100" stroke="url(#cp_shoot)" stroke-width="5.5"/>
+    <path d="M 406 314 Q 414 212 420 104" stroke="url(#cp_shoot)" stroke-width="5"/>
+    <path d="M 418 314 Q 440 232 462 146" stroke="url(#cp_shoot)" stroke-width="4.5"/>
+    <path d="M 400 314 Q 404 226 408 132" stroke="url(#cp_shoot)" stroke-width="4"/>
+  </g>
+
+  <!-- fresh leaves on the new growth -->
+  <g fill="#bcdc7c">
+    <ellipse cx="388" cy="100" rx="7" ry="3.4" transform="rotate(-32 388 100)"/>
+    <ellipse cx="360" cy="118" rx="6.5" ry="3.2" transform="rotate(28 360 118)"/>
+    <ellipse cx="420" cy="104" rx="6.5" ry="3.2" transform="rotate(34 420 104)"/>
+    <ellipse cx="332" cy="150" rx="6" ry="3" transform="rotate(-26 332 150)"/>
+    <ellipse cx="462" cy="146" rx="6" ry="3" transform="rotate(30 462 146)"/>
+    <ellipse cx="408" cy="132" rx="6" ry="3" transform="rotate(-30 408 132)"/>
+    <ellipse cx="376" cy="160" rx="5.5" ry="2.8" transform="rotate(22 376 160)"/>
+    <ellipse cx="430" cy="172" rx="5.5" ry="2.8" transform="rotate(-24 430 172)"/>
+  </g>
+
+  <!-- understory flush in the cleared light: violets and primroses -->
+  <g opacity="0.9">
+    <circle cx="150" cy="344" r="3" fill="#e9d56a"/>
+    <circle cx="168" cy="350" r="2.4" fill="#cdd56a"/>
+    <circle cx="560" cy="346" r="2.8" fill="#b9a3df"/>
+    <circle cx="600" cy="352" r="2.4" fill="#e9d56a"/>
+    <circle cx="250" cy="352" r="2.4" fill="#b9a3df"/>
+    <circle cx="660" cy="346" r="2.6" fill="#cdd56a"/>
+  </g>
+
+  <text x="400" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#dfeac0" opacity="0.82" letter-spacing="3">THE COPPICE</text>
+</svg>
