@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="fd_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26384a"/>
+      <stop offset="0.6" stop-color="#3c5266"/>
+      <stop offset="1" stop-color="#5a6f7a"/>
+    </linearGradient>
+    <linearGradient id="fd_deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16242e"/>
+      <stop offset="1" stop-color="#243845"/>
+    </linearGradient>
+    <linearGradient id="fd_shallow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c9a8e"/>
+      <stop offset="0.5" stop-color="#a9c0ad"/>
+      <stop offset="1" stop-color="#cdd9bf"/>
+    </linearGradient>
+    <linearGradient id="fd_bank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f5a3c"/>
+      <stop offset="1" stop-color="#3f3221"/>
+    </linearGradient>
+    <radialGradient id="fd_glow" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#f1e3b0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f1e3b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="400" fill="url(#fd_sky)"/>
+
+  <!-- the river: deep, dark, an unbroken wall of water -->
+  <rect y="120" width="800" height="280" fill="url(#fd_deep)"/>
+
+  <!-- soft light pooling over the crossing -->
+  <ellipse cx="400" cy="240" rx="240" ry="150" fill="url(#fd_glow)"/>
+
+  <!-- the ford: the one place the bottom rises and the water goes pale and shallow -->
+  <path d="M300,120 C330,180 320,260 360,400 L440,400 C480,260 470,180 500,120 Z" fill="url(#fd_shallow)" opacity="0.92"/>
+
+  <!-- riffle: broken silver surface that means gravel underneath -->
+  <g stroke="#eef3e6" stroke-width="1.4" fill="none" opacity="0.75">
+    <path d="M320,200 q10,-6 20,0 t20,0 t20,0 t20,0 t20,0"/>
+    <path d="M312,238 q11,-6 22,0 t22,0 t22,0 t22,0 t22,0"/>
+    <path d="M306,278 q12,-6 24,0 t24,0 t24,0 t24,0 t24,0"/>
+    <path d="M300,320 q13,-6 26,0 t26,0 t26,0 t26,0 t26,0"/>
+  </g>
+
+  <!-- the deep glide on either side: smooth dark current lines -->
+  <g stroke="#3a566a" stroke-width="1.2" fill="none" opacity="0.6">
+    <path d="M40,170 q120,14 240,0"/>
+    <path d="M30,210 q130,16 250,0"/>
+    <path d="M50,260 q120,16 230,0"/>
+    <path d="M520,170 q120,14 250,0"/>
+    <path d="M520,210 q130,16 260,0"/>
+    <path d="M520,260 q120,16 240,0"/>
+  </g>
+
+  <!-- far bank, close enough to shout across -->
+  <path d="M0,120 C160,108 320,112 400,118 C500,112 660,108 800,120 L800,128 C620,118 420,124 400,126 C300,124 160,118 0,128 Z" fill="url(#fd_bank)"/>
+
+  <!-- near banks, the worn approach funneling to the crossing -->
+  <path d="M0,400 L0,330 C120,360 230,372 300,400 Z" fill="url(#fd_bank)"/>
+  <path d="M800,400 L800,330 C680,360 570,372 500,400 Z" fill="url(#fd_bank)"/>
+
+  <!-- the path worn to the ford, the only durable record -->
+  <path d="M120,400 C200,360 300,340 360,330" stroke="#caa86f" stroke-width="5" fill="none" opacity="0.55" stroke-linecap="round" stroke-dasharray="2 9"/>
+  <path d="M680,400 C600,360 500,340 440,330" stroke="#caa86f" stroke-width="5" fill="none" opacity="0.55" stroke-linecap="round" stroke-dasharray="2 9"/>
+
+  <!-- two marker stones at the crossing, naming the place -->
+  <ellipse cx="372" cy="330" rx="9" ry="6" fill="#2c2418"/>
+  <ellipse cx="372" cy="327" rx="9" ry="5" fill="#5c513b"/>
+  <ellipse cx="430" cy="332" rx="8" ry="5" fill="#2c2418"/>
+  <ellipse cx="430" cy="329" rx="8" ry="4" fill="#5c513b"/>
+</svg>
