@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="sv_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141b28"/>
+      <stop offset="1" stop-color="#0b0f17"/>
+    </linearGradient>
+    <linearGradient id="sv_cloth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a5c86"/>
+      <stop offset="0.6" stop-color="#33507a"/>
+      <stop offset="1" stop-color="#2b4568"/>
+    </linearGradient>
+    <linearGradient id="sv_fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b0f17" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b0f17" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#sv_bg)"/>
+
+  <!-- the woven panel -->
+  <rect x="150" y="70" width="560" height="260" fill="url(#sv_cloth)"/>
+
+  <!-- warp threads: vertical, the long threads under tension -->
+  <g stroke="#2a4066" stroke-width="3" opacity="0.55">
+    <path d="M170,70 V330"/><path d="M194,70 V330"/><path d="M218,70 V330"/>
+    <path d="M242,70 V330"/><path d="M266,70 V330"/><path d="M290,70 V330"/>
+    <path d="M314,70 V330"/><path d="M338,70 V330"/><path d="M362,70 V330"/>
+    <path d="M386,70 V330"/><path d="M410,70 V330"/><path d="M434,70 V330"/>
+    <path d="M458,70 V330"/><path d="M482,70 V330"/><path d="M506,70 V330"/>
+    <path d="M530,70 V330"/><path d="M554,70 V330"/><path d="M578,70 V330"/>
+    <path d="M602,70 V330"/><path d="M626,70 V330"/><path d="M650,70 V330"/>
+    <path d="M674,70 V330"/><path d="M698,70 V330"/>
+  </g>
+
+  <!-- weft threads: horizontal, the single carried thread crossing side to side -->
+  <g stroke="#5b81ad" stroke-width="4" opacity="0.5">
+    <path d="M150,88 H710"/><path d="M150,112 H710"/><path d="M150,136 H710"/>
+    <path d="M150,160 H710"/><path d="M150,184 H710"/><path d="M150,208 H710"/>
+    <path d="M150,232 H710"/><path d="M150,256 H710"/><path d="M150,280 H710"/>
+    <path d="M150,304 H710"/>
+  </g>
+
+  <!-- LEFT EDGE: the selvage. the weft turns back on itself, pass locked to pass. -->
+  <!-- the loops of the returning weft around the last warp -->
+  <g stroke="#6f97c4" stroke-width="4" fill="none" opacity="0.85">
+    <path d="M158,88 q-14,12 0,24"/>
+    <path d="M158,136 q-14,12 0,24"/>
+    <path d="M158,184 q-14,12 0,24"/>
+    <path d="M158,232 q-14,12 0,24"/>
+    <path d="M158,280 q-14,12 0,24"/>
+    <path d="M158,112 q14,12 0,24"/>
+    <path d="M158,160 q14,12 0,24"/>
+    <path d="M158,208 q14,12 0,24"/>
+    <path d="M158,256 q14,12 0,24"/>
+  </g>
+  <!-- the dense self-finished band -->
+  <rect x="150" y="70" width="10" height="260" fill="#243b5c"/>
+  <!-- the classic single colored line of selvage denim -->
+  <rect x="161" y="70" width="4" height="260" fill="#b23a3a"/>
+
+  <!-- RIGHT EDGE: the cut edge. severed warp-ends fraying loose, held by nothing. -->
+  <g stroke="#6f8fb0" stroke-width="2.4" fill="none" opacity="0.8" stroke-linecap="round">
+    <path d="M710,80 q22,-4 40,6"/>
+    <path d="M710,104 q26,6 46,-4"/>
+    <path d="M710,128 q20,-8 44,2"/>
+    <path d="M710,150 q30,4 52,14"/>
+    <path d="M710,172 q18,10 40,4"/>
+    <path d="M710,196 q28,-6 50,8"/>
+    <path d="M710,218 q22,8 46,-6"/>
+    <path d="M710,240 q30,-4 54,10"/>
+    <path d="M710,262 q18,6 42,16"/>
+    <path d="M710,286 q26,-8 48,4"/>
+    <path d="M710,308 q24,10 50,2"/>
+    <path d="M710,320 q20,-6 44,8"/>
+  </g>
+  <!-- loose fibers drifting off the frayed side -->
+  <g stroke="#54708f" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M756,110 q14,4 26,-4"/>
+    <path d="M762,200 q16,-6 30,2"/>
+    <path d="M758,270 q14,8 28,0"/>
+  </g>
+
+  <!-- soft fade over the fraying edge, toward dissolution -->
+  <rect x="640" y="70" width="140" height="260" fill="url(#sv_fade)"/>
+
+  <!-- labels -->
+  <text x="150" y="356" font-family="Georgia, serif" font-size="15" fill="#9db4d0" opacity="0.9">the selvage &#8212; finished by turning back</text>
+  <text x="710" y="356" font-family="Georgia, serif" font-size="15" fill="#7d92ad" opacity="0.75" text-anchor="end">the cut edge &#8212; fraying</text>
+</svg>
