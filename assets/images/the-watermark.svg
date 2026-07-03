@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the dark room, seen by reflected light -->
+    <linearGradient id="wm_room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2026"/>
+      <stop offset="1" stop-color="#0e1013"/>
+    </linearGradient>
+    <!-- the light behind the sheet -->
+    <radialGradient id="wm_glow" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#fdf3d6"/>
+      <stop offset="0.45" stop-color="#f0dfae"/>
+      <stop offset="1" stop-color="#f0dfae" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the sheet itself, warm and faintly translucent -->
+    <linearGradient id="wm_sheet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe6cf"/>
+      <stop offset="0.5" stop-color="#f6efda"/>
+      <stop offset="1" stop-color="#e7dcc0"/>
+    </linearGradient>
+    <!-- brighter region where the paper is thinner: the mark shows through -->
+    <radialGradient id="wm_mark" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#fffbe9" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fffbe9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- room -->
+  <rect width="800" height="400" fill="url(#wm_room)"/>
+
+  <!-- light bleeding around and through the held sheet -->
+  <rect width="800" height="400" fill="url(#wm_glow)" opacity="0.9"/>
+
+  <!-- the sheet, held up to the light, slightly tilted as by a hand -->
+  <g transform="rotate(-2 400 200)">
+    <!-- soft shadow the sheet casts -->
+    <rect x="214" y="54" width="374" height="300" rx="3" fill="#000" opacity="0.28"/>
+    <rect x="210" y="50" width="374" height="300" rx="3" fill="url(#wm_sheet)"/>
+
+    <!-- chain lines: the ghost of the mould's heavier wires (widely spaced, vertical) -->
+    <g stroke="#cdbf9a" stroke-width="1.1" opacity="0.55">
+      <line x1="258" y1="50" x2="258" y2="350"/>
+      <line x1="316" y1="50" x2="316" y2="350"/>
+      <line x1="374" y1="50" x2="374" y2="350"/>
+      <line x1="432" y1="50" x2="432" y2="350"/>
+      <line x1="490" y1="50" x2="490" y2="350"/>
+      <line x1="548" y1="50" x2="548" y2="350"/>
+    </g>
+    <!-- laid lines: the fine mesh ghost (closely spaced, horizontal) -->
+    <g stroke="#d8cca8" stroke-width="0.6" opacity="0.4">
+      <line x1="210" y1="62" x2="584" y2="62"/>
+      <line x1="210" y1="72" x2="584" y2="72"/>
+      <line x1="210" y1="82" x2="584" y2="82"/>
+      <line x1="210" y1="92" x2="584" y2="92"/>
+      <line x1="210" y1="102" x2="584" y2="102"/>
+      <line x1="210" y1="112" x2="584" y2="112"/>
+      <line x1="210" y1="122" x2="584" y2="122"/>
+      <line x1="210" y1="132" x2="584" y2="132"/>
+      <line x1="210" y1="142" x2="584" y2="142"/>
+      <line x1="210" y1="152" x2="584" y2="152"/>
+      <line x1="210" y1="162" x2="584" y2="162"/>
+      <line x1="210" y1="172" x2="584" y2="172"/>
+      <line x1="210" y1="182" x2="584" y2="182"/>
+      <line x1="210" y1="192" x2="584" y2="192"/>
+      <line x1="210" y1="202" x2="584" y2="202"/>
+      <line x1="210" y1="212" x2="584" y2="212"/>
+      <line x1="210" y1="222" x2="584" y2="222"/>
+      <line x1="210" y1="232" x2="584" y2="232"/>
+      <line x1="210" y1="242" x2="584" y2="242"/>
+      <line x1="210" y1="252" x2="584" y2="252"/>
+      <line x1="210" y1="262" x2="584" y2="262"/>
+      <line x1="210" y1="272" x2="584" y2="272"/>
+      <line x1="210" y1="282" x2="584" y2="282"/>
+      <line x1="210" y1="292" x2="584" y2="292"/>
+      <line x1="210" y1="302" x2="584" y2="302"/>
+      <line x1="210" y1="312" x2="584" y2="312"/>
+      <line x1="210" y1="322" x2="584" y2="322"/>
+      <line x1="210" y1="332" x2="584" y2="332"/>
+      <line x1="210" y1="342" x2="584" y2="342"/>
+    </g>
+
+    <!-- the watermark: the paper is thinner here, so more light comes through.
+         a pale device floating in the sheet, brighter than the paper around it. -->
+    <ellipse cx="397" cy="200" rx="118" ry="118" fill="url(#wm_mark)"/>
+    <g fill="none" stroke="#fffdf2" stroke-width="2.4" opacity="0.85" stroke-linecap="round" stroke-linejoin="round">
+      <!-- a simple heraldic-style device made of thinness -->
+      <circle cx="397" cy="200" r="70"/>
+      <!-- inner mark: an abstract 'ao' / open-eye monogram -->
+      <circle cx="397" cy="200" r="30"/>
+      <path d="M397 130 v22 M397 248 v22 M327 200 h22 M445 200 h22"/>
+      <path d="M348 151 l14 14 M446 151 l-14 14 M348 249 l14 -14 M446 249 l-14 -14" opacity="0.7"/>
+    </g>
+    <!-- faint mill initials below the device, also as thinness -->
+    <text x="397" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="4" fill="#fffdf2" opacity="0.6">aoai</text>
+  </g>
+
+  <!-- title, on the room side (reflected light) -->
+  <text x="400" y="382" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#d9cdae" opacity="0.85" letter-spacing="2">The Watermark</text>
+</svg>
