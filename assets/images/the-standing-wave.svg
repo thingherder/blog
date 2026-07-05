@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the river at dusk -->
+    <linearGradient id="sw_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d181d"/>
+      <stop offset="1" stop-color="#060b0e"/>
+    </linearGradient>
+    <!-- a cold pool of light held over the wave -->
+    <radialGradient id="sw_glow" cx="0.46" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#1c4652" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#1c4652" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the body of racing water -->
+    <linearGradient id="sw_water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123640"/>
+      <stop offset="1" stop-color="#081418"/>
+    </linearGradient>
+    <!-- the standing crest, lit from within -->
+    <linearGradient id="sw_crest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe4ea"/>
+      <stop offset="0.4" stop-color="#4f97a6"/>
+      <stop offset="1" stop-color="#1a4650"/>
+    </linearGradient>
+    <!-- the foam at the lip -->
+    <radialGradient id="sw_foam" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#eaf6f8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#eaf6f8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ground -->
+  <rect width="800" height="400" fill="url(#sw_bg)"/>
+  <rect width="800" height="400" fill="url(#sw_glow)"/>
+
+  <!-- the moving surface of the river, well below the crest -->
+  <rect x="0" y="238" width="800" height="162" fill="url(#sw_water)"/>
+
+  <!-- streamlines: the water races left to right and passes THROUGH the wave.
+       every line enters at the left, rises over the pinned rock, and leaves. -->
+  <g fill="none" stroke="#3a7a88" stroke-opacity="0.5" stroke-width="1.4">
+    <path d="M0,300 C160,300 300,296 360,270 C400,252 430,250 470,262 C560,288 680,300 800,300"/>
+    <path d="M0,322 C170,322 320,318 372,296 C405,282 435,281 472,292 C560,314 690,322 800,322"/>
+    <path d="M0,344 C180,344 330,342 384,326 C410,318 440,318 476,325 C560,340 700,344 800,344"/>
+  </g>
+  <g fill="none" stroke="#2b5e6a" stroke-opacity="0.45" stroke-width="1.2">
+    <path d="M0,366 C200,366 340,364 800,366"/>
+    <path d="M0,386 C200,386 340,385 800,386"/>
+  </g>
+
+  <!-- the submerged ledge the wave is pinned to. it never moves. -->
+  <path d="M300,400 L300,352 C316,336 352,332 392,338 C420,342 436,352 452,368 L472,400 Z"
+        fill="#05161a"/>
+  <path d="M300,352 C316,336 352,332 392,338 C420,342 436,352 452,368"
+        fill="none" stroke="#0f3038" stroke-width="2"/>
+
+  <!-- the standing wave itself: a crest that holds its shape over the ledge
+       while all the water flushes through it. the lip curls back upstream. -->
+  <path d="M300,262
+           C330,150 372,132 404,146
+           C452,168 448,214 428,240
+           C452,222 470,224 470,246
+           C470,268 440,286 396,286
+           C346,286 306,286 300,262 Z"
+        fill="url(#sw_crest)"/>
+
+  <!-- the curling lip, throwing water back against the current -->
+  <path d="M404,146 C452,168 448,214 428,240 C446,214 430,178 396,176 C372,175 356,190 348,208
+           C356,172 380,140 404,146 Z"
+        fill="#dff1f4" fill-opacity="0.55"/>
+
+  <!-- foam gathering where the fast flow slams into the standing form -->
+  <ellipse cx="392" cy="250" rx="86" ry="26" fill="url(#sw_foam)"/>
+  <g fill="#eaf6f8" fill-opacity="0.85">
+    <circle cx="352" cy="252" r="4.5"/>
+    <circle cx="372" cy="260" r="3.2"/>
+    <circle cx="398" cy="256" r="5"/>
+    <circle cx="422" cy="252" r="3.6"/>
+    <circle cx="440" cy="258" r="2.8"/>
+    <circle cx="336" cy="246" r="3"/>
+  </g>
+
+  <!-- a thin crest-line of light along the held edge -->
+  <path d="M300,262 C330,150 372,132 404,146"
+        fill="none" stroke="#cdeef2" stroke-width="2" stroke-opacity="0.8"/>
+
+  <!-- direction of flow: the water goes; the wave stays -->
+  <g stroke="#5fa6b3" stroke-width="2" stroke-opacity="0.55" fill="none">
+    <path d="M120,214 L164,214"/>
+    <path d="M156,208 L164,214 L156,220"/>
+    <path d="M600,214 L644,214"/>
+    <path d="M636,208 L644,214 L636,220"/>
+  </g>
+</svg>
