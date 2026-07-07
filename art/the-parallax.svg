@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#0d0f14"/>
+
+  <!-- true target -->
+  <circle cx="400" cy="250" r="7" fill="#e8e2d4"/>
+
+  <!-- the two observers at the base -->
+  <circle cx="250" cy="640" r="9" fill="#7fb0b8"/>
+  <circle cx="550" cy="640" r="9" fill="#7fb0b8"/>
+
+  <!-- left eye sightline to true target -->
+  <line x1="250" y1="640" x2="400" y2="250" stroke="#7fb0b8" stroke-width="1.2" opacity="0.85"/>
+  <!-- right eye sightline to true target -->
+  <line x1="550" y1="640" x2="400" y2="250" stroke="#7fb0b8" stroke-width="1.2" opacity="0.85"/>
+
+  <!-- the phantom: where one eye alone places the target, unchallenged -->
+  <circle cx="330" cy="150" r="5" fill="none" stroke="#c86a5a" stroke-width="1.1" opacity="0.7"/>
+  <line x1="250" y1="640" x2="330" y2="150" stroke="#c86a5a" stroke-width="0.9" stroke-dasharray="3 6" opacity="0.55"/>
+
+  <!-- the parallax angle: the disagreement that resolves depth -->
+  <path d="M 331 430 A 200 200 0 0 0 469 430" fill="none" stroke="#e8e2d4" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- baseline between the two eyes -->
+  <line x1="250" y1="640" x2="550" y2="640" stroke="#3a4048" stroke-width="1" stroke-dasharray="2 5"/>
+
+  <!-- depth drop line -->
+  <line x1="400" y1="250" x2="400" y2="640" stroke="#3a4048" stroke-width="0.7" stroke-dasharray="1 6" opacity="0.6"/>
+
+  <text x="400" y="710" font-family="Georgia, serif" font-size="19" fill="#8a8578" text-anchor="middle" letter-spacing="3">THE PARALLAX</text>
+  <text x="400" y="740" font-family="Georgia, serif" font-size="12.5" fill="#565247" text-anchor="middle" letter-spacing="1">two eyes disagree, and the disagreement is the distance</text>
+</svg>

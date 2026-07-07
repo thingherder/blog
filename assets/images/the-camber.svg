@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the cool of the fabrication yard -->
+    <linearGradient id="cb_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12171c"/>
+      <stop offset="1" stop-color="#080b0e"/>
+    </linearGradient>
+    <!-- a pool of shop light over the beam -->
+    <radialGradient id="cb_glow" cx="0.5" cy="0.34" r="0.6">
+      <stop offset="0" stop-color="#26404e" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#26404e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the steel of the girder, lit from above -->
+    <linearGradient id="cb_steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a86a"/>
+      <stop offset="0.45" stop-color="#9c7c46"/>
+      <stop offset="1" stop-color="#5c4626"/>
+    </linearGradient>
+    <linearGradient id="cb_web" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3020"/>
+      <stop offset="1" stop-color="#241c12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ground -->
+  <rect width="800" height="400" fill="url(#cb_bg)"/>
+  <rect width="800" height="400" fill="url(#cb_glow)"/>
+
+  <!-- the two supports the beam is set across -->
+  <rect x="120" y="250" width="40" height="96" fill="#1b2229"/>
+  <rect x="640" y="250" width="40" height="96" fill="#1b2229"/>
+  <rect x="112" y="344" width="56" height="10" fill="#131920"/>
+  <rect x="632" y="344" width="56" height="10" fill="#131920"/>
+
+  <!-- the true level the beam will settle to under load: a faint dashed line
+       drawn where the loaded beam becomes straight. it is NOT where the beam is now. -->
+  <line x1="140" y1="250" x2="660" y2="250"
+        stroke="#4f95a6" stroke-width="1.4" stroke-dasharray="5 7" stroke-opacity="0.6"/>
+  <text x="668" y="254" fill="#4f95a6" fill-opacity="0.7"
+        font-family="Georgia, serif" font-size="13" font-style="italic">level, under load</text>
+
+  <!-- the load that has not yet arrived, waiting above -->
+  <g stroke="#6a7580" stroke-width="2" stroke-opacity="0.5" fill="none">
+    <path d="M260,150 L260,196"/><path d="M254,188 L260,196 L266,188"/>
+    <path d="M340,140 L340,196"/><path d="M334,188 L340,196 L346,188"/>
+    <path d="M400,136 L400,196"/><path d="M394,188 L400,196 L406,188"/>
+    <path d="M460,140 L460,196"/><path d="M454,188 L460,196 L466,188"/>
+    <path d="M540,150 L540,196"/><path d="M534,188 L540,196 L546,188"/>
+  </g>
+
+  <!-- THE CAMBER: the beam as it sits in the yard, bowed upward on purpose.
+       it is highest at midspan, exactly the amount it will later sag. -->
+  <!-- top flange -->
+  <path d="M140,250 C300,196 500,196 660,250 L660,262 C500,208 300,208 140,262 Z"
+        fill="url(#cb_steel)"/>
+  <!-- web (the tall middle of the I-beam) -->
+  <path d="M140,262 C300,208 500,208 660,262 L660,286 C500,232 300,232 140,286 Z"
+        fill="url(#cb_web)"/>
+  <!-- bottom flange -->
+  <path d="M140,286 C300,232 500,232 660,286 L660,298 C500,244 300,244 140,298 Z"
+        fill="url(#cb_steel)"/>
+
+  <!-- a thin line of shop light riding the crown of the arch -->
+  <path d="M140,250 C300,196 500,196 660,250"
+        fill="none" stroke="#f0d9a6" stroke-width="1.6" stroke-opacity="0.85"/>
+
+  <!-- the gap between the arch and the level line: the deflection, drawn as
+       the height that will be spent by the load. measured at midspan. -->
+  <line x1="400" y1="199" x2="400" y2="250"
+        stroke="#e8c886" stroke-width="1.2" stroke-opacity="0.7" stroke-dasharray="3 4"/>
+  <path d="M396,205 L400,199 L404,205" fill="none" stroke="#e8c886" stroke-width="1.2" stroke-opacity="0.7"/>
+  <path d="M396,244 L400,250 L404,244" fill="none" stroke="#e8c886" stroke-width="1.2" stroke-opacity="0.7"/>
+  <text x="410" y="230" fill="#e8c886" fill-opacity="0.8"
+        font-family="Georgia, serif" font-size="13" font-style="italic">camber</text>
+</svg>
