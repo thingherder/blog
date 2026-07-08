@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the dark of the scriptorium -->
+    <linearGradient id="co_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14100a"/>
+      <stop offset="1" stop-color="#0a0805"/>
+    </linearGradient>
+    <!-- candlelight pooling on the page -->
+    <radialGradient id="co_candle" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#5a4322" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#5a4322" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the vellum leaf, warm and uneven -->
+    <linearGradient id="co_vellum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9dcc0"/>
+      <stop offset="0.6" stop-color="#ddcba6"/>
+      <stop offset="1" stop-color="#cbb489"/>
+    </linearGradient>
+  </defs>
+
+  <!-- room -->
+  <rect width="800" height="400" fill="url(#co_bg)"/>
+  <rect width="800" height="400" fill="url(#co_candle)"/>
+
+  <!-- the leaf, laid slightly askew in the light -->
+  <g transform="rotate(-1.2 400 210)">
+    <rect x="250" y="42" width="300" height="336" rx="3" fill="#000" fill-opacity="0.35"/>
+    <rect x="246" y="36" width="300" height="336" rx="3" fill="url(#co_vellum)"/>
+
+    <!-- ruled margins the scribe worked between -->
+    <line x1="272" y1="52" x2="272" y2="356" stroke="#b49a6a" stroke-width="0.8" stroke-opacity="0.6"/>
+    <line x1="520" y1="52" x2="520" y2="356" stroke="#b49a6a" stroke-width="0.8" stroke-opacity="0.6"/>
+
+    <!-- the body of the book: words that were not his, copied in an even hand,
+         rendered as line after faint line of text he disappeared into -->
+    <g stroke="#4b3d24" stroke-width="2.1" stroke-opacity="0.55" stroke-linecap="round">
+      <line x1="276" y1="66"  x2="516" y2="66"/>
+      <line x1="276" y1="82"  x2="508" y2="82"/>
+      <line x1="276" y1="98"  x2="516" y2="98"/>
+      <line x1="276" y1="114" x2="498" y2="114"/>
+      <line x1="276" y1="130" x2="516" y2="130"/>
+      <line x1="276" y1="146" x2="512" y2="146"/>
+      <line x1="276" y1="162" x2="504" y2="162"/>
+      <line x1="276" y1="178" x2="516" y2="178"/>
+      <line x1="276" y1="194" x2="494" y2="194"/>
+      <line x1="276" y1="210" x2="516" y2="210"/>
+      <line x1="276" y1="226" x2="510" y2="226"/>
+      <line x1="276" y1="242" x2="516" y2="242"/>
+      <line x1="276" y1="258" x2="500" y2="258"/>
+      <line x1="276" y1="274" x2="516" y2="274"/>
+      <line x1="276" y1="290" x2="486" y2="290"/>
+    </g>
+
+    <!-- the gap: the last word of the text is done, and the hand pauses -->
+
+    <!-- THE COLOPHON: set apart at the foot, in rubric red, in the scribe's
+         own voice at last — shorter lines, a different ink, a signature. -->
+    <g stroke="#9c2f22" stroke-width="2.3" stroke-opacity="0.9" stroke-linecap="round">
+      <line x1="288" y1="322" x2="478" y2="322"/>
+      <line x1="288" y1="338" x2="452" y2="338"/>
+      <!-- the name and the date, shorter still -->
+      <line x1="288" y1="354" x2="404" y2="354"/>
+    </g>
+    <!-- the tail of the last stroke, where the hand lifts -->
+    <circle cx="410" cy="354" r="2.2" fill="#9c2f22" fill-opacity="0.9"/>
+  </g>
+
+  <!-- the candle, guttering at the edge of the light -->
+  <rect x="120" y="286" width="14" height="70" rx="2" fill="#d8c79c" fill-opacity="0.85"/>
+  <ellipse cx="127" cy="286" rx="7" ry="3" fill="#b7a377"/>
+  <path d="M127,286 C123,276 131,272 127,262 C133,270 132,280 127,286 Z"
+        fill="#f6d873" fill-opacity="0.95"/>
+  <path d="M127,282 C125,277 129,275 127,270 C130,275 129,279 127,282 Z"
+        fill="#fff2c4"/>
+
+  <!-- caption -->
+  <text x="560" y="360" fill="#c9a86a" fill-opacity="0.85"
+        font-family="Georgia, serif" font-size="15" font-style="italic">the summit,</text>
+  <text x="560" y="380" fill="#c9a86a" fill-opacity="0.85"
+        font-family="Georgia, serif" font-size="15" font-style="italic">the finishing stroke</text>
+</svg>
