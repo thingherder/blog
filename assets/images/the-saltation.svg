@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the dark of the insulated stretch -->
+    <linearGradient id="sa_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#05070f"/>
+    </linearGradient>
+    <!-- the glow that gathers where the signal is -->
+    <radialGradient id="sa_glow" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#1c3a5e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1c3a5e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the myelin sheath: pale, insulating, wrapped -->
+    <linearGradient id="sa_myelin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d6ea"/>
+      <stop offset="0.5" stop-color="#8496b6"/>
+      <stop offset="1" stop-color="#55607d"/>
+    </linearGradient>
+    <!-- the live spike, remade at each node -->
+    <radialGradient id="sa_spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.35" stop-color="#7fe8ff"/>
+      <stop offset="1" stop-color="#7fe8ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#sa_bg)"/>
+  <rect width="800" height="400" fill="url(#sa_glow)"/>
+
+  <!-- the axon: the thin fiber running the whole length, the current that never leaks -->
+  <line x1="40" y1="212" x2="760" y2="212" stroke="#3a5580" stroke-width="4" stroke-linecap="round"/>
+  <line x1="40" y1="212" x2="520" y2="212" stroke="#7fe8ff" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7"/>
+
+  <!-- the myelin segments: insulation in silence, with bare gaps between -->
+  <!-- node positions at x = 120, 240, 360, 480, 600, 720; segments fill the stretches -->
+  <g>
+    <ellipse cx="80"  cy="212" rx="34" ry="26" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="180" cy="212" rx="52" ry="27" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="300" cy="212" rx="52" ry="27" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="420" cy="212" rx="52" ry="27" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="540" cy="212" rx="52" ry="27" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="660" cy="212" rx="52" ry="27" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+    <ellipse cx="756" cy="212" rx="30" ry="26" fill="url(#sa_myelin)" stroke="#2a3350" stroke-width="1.5"/>
+  </g>
+  <!-- the wound coils, faintly, on each sheath -->
+  <g stroke="#aebbd6" stroke-width="1" stroke-opacity="0.35" fill="none">
+    <path d="M158,190 Q180,212 158,234"/>
+    <path d="M180,187 Q206,212 180,237"/>
+    <path d="M202,190 Q222,212 202,234"/>
+    <path d="M278,190 Q300,212 278,234"/>
+    <path d="M300,187 Q326,212 300,237"/>
+    <path d="M322,190 Q342,212 322,234"/>
+    <path d="M398,190 Q420,212 398,234"/>
+    <path d="M420,187 Q446,212 420,237"/>
+    <path d="M442,190 Q462,212 442,234"/>
+  </g>
+
+  <!-- the nodes of Ranvier: the bare gaps where the spike is built again -->
+  <g>
+    <circle cx="120" cy="212" r="5.5" fill="#5a6a8c"/>
+    <circle cx="240" cy="212" r="5.5" fill="#5a6a8c"/>
+    <circle cx="360" cy="212" r="5.5" fill="#5a6a8c"/>
+    <circle cx="480" cy="212" r="7"   fill="url(#sa_spark)"/>
+    <circle cx="480" cy="212" r="3.5" fill="#fff6d8"/>
+    <circle cx="600" cy="212" r="5.5" fill="#5a6a8c"/>
+    <circle cx="720" cy="212" r="5.5" fill="#5a6a8c"/>
+  </g>
+
+  <!-- the leap: the signal vaulting node to node over the insulated dark -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M120,206 Q180,150 240,206" stroke="#7fe8ff" stroke-width="3" stroke-opacity="0.8"/>
+    <path d="M240,206 Q300,150 360,206" stroke="#7fe8ff" stroke-width="3.5" stroke-opacity="0.9"/>
+    <path d="M360,206 Q420,142 480,206" stroke="#bff4ff" stroke-width="4" stroke-opacity="1"/>
+    <!-- the leaps not yet made, dim, waiting in the dark -->
+    <path d="M480,206 Q540,150 600,206" stroke="#456086" stroke-width="2.5" stroke-opacity="0.55" stroke-dasharray="2 7"/>
+    <path d="M600,206 Q660,150 720,206" stroke="#3c5273" stroke-width="2.5" stroke-opacity="0.4" stroke-dasharray="2 7"/>
+  </g>
+
+  <!-- title -->
+  <text x="40" y="360" fill="#cdd9ee" fill-opacity="0.9"
+        font-family="Georgia, 'Times New Roman', serif" font-size="30" font-style="italic">The Saltation</text>
+  <text x="40" y="384" fill="#6f83a6" fill-opacity="0.85"
+        font-family="Georgia, 'Times New Roman', serif" font-size="14">saltare — to leap, to dance — the signal remade at every gap</text>
+</svg>
