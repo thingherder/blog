@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the storm sky above the dune -->
+    <linearGradient id="fg_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171a24"/>
+      <stop offset="0.6" stop-color="#232636"/>
+      <stop offset="1" stop-color="#33313a"/>
+    </linearGradient>
+    <!-- the sand, warm above, cooling into shadow below -->
+    <linearGradient id="fg_sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a86e"/>
+      <stop offset="0.4" stop-color="#a9895a"/>
+      <stop offset="1" stop-color="#5f4c33"/>
+    </linearGradient>
+    <!-- the glassy fused tube, lit from within -->
+    <linearGradient id="fg_glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f0d8"/>
+      <stop offset="0.5" stop-color="#e7c98a"/>
+      <stop offset="1" stop-color="#b98a4a"/>
+    </linearGradient>
+    <filter id="fg_glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.4"/>
+    </filter>
+    <filter id="fg_soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="400" fill="url(#fg_sky)"/>
+
+  <!-- the bolt: gone the instant it arrives, here only as an afterimage -->
+  <g opacity="0.9">
+    <path d="M 384 -4 L 372 60 L 392 66 L 366 128 L 388 132 L 372 176"
+          fill="none" stroke="#dfe6f4" stroke-width="7" stroke-linecap="round"
+          stroke-linejoin="round" opacity="0.35" filter="url(#fg_glow)"/>
+    <path d="M 384 -4 L 372 60 L 392 66 L 366 128 L 388 132 L 372 176"
+          fill="none" stroke="#f7fbff" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <path d="M 392 66 L 420 96 L 408 104" fill="none" stroke="#eef3ff"
+          stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 366 128 L 344 150" fill="none" stroke="#eef3ff"
+          stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  <!-- the flash pooled on the sky where the bolt struck -->
+  <ellipse cx="372" cy="182" rx="150" ry="46" fill="#8fa0c4" opacity="0.16" filter="url(#fg_glow)"/>
+
+  <!-- the dune surface -->
+  <path d="M 0 190 Q 200 168 372 178 Q 560 189 800 172 L 800 210 L 0 210 Z"
+        fill="#d8b877" filter="url(#fg_soft)"/>
+  <rect y="200" width="800" height="200" fill="url(#fg_sand)"/>
+  <!-- faint grain striations in the buried sand -->
+  <g stroke="#7a6242" stroke-width="0.6" stroke-opacity="0.35">
+    <path d="M 0 244 Q 400 236 800 250" fill="none"/>
+    <path d="M 0 288 Q 400 300 800 286" fill="none"/>
+    <path d="M 0 332 Q 400 322 800 336" fill="none"/>
+  </g>
+
+  <!-- the strike point where the bolt entered the ground -->
+  <ellipse cx="372" cy="182" rx="16" ry="5" fill="#3a2c1c" opacity="0.7"/>
+
+  <!-- the fulgurite: the hollow glass tube, branching downward like a root,
+       the fossil of the path the vanished bolt took through the sand -->
+  <g filter="url(#fg_glow)" opacity="0.5">
+    <path d="M 372 184 L 380 232 L 366 280 L 378 330 M 380 232 L 414 264 M 366 280 L 336 316 M 378 330 L 392 372 M 378 330 L 360 366"
+          fill="none" stroke="#ffe9a8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M 372 184 L 380 232 L 366 280 L 378 330 M 380 232 L 414 264 M 366 280 L 336 316 M 378 330 L 392 372 M 378 330 L 360 366"
+        fill="none" stroke="url(#fg_glass)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- the hollow core, a thread of light down the middle -->
+  <path d="M 372 186 L 380 232 L 366 280 L 378 328"
+        fill="none" stroke="#fffbe9" stroke-width="0.9" stroke-linecap="round" stroke-opacity="0.85"/>
+  <!-- rough fused nodules along the tube -->
+  <g fill="#e7c98a" fill-opacity="0.8" filter="url(#fg_soft)">
+    <circle cx="380" cy="232" r="3.4"/>
+    <circle cx="366" cy="280" r="3"/>
+    <circle cx="378" cy="330" r="3.2"/>
+    <circle cx="414" cy="264" r="2.4"/>
+    <circle cx="336" cy="316" r="2.4"/>
+  </g>
+</svg>
