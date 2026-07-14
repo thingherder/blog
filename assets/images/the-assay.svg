@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <!-- the furnace dark, heat rising -->
+    <radialGradient id="as_furnace" cx="0.5" cy="0.72" r="0.85">
+      <stop offset="0" stop-color="#3a1c12"/>
+      <stop offset="0.45" stop-color="#241009"/>
+      <stop offset="1" stop-color="#120806"/>
+    </radialGradient>
+    <!-- the cupel: bone-ash white, stained dark where it drank the dross -->
+    <radialGradient id="as_cupel" cx="0.5" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#f4efe2"/>
+      <stop offset="0.55" stop-color="#e2d7c0"/>
+      <stop offset="0.8" stop-color="#b9a483"/>
+      <stop offset="1" stop-color="#7c6144"/>
+    </radialGradient>
+    <!-- the molten pool inside the cup, hot at the heart -->
+    <radialGradient id="as_pool" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#fff4d6"/>
+      <stop offset="0.4" stop-color="#ffbe4e"/>
+      <stop offset="0.75" stop-color="#d5691f"/>
+      <stop offset="1" stop-color="#7c3410"/>
+    </radialGradient>
+    <!-- the bead of gold that would not burn -->
+    <radialGradient id="as_bead" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fffceb"/>
+      <stop offset="0.35" stop-color="#ffe07a"/>
+      <stop offset="0.7" stop-color="#f2b52e"/>
+      <stop offset="1" stop-color="#b6791a"/>
+    </radialGradient>
+    <filter id="as_glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="as_soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+  </defs>
+
+  <!-- furnace interior -->
+  <rect width="800" height="400" fill="url(#as_furnace)"/>
+
+  <!-- rising heat, faint columns -->
+  <g opacity="0.14" filter="url(#as_glow)" fill="none" stroke="#ff9a3c" stroke-width="6">
+    <path d="M 300 300 C 288 240 316 220 302 150"/>
+    <path d="M 400 320 C 386 250 418 226 404 140"/>
+    <path d="M 500 300 C 512 240 484 220 498 150"/>
+  </g>
+
+  <!-- the halo of heat around the cup -->
+  <ellipse cx="400" cy="252" rx="230" ry="130" fill="#ff8a2a" opacity="0.22" filter="url(#as_glow)"/>
+
+  <!-- the cupel: a shallow thick-walled cup of bone ash -->
+  <ellipse cx="400" cy="300" rx="212" ry="66" fill="#150b07"/>
+  <path d="M 196 262
+           C 196 322 604 322 604 262
+           C 604 342 540 372 400 372
+           C 260 372 196 342 196 262 Z"
+        fill="url(#as_cupel)"/>
+  <!-- the dark stain where the dross was wicked down into the porous ash -->
+  <path d="M 214 276 C 250 344 550 344 586 276
+           C 560 330 500 352 400 352
+           C 300 352 240 330 214 276 Z"
+        fill="#3c2415" opacity="0.55" filter="url(#as_soft)"/>
+
+  <!-- the molten pool in the mouth of the cup -->
+  <ellipse cx="400" cy="262" rx="196" ry="58" fill="url(#as_pool)"/>
+  <ellipse cx="400" cy="262" rx="196" ry="58" fill="none" stroke="#ffd27a" stroke-width="2" opacity="0.5"/>
+
+  <!-- dross: dark oxide skin drifting to the edges, draining away -->
+  <g fill="#5a3418" opacity="0.6" filter="url(#as_soft)">
+    <path d="M 250 250 C 300 236 322 262 300 276 C 276 288 244 274 250 250 Z"/>
+    <path d="M 520 246 C 560 236 574 262 552 274 C 528 284 506 262 520 246 Z"/>
+    <path d="M 470 292 C 500 286 512 302 496 310 C 476 316 456 300 470 292 Z"/>
+    <path d="M 300 296 C 326 292 336 306 322 314 C 302 320 288 304 300 296 Z"/>
+  </g>
+
+  <!-- the breath of air blown across the surface -->
+  <g opacity="0.5" fill="none" stroke="#cfe6ff" stroke-width="2.4" stroke-linecap="round">
+    <path d="M 150 214 C 260 200 360 214 470 206" filter="url(#as_soft)"/>
+    <path d="M 176 230 C 300 218 420 232 560 220" opacity="0.6" filter="url(#as_soft)"/>
+  </g>
+
+  <!-- the brightening: the bead that would not oxidize, showing its clean face -->
+  <circle cx="400" cy="258" r="60" fill="#ff9a3c" opacity="0.6" filter="url(#as_glow)"/>
+  <circle cx="400" cy="256" r="30" fill="url(#as_bead)"/>
+  <ellipse cx="390" cy="248" rx="11" ry="7" fill="#fffdf2" opacity="0.9"/>
+  <circle cx="400" cy="256" r="30" fill="none" stroke="#fff2c4" stroke-width="1.4" opacity="0.7"/>
+
+  <!-- the assayer's air-tube, above the cup -->
+  <g opacity="0.85">
+    <path d="M 96 150 L 300 214" stroke="#8a5a3a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 96 150 L 300 214" stroke="#c8895c" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="300" cy="214" r="5" fill="#ffd98a" filter="url(#as_glow)"/>
+  </g>
+</svg>
