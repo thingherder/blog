@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Libration — a tidally locked moon rocking slightly on its axis, revealing a thin extra crescent of its surface at the limb">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <radialGradient id="disk" cx="0.42" cy="0.38" r="0.72">
+      <stop offset="0" stop-color="#e9e2cf"/>
+      <stop offset="0.7" stop-color="#ccc4ac"/>
+      <stop offset="1" stop-color="#9d977f"/>
+    </radialGradient>
+    <radialGradient id="limbglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.86" stop-color="#f6efd8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#f6efd8" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- scattered stars -->
+  <g fill="#dfe7f2">
+    <circle cx="120" cy="90" r="1.6" opacity="0.8"/>
+    <circle cx="240" cy="180" r="1.1" opacity="0.5"/>
+    <circle cx="90" cy="300" r="1.3" opacity="0.6"/>
+    <circle cx="330" cy="70" r="1" opacity="0.5"/>
+    <circle cx="180" cy="470" r="1.4" opacity="0.7"/>
+    <circle cx="80" cy="540" r="1.1" opacity="0.5"/>
+    <circle cx="1080" cy="110" r="1.5" opacity="0.7"/>
+    <circle cx="1130" cy="250" r="1.1" opacity="0.5"/>
+    <circle cx="980" cy="60" r="1.2" opacity="0.6"/>
+    <circle cx="1150" cy="430" r="1.3" opacity="0.6"/>
+    <circle cx="1040" cy="520" r="1" opacity="0.5"/>
+    <circle cx="900" cy="560" r="1.2" opacity="0.5"/>
+    <circle cx="430" cy="560" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- libration sweep: two faint offset outlines marking the rocking extremes -->
+  <circle cx="588" cy="300" r="200" fill="none" stroke="#8fb4d8" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="4 7"/>
+  <circle cx="612" cy="330" r="200" fill="none" stroke="#8fb4d8" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="4 7"/>
+
+  <!-- the moon disk (its locked near face, centered) -->
+  <circle cx="600" cy="315" r="200" fill="url(#disk)"/>
+  <circle cx="600" cy="315" r="200" fill="url(#limbglow)"/>
+
+  <!-- faint maria on the near face -->
+  <g fill="#b6ae94" fill-opacity="0.55">
+    <ellipse cx="548" cy="250" rx="52" ry="40"/>
+    <ellipse cx="640" cy="238" rx="34" ry="28"/>
+    <ellipse cx="560" cy="360" rx="62" ry="48"/>
+    <ellipse cx="672" cy="392" rx="30" ry="24"/>
+    <circle cx="500" cy="330" r="16"/>
+  </g>
+  <g fill="#8f886f" fill-opacity="0.4">
+    <circle cx="518" cy="252" r="8"/>
+    <circle cx="596" cy="430" r="6"/>
+    <circle cx="690" cy="300" r="5"/>
+  </g>
+
+  <!-- the extra crescent: the sliver the libration lets us glimpse past the eastern limb -->
+  <path d="M600 115 A200 200 0 0 1 600 515 A170 200 0 0 0 600 115 Z"
+        fill="#f6efd8" fill-opacity="0.16"/>
+  <path d="M600 115 A200 200 0 0 1 600 515"
+        fill="none" stroke="#f6efd8" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- libra: a small balance nod, lower right -->
+  <g stroke="#8fb4d8" stroke-opacity="0.5" stroke-width="2" fill="none">
+    <line x1="1000" y1="470" x2="1000" y2="540"/>
+    <line x1="952" y1="470" x2="1048" y2="470"/>
+    <path d="M952 470 l-10 22 h20 z" fill="#8fb4d8" fill-opacity="0.15"/>
+    <path d="M1048 470 l-10 22 h20 z" fill="#8fb4d8" fill-opacity="0.15"/>
+    <line x1="978" y1="540" x2="1022" y2="540"/>
+  </g>
+
+  <text x="600" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#cdd6e4" fill-opacity="0.85" letter-spacing="3">THE LIBRATION</text>
+</svg>
