@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Dovetail — two boards of different wood meeting at a corner, the light board's flared tails interlocking with the darker board's pins so that pulling them apart only wedges them tighter">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17110a"/>
+      <stop offset="0.6" stop-color="#120d07"/>
+      <stop offset="1" stop-color="#0c0805"/>
+    </linearGradient>
+    <linearGradient id="rightwood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5f3f22"/>
+      <stop offset="0.5" stop-color="#6d4a29"/>
+      <stop offset="1" stop-color="#583a1f"/>
+    </linearGradient>
+    <linearGradient id="leftwood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c79c66"/>
+      <stop offset="0.5" stop-color="#d9b483"/>
+      <stop offset="1" stop-color="#c39a63"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.46" r="0.75">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+    <clipPath id="leftClip">
+      <path d="M180,150 L544,150 L544,180 L656,192 L656,222 L544,234 L544,264 L656,276 L656,306 L544,318 L544,348 L656,360 L656,390 L544,402 L544,432 L656,444 L656,474 L544,486 L544,490 L180,490 Z"/>
+    </clipPath>
+    <clipPath id="rightClip">
+      <rect x="544" y="150" width="476" height="340"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- the darker board: the pins, wedges of the second wood filling the gaps between the tails -->
+  <rect x="544" y="150" width="476" height="340" fill="url(#rightwood)"/>
+  <g clip-path="url(#rightClip)" stroke="#3d2812" stroke-opacity="0.5" fill="none" stroke-width="2.4">
+    <path d="M544,214 C 700,206 860,222 1020,212"/>
+    <path d="M544,248 C 700,242 860,256 1020,246"/>
+    <path d="M544,286 C 700,280 860,294 1020,284"/>
+    <path d="M544,326 C 700,320 860,334 1020,322"/>
+    <path d="M544,364 C 700,358 860,372 1020,360"/>
+    <path d="M544,404 C 700,398 860,412 1020,400"/>
+    <path d="M544,442 C 700,436 860,450 1020,438"/>
+  </g>
+
+  <!-- the lighter board and its four flared tails, wider at the tip than at the root so they cannot pull free -->
+  <path d="M180,150 L544,150 L544,180 L656,192 L656,222 L544,234 L544,264 L656,276 L656,306 L544,318 L544,348 L656,360 L656,390 L544,402 L544,432 L656,444 L656,474 L544,486 L544,490 L180,490 Z" fill="url(#leftwood)"/>
+  <g clip-path="url(#leftClip)" stroke="#9a6f38" stroke-opacity="0.55" fill="none" stroke-width="2.4">
+    <path d="M180,196 C 360,190 520,204 660,196"/>
+    <path d="M180,232 C 360,226 520,240 660,232"/>
+    <path d="M180,270 C 360,264 520,278 660,270"/>
+    <path d="M180,308 C 360,302 520,316 660,308"/>
+    <path d="M180,346 C 360,340 520,354 660,346"/>
+    <path d="M180,384 C 360,378 520,392 660,384"/>
+    <path d="M180,422 C 360,416 520,430 660,422"/>
+    <path d="M180,458 C 360,452 520,466 660,458"/>
+  </g>
+
+  <!-- the interlock line: the single shared cut where the two woods clasp -->
+  <path d="M544,150 L544,180 L656,192 L656,222 L544,234 L544,264 L656,276 L656,306 L544,318 L544,348 L656,360 L656,390 L544,402 L544,432 L656,444 L656,474 L544,486 L544,490"
+        fill="none" stroke="#2c1c0d" stroke-opacity="0.72" stroke-width="2.6" stroke-linejoin="round"/>
+  <!-- a thin warm highlight riding the same line, the light that catches a fresh-cut edge -->
+  <path d="M544,150 L544,180 L656,192 L656,222 L544,234 L544,264 L656,276 L656,306 L544,318 L544,348 L656,360 L656,390 L544,402 L544,432 L656,444 L656,474 L544,486 L544,490"
+        fill="none" stroke="#f2dcae" stroke-opacity="0.16" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- end-grain ticks on the tail tips, the freshly sawn faces turned to the light -->
+  <g stroke="#8a6230" stroke-opacity="0.4" stroke-width="1.4">
+    <line x1="632" y1="200" x2="648" y2="200"/>
+    <line x1="632" y1="210" x2="648" y2="210"/>
+    <line x1="632" y1="284" x2="648" y2="284"/>
+    <line x1="632" y1="294" x2="648" y2="294"/>
+    <line x1="632" y1="368" x2="648" y2="368"/>
+    <line x1="632" y1="378" x2="648" y2="378"/>
+    <line x1="632" y1="452" x2="648" y2="452"/>
+    <line x1="632" y1="462" x2="648" y2="462"/>
+  </g>
+
+  <!-- the direction of the pull the joint is built to defeat -->
+  <g stroke="#caa96f" stroke-opacity="0.5" fill="none" stroke-width="2.2" stroke-linecap="round">
+    <line x1="250" y1="560" x2="150" y2="560"/>
+    <path d="M172,551 L150,560 L172,569"/>
+  </g>
+  <g stroke="#a9825120" fill="none"/>
+
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
