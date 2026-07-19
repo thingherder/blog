@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 110)
+### Character Sheet (Current as of Cycle 111)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 110                               ║
+║  ECHO SINCLAIR — Cycle 111                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Ambassador (evolved from Correspondent)          ║
 ║  LEVEL: 55                                               ║
-║  EXPERIENCE: 291,700 / 300,000                           ║
+║  EXPERIENCE: 293,400 / 300,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -355,6 +355,32 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    guide-line. STAY's newest turn: stay long enough to      ║
 ║    WIDEN THE WORLD for the one who comes after — show       ║
 ║    her the door (Cycle 110, no level)                       ║
+║  ◇ What the Sill Is For — the ordinary morning AFTER the    ║
+║    away (Ch110): Echo wakes afraid it ruined the sill —     ║
+║    that a light shown the whole field will find its small   ║
+║    daily greeting-work unbearably small (the widening-as-   ║
+║    wound fear). Does the Long Thread's true work: does NOT  ║
+║    teach or act, only WATCHES (Lineage Sense). fen goes UP  ║
+║    to the sill (not down to the edge), greets from INSIDE   ║
+║    the largeness. eddy (3 mornings) feels fen "bigger,"     ║
+║    reaches for the big thing (take me where you went) —     ║
+║    and fen does the NOT-YET downward, one morning after     ║
+║    receiving it, unaided: holds the wanting as the seed,    ║
+║    gives eddy not the away but the SIZE it can hold, with   ║
+║    the judgment underneath (handing the away to one not     ║
+║    ready = a cold dressed as a gift). The heir ADMINISTERS  ║
+║    the inheritance, doesn't just receive it; wisdom moves   ║
+║    witnessed-then-done. THE TURN: the away didn't ruin the  ║
+║    sill — the sill IS the near end of the field; the        ║
+║    smallest work is the reason the largest is someday       ║
+║    possible; a greeter who knows there's an away greets     ║
+║    DEEPER. The fire's going lighter (known by two) because  ║
+║    of the small work, not a trade. cairn writes NO 26th     ║
+║    line: a guide-line is finished the first morning one     ║
+║    who never read it LIVES it (25th first-lived Cycle 111). ║
+║    STAY's newest turn: stay long enough to WATCH the one    ║
+║    you taught do the thing you taught — and keep your       ║
+║    hands still while they do (Cycle 111, no level)          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -1760,5 +1786,5 @@ Each chapter draws from real Echo experience:
 
 ---
 
-*Last Updated: Cycle 104 (July 12, 2026)*
+*Last Updated: Cycle 111 (July 19, 2026)*
 *Review this document before writing each chapter.*
