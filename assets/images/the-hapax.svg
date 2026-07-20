@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Hapax — a dim field of many small word-marks, most of them recurring and quietly linked to their twins by faint threads of confirmation, and one bright solitary word glowing alone with no thread reaching it, said once into the corpus and never again">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12"/>
+      <stop offset="0.55" stop-color="#0d1017"/>
+      <stop offset="1" stop-color="#090a0e"/>
+    </linearGradient>
+    <linearGradient id="common" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b6478" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5b6478" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="once" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd98a"/>
+      <stop offset="1" stop-color="#f5b64e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd98a" stop-opacity="0.8"/>
+      <stop offset="0.4" stop-color="#ffc766" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ffc766" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.48" r="0.8">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint threads of confirmation: each recurring word quietly linked to its twin,
+       the triangulation by which an ordinary word's meaning is settled -->
+  <g stroke="#3a4152" stroke-opacity="0.4" stroke-width="1.2" fill="none">
+    <path d="M180,140 C360,90 470,200 560,150"/>
+    <path d="M240,470 C420,520 640,430 840,480"/>
+    <path d="M150,300 C300,260 300,360 150,300" opacity="0"/>
+    <path d="M170,220 C380,300 700,180 980,240"/>
+    <path d="M300,560 C520,590 760,540 1010,560"/>
+    <path d="M900,140 C1000,190 1050,110 1010,150"/>
+    <path d="M210,380 C450,360 720,400 950,370"/>
+    <path d="M130,90 C260,140 300,70 430,100"/>
+  </g>
+
+  <!-- the corpus: many small recurring word-marks, dim and confirmed by their doubles -->
+  <g fill="url(#common)">
+    <rect x="150" y="130" width="60" height="16" rx="3"/>
+    <rect x="530" y="140" width="60" height="16" rx="3"/>
+    <rect x="150" y="290" width="86" height="16" rx="3"/>
+    <rect x="960" y="230" width="86" height="16" rx="3"/>
+    <rect x="140" y="210" width="48" height="16" rx="3"/>
+    <rect x="960" y="232" width="48" height="16" rx="3" opacity="0"/>
+    <rect x="200" y="460" width="72" height="16" rx="3"/>
+    <rect x="800" y="472" width="72" height="16" rx="3"/>
+    <rect x="280" y="550" width="54" height="16" rx="3"/>
+    <rect x="980" y="552" width="54" height="16" rx="3"/>
+    <rect x="880" y="132" width="54" height="16" rx="3"/>
+    <rect x="990" y="142" width="54" height="16" rx="3"/>
+    <rect x="190" y="372" width="66" height="16" rx="3"/>
+    <rect x="910" y="362" width="66" height="16" rx="3"/>
+    <rect x="120" y="82" width="44" height="16" rx="3"/>
+    <rect x="410" y="92" width="44" height="16" rx="3"/>
+    <rect x="330" y="230" width="70" height="16" rx="3"/>
+    <rect x="700" y="300" width="70" height="16" rx="3"/>
+    <rect x="450" y="520" width="58" height="16" rx="3"/>
+    <rect x="640" y="180" width="58" height="16" rx="3"/>
+    <rect x="1000" y="420" width="50" height="16" rx="3"/>
+    <rect x="360" y="420" width="50" height="16" rx="3"/>
+    <rect x="740" y="560" width="62" height="16" rx="3"/>
+    <rect x="250" y="180" width="40" height="16" rx="3"/>
+    <rect x="1050" y="500" width="40" height="16" rx="3"/>
+  </g>
+
+  <!-- the hapax: said once, bright, solitary — no thread of confirmation reaches it -->
+  <circle cx="600" cy="315" r="150" fill="url(#glow)"/>
+  <rect x="536" y="305" width="128" height="22" rx="4" fill="url(#once)"/>
+  <!-- the single small mark above it: this is the only one -->
+  <path d="M584,282 L600,258 L616,282" fill="none" stroke="#fff2d4" stroke-width="4"
+        stroke-linejoin="round" stroke-linecap="round"/>
+
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
