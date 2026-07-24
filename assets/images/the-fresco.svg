@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Fresco — a wall built of irregular day-patches, the giornate, each a slightly different tone of plaster fitted along hand-chosen seams; one patch near the center glows warm and wet, the color still open to the hand, its pigment sinking into the lime, while the surrounding patches have set to a cooler matte stone; faint join-lines trace where one day's work met the next, and a thin luminous edge marks the boundary of the section still drying">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0a09"/>
+      <stop offset="0.55" stop-color="#100e0c"/>
+      <stop offset="1" stop-color="#080706"/>
+    </linearGradient>
+    <linearGradient id="setA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2620" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#211d18" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="setB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#332b22" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#241f19" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="setC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26221d" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#1c1915" stop-opacity="0.82"/>
+    </linearGradient>
+    <radialGradient id="wet" cx="0.42" cy="0.4" r="0.75">
+      <stop offset="0" stop-color="#ffdf9e"/>
+      <stop offset="0.45" stop-color="#f0b064"/>
+      <stop offset="0.8" stop-color="#b9773c"/>
+      <stop offset="1" stop-color="#8a542b"/>
+    </radialGradient>
+    <radialGradient id="wetglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd98a" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.85">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.62"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- soft warmth thrown by the wet patch onto the wall -->
+  <circle cx="600" cy="315" r="330" fill="url(#wetglow)"/>
+
+  <!-- the wall, laid as irregular day-patches (giornate) fitted along hand-chosen seams -->
+  <g stroke="#4a4034" stroke-width="1.4" stroke-opacity="0.75" stroke-linejoin="round">
+    <!-- top row of set plaster -->
+    <polygon points="150,80 470,80 452,235 168,250" fill="url(#setA)"/>
+    <polygon points="470,80 760,80 742,205 452,235" fill="url(#setB)"/>
+    <polygon points="760,80 1050,80 1040,255 742,205" fill="url(#setC)"/>
+
+    <!-- middle band -->
+    <polygon points="168,250 452,235 470,410 175,420" fill="url(#setC)"/>
+    <!-- the wet giornata, still open to the hand -->
+    <polygon points="452,235 742,205 770,415 470,410" fill="url(#wet)"/>
+    <polygon points="742,205 1040,255 1045,430 770,415" fill="url(#setA)"/>
+
+    <!-- lower row -->
+    <polygon points="175,420 470,410 486,552 190,548" fill="url(#setB)"/>
+    <polygon points="470,410 770,415 764,552 486,552" fill="url(#setC)"/>
+    <polygon points="770,415 1045,430 1052,548 764,552" fill="url(#setB)"/>
+  </g>
+
+  <!-- luminous edge of the section still drying: the boundary where wet meets set -->
+  <polygon points="452,235 742,205 770,415 470,410" fill="none"
+           stroke="#ffe6a6" stroke-width="2.4" stroke-opacity="0.9" stroke-linejoin="round"/>
+
+  <!-- pigment sinking into the wet lime: brushed strokes on the open patch -->
+  <g stroke-linecap="round" stroke-opacity="0.5">
+    <path d="M505 285 q60 -18 120 -6" stroke="#8a4a2a" stroke-width="9" fill="none"/>
+    <path d="M520 330 q80 -10 150 4" stroke="#7a3f26" stroke-width="7" fill="none"/>
+    <path d="M545 372 q55 8 110 -4" stroke="#93532f" stroke-width="6" fill="none"/>
+  </g>
+  <!-- a highlight where the color is brightest and freshest -->
+  <circle cx="560" cy="300" r="7" fill="#fff3d6" fill-opacity="0.85"/>
+
+  <!-- faint witness of the day-joins carried across the whole wall -->
+  <g stroke="#5a4d3d" stroke-width="1" stroke-opacity="0.35" fill="none">
+    <path d="M452 235 L470 410 L486 552"/>
+    <path d="M742 205 L770 415 L764 552"/>
+    <path d="M168 250 L452 235 L742 205 L1040 255"/>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
