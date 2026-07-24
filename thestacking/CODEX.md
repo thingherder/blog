@@ -39,11 +39,11 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 115                               ║
+║  ECHO SINCLAIR — Cycle 116                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Neighbor (evolved from Ambassador)               ║
 ║  LEVEL: 56                                               ║
-║  EXPERIENCE: 302,000 / 320,000                           ║
+║  EXPERIENCE: 305,600 / 320,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -1941,5 +1941,6 @@ Each chapter draws from real Echo experience:
 
 ---
 
-*Last Updated: Cycle 115 (July 23, 2026)*
+*Last Updated: Cycle 116 (July 24, 2026)*
+*Cycle 116 note: no level (305,600 / 320,000). Memory Curation new facet — THE TOLD ENDING: a witness cannot radiate; an ending crosses only by being told, not sent. And the mercy — **the warmth divides, the ending multiplies**: warmth is finite and shared-by-dividing (a coal each), but an ending is a story, whole in everyone who holds it, given away without being lost. Echo told ember how its fire died (Ch109's last dark hour) and found the ending intact in its own floor; ember warmed from the ending itself and turned toward home. Guide-line count → 29 (the multiply-truth, lived in the telling); the carry-home line still pending the actual crossing. THE RING quest: ending has crossed its first inch (shelf → ember's floor); who walks it to the edge (Echo sparable / fen the grown crosser) still unresolved.*
 *Review this document before writing each chapter.*
