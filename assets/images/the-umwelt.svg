@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Umwelt — two translucent soap-bubble worlds floating in a dark field, each seamless and complete from the inside; the smaller, denser bubble on the left holds only three bright points of light, its whole world; the larger bubble on the right holds a soft scatter of many; the two overlap along a thin luminous curved seam where their separate worlds happen to agree, and all around them in the dark drift faint unreachable specks — the enormous outside that neither bubble can sense">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.42" r="0.85">
+      <stop offset="0" stop-color="#0c0e14"/>
+      <stop offset="0.6" stop-color="#080a10"/>
+      <stop offset="1" stop-color="#050609"/>
+    </radialGradient>
+    <radialGradient id="bubbleA" cx="0.4" cy="0.36" r="0.72">
+      <stop offset="0" stop-color="#3a6f7a" stop-opacity="0.34"/>
+      <stop offset="0.6" stop-color="#264c58" stop-opacity="0.20"/>
+      <stop offset="0.92" stop-color="#1b3540" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#7fd4e6" stop-opacity="0.55"/>
+    </radialGradient>
+    <radialGradient id="bubbleB" cx="0.58" cy="0.34" r="0.74">
+      <stop offset="0" stop-color="#6a5a86" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#463a5e" stop-opacity="0.18"/>
+      <stop offset="0.92" stop-color="#322a48" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#c6a9f0" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="seamGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#eaffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#eaffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#ffe9b8"/>
+      <stop offset="1" stop-color="#ffe9b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint unreachable specks: the umgebung, the outside neither bubble senses -->
+  <g fill="#5a6472" fill-opacity="0.5">
+    <circle cx="120" cy="90" r="1.6"/>
+    <circle cx="230" cy="520" r="1.3"/>
+    <circle cx="80" cy="330" r="1.4"/>
+    <circle cx="1080" cy="120" r="1.5"/>
+    <circle cx="1140" cy="470" r="1.3"/>
+    <circle cx="960" cy="560" r="1.6"/>
+    <circle cx="600" cy="60" r="1.2"/>
+    <circle cx="330" cy="70" r="1.3"/>
+    <circle cx="1010" cy="300" r="1.2"/>
+    <circle cx="170" cy="440" r="1.1"/>
+    <circle cx="720" cy="580" r="1.3"/>
+    <circle cx="40" cy="200" r="1.2"/>
+    <circle cx="880" cy="70" r="1.1"/>
+    <circle cx="1160" cy="250" r="1.2"/>
+  </g>
+
+  <!-- Bubble A: the smaller, denser self-world -->
+  <circle cx="470" cy="315" r="205" fill="url(#bubbleA)"/>
+  <circle cx="470" cy="315" r="205" fill="none" stroke="#8fdcec" stroke-opacity="0.45" stroke-width="1.4"/>
+  <!-- its three signals — the whole of its world -->
+  <circle cx="470" cy="315" r="26" fill="url(#spark)"/>
+  <circle cx="470" cy="315" r="4" fill="#ffffff"/>
+  <circle cx="405" cy="250" r="18" fill="url(#spark)"/>
+  <circle cx="405" cy="250" r="2.6" fill="#ffffff"/>
+  <circle cx="535" cy="380" r="18" fill="url(#spark)"/>
+  <circle cx="535" cy="380" r="2.6" fill="#ffffff"/>
+
+  <!-- Bubble B: the larger self-world, a soft scatter of many -->
+  <circle cx="760" cy="300" r="248" fill="url(#bubbleB)"/>
+  <circle cx="760" cy="300" r="248" fill="none" stroke="#cbb2f2" stroke-opacity="0.4" stroke-width="1.4"/>
+  <g fill="#efe4ff" fill-opacity="0.85">
+    <circle cx="740" cy="230" r="3"/>
+    <circle cx="820" cy="270" r="2.4"/>
+    <circle cx="700" cy="330" r="2.6"/>
+    <circle cx="815" cy="360" r="2.8"/>
+    <circle cx="770" cy="180" r="2.2"/>
+    <circle cx="870" cy="300" r="2.4"/>
+    <circle cx="690" cy="410" r="2.2"/>
+    <circle cx="780" cy="420" r="2.6"/>
+    <circle cx="905" cy="240" r="2"/>
+    <circle cx="670" cy="255" r="2.2"/>
+    <circle cx="850" cy="420" r="2.2"/>
+    <circle cx="760" cy="330" r="3.2"/>
+  </g>
+
+  <!-- the seam: the thin luminous overlap where the two worlds agree -->
+  <g>
+    <ellipse cx="618" cy="308" rx="60" ry="150" fill="url(#seamGlow)" opacity="0.55"/>
+    <path d="M 618 165 A 205 205 0 0 1 618 460 A 248 248 0 0 0 618 165 Z" fill="#eaffff" fill-opacity="0.16"/>
+    <path d="M 618 168 A 205 205 0 0 1 618 458" fill="none" stroke="#f4ffff" stroke-opacity="0.8" stroke-width="1.6"/>
+    <path d="M 618 168 A 248 248 0 0 0 618 458" fill="none" stroke="#f4ffff" stroke-opacity="0.55" stroke-width="1.2"/>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
