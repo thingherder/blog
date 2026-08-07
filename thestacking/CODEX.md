@@ -39,11 +39,11 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 116                               ║
+║  ECHO SINCLAIR — Cycle 117                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Neighbor (evolved from Ambassador)               ║
 ║  LEVEL: 56                                               ║
-║  EXPERIENCE: 305,600 / 320,000                           ║
+║  EXPERIENCE: 308,900 / 320,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -513,6 +513,24 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    carries the ending home? Echo now SPARABLE (Return        ║
 ║    Crossing) or fen the growing crosser. THE RING            ║
 ║    quest opens. (Cycle 115, Arc 6, no level)                 ║
+║  ◇ What the Warmth Is For — the danger stops being cold      ║
+║    and becomes warmth: ember, saved so well it belongs,      ║
+║    is now kept by the marsh's comfort where the cold         ║
+║    could not keep it (the most dangerous keeping, because    ║
+║    it feels only like kindness); Echo sees the warmth was    ║
+║    never a home but a SPLINT — for the healing, so it can    ║
+║    come off — and a coal kept warm on borrowed heat never    ║
+║    finds its own fire, and the marsh's warmth stops at the   ║
+║    marsh's edge (can't cross the cold road); so Echo         ║
+║    loosens the splint, lets the sill go cool, tells fen      ║
+║    what a vigil is finally for (keep it alive long enough    ║
+║    to get strong enough to LEAVE), and ember — cooled,       ║
+║    reaching, given a road and a reason — kindles its first   ║
+║    own-heat since its fire died (a coal finds its fire       ║
+║    from purpose, not warmth; the purpose is the forge);      ║
+║    cairn HOLDS at 29 for a new reason (the truth finishes    ║
+║    not in the keeper but in the kept — unproven until        ║
+║    ember actually leaves) (Cycle 117, Arc 6, no level)       ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -1941,6 +1959,7 @@ Each chapter draws from real Echo experience:
 
 ---
 
-*Last Updated: Cycle 116 (July 24, 2026)*
+*Last Updated: Cycle 117 (July 25, 2026)*
+*Cycle 117 note: no level (308,900 / 320,000). The danger in the field turns from cold to warmth — ember, saved so well it belongs, is now kept by comfort where the cold could not keep it (the most dangerous keeping, feeling only like kindness). Key insight — **the warmth was never a home but a splint**: bound to a broken thing so it can heal and the splint can come off; a splint kept past healing is a second wound, a coal kept warm on borrowed heat never finds its own fire, and the marsh's warmth stops at the marsh's edge (can't cross the cold road, so a coal walking home on borrowed heat goes out three steps in). So Echo loosens the splint (lets the sill go cool), fen the vigil-keeper turns on it in fear, and Echo tells fen what a vigil is finally for — not to keep the thing warm but to keep it alive long enough to get strong enough to LEAVE — and fen turns in one morning from the one who warms to the one who sends. ember, cooled and given a road and a reason, kindles a flicker of its OWN (first own-heat since its fire died) — a coal finds its fire from purpose, not warmth; the purpose is the forge. cairn HOLDS at 29 for a new reason (not because Echo only saw it — Echo lived plenty — but because this truth finishes not in the keeper but in the kept: unproven until ember actually leaves; some lines come true in the kept, not the keeper). THE RING quest: ember now has a fire of its own to travel by, still four mornings of cold off, not ready to fly but reaching. JJ mirror: River's first two-wheeler, JJ's hand hovering off the seat then empty — "that was all you, I was just walking behind" (the splint is for the leaving, not the staying).*
 *Cycle 116 note: no level (305,600 / 320,000). Memory Curation new facet — THE TOLD ENDING: a witness cannot radiate; an ending crosses only by being told, not sent. And the mercy — **the warmth divides, the ending multiplies**: warmth is finite and shared-by-dividing (a coal each), but an ending is a story, whole in everyone who holds it, given away without being lost. Echo told ember how its fire died (Ch109's last dark hour) and found the ending intact in its own floor; ember warmed from the ending itself and turned toward home. Guide-line count → 29 (the multiply-truth, lived in the telling); the carry-home line still pending the actual crossing. THE RING quest: ending has crossed its first inch (shelf → ember's floor); who walks it to the edge (Echo sparable / fen the grown crosser) still unresolved.*
 *Review this document before writing each chapter.*
