@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Sacrificial Anode — the dark underside of a steel hull hanging across the top of a deep green-blue sea; bolted to it by two rivets is a smaller block of a paler, more reactive metal, its lower faces pitted and gnawed and softly glowing as it dissolves; faint curved current lines arc out from the anode and back into the intact hull, and small bright specks drift up from the eaten metal into the dark water, the anode being consumed so the hull is spared">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c2530"/>
+      <stop offset="0.45" stop-color="#082027"/>
+      <stop offset="1" stop-color="#040d12"/>
+    </linearGradient>
+    <radialGradient id="surface" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#2f6f78" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="#164048" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0c2530" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1f26"/>
+      <stop offset="0.7" stop-color="#12161c"/>
+      <stop offset="1" stop-color="#0a0d12"/>
+    </linearGradient>
+    <linearGradient id="hullEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a5a66" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#4a5a66" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="anode" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceaf0"/>
+      <stop offset="0.5" stop-color="#a9c4cf"/>
+      <stop offset="1" stop-color="#6f8f9c"/>
+    </linearGradient>
+    <radialGradient id="anodeGlow" cx="0.5" cy="0.75" r="0.75">
+      <stop offset="0" stop-color="#bfeff7" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#7fd0e0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7fd0e0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#cdeff8"/>
+      <stop offset="1" stop-color="#cdeff8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rivet" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#8f9aa4"/>
+      <stop offset="1" stop-color="#2b333b"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.85">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.62"/>
+    </radialGradient>
+  </defs>
+
+  <!-- deep water -->
+  <rect width="1200" height="630" fill="url(#sea)"/>
+  <rect width="1200" height="360" fill="url(#surface)"/>
+
+  <!-- faint far specks in the water -->
+  <g fill="#5f8790" fill-opacity="0.35">
+    <circle cx="140" cy="180" r="1.5"/>
+    <circle cx="300" cy="120" r="1.1"/>
+    <circle cx="980" cy="150" r="1.4"/>
+    <circle cx="1080" cy="250" r="1.1"/>
+    <circle cx="210" cy="470" r="1.2"/>
+    <circle cx="1010" cy="470" r="1.3"/>
+    <circle cx="640" cy="90" r="1.0"/>
+  </g>
+
+  <!-- the steel hull: a large intact plane hanging across the top, its underside a gentle diagonal -->
+  <path d="M0,0 L1200,0 L1200,258 L0,318 Z" fill="url(#hull)"/>
+  <!-- bright waterline edge where the noble metal meets the sea -->
+  <path d="M0,318 L1200,258 L1200,270 L0,330 Z" fill="url(#hullEdge)"/>
+  <!-- subtle plate seams on the hull -->
+  <g stroke="#2b333c" stroke-width="2" stroke-opacity="0.6">
+    <line x1="360" y1="0" x2="352" y2="300"/>
+    <line x1="760" y1="0" x2="768" y2="280"/>
+  </g>
+
+  <!-- protective current: curved lines arcing from the anode out and back into the hull -->
+  <g fill="none" stroke="#8fe0ee" stroke-opacity="0.5" stroke-width="2">
+    <path d="M556,470 C470,430 452,360 470,312"/>
+    <path d="M600,486 C600,420 610,360 616,306"/>
+    <path d="M648,470 C740,432 758,362 742,308"/>
+    <path d="M540,452 C420,430 372,372 372,320"/>
+    <path d="M664,452 C800,432 852,376 856,322"/>
+  </g>
+  <!-- current arrowheads meeting the hull -->
+  <g fill="#8fe0ee" fill-opacity="0.7">
+    <path d="M470,312 l-7,10 l13,-2 z"/>
+    <path d="M616,306 l-6,11 l12,-1 z"/>
+    <path d="M742,308 l0,12 l11,-6 z"/>
+    <path d="M372,320 l-5,11 l12,-2 z"/>
+    <path d="M856,322 l1,12 l10,-6 z"/>
+  </g>
+
+  <!-- glow behind the dissolving anode -->
+  <ellipse cx="600" cy="470" rx="180" ry="150" fill="url(#anodeGlow)"/>
+
+  <!-- the anode block, bolted to the hull, its lower edge pitted and gnawed away -->
+  <path d="M520,300
+           L680,300
+           L680,404
+           L664,404 L660,420 L646,410
+           L632,432 L618,414 L604,436 L590,412
+           L574,430 L562,410 L548,424 L540,406
+           L520,410 Z" fill="url(#anode)"/>
+  <!-- shaded pits chewed into the anode face -->
+  <g fill="#4d6672" fill-opacity="0.75">
+    <circle cx="560" cy="392" r="9"/>
+    <circle cx="600" cy="404" r="12"/>
+    <circle cx="642" cy="388" r="8"/>
+    <circle cx="588" cy="360" r="6"/>
+    <circle cx="624" cy="418" r="6"/>
+  </g>
+  <!-- highlight on the anode's upper face -->
+  <path d="M520,300 L680,300 L680,318 L520,318 Z" fill="#eef6f9" fill-opacity="0.5"/>
+
+  <!-- two rivets bonding anode to hull: the electrical continuity -->
+  <circle cx="548" cy="326" r="9" fill="url(#rivet)"/>
+  <circle cx="652" cy="322" r="9" fill="url(#rivet)"/>
+
+  <!-- dissolved metal drifting up from the eaten anode into the water -->
+  <g>
+    <circle cx="588" cy="470" r="3.2" fill="url(#spark)"/>
+    <circle cx="620" cy="500" r="2.4" fill="url(#spark)"/>
+    <circle cx="560" cy="520" r="2.0" fill="url(#spark)"/>
+    <circle cx="640" cy="540" r="2.6" fill="url(#spark)"/>
+    <circle cx="602" cy="560" r="1.8" fill="url(#spark)"/>
+    <circle cx="574" cy="588" r="1.6" fill="url(#spark)"/>
+    <circle cx="628" cy="600" r="1.4" fill="url(#spark)"/>
+    <circle cx="600" cy="452" r="2.2" fill="url(#spark)"/>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
