@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Expansion Joint — a steel bridge deck seen from above, split down the middle by an interlaced finger joint: two combs of steel teeth reaching across a dark central gap and meshing without touching. The left half of the deck glows warm, in summer heat, its fingers pushed close and nearly closed; the right half is cool blue, in winter cold, its fingers drawn back so the gap opens wide. Faint arrows show the warm side expanding toward the seam and the cool side contracting away from it, the joint breathing between them.">
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3a1608"/>
+      <stop offset="0.55" stop-color="#5a2610"/>
+      <stop offset="1" stop-color="#7a3a14"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e2b38"/>
+      <stop offset="0.5" stop-color="#0a2230"/>
+      <stop offset="1" stop-color="#071a26"/>
+    </linearGradient>
+    <linearGradient id="steelWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8a15a"/>
+      <stop offset="0.5" stop-color="#c07636"/>
+      <stop offset="1" stop-color="#7c4620"/>
+    </linearGradient>
+    <linearGradient id="steelCool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fc6d8"/>
+      <stop offset="0.5" stop-color="#5f8ea0"/>
+      <stop offset="1" stop-color="#33586a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#ffb46a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffb46a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020507"/>
+      <stop offset="0.5" stop-color="#000000"/>
+      <stop offset="1" stop-color="#020507"/>
+    </linearGradient>
+  </defs>
+
+  <!-- deck halves -->
+  <rect x="0" y="0" width="600" height="630" fill="url(#warm)"/>
+  <rect x="600" y="0" width="600" height="630" fill="url(#cool)"/>
+
+  <!-- heat glow bleeding from the warm side toward the seam -->
+  <ellipse cx="560" cy="315" rx="420" ry="360" fill="url(#glow)"/>
+
+  <!-- faint deck plate texture: expansion / contraction direction arrows -->
+  <g stroke="#ffce9a" stroke-width="3" stroke-opacity="0.35" fill="none" stroke-linecap="round">
+    <path d="M120 110 h120 m-14 -10 l14 10 l-14 10"/>
+    <path d="M120 520 h120 m-14 -10 l14 10 l-14 10"/>
+  </g>
+  <g stroke="#a9d2e2" stroke-width="3" stroke-opacity="0.30" fill="none" stroke-linecap="round">
+    <path d="M1080 110 h-120 m14 -10 l-14 10 l14 10"/>
+    <path d="M1080 520 h-120 m14 -10 l-14 10 l14 10"/>
+  </g>
+
+  <!-- central expansion gap -->
+  <rect x="582" y="0" width="36" height="630" fill="url(#gap)"/>
+
+  <!-- WARM fingers: pushed close, reaching far across, nearly closing the gap -->
+  <g fill="url(#steelWarm)" stroke="#3a2010" stroke-width="2">
+    <path d="M300 40  L604 40  L616 70  L604 100 L300 100 Z"/>
+    <path d="M300 150 L604 150 L616 180 L604 210 L300 210 Z"/>
+    <path d="M300 260 L604 260 L616 290 L604 320 L300 320 Z"/>
+    <path d="M300 370 L604 370 L616 400 L604 430 L300 430 Z"/>
+    <path d="M300 480 L604 480 L616 510 L604 540 L300 540 Z"/>
+    <path d="M300 590 L604 590 L616 615 L604 630 L300 630 Z"/>
+  </g>
+  <!-- warm finger highlights -->
+  <g stroke="#ffd7a6" stroke-width="2.5" stroke-opacity="0.7" fill="none">
+    <line x1="300" y1="47" x2="600" y2="47"/>
+    <line x1="300" y1="157" x2="600" y2="157"/>
+    <line x1="300" y1="267" x2="600" y2="267"/>
+    <line x1="300" y1="377" x2="600" y2="377"/>
+    <line x1="300" y1="487" x2="600" y2="487"/>
+  </g>
+
+  <!-- COOL fingers: drawn back, meshing between the warm teeth, gap opened -->
+  <g fill="url(#steelCool)" stroke="#173038" stroke-width="2">
+    <path d="M900 95  L596 95  L584 125 L596 155 L900 155 Z"/>
+    <path d="M900 205 L596 205 L584 235 L596 265 L900 265 Z"/>
+    <path d="M900 315 L596 315 L584 345 L596 375 L900 375 Z"/>
+    <path d="M900 425 L596 425 L584 455 L596 485 L900 485 Z"/>
+    <path d="M900 535 L596 535 L584 565 L596 595 L900 595 Z"/>
+    <path d="M900 -15 L596 -15 L584 15 L596 45 L900 45 Z"/>
+  </g>
+  <!-- cool finger highlights -->
+  <g stroke="#c7e4f0" stroke-width="2.5" stroke-opacity="0.6" fill="none">
+    <line x1="600" y1="102" x2="900" y2="102"/>
+    <line x1="600" y1="212" x2="900" y2="212"/>
+    <line x1="600" y1="322" x2="900" y2="322"/>
+    <line x1="600" y1="432" x2="900" y2="432"/>
+    <line x1="600" y1="542" x2="900" y2="542"/>
+  </g>
+
+  <!-- the thin dark clearances the teeth never close: the gap that must remain -->
+  <g stroke="#000000" stroke-opacity="0.55" stroke-width="2" fill="none">
+    <path d="M584 15 L596 45 M584 125 L596 155 M584 235 L596 265 M584 345 L596 375 M584 455 L596 485 M584 565 L596 595"/>
+    <path d="M604 40 L616 70 M604 150 L616 180 M604 260 L616 290 M604 370 L616 400 M604 480 L616 510 M604 590 L616 615"/>
+  </g>
+</svg>
