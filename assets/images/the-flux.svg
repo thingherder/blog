@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Flux — a dark circuit board seen up close. On the left a bead of solder sits balled-up and sullen on a dull, tarnished copper pad, touching it at a single point and refusing to spread. A hot soldering-iron tip descends at the center into a warm glow of active flux, from which thin wisps of vapor curl upward as the flux boils away. On the right the same solder has wetted the copper into a clean bright fillet that flows smoothly along the joint. The scene reads left to right as beaded-and-refused, cleared-in-the-heat, and finally joined.">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1712"/>
+      <stop offset="0.5" stop-color="#08120f"/>
+      <stop offset="1" stop-color="#050b09"/>
+    </linearGradient>
+    <linearGradient id="copperDull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5e4a34"/>
+      <stop offset="0.5" stop-color="#463523"/>
+      <stop offset="1" stop-color="#2e2417"/>
+    </linearGradient>
+    <linearGradient id="copperBright" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5a45c"/>
+      <stop offset="0.5" stop-color="#c07634"/>
+      <stop offset="1" stop-color="#7c451d"/>
+    </linearGradient>
+    <radialGradient id="beadDull" cx="0.38" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#9a9488"/>
+      <stop offset="0.5" stop-color="#6b675e"/>
+      <stop offset="1" stop-color="#3a3832"/>
+    </radialGradient>
+    <linearGradient id="solderBright" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f1ea"/>
+      <stop offset="0.45" stop-color="#c9cbcf"/>
+      <stop offset="1" stop-color="#7f8489"/>
+    </linearGradient>
+    <linearGradient id="iron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9ccd2"/>
+      <stop offset="0.5" stop-color="#8a8f96"/>
+      <stop offset="1" stop-color="#4c5158"/>
+    </linearGradient>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd9a0"/>
+      <stop offset="0.5" stop-color="#e79a52"/>
+      <stop offset="1" stop-color="#b9662c"/>
+    </linearGradient>
+    <radialGradient id="fluxGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity="0.85"/>
+      <stop offset="0.4" stop-color="#ff9a3c" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hotcore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d8" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff4d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vapor" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e8dcc4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e8dcc4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- board -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#board)"/>
+
+  <!-- faint copper traces on the board -->
+  <g stroke="#20362b" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M60 120 H300 V210 H150"/>
+    <path d="M1140 90 H900 V180 H1040"/>
+    <path d="M80 520 H260 V430"/>
+    <path d="M1130 540 H980 V470 H1080"/>
+    <path d="M600 40 V120"/>
+    <path d="M600 560 V610"/>
+  </g>
+  <g fill="#26402f" opacity="0.8">
+    <circle cx="150" cy="210" r="8"/>
+    <circle cx="1040" cy="180" r="8"/>
+    <circle cx="260" cy="430" r="8"/>
+    <circle cx="1080" cy="470" r="8"/>
+  </g>
+
+  <!-- ================= LEFT: beaded, refused on a tarnished pad ================= -->
+  <g>
+    <rect x="150" y="360" width="230" height="34" rx="6" fill="url(#copperDull)"/>
+    <!-- oxide dullness haze over the pad -->
+    <rect x="150" y="360" width="230" height="34" rx="6" fill="#1b1810" opacity="0.35"/>
+    <!-- the sullen bead touching at a single point -->
+    <ellipse cx="265" cy="342" rx="46" ry="44" fill="url(#beadDull)"/>
+    <ellipse cx="250" cy="326" rx="14" ry="11" fill="#c9c4b8" opacity="0.6"/>
+    <!-- single point of contact -->
+    <ellipse cx="265" cy="360" rx="8" ry="4" fill="#2a271f"/>
+  </g>
+  <text x="265" y="452" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#8a8073" font-style="italic">it beads and refuses</text>
+
+  <!-- ================= RIGHT: wetted, flowing into a clean fillet ================= -->
+  <g>
+    <rect x="820" y="360" width="250" height="34" rx="6" fill="url(#copperBright)"/>
+    <!-- a lead rising from the pad that the solder has joined -->
+    <rect x="1000" y="300" width="26" height="72" rx="4" fill="url(#iron)"/>
+    <!-- clean concave fillet flowing up onto the lead -->
+    <path d="M820 372 H986 C1000 372 1006 356 1013 330 C1016 356 1030 372 1052 372 H1070 V394 H820 Z" fill="url(#solderBright)"/>
+    <path d="M840 372 H980 C994 372 1000 360 1010 338" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.55" stroke-linecap="round"/>
+  </g>
+  <text x="945" y="452" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e0b077" font-style="italic">it wets and flows</text>
+
+  <!-- ================= CENTER: the flux doing its work in the heat ================= -->
+  <!-- glow of active flux -->
+  <ellipse cx="600" cy="360" rx="230" ry="180" fill="url(#fluxGlow)"/>
+  <ellipse cx="600" cy="356" rx="120" ry="96" fill="url(#hotcore)"/>
+
+  <!-- center copper pad, being cleared -->
+  <rect x="500" y="360" width="200" height="34" rx="6" fill="url(#copperBright)"/>
+
+  <!-- soldering iron descending from upper right -->
+  <g>
+    <rect x="700" y="70" width="70" height="230" rx="18" fill="url(#iron)" transform="rotate(24 735 185)"/>
+    <!-- hot tip meeting the joint -->
+    <polygon points="612,300 660,238 700,270 648,352" fill="url(#tip)"/>
+    <polygon points="628,300 660,258 686,282 648,336" fill="#fff2d0" opacity="0.6"/>
+  </g>
+
+  <!-- a fresh drop of molten solder at the tip -->
+  <ellipse cx="612" cy="348" rx="20" ry="17" fill="url(#solderBright)"/>
+  <ellipse cx="606" cy="342" rx="6" ry="5" fill="#ffffff" opacity="0.8"/>
+
+  <!-- flux boiling away: rising wisps of vapor -->
+  <g fill="url(#vapor)">
+    <path d="M560 320 C540 270 590 250 566 200 C552 168 588 150 574 110" stroke="url(#vapor)" stroke-width="10" fill="none" opacity="0.7"/>
+    <path d="M624 316 C648 268 604 246 636 196 C654 166 622 146 646 108" stroke="url(#vapor)" stroke-width="9" fill="none" opacity="0.6"/>
+    <path d="M598 324 C584 282 616 264 600 220" stroke="url(#vapor)" stroke-width="7" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="560" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" letter-spacing="2" fill="#f0d9b0">The Flux</text>
+  <text x="600" y="596" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#9a8f7c" font-style="italic">the tarnish is the obstacle, not the gap</text>
+</svg>
