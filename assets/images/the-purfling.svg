@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Purfling — a close view of the edge of a violin's spruce top, warm amber wood with fine vertical grain running down the plate. A short way in from the rounded, varnished rim, the purfling runs parallel to the edge as a triple line: two dark strands flanking a pale one, curving gently with the body. On the left, a crack has traveled up from the edge along the grain and stopped dead at the purfling channel, spending itself in the sacrificial border rather than reaching the belly above. On the right, for contrast, a merely painted-on black line sits on the surface with a crack running straight through it into the wood, all appearance and no protection. Warm light rakes across the varnish.">
+  <defs>
+    <linearGradient id="spruce" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a3f"/>
+      <stop offset="0.5" stop-color="#b9752f"/>
+      <stop offset="1" stop-color="#8f571f"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3a2411"/>
+      <stop offset="0.4" stop-color="#6e401a"/>
+      <stop offset="1" stop-color="#a86a2c"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.5" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffcf7a" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="varnish" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a4a1e" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#e8b56a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7a4a1e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- spruce top plate -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#spruce)"/>
+
+  <!-- fine vertical grain of the soundboard -->
+  <g stroke="#8a5a24" stroke-width="2" opacity="0.35">
+    <line x1="70" y1="0" x2="70" y2="470"/>
+    <line x1="130" y1="0" x2="130" y2="470"/>
+    <line x1="195" y1="0" x2="195" y2="470"/>
+    <line x1="260" y1="0" x2="260" y2="470"/>
+    <line x1="330" y1="0" x2="330" y2="470"/>
+    <line x1="400" y1="0" x2="400" y2="470"/>
+    <line x1="470" y1="0" x2="470" y2="470"/>
+    <line x1="545" y1="0" x2="545" y2="470"/>
+    <line x1="620" y1="0" x2="620" y2="470"/>
+    <line x1="700" y1="0" x2="700" y2="470"/>
+    <line x1="780" y1="0" x2="780" y2="470"/>
+    <line x1="860" y1="0" x2="860" y2="470"/>
+    <line x1="940" y1="0" x2="940" y2="470"/>
+    <line x1="1020" y1="0" x2="1020" y2="470"/>
+    <line x1="1100" y1="0" x2="1100" y2="470"/>
+    <line x1="1160" y1="0" x2="1160" y2="470"/>
+  </g>
+  <g stroke="#6f4519" stroke-width="1" opacity="0.25">
+    <line x1="100" y1="0" x2="100" y2="470"/>
+    <line x1="225" y1="0" x2="225" y2="470"/>
+    <line x1="365" y1="0" x2="365" y2="470"/>
+    <line x1="510" y1="0" x2="510" y2="470"/>
+    <line x1="660" y1="0" x2="660" y2="470"/>
+    <line x1="740" y1="0" x2="740" y2="470"/>
+    <line x1="900" y1="0" x2="900" y2="470"/>
+    <line x1="1060" y1="0" x2="1060" y2="470"/>
+  </g>
+
+  <!-- soft warm sheen over the belly -->
+  <ellipse cx="600" cy="180" rx="640" ry="260" fill="url(#sheen)"/>
+
+  <!-- the rounded, dark varnished rim along the bottom -->
+  <path d="M0 470 Q600 430 1200 470 L1200 630 L0 630 Z" fill="url(#rim)"/>
+  <!-- highlight running along the crest of the rim -->
+  <path d="M0 470 Q600 430 1200 470" fill="none" stroke="#e7b978" stroke-width="4" opacity="0.6"/>
+
+  <!-- REAL purfling: routed channel a short way in from the edge, triple line -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M0 408 Q600 372 1200 408" stroke="#241408" stroke-width="7"/>
+    <path d="M0 400 Q600 364 1200 400" stroke="#f0dcb4" stroke-width="5"/>
+    <path d="M0 392 Q600 356 1200 392" stroke="#241408" stroke-width="7"/>
+  </g>
+
+  <!-- LEFT: a crack travels up the grain from the rim and STOPS at the purfling channel -->
+  <g stroke="#2c1707" stroke-linecap="round" fill="none">
+    <path d="M250 628 L256 560 L248 512 L254 470 L250 430 L255 410" stroke-width="5"/>
+    <path d="M255 410 L252 402" stroke-width="3" opacity="0.7"/>
+  </g>
+  <!-- little energy-absorbed mark where the crack dies in the border -->
+  <circle cx="253" cy="404" r="9" fill="none" stroke="#3a2410" stroke-width="2" opacity="0.5"/>
+
+  <!-- RIGHT: PAINTED purfling — a single scribed black line, no channel -->
+  <path d="M760 396 Q980 372 1200 384" fill="none" stroke="#1c1206" stroke-width="4" opacity="0.9"/>
+  <!-- and a crack runs straight THROUGH the painted line, unstopped, into the belly -->
+  <g stroke="#2c1707" stroke-linecap="round" fill="none">
+    <path d="M980 628 L986 560 L978 500 L984 440 L979 384 L985 320 L980 250 L986 190" stroke-width="5"/>
+    <path d="M986 190 L982 150" stroke-width="3" opacity="0.7"/>
+  </g>
+
+  <!-- faint vertical varnish light bands for depth -->
+  <rect x="330" y="0" width="90" height="470" fill="url(#varnish)" opacity="0.5"/>
+  <rect x="820" y="0" width="90" height="470" fill="url(#varnish)" opacity="0.4"/>
+</svg>
