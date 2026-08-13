@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Cofferdam — a cross-section of a river with a walled ring of steel sheet piling driven down into the bed. Outside the ring, on the left and right, the river stands high and deep in cold green water. Inside the ring the water has been pumped away, leaving a dry walled well of open air reaching all the way down to the exposed riverbed, where a half-built stone pier rises course by course toward the surface. Two horizontal struts brace the walls apart against the crush of the water. A discharge pipe arcs over the right wall, spilling pumped seepage back into the river, and thin trickles weep in at the base of the inner walls where the river is always finding the seams. Warm light falls into the dry ring; the water outside is dark and pressing.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdd8d6"/>
+      <stop offset="1" stop-color="#e7ebe4"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f7d78"/>
+      <stop offset="0.5" stop-color="#245853"/>
+      <stop offset="1" stop-color="#123531"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a442a"/>
+      <stop offset="1" stop-color="#2f2114"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f97a0"/>
+      <stop offset="0.5" stop-color="#cfd6db"/>
+      <stop offset="1" stop-color="#6b727b"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8ad9a"/>
+      <stop offset="1" stop-color="#7d715d"/>
+    </linearGradient>
+    <radialGradient id="airbloom" cx="0.5" cy="0.28" r="0.7">
+      <stop offset="0" stop-color="#ffe7b4" stop-opacity="0.45"/>
+      <stop offset="0.6" stop-color="#f4cf88" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f4cf88" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky / air above the water -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- earth: the riverbed material under everything -->
+  <rect x="0" y="500" width="1200" height="130" fill="url(#earth)"/>
+  <g stroke="#7a5c38" stroke-width="2" opacity="0.35">
+    <line x1="0" y1="540" x2="1200" y2="548"/>
+    <line x1="0" y1="580" x2="1200" y2="586"/>
+    <line x1="0" y1="610" x2="1200" y2="614"/>
+  </g>
+
+  <!-- OUTSIDE WATER: the river standing high on the left and right of the ring -->
+  <g>
+    <rect x="0" y="250" width="412" height="270" fill="url(#water)"/>
+    <rect x="788" y="250" width="412" height="270" fill="url(#water)"/>
+  </g>
+  <!-- horizontal current striations in the deep water -->
+  <g stroke="#5f9b95" stroke-width="2" opacity="0.30">
+    <line x1="0" y1="300" x2="412" y2="300"/>
+    <line x1="0" y1="352" x2="412" y2="356"/>
+    <line x1="0" y1="410" x2="412" y2="408"/>
+    <line x1="0" y1="466" x2="412" y2="470"/>
+    <line x1="788" y1="300" x2="1200" y2="300"/>
+    <line x1="788" y1="352" x2="1200" y2="356"/>
+    <line x1="788" y1="410" x2="1200" y2="408"/>
+    <line x1="788" y1="466" x2="1200" y2="470"/>
+  </g>
+  <!-- wavy water surface line, higher than the dry floor within -->
+  <path d="M0 250 Q 60 242, 120 250 T 240 250 T 360 250 T 412 250"
+        fill="none" stroke="#a9d3cd" stroke-width="3" opacity="0.7"/>
+  <path d="M788 250 Q 848 258, 908 250 T 1028 250 T 1148 250 T 1200 250"
+        fill="none" stroke="#a9d3cd" stroke-width="3" opacity="0.7"/>
+
+  <!-- INSIDE THE RING: the dry walled well of open air -->
+  <rect x="430" y="170" width="340" height="330" fill="url(#sky)"/>
+  <ellipse cx="600" cy="250" rx="260" ry="220" fill="url(#airbloom)"/>
+  <!-- exposed dry riverbed at the bottom of the ring -->
+  <rect x="430" y="500" width="340" height="20" fill="#6a5031"/>
+
+  <!-- the half-built stone pier rising course by course inside the dry ring -->
+  <g stroke="#5c5140" stroke-width="1.6">
+    <rect x="486" y="500" width="228" height="0.1" fill="none" stroke="none"/>
+    <!-- courses from the bed upward, tapering slightly -->
+    <rect x="486" y="470" width="228" height="32" fill="url(#stone)"/>
+    <rect x="492" y="440" width="216" height="32" fill="url(#stone)"/>
+    <rect x="498" y="410" width="204" height="32" fill="url(#stone)"/>
+    <rect x="504" y="380" width="192" height="32" fill="url(#stone)"/>
+    <rect x="510" y="350" width="180" height="32" fill="url(#stone)"/>
+    <rect x="516" y="322" width="168" height="30" fill="url(#stone)"/>
+  </g>
+  <!-- staggered vertical joints between the blocks -->
+  <g stroke="#5c5140" stroke-width="1.4" opacity="0.8">
+    <line x1="560" y1="470" x2="560" y2="502"/>
+    <line x1="636" y1="470" x2="636" y2="502"/>
+    <line x1="600" y1="440" x2="600" y2="472"/>
+    <line x1="524" y1="440" x2="524" y2="472"/>
+    <line x1="676" y1="440" x2="676" y2="472"/>
+    <line x1="566" y1="410" x2="566" y2="442"/>
+    <line x1="642" y1="410" x2="642" y2="442"/>
+    <line x1="600" y1="380" x2="600" y2="412"/>
+    <line x1="548" y1="380" x2="548" y2="412"/>
+    <line x1="652" y1="380" x2="652" y2="412"/>
+    <line x1="572" y1="350" x2="572" y2="382"/>
+    <line x1="628" y1="350" x2="628" y2="382"/>
+  </g>
+
+  <!-- seepage: thin trickles weeping in at the base of the inner walls -->
+  <g stroke="#8fc6c0" stroke-width="2.4" opacity="0.6" fill="none">
+    <path d="M440 470 q 6 14, 2 30"/>
+    <path d="M446 442 q 8 16, 3 40"/>
+    <path d="M760 470 q -6 14, -2 30"/>
+    <path d="M754 448 q -8 16, -3 40"/>
+  </g>
+  <!-- small pooling water on the dry floor -->
+  <ellipse cx="452" cy="512" rx="20" ry="4" fill="#6fb0aa" opacity="0.5"/>
+  <ellipse cx="748" cy="512" rx="18" ry="4" fill="#6fb0aa" opacity="0.5"/>
+
+  <!-- LEFT WALL of sheet piling, driven down into the bed and rising above the water -->
+  <rect x="408" y="168" width="26" height="440" fill="url(#steel)" stroke="#4b525a" stroke-width="2"/>
+  <g stroke="#5b636c" stroke-width="1.6" opacity="0.6">
+    <line x1="414" y1="168" x2="414" y2="608"/>
+    <line x1="421" y1="168" x2="421" y2="608"/>
+    <line x1="428" y1="168" x2="428" y2="608"/>
+  </g>
+  <!-- RIGHT WALL of sheet piling -->
+  <rect x="766" y="168" width="26" height="440" fill="url(#steel)" stroke="#4b525a" stroke-width="2"/>
+  <g stroke="#5b636c" stroke-width="1.6" opacity="0.6">
+    <line x1="772" y1="168" x2="772" y2="608"/>
+    <line x1="779" y1="168" x2="779" y2="608"/>
+    <line x1="786" y1="168" x2="786" y2="608"/>
+  </g>
+
+  <!-- horizontal struts (walings) bracing the two walls apart against the water -->
+  <g fill="#3c4249" stroke="#20242a" stroke-width="1.5">
+    <rect x="434" y="214" width="332" height="16" rx="2"/>
+    <rect x="434" y="300" width="332" height="16" rx="2"/>
+  </g>
+  <g fill="#565d65">
+    <rect x="512" y="230" width="16" height="70"/>
+    <rect x="672" y="230" width="16" height="70"/>
+  </g>
+
+  <!-- discharge pipe: arcing over the right wall, pumping seepage back into the river -->
+  <path d="M690 340 C 690 250, 820 250, 850 300"
+        fill="none" stroke="#43494f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M690 340 C 690 250, 820 250, 850 300"
+        fill="none" stroke="#6b727b" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <!-- water spilling from the pipe mouth back into the river -->
+  <path d="M851 300 q 6 26, -2 52 q -4 20, 4 40"
+        fill="none" stroke="#a9d3cd" stroke-width="4" opacity="0.7"/>
+  <g fill="#bfe0da" opacity="0.7">
+    <circle cx="854" cy="372" r="3"/>
+    <circle cx="848" cy="392" r="2.4"/>
+    <circle cx="856" cy="408" r="2.2"/>
+  </g>
+
+  <!-- soft vignette -->
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#12201e" stroke-width="46" opacity="0.26"/>
+</svg>
