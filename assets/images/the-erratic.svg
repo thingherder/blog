@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Erratic — a wide cold landscape of pale limestone pavement under a low grey-blue sky. In the far distance a dark ridge of mountains stands where the boulder was quarried; a faint pale sweep of vanished ice arcs across the middle ground, ghosted and nearly gone. In the foreground, alone on the pale ground, sits a large dark boulder of a wholly different rock, perched on a small pedestal of the light stone that has weathered down around it. A dotted line traces from the distant ridge across the land to the boulder, marking the path it was carried. Warm light falls on the foreign stone; everything around it is cool and grey.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b7c2cc"/>
+      <stop offset="0.6" stop-color="#cfd6d8"/>
+      <stop offset="1" stop-color="#dfe2dc"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8d3c4"/>
+      <stop offset="1" stop-color="#b6ae9a"/>
+    </linearGradient>
+    <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b6470"/>
+      <stop offset="1" stop-color="#3c434e"/>
+    </linearGradient>
+    <linearGradient id="boulder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c6f63"/>
+      <stop offset="0.5" stop-color="#4a4038"/>
+      <stop offset="1" stop-color="#2c251f"/>
+    </linearGradient>
+    <linearGradient id="pedestal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4dfd0"/>
+      <stop offset="1" stop-color="#c3bba7"/>
+    </linearGradient>
+    <radialGradient id="warmlight" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.5"/>
+      <stop offset="0.6" stop-color="#f5cd82" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#f5cd82" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- distant source ridge, where the boulder was quarried -->
+  <path d="M0 300 L120 250 L210 292 L320 232 L430 288 L560 246 L690 296 L820 258 L960 300 L1080 268 L1200 302 L1200 360 L0 360 Z" fill="url(#ridge)" opacity="0.85"/>
+  <!-- snow on the far peaks -->
+  <g fill="#e9edf0" opacity="0.5">
+    <path d="M320 232 L352 262 L288 262 Z"/>
+    <path d="M560 246 L590 274 L530 274 Z"/>
+    <path d="M120 250 L148 278 L92 278 Z"/>
+  </g>
+
+  <!-- ghost of the vanished ice sheet: a faint pale sweep across the middle ground -->
+  <path d="M-40 380 Q 400 330, 760 372 T 1240 366 L1240 430 Q 780 404, 380 428 T -40 440 Z" fill="#eef2f3" opacity="0.35"/>
+  <path d="M-40 392 Q 420 348, 800 386" fill="none" stroke="#f3f6f6" stroke-width="3" opacity="0.4"/>
+
+  <!-- the pale limestone pavement -->
+  <rect x="0" y="360" width="1200" height="270" fill="url(#ground)"/>
+  <!-- glacial striations / grikes: fissures scoured into the ground, flowing in the ice's direction -->
+  <g stroke="#a49a84" stroke-width="2" opacity="0.55" fill="none">
+    <path d="M0 452 Q 300 446, 600 456 T 1200 452"/>
+    <path d="M0 500 Q 340 492, 680 504 T 1200 500"/>
+    <path d="M0 556 Q 300 548, 640 560 T 1200 556"/>
+    <path d="M0 604 Q 360 596, 720 608 T 1200 604"/>
+  </g>
+  <!-- vertical clint/grike jointing of a limestone pavement -->
+  <g stroke="#9a9078" stroke-width="1.5" opacity="0.4">
+    <line x1="150" y1="420" x2="140" y2="620"/>
+    <line x1="330" y1="440" x2="322" y2="620"/>
+    <line x1="520" y1="470" x2="514" y2="620"/>
+    <line x1="900" y1="450" x2="912" y2="620"/>
+    <line x1="1060" y1="430" x2="1074" y2="620"/>
+  </g>
+
+  <!-- dotted path traced from the source ridge to the boulder -->
+  <path d="M470 300 Q 620 380, 690 460 T 812 512" fill="none" stroke="#6b7076" stroke-width="3" stroke-dasharray="3 14" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- warm light pooled on the foreign stone -->
+  <ellipse cx="812" cy="470" rx="360" ry="230" fill="url(#warmlight)"/>
+
+  <!-- the pedestal of pale stone left standing beneath the boulder -->
+  <path d="M726 566 L742 512 L890 512 L906 566 Q 816 582, 726 566 Z" fill="url(#pedestal)"/>
+  <path d="M726 566 Q 816 582, 906 566 L906 582 Q 816 598, 726 582 Z" fill="#a89f8a" opacity="0.7"/>
+
+  <!-- the erratic: a large dark boulder of a wholly different rock -->
+  <path d="M736 512 Q 700 460, 742 418 Q 772 384, 826 388 Q 888 392, 900 452 Q 910 500, 884 514 Q 812 528, 736 512 Z" fill="url(#boulder)"/>
+  <!-- facets and grain on the boulder, hinting at its foreign composition -->
+  <g stroke="#231d18" stroke-width="2" opacity="0.55" fill="none">
+    <path d="M762 508 Q 748 462, 786 424"/>
+    <path d="M812 522 Q 806 470, 838 406"/>
+    <path d="M866 512 Q 878 468, 862 428"/>
+  </g>
+  <!-- lit edge catching the warm light -->
+  <path d="M742 418 Q 772 384, 826 388 Q 862 391, 884 424" fill="none" stroke="#c9b48c" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+  <!-- flecks of a different mineral -->
+  <g fill="#b9a279" opacity="0.55">
+    <circle cx="784" cy="452" r="3"/>
+    <circle cx="828" cy="470" r="2.4"/>
+    <circle cx="806" cy="430" r="2"/>
+    <circle cx="852" cy="458" r="2.6"/>
+  </g>
+</svg>
