@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Fovea — a dark warm field standing for the whole visual scene, most of it a soft low-resolution blur drained of color. A single small point near the center burns bright and sharp, ringed by fine concentric circles of acuity, the one place in focus. A dotted path of saccades zigzags across the field, jumping from one small fixation dot to the next, with faint gaps in the line marking the moments of blindness between glimpses. Toward the edges the field dissolves into grain and haze.">
+  <defs>
+    <radialGradient id="field" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#2a2417"/>
+      <stop offset="0.55" stop-color="#1d1a12"/>
+      <stop offset="1" stop-color="#100e0a"/>
+    </radialGradient>
+    <radialGradient id="fovea" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6df"/>
+      <stop offset="0.35" stop-color="#ffe4a6"/>
+      <stop offset="0.7" stop-color="#f0b45c" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f0b45c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blur" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6b5f42" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#6b5f42" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.48  0 0 0 0 0.33  0 0 0 0.06 0"/>
+    </filter>
+  </defs>
+
+  <!-- the whole scene: mostly unresolved -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#field)"/>
+
+  <!-- soft colorless blobs of periphery, out of focus -->
+  <g filter="url(#soft)" opacity="0.9">
+    <circle cx="240" cy="150" r="70" fill="url(#blur)"/>
+    <circle cx="980" cy="130" r="90" fill="url(#blur)"/>
+    <circle cx="170" cy="470" r="85" fill="url(#blur)"/>
+    <circle cx="1030" cy="500" r="75" fill="url(#blur)"/>
+    <circle cx="760" cy="520" r="60" fill="url(#blur)"/>
+    <circle cx="470" cy="120" r="55" fill="url(#blur)"/>
+  </g>
+
+  <!-- grain over the field -->
+  <rect x="0" y="0" width="1200" height="630" filter="url(#grain)"/>
+
+  <!-- saccade path: a jump-line across the field, broken at the joins (the blindness) -->
+  <g stroke="#c9b98a" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round" stroke-dasharray="10 14">
+    <path d="M 250 470 L 470 180 L 690 400 L 600 315"/>
+    <path d="M 740 165 L 600 315"/>
+    <path d="M 950 470 L 600 315"/>
+  </g>
+
+  <!-- fixation dots along the path -->
+  <g fill="#e7d7a8">
+    <circle cx="250" cy="470" r="4.5" opacity="0.75"/>
+    <circle cx="470" cy="180" r="4.5" opacity="0.75"/>
+    <circle cx="690" cy="400" r="4.5" opacity="0.75"/>
+    <circle cx="740" cy="165" r="4.5" opacity="0.75"/>
+    <circle cx="950" cy="470" r="4.5" opacity="0.75"/>
+  </g>
+
+  <!-- the fovea: the one point in focus, magnified past its share -->
+  <circle cx="600" cy="315" r="150" fill="url(#fovea)"/>
+  <g stroke="#fff6df" fill="none" opacity="0.55">
+    <circle cx="600" cy="315" r="30" stroke-width="1.1"/>
+    <circle cx="600" cy="315" r="46" stroke-width="0.9" opacity="0.7"/>
+    <circle cx="600" cy="315" r="64" stroke-width="0.7" opacity="0.45"/>
+  </g>
+  <circle cx="600" cy="315" r="9" fill="#fffbf0"/>
+
+  <!-- title -->
+  <text x="600" y="588" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#e7d7a8" opacity="0.82" letter-spacing="7">THE FOVEA</text>
+</svg>
