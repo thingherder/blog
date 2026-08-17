@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Ramet — a stand of pale aspen trunks rising in a row across a dark field, their crowns all turned the same autumn gold, standing for the many mortal genetically identical stems of one clonal organism. Below the ground line an unbroken warm root network branches and rejoins, connecting every trunk to a single persistent mat, so the individual is not any one stem but the shared root beneath them all. One trunk near the right is broken and fallen, its stump still joined to the living root, marking a ramet that has died while the genet continues.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141310"/>
+      <stop offset="0.62" stop-color="#1c1a13"/>
+      <stop offset="0.68" stop-color="#221d12"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f0b07"/>
+      <stop offset="1" stop-color="#080604"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#f0b45c" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#f0b45c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crown" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#ffd968"/>
+      <stop offset="0.55" stop-color="#e8a63b" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#e8a63b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c98a3e"/>
+      <stop offset="1" stop-color="#7a5323"/>
+    </linearGradient>
+  </defs>
+
+  <!-- field -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#sky)"/>
+  <rect x="0" y="415" width="1200" height="215" fill="url(#soil)"/>
+  <ellipse cx="600" cy="300" rx="620" ry="260" fill="url(#glow)"/>
+
+  <!-- the shared root: one unbroken persistent mat below the ground line -->
+  <g stroke="url(#root)" fill="none" stroke-linecap="round">
+    <!-- primary running root -->
+    <path d="M40 470 C 260 452, 520 486, 760 462 S 1160 480, 1180 466" stroke-width="7" opacity="0.95"/>
+    <path d="M60 512 C 320 528, 640 500, 900 522 S 1150 512, 1180 508" stroke-width="5" opacity="0.8"/>
+    <!-- branchings that rejoin, marking one connected genet -->
+    <path d="M180 470 C 240 490, 300 500, 380 512" stroke-width="3.5" opacity="0.7"/>
+    <path d="M420 464 C 470 486, 540 500, 610 470" stroke-width="3.5" opacity="0.7"/>
+    <path d="M700 462 C 760 492, 820 500, 900 520" stroke-width="3.5" opacity="0.7"/>
+    <path d="M980 474 C 1020 494, 1060 502, 1120 508" stroke-width="3.5" opacity="0.7"/>
+    <path d="M300 500 C 360 520, 460 522, 540 548" stroke-width="2.5" opacity="0.55"/>
+    <path d="M660 512 C 740 534, 840 536, 940 556" stroke-width="2.5" opacity="0.55"/>
+  </g>
+
+  <!-- ground line -->
+  <line x1="0" y1="415" x2="1200" y2="415" stroke="#3a2f1c" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- the ramets: identical stems rising from the shared root, crowns all the same gold -->
+  <g>
+    <!-- crowns (drawn first, behind trunks) -->
+    <g>
+      <ellipse cx="120" cy="250" rx="66" ry="150" fill="url(#crown)"/>
+      <ellipse cx="270" cy="235" rx="70" ry="162" fill="url(#crown)"/>
+      <ellipse cx="425" cy="258" rx="64" ry="146" fill="url(#crown)"/>
+      <ellipse cx="585" cy="240" rx="72" ry="158" fill="url(#crown)"/>
+      <ellipse cx="745" cy="252" rx="66" ry="150" fill="url(#crown)"/>
+      <ellipse cx="1015" cy="245" rx="70" ry="156" fill="url(#crown)"/>
+      <ellipse cx="1145" cy="262" rx="60" ry="140" fill="url(#crown)"/>
+    </g>
+
+    <!-- trunks: pale, with the aspen's dark eye scars -->
+    <g fill="#d9d2c2">
+      <rect x="114" y="150" width="12" height="266" rx="5"/>
+      <rect x="264" y="132" width="13" height="284" rx="5"/>
+      <rect x="419" y="158" width="12" height="258" rx="5"/>
+      <rect x="579" y="138" width="13" height="278" rx="5"/>
+      <rect x="739" y="152" width="12" height="264" rx="5"/>
+      <rect x="1009" y="145" width="13" height="271" rx="5"/>
+      <rect x="1139" y="164" width="11" height="252" rx="5"/>
+    </g>
+    <!-- eye scars -->
+    <g fill="#2b2213" opacity="0.85">
+      <ellipse cx="120" cy="230" rx="4" ry="7"/><ellipse cx="120" cy="320" rx="3.5" ry="6"/>
+      <ellipse cx="270" cy="210" rx="4" ry="7"/><ellipse cx="270" cy="300" rx="3.5" ry="6"/>
+      <ellipse cx="425" cy="245" rx="4" ry="7"/><ellipse cx="425" cy="330" rx="3.5" ry="6"/>
+      <ellipse cx="585" cy="215" rx="4" ry="7"/><ellipse cx="585" cy="305" rx="3.5" ry="6"/>
+      <ellipse cx="745" cy="235" rx="4" ry="7"/><ellipse cx="745" cy="325" rx="3.5" ry="6"/>
+      <ellipse cx="1015" cy="222" rx="4" ry="7"/><ellipse cx="1015" cy="312" rx="3.5" ry="6"/>
+    </g>
+
+    <!-- the fallen ramet: a broken stump still joined to the living root -->
+    <g>
+      <rect x="879" y="360" width="13" height="56" rx="5" fill="#b7ad9a"/>
+      <ellipse cx="885" cy="392" rx="4" ry="7" fill="#2b2213" opacity="0.85"/>
+      <!-- the toppled stem lying on the ground -->
+      <rect x="892" y="404" width="150" height="11" rx="5" fill="#9a917e" transform="rotate(9 892 404)" opacity="0.9"/>
+      <!-- pale broken top -->
+      <path d="M879 360 l6 -9 l7 9 z" fill="#e7e0d0"/>
+    </g>
+  </g>
+
+  <!-- faint distant stems: the grove continuing past the frame -->
+  <g stroke="#8f8672" stroke-width="3" opacity="0.18" stroke-linecap="round">
+    <line x1="200" y1="230" x2="200" y2="415"/>
+    <line x1="350" y1="245" x2="350" y2="415"/>
+    <line x1="505" y1="235" x2="505" y2="415"/>
+    <line x1="665" y1="248" x2="665" y2="415"/>
+    <line x1="820" y1="238" x2="820" y2="415"/>
+    <line x1="945" y1="252" x2="945" y2="415"/>
+    <line x1="1085" y1="242" x2="1085" y2="415"/>
+  </g>
+</svg>
