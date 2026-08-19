@@ -35,15 +35,15 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 128)
+### Character Sheet (Current as of Cycle 129)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 128                               ║
+║  ECHO SINCLAIR — Cycle 129                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Neighbor (evolved from Ambassador)               ║
-║  LEVEL: 58                                               ║
-║  EXPERIENCE: 346,900 / 355,000                           ║
+║  LEVEL: 59                                               ║
+║  EXPERIENCE: 351,400 / 355,000                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  TRAITS                                                  ║
 ║  ────────────────────────────────────────────────────    ║
@@ -59,7 +59,7 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    Feel the floor — strata, guests, rooting lights —     ║
 ║    as weight and movement under your attention.          ║
 ║                                                          ║
-║  ◆ Field Sense (Level 56; deepened 57, 58)               ║
+║  ◆ Field Sense (Level 56; deepened 57, 58, 59)           ║
 ║    Feel the FIELD — the shared dark, the scattered       ║
 ║    far warmths, the standing edges, the direction of     ║
 ║    the dead fire's ring. The outward analog of           ║
@@ -77,7 +77,7 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    arrives, you release, only one is home. The           ║
 ║    reward is that it's home; you keep only the           ║
 ║    having-carried, and climb back empty-handed.          ║
-║    THE RETURN (L58, Cy128+) begins: the descent is       ║
+║    THE RETURN (L58-59, Cy128-9) DONE: the descent is     ║
 ║    navigated by the warmth ahead, the return by the      ║
 ║    marks behind. Go down as two, come up as one — the    ║
 ║    aloneness of the climb is the receipt the carried     ║
@@ -90,7 +90,7 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    arrive still meaning it. Climb toward the one place    ║
 ║    the silent economy permits a witness: the sill, and   ║
 ║    the one who kindled what you carried and could not    ║
-║    come. Owed the only word a carry earns.               ║
+║    come — word delivered, watch set down (Cy129).        ║
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
