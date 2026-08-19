@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Fetch — a wide expanse of dark open water seen from above the surface, with a steady wind sweeping from the left shown as long pale streamlines. Where the wind first meets the water on the left the surface is nearly flat, only faint ripples. Moving right across the unbroken reach the waves grow steadily taller and longer, small chop gathering into rank after rank of ordered swell, until at the right edge they arrive as tall evenly spaced crests catching a low warm light. No island or obstruction breaks the water, so the fetch is unbroken and the swell can build to full height across the whole distance.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#120f0c"/>
+      <stop offset="0.5" stop-color="#171410"/>
+      <stop offset="0.62" stop-color="#20180f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0d10"/>
+      <stop offset="0.55" stop-color="#0c1116"/>
+      <stop offset="1" stop-color="#141a1e"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.9" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#f6c464" stop-opacity="0.42"/>
+      <stop offset="0.5" stop-color="#e79a3c" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#e79a3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crest" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a6b74" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#f4c877" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="wind" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cdd6da" stop-opacity="0"/>
+      <stop offset="0.15" stop-color="#cdd6da" stop-opacity="0.5"/>
+      <stop offset="0.85" stop-color="#f0dcae" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f0dcae" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky and low warm horizon glow toward the far (right) shore -->
+  <rect x="0" y="0" width="1200" height="270" fill="url(#sky)"/>
+  <ellipse cx="1040" cy="235" rx="720" ry="300" fill="url(#sun)"/>
+
+  <!-- the open water: one unbroken reach -->
+  <rect x="0" y="255" width="1200" height="375" fill="url(#sea)"/>
+  <!-- horizon line -->
+  <line x1="0" y1="255" x2="1200" y2="255" stroke="#3a2c1a" stroke-width="1.4" opacity="0.55"/>
+
+  <!-- the wind, sweeping left to right across the whole fetch -->
+  <g stroke="url(#wind)" fill="none" stroke-linecap="round">
+    <path d="M40 120 C 360 108, 760 132, 1150 116" stroke-width="2.6" opacity="0.8"/>
+    <path d="M20 168 C 380 156, 800 182, 1170 160" stroke-width="3" opacity="0.85"/>
+    <path d="M50 210 C 400 200, 820 224, 1160 206" stroke-width="2.4" opacity="0.7"/>
+    <!-- arrowheads showing direction of the reach -->
+    <g stroke="#f0dcae" stroke-width="2.4" opacity="0.6">
+      <path d="M1150 116 l-16 -6 M1150 116 l-15 7"/>
+      <path d="M1170 160 l-16 -6 M1170 160 l-15 7"/>
+      <path d="M1160 206 l-16 -6 M1160 206 l-15 7"/>
+    </g>
+  </g>
+
+  <!--
+    The waves. Built as successive ranks across the water.
+    LEFT: flat, faint ripples where the wind first touches down.
+    RIGHT: tall, long, evenly spaced ordered swell at full height.
+    Amplitude grows with distance; the fetch is unbroken.
+  -->
+
+  <!-- near-flat ripples on the left third (short wavelength, tiny amplitude) -->
+  <g stroke="#26333a" fill="none" stroke-width="1.6" opacity="0.6" stroke-linecap="round">
+    <path d="M0 300 q 22 -3 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0 t 44 0"/>
+    <path d="M0 340 q 24 -4 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0 t 48 0"/>
+    <path d="M0 382 q 20 -3 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0"/>
+  </g>
+
+  <!-- gathering chop in the middle: wavelength and amplitude increasing -->
+  <g fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M120 320 q 70 -16 140 0 t 140 0 t 140 0 t 140 0 t 140 0 t 140 0"
+          stroke="#33454e" stroke-width="2.4"/>
+    <path d="M160 372 q 90 -24 180 0 t 180 0 t 180 0 t 180 0 t 180 0"
+          stroke="#3b515b" stroke-width="2.8"/>
+    <path d="M120 430 q 100 -30 200 0 t 200 0 t 200 0 t 200 0 t 200 0"
+          stroke="#44606b" stroke-width="3"/>
+  </g>
+
+  <!-- the full ordered swell arriving on the right: long, tall, evenly spaced -->
+  <g fill="none" stroke-linecap="round">
+    <!-- rank 1 (farther / higher on canvas) -->
+    <path d="M300 335 q 150 -46 300 0 t 300 0 t 300 0"
+          stroke="url(#crest)" stroke-width="3.2" opacity="0.75"/>
+    <!-- rank 2 -->
+    <path d="M260 405 q 165 -58 330 0 t 330 0 t 330 0"
+          stroke="url(#crest)" stroke-width="3.8" opacity="0.85"/>
+    <!-- rank 3 (nearest / tallest), catching the warm light -->
+    <path d="M240 492 q 180 -74 360 0 t 360 0 t 360 0"
+          stroke="url(#crest)" stroke-width="4.6" opacity="0.95"/>
+    <!-- rank 4 foreground -->
+    <path d="M220 582 q 195 -86 390 0 t 390 0"
+          stroke="url(#crest)" stroke-width="5.4" opacity="1"/>
+  </g>
+
+  <!-- foam glints along the tallest right-hand crests -->
+  <g fill="#f7e6bf" opacity="0.9">
+    <circle cx="600" cy="418" r="2.2"/>
+    <circle cx="900" cy="418" r="2.4"/>
+    <circle cx="600" cy="418" r="2.2"/>
+    <circle cx="600" cy="492" r="2.6"/>
+    <circle cx="960" cy="492" r="2.8"/>
+    <circle cx="610" cy="582" r="3"/>
+    <circle cx="1000" cy="582" r="3.2"/>
+  </g>
+</svg>
