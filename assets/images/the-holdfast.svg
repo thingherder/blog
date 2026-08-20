@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Holdfast — an underwater scene. At the bottom, a dark rock, and gripping it a tangle of root-like fingers: the kelp's holdfast, clenched hard around the stone. From it rises a single smooth stalk into deep blue-green water, opening near the top into long broad blades that fan out and catch a pale light filtering down from the surface far above. The holdfast at the base is knotted and gripping; the blades at the top are open and feeding. Faint particles drift through the water column between them.">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e2b30"/>
+      <stop offset="0.45" stop-color="#0a2024"/>
+      <stop offset="0.8" stop-color="#08171a"/>
+      <stop offset="1" stop-color="#050f11"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.42" cy="-0.05" r="0.9">
+      <stop offset="0" stop-color="#bfe6d6" stop-opacity="0.5"/>
+      <stop offset="0.4" stop-color="#7fc0b0" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#7fc0b0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9d8a0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#3f7d5c" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="stalk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f8a63"/>
+      <stop offset="1" stop-color="#2c5238"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2224"/>
+      <stop offset="1" stop-color="#0b0f10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- the water column -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#water)"/>
+  <!-- light filtering down from the surface far above -->
+  <ellipse cx="500" cy="0" rx="620" ry="440" fill="url(#light)"/>
+  <!-- god-rays -->
+  <g stroke="#bfe6d6" stroke-linecap="round" opacity="0.10">
+    <line x1="360" y1="-20" x2="180" y2="360" stroke-width="26"/>
+    <line x1="520" y1="-20" x2="470" y2="420" stroke-width="34"/>
+    <line x1="700" y1="-20" x2="820" y2="380" stroke-width="22"/>
+  </g>
+
+  <!-- drifting particles in the water column -->
+  <g fill="#cfeee0" opacity="0.35">
+    <circle cx="300" cy="180" r="1.6"/>
+    <circle cx="820" cy="150" r="1.3"/>
+    <circle cx="640" cy="260" r="1.8"/>
+    <circle cx="420" cy="330" r="1.4"/>
+    <circle cx="900" cy="300" r="1.6"/>
+    <circle cx="760" cy="420" r="1.5"/>
+    <circle cx="240" cy="470" r="1.7"/>
+    <circle cx="560" cy="500" r="1.3"/>
+  </g>
+
+  <!-- the blades near the top: open, broad, feeding across their whole surface -->
+  <g fill="url(#blade)" opacity="0.92">
+    <path d="M596 250 C 470 200, 360 150, 250 96 C 372 150, 470 208, 596 258 Z"/>
+    <path d="M600 240 C 520 150, 470 92, 430 40 C 500 110, 560 176, 604 246 Z"/>
+    <path d="M604 250 C 700 190, 810 150, 930 104 C 812 158, 706 214, 604 258 Z"/>
+    <path d="M602 244 C 660 150, 720 96, 792 52 C 726 128, 668 190, 606 250 Z"/>
+    <path d="M600 250 C 588 170, 582 110, 584 44 C 596 118, 604 182, 606 250 Z"/>
+  </g>
+  <!-- pale midribs on the blades catching light -->
+  <g stroke="#dff2e4" fill="none" stroke-width="1.4" opacity="0.5" stroke-linecap="round">
+    <path d="M600 252 C 500 200, 400 160, 300 118"/>
+    <path d="M600 250 C 540 160, 500 104, 468 56"/>
+    <path d="M602 252 C 690 200, 780 162, 872 122"/>
+    <path d="M601 250 C 656 162, 706 110, 762 68"/>
+  </g>
+
+  <!-- the stalk (stipe): one smooth rise from anchor to blades -->
+  <path d="M590 250 C 582 360, 596 470, 600 520 C 604 470, 618 360, 610 250 Z"
+        fill="url(#stalk)"/>
+  <path d="M600 255 C 596 360, 600 460, 600 515" stroke="#8fc79f" stroke-width="1.3"
+        fill="none" opacity="0.45"/>
+
+  <!-- the rock at the base -->
+  <path d="M360 630 C 380 560, 470 528, 600 522 C 740 528, 840 560, 860 630 Z"
+        fill="url(#rock)"/>
+  <path d="M360 630 C 380 560, 470 528, 600 522 C 740 528, 840 560, 860 630"
+        stroke="#2b3436" stroke-width="1.2" fill="none" opacity="0.6"/>
+
+  <!--
+    THE HOLDFAST: the knotted, gripping, root-like fingers.
+    It looks like roots but takes nothing from the rock. It only holds.
+    Clenched hard around the stone, splayed and interlocked.
+  -->
+  <g stroke="#39604a" fill="none" stroke-linecap="round" opacity="0.95">
+    <path d="M600 522 C 578 548, 548 566, 508 574" stroke-width="7"/>
+    <path d="M600 522 C 590 552, 566 578, 526 596" stroke-width="6"/>
+    <path d="M600 522 C 604 552, 594 582, 566 606" stroke-width="6.5"/>
+    <path d="M600 522 C 616 550, 640 574, 682 584" stroke-width="7"/>
+    <path d="M600 522 C 610 554, 636 580, 678 600" stroke-width="6"/>
+    <path d="M600 522 C 596 556, 610 586, 640 608" stroke-width="6.5"/>
+  </g>
+  <!-- secondary gripping fingers, darker, digging into the rock -->
+  <g stroke="#26463536" fill="none" stroke-linecap="round" stroke-width="4" opacity="0.9">
+    <path d="M508 574 C 480 582, 456 596, 442 614"/>
+    <path d="M526 596 C 502 606, 484 618, 472 628"/>
+    <path d="M682 584 C 710 592, 732 606, 748 622"/>
+    <path d="M678 600 C 704 610, 722 620, 736 628"/>
+    <path d="M566 606 C 552 618, 546 624, 542 630"/>
+    <path d="M640 608 C 652 618, 660 624, 664 630"/>
+  </g>
+  <!-- the clenched knot where all fingers meet the stipe -->
+  <ellipse cx="600" cy="524" rx="20" ry="12" fill="#2f5340"/>
+</svg>
