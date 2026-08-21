@@ -1,74 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Annealing — a bar of metal lying in a dark furnace, glowing from within at annealing heat, deep red at the ends warming to bright orange-gold across the middle where the heat is greatest. The bar tells its story left to right: on the left the grain structure is drawn as tangled, elongated, sheared cells crowded and jammed together — cold-worked, dislocation-choked, hard and brittle. Toward the right those strained grains give way to clean, rounded, evenly-sized crystals — the new strain-free grains that nucleate and grow during recrystallization, softening the metal and wiping its deformation history. Faint embers drift up through the dark furnace air above the glowing bar.">
   <defs>
-    <!-- Heat gradient along the blade: incandescent white-yellow at the tang,
-         fading through orange and deep red to cold dark steel at the tip.
-         This is the slow cool, read left to right. -->
-    <linearGradient id="heat" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0.00" stop-color="#fff4d6"/>
-      <stop offset="0.12" stop-color="#ffd98a"/>
-      <stop offset="0.28" stop-color="#ff9d3c"/>
-      <stop offset="0.45" stop-color="#e8551c"/>
-      <stop offset="0.62" stop-color="#9c2c14"/>
-      <stop offset="0.80" stop-color="#4a201a"/>
-      <stop offset="1.00" stop-color="#2a2630"/>
+    <linearGradient id="furnace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14100e"/>
+      <stop offset="0.5" stop-color="#0d0908"/>
+      <stop offset="1" stop-color="#070404"/>
     </linearGradient>
-    <!-- Soft glow that the hot end throws onto the dark ground -->
-    <radialGradient id="forgeGlow" cx="0.13" cy="0.5" r="0.55">
-      <stop offset="0" stop-color="#ff8c2e" stop-opacity="0.30"/>
-      <stop offset="0.5" stop-color="#b34418" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#0a0a0f" stop-opacity="0"/>
+    <radialGradient id="forgeglow" cx="0.5" cy="0.52" r="0.62">
+      <stop offset="0" stop-color="#ffb24d" stop-opacity="0.42"/>
+      <stop offset="0.35" stop-color="#e8631f" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#b02a10" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#b02a10" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c1c0c"/>
+      <stop offset="0.22" stop-color="#c8451a"/>
+      <stop offset="0.5" stop-color="#ffcf6b"/>
+      <stop offset="0.78" stop-color="#d65a1e"/>
+      <stop offset="1" stop-color="#7c1c0c"/>
+    </linearGradient>
+    <linearGradient id="barsheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2cf" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffd27a" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#5a1405" stop-opacity="0.35"/>
     </linearGradient>
   </defs>
 
-  <!-- Ground -->
-  <rect width="800" height="400" fill="#0a0a0f"/>
-  <rect width="800" height="400" fill="url(#forgeGlow)"/>
+  <!-- the dark furnace -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#furnace)"/>
+  <!-- the heat the bar throws into the surrounding air -->
+  <ellipse cx="600" cy="330" rx="640" ry="300" fill="url(#forgeglow)"/>
 
-  <!-- The blade, laid flat, cooling. Tang at left (hot), tip at right (cold). -->
-  <g transform="translate(0,8)">
-    <!-- Body of the blade: a long tapered leaf -->
-    <path d="M 70 200
-             L 150 180
-             L 600 176
-             L 720 200
-             L 600 224
-             L 150 220
-             Z"
-          fill="url(#heat)"/>
+  <!-- the glowing bar -->
+  <rect x="120" y="262" width="960" height="112" rx="16" fill="url(#bar)"/>
+  <rect x="120" y="262" width="960" height="112" rx="16" fill="url(#barsheen)"/>
+  <!-- bright core where the heat is greatest -->
+  <ellipse cx="600" cy="318" rx="230" ry="40" fill="#fff0c4" opacity="0.5"/>
 
-    <!-- Fuller / center line catching light -->
-    <path d="M 150 199 L 600 197" stroke="#fff" stroke-width="1" opacity="0.18"/>
-
-    <!-- Upper edge sheen, brightest where the metal is hottest -->
-    <path d="M 70 200 L 150 180 L 600 176 L 720 200"
-          fill="none" stroke="url(#sheen)" stroke-width="2"/>
-
-    <!-- Tang (the grip end), darker forged stub -->
-    <rect x="40" y="192" width="40" height="16" rx="3" fill="#1c1a22"/>
-
-    <!-- Heat shimmer marks rising off the hot end -->
-    <g stroke="#ffb15a" stroke-width="1.4" fill="none" opacity="0.5" stroke-linecap="round">
-      <path d="M 120 168 q 6 -14 0 -28 q -6 -14 0 -28"/>
-      <path d="M 160 164 q 6 -14 0 -28 q -6 -14 0 -28" opacity="0.7"/>
-      <path d="M 96 172 q 6 -12 0 -24 q -6 -12 0 -24" opacity="0.85"/>
-    </g>
+  <!--
+    THE MICROSTRUCTURE, read left to right.
+    LEFT: cold-worked grains — elongated, sheared, tangled, jammed. Work-hardened.
+  -->
+  <g stroke="#611303" stroke-width="1.6" fill="none" opacity="0.6" stroke-linecap="round">
+    <path d="M150 268 C 176 300, 168 342, 150 372"/>
+    <path d="M178 266 C 210 302, 196 344, 176 374"/>
+    <path d="M206 268 C 242 300, 224 346, 202 372"/>
+    <path d="M236 266 C 274 304, 252 342, 230 374"/>
+    <path d="M268 268 C 306 300, 282 346, 260 372"/>
+    <path d="M300 266 C 340 304, 312 342, 292 374"/>
+    <path d="M334 268 C 372 302, 346 346, 324 372"/>
+    <path d="M368 266 C 406 302, 380 344, 358 374"/>
+    <!-- cross shears: the tangle -->
+    <path d="M152 300 C 210 292, 300 316, 372 306" opacity="0.5"/>
+    <path d="M150 340 C 220 350, 300 330, 380 344" opacity="0.5"/>
   </g>
 
-  <!-- A faint scale beneath: temperature falling left to right -->
-  <g opacity="0.22" font-family="Georgia, serif" font-size="12" fill="#cdbf94">
-    <text x="70" y="300" text-anchor="start">quench</text>
-    <text x="400" y="300" text-anchor="middle">temper</text>
-    <text x="720" y="300" text-anchor="end">cold</text>
+  <!-- TRANSITION: strained grains beginning to break into new ones -->
+  <g stroke="#6d1804" stroke-width="1.5" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M404 268 C 430 300, 422 344, 404 372"/>
+    <path d="M440 288 C 470 296, 474 322, 452 336 C 432 348, 410 332, 416 312 C 420 298, 430 292, 440 288 Z"/>
+    <path d="M470 330 C 498 330, 508 356, 486 368 C 466 378, 448 360, 456 342 C 460 334, 464 331, 470 330 Z"/>
   </g>
-  <line x1="70" y1="284" x2="720" y2="284" stroke="#3a342c" stroke-width="0.75" opacity="0.5"/>
 
-  <!-- Title -->
-  <text x="400" y="350" text-anchor="middle"
-        font-family="Georgia, serif" font-size="22" fill="#e8dcc8" opacity="0.92"
-        letter-spacing="2">The Annealing</text>
+  <!--
+    RIGHT: recrystallized grains — new, strain-free, rounded, even.
+    Soft, ductile, ready to be worked again.
+  -->
+  <g stroke="#7a1e05" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M540 292 C 576 288, 588 316, 566 332 C 542 348, 512 328, 520 306 C 524 296, 530 293, 540 292 Z"/>
+    <path d="M600 282 C 636 280, 650 306, 628 322 C 604 338, 574 320, 580 298 C 584 288, 590 284, 600 282 Z"/>
+    <path d="M572 336 C 606 334, 620 360, 598 372 C 576 384, 548 366, 552 346 C 556 338, 562 337, 572 336 Z"/>
+    <path d="M660 300 C 698 296, 714 324, 690 342 C 664 360, 632 338, 640 314 C 645 304, 650 301, 660 300 Z"/>
+    <path d="M642 346 C 676 344, 688 368, 668 378 C 648 388, 624 372, 628 356 C 631 349, 634 347, 642 346 Z"/>
+    <path d="M724 288 C 762 284, 778 312, 754 330 C 728 348, 696 326, 704 302 C 709 292, 714 289, 724 288 Z"/>
+    <path d="M712 340 C 748 338, 762 362, 740 374 C 718 386, 690 368, 696 350 C 700 342, 704 341, 712 340 Z"/>
+    <path d="M792 296 C 828 292, 844 320, 820 338 C 794 356, 762 334, 770 310 C 775 300, 780 297, 792 296 Z"/>
+    <path d="M780 346 C 812 344, 824 366, 804 376 C 786 386, 762 370, 766 354 C 769 348, 773 347, 780 346 Z"/>
+    <path d="M858 290 C 894 286, 910 314, 886 332 C 860 350, 828 328, 836 304 C 841 294, 846 291, 858 290 Z"/>
+    <path d="M846 342 C 878 340, 892 364, 870 376 C 850 388, 824 370, 830 352 C 833 345, 838 343, 846 342 Z"/>
+    <path d="M922 300 C 956 298, 968 322, 948 334 C 928 346, 904 330, 910 312 C 913 304, 916 301, 922 300 Z"/>
+    <path d="M908 348 C 938 346, 950 366, 932 376 C 916 384, 894 370, 898 356 C 901 350, 904 349, 908 348 Z"/>
+    <path d="M984 306 C 1014 304, 1026 326, 1008 338 C 990 350, 968 336, 972 320 C 975 312, 978 307, 984 306 Z"/>
+  </g>
+
+  <!-- embers drifting up through the furnace dark -->
+  <g fill="#ffcf7a">
+    <circle cx="300" cy="150" r="2.1" opacity="0.8"/>
+    <circle cx="470" cy="118" r="1.5" opacity="0.6"/>
+    <circle cx="640" cy="96" r="2.4" opacity="0.85"/>
+    <circle cx="560" cy="180" r="1.6" opacity="0.55"/>
+    <circle cx="770" cy="140" r="1.9" opacity="0.7"/>
+    <circle cx="880" cy="104" r="1.4" opacity="0.5"/>
+    <circle cx="410" cy="205" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="212" r="1.7" opacity="0.55"/>
+    <circle cx="930" cy="188" r="1.5" opacity="0.5"/>
+    <circle cx="360" cy="470" r="1.6" opacity="0.45"/>
+    <circle cx="720" cy="500" r="1.8" opacity="0.5"/>
+    <circle cx="880" cy="452" r="1.4" opacity="0.4"/>
+  </g>
 </svg>
