@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="The Enjambment — a dim page of verse rendered as stacked horizontal rules, ivory lines of type ruled left to right across a deep indigo ground. One line ends short of the right margin, leaving a pale gap; from that broken line-end a single bright thread of text lifts off the baseline, arcs up and over the empty margin in a striding leap, and lands running at the start of the line below, where it resolves back into the flow of type. A soft reading-light falls from the upper left, and a faint vertical caesura mark pauses one of the lower lines.">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161a2e"/>
+      <stop offset="0.5" stop-color="#0f1222"/>
+      <stop offset="1" stop-color="#080a16"/>
+    </linearGradient>
+    <radialGradient id="readlight" cx="0.3" cy="0.28" r="0.85">
+      <stop offset="0" stop-color="#cdd6ff" stop-opacity="0.20"/>
+      <stop offset="0.45" stop-color="#8f9bd0" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stride" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9d9a6" stop-opacity="0.35"/>
+      <stop offset="0.35" stop-color="#f6e7b4" stop-opacity="1"/>
+      <stop offset="0.7" stop-color="#f6e7b4" stop-opacity="1"/>
+      <stop offset="1" stop-color="#e9d9a6" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+  </defs>
+
+  <!-- page ground and reading light -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#page)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#readlight)"/>
+
+  <!-- ================= LINES OF TYPE (ruled as broken segments to read as words) ================= -->
+  <!-- each line is a run of short ivory dashes: type set across the page -->
+  <g stroke="#cdd2e8" stroke-linecap="round" opacity="0.5">
+    <!-- line 1 (full) -->
+    <g stroke-width="7">
+      <path d="M150 150 h60 M226 150 h34 M276 150 h78 M370 150 h44 M430 150 h90 M536 150 h40 M592 150 h70 M678 150 h50 M744 150 h96 M856 150 h38 M910 150 h74 M1000 150 h50"/>
+    </g>
+    <!-- line 2 (full) -->
+    <g stroke-width="7">
+      <path d="M150 210 h48 M214 210 h84 M314 210 h40 M370 210 h66 M452 210 h50 M518 210 h94 M628 210 h36 M680 210 h72 M768 210 h46 M830 210 h88 M934 210 h56 M1006 210 h44"/>
+    </g>
+  </g>
+
+  <!-- line 3: THE BROKEN LINE — ends short of the margin, leaving a pale gap -->
+  <g stroke="#cdd2e8" stroke-linecap="round" stroke-width="7" opacity="0.5">
+    <path d="M150 270 h70 M236 270 h40 M292 270 h86 M394 270 h44 M454 270 h96 M566 270 h38"/>
+  </g>
+  <!-- the empty right margin after the break (faint dashed guide) -->
+  <path d="M640 270 H1050" stroke="#5a6390" stroke-width="1.5" stroke-dasharray="2 12" opacity="0.5"/>
+
+  <!-- ================= THE STRIDE — meaning walking over the break ================= -->
+  <!-- lifts off the broken line-end, arcs over the empty margin, lands at the start of line 4 -->
+  <path d="M604 270 C 720 250, 900 150, 990 175 C 1070 197, 1030 300, 900 320 C 720 346, 300 322, 190 330"
+        fill="none" stroke="url(#stride)" stroke-width="9" stroke-linecap="round" filter="url(#soft)" opacity="0.9"/>
+  <path d="M604 270 C 720 250, 900 150, 990 175 C 1070 197, 1030 300, 900 320 C 720 346, 300 322, 190 330"
+        fill="none" stroke="#fbf1cf" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- lift-off point on the broken line -->
+  <circle cx="604" cy="270" r="7" fill="#fbf1cf"/>
+  <!-- landing point at the head of line 4, running -->
+  <circle cx="190" cy="330" r="7" fill="#fbf1cf"/>
+
+  <!-- line 4: THE LANDING — stride resolves back into the flow of type -->
+  <g stroke-linecap="round" stroke-width="7">
+    <!-- first few words glow, still lit from the stride that just landed -->
+    <path d="M190 330 h64 M270 330 h40 M326 330 h80" stroke="#f2e6bd" opacity="0.9"/>
+    <!-- then settles to ordinary type -->
+    <path d="M422 330 h46 M484 330 h92 M592 330 h38 M646 330 h70 M732 330 h50 M798 330 h86 M900 330 h44 M960 330 h74"
+          stroke="#cdd2e8" opacity="0.5"/>
+  </g>
+
+  <!-- lines 5 and 6 (full) with a caesura pause in line 5 -->
+  <g stroke="#cdd2e8" stroke-linecap="round" stroke-width="7" opacity="0.5">
+    <path d="M150 390 h58 M224 390 h86 M326 390 h42"/>
+    <!-- caesura: a held pause mid-line -->
+    <path d="M394 390 h72 M552 390 h50 M618 390 h90 M724 390 h40 M780 390 h78 M874 390 h52 M942 390 h60"/>
+  </g>
+  <!-- caesura mark -->
+  <path d="M498 376 v28" stroke="#8f9bd0" stroke-width="2.5" opacity="0.7"/>
+
+  <g stroke="#cdd2e8" stroke-linecap="round" stroke-width="7" opacity="0.42">
+    <path d="M150 450 h72 M238 450 h44 M298 450 h88 M402 450 h40 M458 450 h94 M568 450 h38 M622 450 h70 M708 450 h50 M774 450 h84 M874 450 h46 M936 450 h66"/>
+  </g>
+  <g stroke="#cdd2e8" stroke-linecap="round" stroke-width="7" opacity="0.34">
+    <path d="M150 510 h64 M230 510 h84 M330 510 h40 M386 510 h90 M492 510 h48 M556 510 h74 M646 510 h52 M714 510 h88 M818 510 h44 M878 510 h70"/>
+  </g>
+
+  <!-- title -->
+  <text x="150" y="588" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#e9d9a6" opacity="0.82">the sentence strides over the break</text>
+</svg>
