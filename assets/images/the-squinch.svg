@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Looking up into the corner of an old domed room. The lower half is the square room: two plain sandstone walls meeting at a sharp vertical corner, deep in warm shadow. Where they meet the ceiling, the right angle is filled by a squinch — a fan of nested arches stepping across the corner, each smaller arch resting on the one below, converting the square into an octagon and then into a near-circle. Above the stepped corner the golden ring of the dome's base begins to curve away into a warm lit cupola, a soft shaft of light falling from an oculus. The most intricate, honeycombed part of the whole image is the shadowed corner itself.">
+  <defs>
+    <linearGradient id="wallL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a4e2c"/>
+      <stop offset="1" stop-color="#5a3820"/>
+    </linearGradient>
+    <linearGradient id="wallR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4a2e1a"/>
+      <stop offset="1" stop-color="#6d4526"/>
+    </linearGradient>
+    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7dc9a"/>
+      <stop offset="0.5" stop-color="#e0ab5a"/>
+      <stop offset="1" stop-color="#b47c3a"/>
+    </linearGradient>
+    <radialGradient id="oculus" cx="0.5" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#fff4d2" stop-opacity="0.9"/>
+      <stop offset="0.4" stop-color="#f4cd74" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8a5a2c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shell" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f3d38a"/>
+      <stop offset="1" stop-color="#9a6a34"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- deep interior ground -->
+  <rect x="0" y="0" width="1200" height="630" fill="#2c1b10"/>
+
+  <!-- the two walls of the square room, meeting at center -->
+  <polygon points="0,210 600,300 600,630 0,630" fill="url(#wallL)"/>
+  <polygon points="1200,210 600,300 600,630 1200,630" fill="url(#wallR)"/>
+  <!-- sharp vertical corner seam -->
+  <line x1="600" y1="300" x2="600" y2="630" stroke="#20120a" stroke-width="3" opacity="0.7"/>
+
+  <!-- warm cupola above, lit -->
+  <path d="M 120,210 Q 600,-40 1080,210 L 1080,300 Q 600,120 120,300 Z" fill="url(#dome)"/>
+  <!-- oculus light wash -->
+  <ellipse cx="600" cy="150" rx="520" ry="220" fill="url(#oculus)"/>
+
+  <!-- ribs of the dome fanning from the crown -->
+  <g stroke="#8a5c2c" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M600,120 Q400,180 200,255"/>
+    <path d="M600,120 Q500,170 330,235"/>
+    <path d="M600,120 Q600,160 600,300"/>
+    <path d="M600,120 Q700,170 870,235"/>
+    <path d="M600,120 Q800,180 1000,255"/>
+  </g>
+
+  <!-- golden ring: base of the dome, where the octagon has become a circle -->
+  <path d="M 150,258 Q 600,150 1050,258" fill="none" stroke="#f6d98f" stroke-width="6" opacity="0.9"/>
+  <path d="M 150,258 Q 600,150 1050,258" fill="none" stroke="#fff4d2" stroke-width="2" opacity="0.7"/>
+
+  <!-- THE SQUINCH: nested fan of arches stepping across the corner -->
+  <!-- built as concentric corbelled arches centered on the corner apex at (600,300) -->
+  <g>
+    <!-- outer / largest arch, sitting on the walls, spanning the corner -->
+    <path d="M 470,300 A 130,120 0 0 1 730,300" fill="#3a2414" stroke="#caa25e" stroke-width="3"/>
+    <path d="M 500,300 A 100,96 0 0 1 700,300" fill="#31200f" stroke="#b98f4e" stroke-width="2.5"/>
+    <path d="M 528,300 A 72,72 0 0 1 672,300" fill="#291a0c" stroke="#a67f42" stroke-width="2.5"/>
+    <path d="M 552,300 A 48,52 0 0 1 648,300" fill="#20140a" stroke="#8f6c38" stroke-width="2"/>
+    <path d="M 572,300 A 28,34 0 0 1 628,300" fill="#180f07" stroke="#7a5c30" stroke-width="2"/>
+
+    <!-- muqarnas cells: small niches subdividing the corner, left flank -->
+    <g fill="#3f2816" stroke="#b78d4c" stroke-width="1.6">
+      <path d="M 486,300 a 20,22 0 0 1 40,0 z"/>
+      <path d="M 512,272 a 18,20 0 0 1 36,0 z"/>
+      <path d="M 458,300 a 14,16 0 0 1 28,0 z"/>
+    </g>
+    <!-- muqarnas cells, right flank (mirror) -->
+    <g fill="#3f2816" stroke="#b78d4c" stroke-width="1.6">
+      <path d="M 674,300 a 20,22 0 0 1 40,0 z"/>
+      <path d="M 652,272 a 18,20 0 0 1 36,0 z"/>
+      <path d="M 714,300 a 14,16 0 0 1 28,0 z"/>
+    </g>
+    <!-- upper tier cells nested toward the crown -->
+    <g fill="#4a301b" stroke="#c9a05c" stroke-width="1.4">
+      <path d="M 566,258 a 16,18 0 0 1 32,0 z"/>
+      <path d="M 602,258 a 16,18 0 0 1 32,0 z"/>
+      <path d="M 584,232 a 14,16 0 0 1 32,0 z"/>
+    </g>
+
+    <!-- soft catch-light on the squinch faces -->
+    <path d="M 528,300 A 72,72 0 0 1 672,300" fill="none" stroke="#ffe6a8" stroke-width="1.4" opacity="0.5"/>
+  </g>
+
+  <!-- faint octagon hint: the diagonal faces the squinch creates on the walls -->
+  <g stroke="#caa25e" stroke-width="2" opacity="0.35" fill="none">
+    <line x1="470" y1="300" x2="600" y2="300"/>
+    <line x1="730" y1="300" x2="600" y2="300"/>
+  </g>
+
+  <!-- dust of light from the oculus -->
+  <g fill="#fff4d2" filter="url(#soft)" opacity="0.5">
+    <circle cx="600" cy="200" r="3"/>
+    <circle cx="560" cy="235" r="2"/>
+    <circle cx="645" cy="240" r="2"/>
+  </g>
+</svg>
