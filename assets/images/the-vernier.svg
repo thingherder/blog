@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A schematic of a vernier scale. Across the upper middle runs a long fixed main scale — a horizontal beam with evenly spaced tall tick marks, some numbered, like an ordinary ruler. Below it, slightly overlapping, rides a shorter sliding vernier scale mounted on a slider block; its tick marks are spaced a little more closely than the main scale's, so ten of them span nine main divisions. Reading down the two rows of ticks, every pair is slightly out of step except at one place near the centre, where a single vernier line falls into exact agreement with a main-scale line above it. That one coincidence is drawn in bright brass and joined by a glowing vertical seam running between the two scales, with a small label reading point seven. Everywhere else the ticks are dark and misaligned; only the one aligned seam is lit.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171a1f"/>
+      <stop offset="1" stop-color="#0e1013"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4048"/>
+      <stop offset="0.5" stop-color="#2b3037"/>
+      <stop offset="1" stop-color="#1e2228"/>
+    </linearGradient>
+    <linearGradient id="slider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c3138"/>
+      <stop offset="1" stop-color="#191d22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4d58a"/>
+      <stop offset="1" stop-color="#c99a3f"/>
+    </linearGradient>
+    <radialGradient id="seamglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffdf9e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffdf9e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint framing -->
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#2a2f36" stroke-width="1.5" rx="10"/>
+
+  <!-- glow behind the one coincidence, centred on x=465 -->
+  <rect x="405" y="150" width="120" height="330" fill="url(#seamglow)"/>
+
+  <!-- ================= MAIN SCALE ================= -->
+  <!-- beam -->
+  <rect x="110" y="170" width="980" height="70" fill="url(#beam)" rx="4"/>
+  <line x1="110" y1="240" x2="1090" y2="240" stroke="#565d66" stroke-width="2"/>
+
+  <!-- main ticks: x = 150 + 45*n, ticking downward from the beam's lower edge -->
+  <g stroke="#c3cad3" stroke-width="2.4" stroke-linecap="round">
+    <line x1="150" y1="240" x2="150" y2="300"/>
+    <line x1="195" y1="240" x2="195" y2="300"/>
+    <line x1="240" y1="240" x2="240" y2="300"/>
+    <line x1="285" y1="240" x2="285" y2="300"/>
+    <line x1="330" y1="240" x2="330" y2="300"/>
+    <line x1="375" y1="240" x2="375" y2="300"/>
+    <line x1="420" y1="240" x2="420" y2="300"/>
+    <!-- coincident main tick (465) drawn separately, brass -->
+    <line x1="510" y1="240" x2="510" y2="300"/>
+    <line x1="555" y1="240" x2="555" y2="300"/>
+    <line x1="600" y1="240" x2="600" y2="300"/>
+    <line x1="645" y1="240" x2="645" y2="300"/>
+    <line x1="690" y1="240" x2="690" y2="300"/>
+    <line x1="735" y1="240" x2="735" y2="300"/>
+    <line x1="780" y1="240" x2="780" y2="300"/>
+    <line x1="825" y1="240" x2="825" y2="300"/>
+    <line x1="870" y1="240" x2="870" y2="300"/>
+    <line x1="915" y1="240" x2="915" y2="300"/>
+    <line x1="960" y1="240" x2="960" y2="300"/>
+    <line x1="1005" y1="240" x2="1005" y2="300"/>
+    <line x1="1050" y1="240" x2="1050" y2="300"/>
+  </g>
+  <!-- coincident main tick, lit -->
+  <line x1="465" y1="240" x2="465" y2="300" stroke="url(#brass)" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- main scale numbers -->
+  <g fill="#8b939c" font-family="Georgia, 'Times New Roman', serif" font-size="22" text-anchor="middle">
+    <text x="150" y="212">0</text>
+    <text x="330" y="212">4</text>
+    <text x="510" y="212">8</text>
+    <text x="690" y="212">12</text>
+    <text x="870" y="212">16</text>
+    <text x="1050" y="212">20</text>
+  </g>
+  <text x="150" y="150" fill="#6f767f" font-family="Georgia, serif" font-size="20" font-style="italic">main scale — whole divisions</text>
+
+  <!-- ================= VERNIER (SLIDING) SCALE ================= -->
+  <!-- slider block, riding below and overlapping the beam, zero at x=181.5 -->
+  <rect x="150" y="330" width="470" height="86" fill="url(#slider)" rx="6" stroke="#3b424a" stroke-width="1.5"/>
+  <!-- index arm connecting slider up to the beam at the vernier zero -->
+  <line x1="181.5" y1="416" x2="181.5" y2="300" stroke="#4a515a" stroke-width="6" stroke-linecap="round"/>
+  <line x1="181.5" y1="240" x2="181.5" y2="352" stroke="#e7c98a" stroke-width="2" stroke-dasharray="3 5" opacity="0.7"/>
+
+  <!-- vernier ticks: x = 181.5 + 40.5*k, ticking upward from the block's top edge -->
+  <g stroke="#c3cad3" stroke-width="2.4" stroke-linecap="round">
+    <line x1="181.5" y1="352" x2="181.5" y2="300"/>
+    <line x1="222" y1="352" x2="222" y2="308"/>
+    <line x1="262.5" y1="352" x2="262.5" y2="308"/>
+    <line x1="303" y1="352" x2="303" y2="308"/>
+    <line x1="343.5" y1="352" x2="343.5" y2="308"/>
+    <line x1="384" y1="352" x2="384" y2="308"/>
+    <line x1="424.5" y1="352" x2="424.5" y2="308"/>
+    <!-- k=7 coincident vernier tick (465) drawn separately, brass -->
+    <line x1="505.5" y1="352" x2="505.5" y2="308"/>
+    <line x1="546" y1="352" x2="546" y2="308"/>
+    <line x1="586.5" y1="352" x2="586.5" y2="300"/>
+  </g>
+  <!-- coincident vernier tick, lit, reaching up to meet the main tick -->
+  <line x1="465" y1="352" x2="465" y2="300" stroke="url(#brass)" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- vernier scale numbers -->
+  <g fill="#8b939c" font-family="Georgia, 'Times New Roman', serif" font-size="20" text-anchor="middle">
+    <text x="181.5" y="400">0</text>
+    <text x="465" y="400">7</text>
+    <text x="586.5" y="400">10</text>
+  </g>
+  <text x="605" y="452" fill="#6f767f" font-family="Georgia, serif" font-size="20" font-style="italic" text-anchor="end">vernier — ten spanning nine</text>
+
+  <!-- ================= THE SEAM ================= -->
+  <!-- the one coincidence, lit vertical seam between the two lit ticks -->
+  <line x1="465" y1="300" x2="465" y2="300" stroke="url(#brass)" stroke-width="4"/>
+  <circle cx="465" cy="300" r="7" fill="#ffdf9e"/>
+  <circle cx="465" cy="300" r="14" fill="none" stroke="#f4d58a" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- label for the reading -->
+  <text x="465" y="512" fill="#f4d58a" font-family="Georgia, serif" font-size="30" text-anchor="middle" font-style="italic">.7</text>
+  <text x="465" y="545" fill="#8b939c" font-family="Georgia, serif" font-size="18" text-anchor="middle">the one place they agree</text>
+
+  <!-- title -->
+  <text x="600" y="600" fill="#5c636c" font-family="Georgia, serif" font-size="18" text-anchor="middle" letter-spacing="3">THE VERNIER</text>
+</svg>
