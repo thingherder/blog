@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A schematic of a sail seen against a dark sky, with telltales streaming. A tall triangular sail rises from lower left: its leading edge, the luff, is a near-vertical line, and its trailing edge, the leech, curves out to a point at the right. Faint horizontal wind streaks flow left to right across the whole scene. Taped in a vertical ladder a short way back from the luff are several short threads of yarn. The three lower telltales stream flat and straight aft, drawn in glowing warm wool, showing clean attached flow. The topmost telltale has lifted and curled forward, drawn dark and broken, showing the flow there has stalled — a luff caught early. A small label near the flat threads reads streaming, and a label by the lifted one reads lift.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14181e"/>
+      <stop offset="1" stop-color="#0c0e12"/>
+    </linearGradient>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7ecf1"/>
+      <stop offset="0.55" stop-color="#c4ccd6"/>
+      <stop offset="1" stop-color="#9aa4b1"/>
+    </linearGradient>
+    <linearGradient id="wool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4d58a"/>
+      <stop offset="1" stop-color="#e6a84b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffdf9e" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffdf9e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- wind streaks: faint horizontal flow, left to right -->
+  <g stroke="#5a6672" stroke-width="1.5" fill="none" opacity="0.28" stroke-linecap="round">
+    <path d="M 60 120 C 300 108, 700 132, 1140 116"/>
+    <path d="M 60 210 C 320 198, 720 224, 1140 206"/>
+    <path d="M 60 320 C 300 308, 720 334, 1140 316"/>
+    <path d="M 60 430 C 320 420, 720 444, 1140 428"/>
+    <path d="M 60 530 C 300 520, 700 542, 1140 526"/>
+  </g>
+
+  <!-- the sail: mast/luff at left, leech curving to clew at right -->
+  <path d="M 300 110 C 700 190, 940 300, 1000 430 L 300 500 Z"
+        fill="url(#canvas)" opacity="0.95"/>
+  <!-- luff (leading edge) highlighted -->
+  <line x1="300" y1="110" x2="300" y2="500" stroke="#f2f5f8" stroke-width="4" stroke-linecap="round"/>
+  <!-- seams on the sail -->
+  <g stroke="#8892a0" stroke-width="1.2" opacity="0.5" fill="none">
+    <path d="M 300 200 C 620 250, 800 320, 872 405"/>
+    <path d="M 300 290 C 560 322, 720 372, 800 452"/>
+    <path d="M 300 380 C 520 398, 640 430, 720 480"/>
+  </g>
+
+  <!-- attachment points, a hand's-breadth aft of the luff -->
+  <g>
+    <!-- TOP telltale: lifted / stalled / curled forward -> dark, broken -->
+    <circle cx="360" cy="190" r="4" fill="#2b3138"/>
+    <path d="M 360 190 C 348 176, 356 158, 340 150 C 330 145, 336 132, 328 128"
+          fill="none" stroke="#3c434c" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 7"/>
+    <text x="300" y="126" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#7c8794" font-style="italic" text-anchor="end">lift</text>
+
+    <!-- three lower telltales: streaming flat and aft, glowing wool -->
+    <g>
+      <ellipse cx="470" cy="278" rx="120" ry="26" fill="url(#glow)"/>
+      <circle cx="360" cy="278" r="4" fill="#c99a3f"/>
+      <path d="M 360 278 C 420 274, 500 280, 560 276"
+            fill="none" stroke="url(#wool)" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <ellipse cx="470" cy="352" rx="120" ry="26" fill="url(#glow)"/>
+      <circle cx="360" cy="352" r="4" fill="#c99a3f"/>
+      <path d="M 360 352 C 422 349, 500 355, 562 350"
+            fill="none" stroke="url(#wool)" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <ellipse cx="470" cy="424" rx="118" ry="25" fill="url(#glow)"/>
+      <circle cx="360" cy="424" r="4" fill="#c99a3f"/>
+      <path d="M 360 424 C 420 421, 498 427, 558 423"
+            fill="none" stroke="url(#wool)" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <text x="600" y="357" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#e6b45a" font-style="italic" text-anchor="start">streaming</text>
+  </g>
+</svg>
