@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark seascape at dusk. Across a grey sea the pale back and tail of a whale arcs above the water, and a faint moonlit path runs over the swell toward the horizon, so the sea reads as a road. Two illuminated words float above the water like struck coins: WHALE on the left and ROAD on the right, each in warm gold on a dark panel. A short bright arc of light springs between them, joined by a small burst of sparks at its center, and beneath the arc a fainter compound reads whale-road. The horizon glows a thin band of cold light under a deep blue-black sky scattered with a few stars.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.7" stop-color="#101a2c"/>
+      <stop offset="1" stop-color="#16233a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2b40"/>
+      <stop offset="1" stop-color="#0a121d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6dc93"/>
+      <stop offset="1" stop-color="#e0a949"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a3c55" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#9fb6cf" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#2a3c55" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d0" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#ffd77a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd77a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="panelglow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#1d2b40"/>
+      <stop offset="1" stop-color="#0d1626"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky and sea -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect y="392" width="1200" height="238" fill="url(#sea)"/>
+
+  <!-- stars -->
+  <g fill="#cdd9ea">
+    <circle cx="150" cy="70" r="1.4" opacity="0.8"/>
+    <circle cx="320" cy="120" r="1" opacity="0.6"/>
+    <circle cx="520" cy="60" r="1.2" opacity="0.7"/>
+    <circle cx="900" cy="90" r="1.3" opacity="0.75"/>
+    <circle cx="1050" cy="150" r="1" opacity="0.6"/>
+    <circle cx="1120" cy="60" r="1.5" opacity="0.85"/>
+    <circle cx="720" cy="130" r="0.9" opacity="0.5"/>
+    <circle cx="240" cy="200" r="0.9" opacity="0.45"/>
+  </g>
+
+  <!-- thin glowing horizon band -->
+  <rect x="0" y="390" width="1200" height="3" fill="url(#horizon)"/>
+
+  <!-- moonlit road across the swell, narrowing to the horizon -->
+  <g fill="#aebfd6">
+    <path d="M 600 392 L 640 392 L 900 620 L 300 620 Z" opacity="0.10"/>
+    <path d="M 600 392 L 622 392 L 760 620 L 440 620 Z" opacity="0.14"/>
+  </g>
+
+  <!-- swell lines -->
+  <g stroke="#3b5474" stroke-width="1.6" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M 40 450 C 300 440, 900 460, 1160 448"/>
+    <path d="M 40 512 C 320 502, 880 522, 1160 508"/>
+    <path d="M 40 578 C 300 568, 900 588, 1160 574"/>
+  </g>
+
+  <!-- the whale: back and fluke arcing above the water -->
+  <g fill="#c3d0e0">
+    <path d="M 470 452
+             C 560 402, 700 400, 792 446
+             C 720 430, 592 432, 508 470
+             C 496 466, 480 460, 470 452 Z" opacity="0.9"/>
+    <!-- fluke -->
+    <path d="M 792 446
+             C 812 430, 840 420, 862 402
+             C 852 424, 856 440, 872 452
+             C 846 448, 818 448, 792 446 Z" opacity="0.85"/>
+  </g>
+  <!-- spray / blow -->
+  <g stroke="#dbe6f2" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M 560 400 C 556 380, 548 366, 540 356"/>
+    <path d="M 566 400 C 570 382, 574 368, 582 356"/>
+  </g>
+
+  <!-- two word-panels, struck like coins -->
+  <!-- WHALE (left) -->
+  <g>
+    <rect x="150" y="196" width="292" height="112" rx="10" fill="url(#panelglow)" stroke="#e0a949" stroke-width="2" opacity="0.96"/>
+    <text x="296" y="272" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" letter-spacing="4" fill="url(#gold)">WHALE</text>
+  </g>
+  <!-- ROAD (right) -->
+  <g>
+    <rect x="758" y="196" width="292" height="112" rx="10" fill="url(#panelglow)" stroke="#e0a949" stroke-width="2" opacity="0.96"/>
+    <text x="904" y="272" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" letter-spacing="6" fill="url(#gold)">ROAD</text>
+  </g>
+
+  <!-- the arc of light springing between the two words -->
+  <path d="M 448 250 C 560 150, 640 150, 752 250" fill="none" stroke="#ffe6a6" stroke-width="3" opacity="0.9" stroke-linecap="round"/>
+  <path d="M 448 250 C 560 150, 640 150, 752 250" fill="none" stroke="#fff6dc" stroke-width="1.2" opacity="0.9" stroke-linecap="round"/>
+
+  <!-- spark burst at the center of the arc -->
+  <circle cx="600" cy="176" r="70" fill="url(#spark)"/>
+  <g stroke="#fff4d0" stroke-width="2.4" stroke-linecap="round" opacity="0.95">
+    <path d="M 600 138 L 600 118"/>
+    <path d="M 600 214 L 600 234"/>
+    <path d="M 562 176 L 542 176"/>
+    <path d="M 638 176 L 658 176"/>
+    <path d="M 573 149 L 559 135"/>
+    <path d="M 627 149 L 641 135"/>
+    <path d="M 573 203 L 559 217"/>
+    <path d="M 627 203 L 641 217"/>
+  </g>
+  <circle cx="600" cy="176" r="6" fill="#fff8e6"/>
+
+  <!-- the fainter compound beneath the arc -->
+  <text x="600" y="352" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-style="italic" letter-spacing="2" fill="#e9c880" opacity="0.78">whale-road</text>
+</svg>
