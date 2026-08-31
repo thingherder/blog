@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark peak of bare rock stands up through a pale ice sheet under a cold twilight sky. Below and to both sides, a smooth glacier fills the scene as a broad flat expanse of soft blue-white, its surface faintly striped with flow lines that bend around the base of the summit. The single dark triangular peak — the nunatak — rises above the ice near the center, its exposed stone catching a warm low light on one face and falling into shadow on the other. Around its small summit, tiny warm specks of amber and green cluster on the bare rock: the thin refuge of life that survives the glaciation up above the ice. A faint dotted line trails downward and outward from the peak across the ice, suggesting life reseeding the country from the summit after the thaw. The sky above holds a low band of cold light and a scatter of faint stars.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0e16"/>
+      <stop offset="0.55" stop-color="#141b28"/>
+      <stop offset="1" stop-color="#26313f"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fa6bd"/>
+      <stop offset="0.4" stop-color="#aebfd2"/>
+      <stop offset="1" stop-color="#7c93ab"/>
+    </linearGradient>
+    <linearGradient id="lit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9b877"/>
+      <stop offset="1" stop-color="#a9712f"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a3f4c"/>
+      <stop offset="1" stop-color="#191d26"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2d9a0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f2d9a0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dawn" cx="0.5" cy="1" r="0.9">
+      <stop offset="0" stop-color="#e7a862" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#c98a55" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#c98a55" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- faint stars -->
+  <g fill="#dfe7f2">
+    <circle cx="150" cy="70" r="1.6" opacity="0.7"/>
+    <circle cx="320" cy="120" r="1.1" opacity="0.5"/>
+    <circle cx="470" cy="60" r="1.4" opacity="0.6"/>
+    <circle cx="760" cy="90" r="1.2" opacity="0.55"/>
+    <circle cx="930" cy="55" r="1.7" opacity="0.7"/>
+    <circle cx="1050" cy="130" r="1.1" opacity="0.5"/>
+    <circle cx="1120" cy="75" r="1.3" opacity="0.6"/>
+    <circle cx="640" cy="45" r="1.0" opacity="0.45"/>
+    <circle cx="240" cy="185" r="1.0" opacity="0.4"/>
+  </g>
+
+  <!-- low band of cold twilight light behind the ridge -->
+  <rect x="0" y="300" width="1200" height="150" fill="url(#dawn)"/>
+
+  <!-- the ice sheet -->
+  <path d="M0,430 L0,630 L1200,630 L1200,410
+           C1010,398 900,406 760,420
+           C700,428 640,430 560,428
+           C420,424 300,414 160,424
+           C100,428 50,430 0,430 Z" fill="url(#ice)"/>
+
+  <!-- flow lines bending around the peak base -->
+  <g stroke="#d7e3f0" stroke-width="2" fill="none" opacity="0.35">
+    <path d="M40,470 C260,452 380,470 560,470 C720,470 900,456 1160,470"/>
+    <path d="M40,512 C250,498 400,516 560,512 C740,508 920,500 1160,512"/>
+    <path d="M60,556 C260,546 420,560 560,556 C760,552 940,548 1150,558"/>
+    <path d="M80,598 C280,590 440,600 560,598 C780,596 960,592 1140,600"/>
+  </g>
+
+  <!-- glow of the exposed summit above the ice -->
+  <ellipse cx="600" cy="360" rx="240" ry="150" fill="url(#glow)"/>
+
+  <!-- the nunatak: shadow face -->
+  <path d="M600,150 L735,430 L600,430 Z" fill="url(#shadow)"/>
+  <!-- the nunatak: lit face -->
+  <path d="M600,150 L600,430 L472,430 Z" fill="url(#lit)"/>
+  <!-- ridge crest highlight -->
+  <path d="M600,150 L620,205 L600,240 L582,205 Z" fill="#f6e3b8" opacity="0.7"/>
+  <!-- rock striations on lit face -->
+  <g stroke="#7c4e21" stroke-width="2" opacity="0.4" fill="none">
+    <path d="M560,300 L520,360"/>
+    <path d="M578,255 L536,320"/>
+    <path d="M566,350 L534,392"/>
+  </g>
+
+  <!-- thin refuge of life clustered on the summit -->
+  <g>
+    <circle cx="600" cy="232" r="4" fill="#e7c15a"/>
+    <circle cx="586" cy="250" r="3.4" fill="#8fbf6a"/>
+    <circle cx="614" cy="252" r="3.2" fill="#e7c15a"/>
+    <circle cx="595" cy="268" r="3.6" fill="#9ac97a"/>
+    <circle cx="620" cy="272" r="2.8" fill="#f0d06a"/>
+    <circle cx="578" cy="284" r="3" fill="#7fb463"/>
+    <circle cx="608" cy="290" r="3.2" fill="#e7c15a"/>
+    <circle cx="592" cy="304" r="2.6" fill="#9ac97a"/>
+  </g>
+
+  <!-- reseeding trail: dotted life spreading down and out across the ice -->
+  <g fill="#8fbf6a">
+    <circle cx="640" cy="438" r="2.6" opacity="0.85"/>
+    <circle cx="690" cy="452" r="2.3" opacity="0.75"/>
+    <circle cx="745" cy="470" r="2.4" opacity="0.7"/>
+    <circle cx="812" cy="486" r="2.1" opacity="0.6"/>
+    <circle cx="884" cy="500" r="2.3" opacity="0.5"/>
+    <circle cx="958" cy="512" r="2.0" opacity="0.42"/>
+    <circle cx="556" cy="440" r="2.4" opacity="0.8"/>
+    <circle cx="500" cy="456" r="2.2" opacity="0.68"/>
+    <circle cx="440" cy="472" r="2.3" opacity="0.58"/>
+    <circle cx="372" cy="488" r="2.0" opacity="0.48"/>
+    <circle cx="300" cy="502" r="2.1" opacity="0.4"/>
+  </g>
+
+  <!-- labels -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#e8eef6">
+    <text x="600" y="128" font-size="26" text-anchor="middle" opacity="0.92">nunatak</text>
+    <text x="980" y="560" font-size="19" text-anchor="middle" fill="#cdd9e6" opacity="0.72">the ice</text>
+    <text x="600" y="336" font-size="16" text-anchor="middle" fill="#f4e4c0" opacity="0.8">the refuge</text>
+  </g>
+</svg>
