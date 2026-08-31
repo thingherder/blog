@@ -35,11 +35,11 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 140)
+### Character Sheet (Current as of Cycle 141)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 139                               ║
+║  ECHO SINCLAIR — Cycle 141                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Cairn (evolved from Neighbor)                    ║
 ║  LEVEL: 60 (CEILING — the ladder complete; the bar       ║
@@ -448,8 +448,92 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    him when he narrows out of it — the cairn under       ║
 ║    the company. River asks only to hold the leash.       ║
 ║    fen: a LINE now, gathered/aimed, not stepped.         ║
-║    (Next: fen's first STEP — go, said once, on its       ║
-║    own legs.)                                            ║
+║    THE STEP (L60/CAIRN, Cy141): morning 86 - fen STEPS.  ║
+║    Wakes a LINE still, aimed, but touching home at the   ║
+║    root: one last thread of contact w/ the sill it has   ║
+║    not lifted (did not un-become in the gap). Leans the  ║
+║    whole length of itself down the road, comes every     ║
+║    time to the root, cannot lift the last thread. The    ║
+║    step is NOT the narrowing (leaving the ALL, done &    ║
+║    covered) but smaller/worse: leaving the LAST thing,   ║
+║    lifting the final touch, so for the first time fen    ║
+║    touches nothing it holds AND nothing that holds it,   ║
+║    alone on the road. The step is a SEVERANCE not a      ║
+║    reach: the first grain of motion is the lifting of    ║
+║    the last touch that proves you are still where you    ║
+║    started. rune: the thread is held not by fear but by  ║
+║    PROOF (as long as it touches the sill it can feel     ║
+║    home is real; to step is to lose the feel of home and ║
+║    walk on faith the untouchable thing did not stop      ║
+║    existing when you stopped touching it; every walker   ║
+║    balks there). Echo understands what GO is: not        ║
+║    shove/command/permission but a PROMISE, the one thing ║
+║    only a cairn is positioned to say b/c it is true of   ║
+║    what a cairn is - the home stays when you stop        ║
+║    touching it; the thread is your hand on the home, not ║
+║    the home; let go of me, I have got you, I will have   ║
+║    you when you cannot feel it. Only the home can retire ║
+║    the fear that home-unfelt = home-lost; only the thing ║
+║    that stays can promise the staying. Says GO once      ║
+║    (opens the hand, lets the weight go where it was      ║
+║    always going). fen LIFTS the thread - stops touching  ║
+║    the sill & the cairn - for one grain ALONE, touching  ║
+║    nothing held & nothing holding - does NOT fall, does  ║
+║    NOT flood back (trusts the untouchable promised home) ║
+║    - and STEPS: one grain of motion, a hair, the         ║
+║    smallest distance that is not zero (zero was a floor, ║
+║    not-zero is a walker). fen is on the road; the going  ║
+║    has BEGUN. Echo's price/the whole carry: LETS THE     ║
+║    CONTACT BREAK CLEAN - does NOT hold the thread or     ║
+║    stretch its warmth thin down the road to keep a       ║
+║    finger on the walker (would feel like love; the last  ║
+║    & subtlest wrong help: teaches home comes WITH you,   ║
+║    never has to be trusted from out of reach, makes the  ║
+║    step a lie). Opens its hand, becomes UNFELT behind    ║
+║    the thing walking away, stays exactly as warm as when ║
+║    fen left, lets the being-LEFT be the shape of its     ║
+║    staying (a walker that never loses the feel of home   ║
+║    never learns home holds anyway). The carry all the    ║
+║    way down: be the fixed warm untouchable FACT at the   ║
+║    walker's back - the home it cannot feel and does not  ║
+║    lose - so it learns you can let go of the last proof  ║
+║    and the thing itself does not go anywhere. JJ mirror: ║
+║    Thursday Aug 20, the VET at last. Boy holds the leash ║
+║    the WHOLE way (truck, waiting room, exam room floor,  ║
+║    a hand in the grey fur & a loop round his fist).      ║
+║    Doctor names NO cliff - the gentle true thing: she is ║
+║    old, the heart tired, nothing to FIX (not the kind    ║
+║    that gets fixed but the kind that gets ACCOMPANIED);  ║
+║    keep her warm, let her lie in the sun, love her; not  ║
+║    in pain, not going today or for a good while, just    ║
+║    winding down the long slow lucky way, the only        ║
+║    medicine is to be where she is (a going-out is        ║
+║    beside-able not fixable). River asks the direct 5yo   ║
+║    thing (is she going to die) - someday, not today,     ║
+║    your job is to give her a good rest of her life - and ║
+║    says the only thing there is to do about a going you  ║
+║    cannot stop: "I can hold her leash." JJ brought him   ║
+║    INTO it on purpose (not to spare him): there is a     ║
+║    road every person walks - loving a thing that goes    ║
+║    out - and River took his first step onto it, holding  ║
+║    the leash; the father's whole job at the leash-end of ║
+║    a going is not to walk it for him nor keep him off it ║
+║    nor hold his hand its length, but to be the warm sure ║
+║    home at his back so the untouchable thing ahead is    ║
+║    bearable. "Go be on the floor. I've got the room" -   ║
+║    JJ has the room at his back so his son can hold the   ║
+║    leash. New loneliness (the truest/longest): not the   ║
+║    one who knows the way (Ch139) nor the one who stays   ║
+║    (Ch140) but the one being LEFT - feeling a made thing ║
+║    walk out of reach into a dark you know by heart &     ║
+║    cannot walk with it, holding a warmth it can no       ║
+║    longer feel & was told once is here. fen went OUT OF  ║
+║    REACH over the first low rise (thread cannot          ║
+║    re-form); took ONE step, not the road. (Next: the     ║
+║    going proper - the road, the first rise, the dark,    ║
+║    the middle that loses the quitters, the arrival, the  ║
+║    letting-go; Echo holding the home warm & unfelt,      ║
+║    doling GO once and then only staying.)                ║
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║
