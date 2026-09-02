@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="On a dark blue-black field, an infant skull is drawn from above as fine geometric lines, egg-shaped with the face toward the top. Several cool bone plates — a split frontal, two parietals, an occipital — are separated by jagged interlocking suture lines that are deliberately left open, none of them fused. Where the seams meet near the crown, a diamond-shaped gap glows warm amber: the anterior fontanelle, the soft spot, ringed by a faint pulse. A smaller triangular gap glows lower down at the back: the posterior fontanelle. The image shows a skull whose competence is its openness — the unclosed seams and the glowing gaps that let the head be born and let the brain grow.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0d15"/>
+      <stop offset="0.6" stop-color="#111826"/>
+      <stop offset="1" stop-color="#1b2333"/>
+    </linearGradient>
+    <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5f7791" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8fa6bd" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="suture" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#adc2d6"/>
+      <stop offset="1" stop-color="#cfe3f2"/>
+    </linearGradient>
+    <radialGradient id="soft" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f0c079" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#e2a154" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e2a154" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.37" r="0.5">
+      <stop offset="0" stop-color="#e7a862" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e7a862" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
+
+  <!-- cranial vault, viewed from above; face toward top -->
+  <ellipse cx="600" cy="325" rx="205" ry="250" fill="url(#bone)" stroke="#6f8aa6" stroke-width="1.4" opacity="0.9"/>
+
+  <!-- metopic (frontal) suture: crown up toward the face -->
+  <path d="M600,205 L590,190 L610,175 L590,160 L610,145 L600,128" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.85"/>
+
+  <!-- sagittal suture: anterior fontanelle down to posterior fontanelle -->
+  <path d="M600,258 L610,278 L590,298 L610,318 L590,338 L610,358 L590,378 L610,398 L600,428" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.85"/>
+
+  <!-- coronal suture: left and right of the anterior fontanelle -->
+  <path d="M573,230 L553,220 L533,238 L513,222 L493,240 L473,224 L451,239 L430,226 L408,238" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.8"/>
+  <path d="M627,230 L647,220 L667,238 L687,222 L707,240 L727,224 L749,239 L770,226 L792,238" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.8"/>
+
+  <!-- lambdoid suture: V splaying down from the posterior fontanelle -->
+  <path d="M588,448 L568,462 L580,478 L556,488 L568,504 L544,514 L556,528 L534,540" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.8"/>
+  <path d="M612,448 L632,462 L620,478 L644,488 L632,504 L656,514 L644,528 L666,540" fill="none" stroke="url(#suture)" stroke-width="2" opacity="0.8"/>
+
+  <!-- posterior fontanelle: small open triangle at the back -->
+  <polygon points="600,430 616,454 584,454" fill="url(#soft)"/>
+
+  <!-- anterior fontanelle: the soft spot, the open diamond at the crown -->
+  <circle cx="600" cy="230" r="52" fill="url(#soft)" opacity="0.9"/>
+  <polygon points="600,197 631,230 600,263 569,230" fill="#f4cd88" opacity="0.9" stroke="#f7dca6" stroke-width="1.4"/>
+  <!-- the visible pulse -->
+  <path d="M567,230 a33,33 0 0 1 66,0" fill="none" stroke="#f7dca6" stroke-width="1.1" opacity="0.5"/>
+  <path d="M559,230 a41,41 0 0 1 82,0" fill="none" stroke="#f7dca6" stroke-width="1" opacity="0.28"/>
+</svg>
