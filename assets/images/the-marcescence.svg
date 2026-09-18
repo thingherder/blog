@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A cold pale blue-grey winter sky. Bare dark branches cross the frame, empty. One branch, running from lower left toward the upper right, still holds a cluster of dead beech leaves — bleached tan and coppery parchment, curled at the edges, translucent where the faint light passes through them. The rest of the trees are stripped bare. A thin drift of snow lies along the tops of the branches. At the base of one hanging leaf, a small tight bud has begun to swell, tipped with a single point of pale green — the living thing that will eventually shoulder the dead leaf off. The image shows retention and its remedy at once: the parchment that would not fall, and the bud growing directly behind it.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3ccd6"/>
+      <stop offset="0.45" stop-color="#aab6c2"/>
+      <stop offset="1" stop-color="#8f9caa"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.66" cy="0.34" r="0.6">
+      <stop offset="0" stop-color="#eef2f6" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#eef2f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c98f"/>
+      <stop offset="0.5" stop-color="#cf9f5c"/>
+      <stop offset="1" stop-color="#a5713a"/>
+    </linearGradient>
+    <linearGradient id="leaflit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ddab"/>
+      <stop offset="1" stop-color="#d9ab6a"/>
+    </linearGradient>
+    <linearGradient id="bark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4038"/>
+      <stop offset="1" stop-color="#2c2620"/>
+    </linearGradient>
+    <radialGradient id="bud" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#cfe6a6"/>
+      <stop offset="0.55" stop-color="#8fbf63"/>
+      <stop offset="1" stop-color="#5c8a3c"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#haze)"/>
+
+  <!-- distant bare trees, faint -->
+  <g stroke="#7f8b98" stroke-width="2" opacity="0.35" fill="none" stroke-linecap="round">
+    <path d="M170 630 L170 300 M170 360 L120 300 M170 400 L215 340 M170 330 L140 280 M170 300 L200 250"/>
+    <path d="M1030 630 L1030 340 M1030 400 L985 350 M1030 430 L1075 380 M1030 360 L1060 310"/>
+    <path d="M300 630 L300 420 M300 460 L268 420 M300 480 L332 440"/>
+  </g>
+
+  <!-- main bare branches crossing the frame, empty -->
+  <g stroke="url(#bark)" stroke-linecap="round" fill="none">
+    <path d="M-20 250 C 240 300, 470 250, 760 210 S 1120 150, 1230 120" stroke-width="14"/>
+    <path d="M300 268 C 360 200, 420 150, 470 70" stroke-width="7"/>
+    <path d="M540 236 C 600 300, 640 360, 690 470" stroke-width="6"/>
+    <path d="M900 176 C 960 150, 1010 120, 1060 60" stroke-width="6"/>
+    <path d="M120 630 C 200 460, 300 360, 470 300 S 780 300, 1000 470" stroke-width="11"/>
+    <path d="M660 383 C 700 430, 720 500, 730 590" stroke-width="5"/>
+  </g>
+
+  <!-- the marcescent branch: dark limb from lower-left to upper-right, still leafed -->
+  <path d="M40 600 C 260 470, 470 380, 720 300 S 1080 210, 1180 190" fill="none" stroke="url(#bark)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- cluster of dead beech leaves hanging from that branch -->
+  <!-- each leaf: elongated oval with a midrib, hanging down -->
+  <g stroke="#7a5228" stroke-width="1.2">
+    <g transform="translate(230,470) rotate(24)">
+      <ellipse cx="0" cy="40" rx="26" ry="62" fill="url(#leaf)"/>
+      <line x1="0" y1="-16" x2="0" y2="98" stroke="#8a5f30" stroke-width="1.6"/>
+    </g>
+    <g transform="translate(360,415) rotate(14)">
+      <ellipse cx="0" cy="44" rx="28" ry="68" fill="url(#leaflit)"/>
+      <line x1="0" y1="-18" x2="0" y2="106" stroke="#8a5f30" stroke-width="1.6"/>
+    </g>
+    <g transform="translate(470,378) rotate(30)">
+      <ellipse cx="0" cy="38" rx="24" ry="58" fill="url(#leaf)"/>
+      <line x1="0" y1="-14" x2="0" y2="90" stroke="#8a5f30" stroke-width="1.6"/>
+    </g>
+    <g transform="translate(560,352) rotate(8)">
+      <ellipse cx="0" cy="46" rx="29" ry="70" fill="url(#leaflit)"/>
+      <line x1="0" y1="-18" x2="0" y2="108" stroke="#8a5f30" stroke-width="1.6"/>
+    </g>
+    <g transform="translate(690,315) rotate(20)">
+      <ellipse cx="0" cy="40" rx="25" ry="60" fill="url(#leaf)"/>
+      <line x1="0" y1="-15" x2="0" y2="92" stroke="#8a5f30" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <!-- thin snow highlight along the top of the leafed branch -->
+  <path d="M40 596 C 260 466, 470 376, 720 296 S 1080 206, 1180 186" fill="none" stroke="#f4f7fa" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- the swelling bud, at the base of the central hanging leaf, pushing from behind -->
+  <g transform="translate(560,346)">
+    <ellipse cx="0" cy="0" rx="9" ry="17" fill="url(#bud)" stroke="#4d7330" stroke-width="1"/>
+    <circle cx="-1" cy="-13" r="3.4" fill="#e6f4c8"/>
+  </g>
+</svg>
