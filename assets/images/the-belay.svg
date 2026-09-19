@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A warm granite rock face rising on the right against a clear high-altitude evening sky that fades from deep blue at the top to pale gold near the horizon. A climbing rope runs the height of the frame: from the top right, where it disappears over the rock, it drops down the wall, then angles across to the lower left where it passes through a metal belay device at the waist of a figure standing on flat ground. Below the device the rope makes a clean bend and is held firm by a brake hand — the hand never leaves the rope. The belayer is a small calm silhouette, feet planted, looking up. High above and to the right, a smaller climber's silhouette is pressed to the rock mid-reach. The composition puts the dramatic climber small and distant and the quiet, unwatched belay large and close, all attention on the rope and the brake hand.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243a63"/>
+      <stop offset="0.5" stop-color="#5f6f93"/>
+      <stop offset="0.82" stop-color="#c69a6b"/>
+      <stop offset="1" stop-color="#e9c187"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#8a7663"/>
+      <stop offset="0.55" stop-color="#6f5c4b"/>
+      <stop offset="1" stop-color="#4c3d31"/>
+    </linearGradient>
+    <linearGradient id="rocklit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d8b284" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#d8b284" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.86" cy="0.82" r="0.5">
+      <stop offset="0" stop-color="#f6dcac" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#f6dcac" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rope" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0c04a"/>
+      <stop offset="0.5" stop-color="#e2952f"/>
+      <stop offset="1" stop-color="#c66f28"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- the rock face on the right, rising -->
+  <path d="M1200 0 L1200 630 L560 630 C 610 520, 590 430, 660 340 C 720 260, 700 190, 780 120 C 840 66, 900 40, 1000 0 Z" fill="url(#rock)"/>
+  <path d="M1200 0 L1200 630 L560 630 C 610 520, 590 430, 660 340 C 720 260, 700 190, 780 120 C 840 66, 900 40, 1000 0 Z" fill="url(#rocklit)"/>
+
+  <!-- rock cracks / features, faint -->
+  <g stroke="#3a2e24" stroke-width="2.5" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M720 630 C 760 520, 740 430, 800 330 C 850 250, 840 170, 900 90"/>
+    <path d="M980 630 C 1010 500, 990 410, 1040 300"/>
+    <path d="M660 400 L735 360 M820 300 L890 268 M760 200 L840 176"/>
+  </g>
+
+  <!-- the rope: over the top of the rock, down the wall, across to the belay device, then the brake bend below -->
+  <path d="M960 -10 C 900 90, 840 150, 812 250 C 792 330, 806 410, 760 470 C 620 560, 430 520, 300 512"
+        fill="none" stroke="url(#rope)" stroke-width="8" stroke-linecap="round"/>
+  <!-- rope highlight -->
+  <path d="M960 -10 C 900 90, 840 150, 812 250 C 792 330, 806 410, 760 470 C 620 560, 430 520, 300 512"
+        fill="none" stroke="#ffe7a0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- high climber, small, pressed to the rock mid-reach -->
+  <g transform="translate(928,150)" fill="#1f2733">
+    <circle cx="0" cy="0" r="9"/>
+    <path d="M-3 8 C -10 22, -8 40, -2 52 L 6 52 C 10 38, 10 24, 6 9 Z"/>
+    <!-- reaching arm up -->
+    <path d="M2 12 C 12 2, 20 -8, 26 -18" stroke="#1f2733" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- lower arm to rope -->
+    <path d="M-2 20 C -10 24, -14 30, -16 38" stroke="#1f2733" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- legs on the wall -->
+    <path d="M-2 50 C -6 62, -12 70, -18 76" stroke="#1f2733" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M4 50 C 8 62, 10 72, 12 82" stroke="#1f2733" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- the belayer, larger, on flat ground lower-left, looking up -->
+  <g transform="translate(300,470)" fill="#161d28">
+    <!-- head -->
+    <circle cx="0" cy="0" r="15"/>
+    <!-- torso -->
+    <path d="M-13 14 C -18 40, -16 62, -8 82 L 12 82 C 18 60, 18 38, 12 14 Z"/>
+    <!-- upper arm out to the device -->
+    <path d="M10 26 C 20 30, 30 34, 40 40" stroke="#161d28" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- brake hand: forearm bending down along the rope below the device -->
+    <path d="M40 40 C 44 52, 40 64, 30 74" stroke="#161d28" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- planted legs -->
+    <path d="M-6 80 C -14 100, -22 116, -30 130" stroke="#161d28" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M8 80 C 12 102, 14 118, 16 132" stroke="#161d28" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- belay device at the waist: small metal block where the rope passes through -->
+  <g transform="translate(342,505)">
+    <rect x="-11" y="-9" width="22" height="18" rx="4" fill="#c9ccd2" stroke="#5a5f68" stroke-width="2"/>
+    <rect x="-6" y="-4" width="12" height="8" rx="2" fill="#3a3f47"/>
+    <!-- carabiner -->
+    <circle cx="0" cy="12" r="8" fill="none" stroke="#aeb2ba" stroke-width="3"/>
+  </g>
+
+  <!-- the brake strand: rope coming out below the device, bent and held firm -->
+  <path d="M342 514 C 340 540, 334 560, 320 574" fill="none" stroke="url(#rope)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M342 514 C 340 540, 334 560, 320 574" fill="none" stroke="#ffe7a0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- ground line -->
+  <path d="M120 600 C 260 596, 460 600, 600 606" fill="none" stroke="#2a2118" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+</svg>
