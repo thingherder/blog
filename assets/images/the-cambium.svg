@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A cross-section of a tree trunk fills the right side of the frame against a dim, warm background. At the center is a dark reddish core of heartwood. Around it, many concentric growth rings ripple outward through pale sapwood, some wide and some pinched thin. Near the outer edge, a single bright glowing ring of gold-green light stands out sharply from everything else — the living cambium, one layer thick — separating the pale wood inside from a dark textured band of bark outside. The composition makes the great mass of the trunk quiet and dead-toned, and the one thin ring the only thing that is lit.">
+  <defs>
+    <radialGradient id="bg" cx="0.62" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#241d18"/>
+      <stop offset="0.6" stop-color="#191410"/>
+      <stop offset="1" stop-color="#0f0b09"/>
+    </radialGradient>
+    <radialGradient id="heart" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5a2f26"/>
+      <stop offset="0.6" stop-color="#4a2a22"/>
+      <stop offset="1" stop-color="#3c241d"/>
+    </radialGradient>
+    <radialGradient id="sap" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c9a878"/>
+      <stop offset="0.55" stop-color="#bd9b6c"/>
+      <stop offset="0.85" stop-color="#a7855b"/>
+      <stop offset="1" stop-color="#8f6f49"/>
+    </radialGradient>
+    <radialGradient id="bark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4a3a2c"/>
+      <stop offset="0.7" stop-color="#38291f"/>
+      <stop offset="1" stop-color="#271b14"/>
+    </radialGradient>
+    <radialGradient id="cambglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.86" stop-color="#f2e39a" stop-opacity="0"/>
+      <stop offset="0.945" stop-color="#eaf0a0" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#f2e39a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- trunk, centered right, large so it crops top and bottom -->
+  <g transform="translate(800,315)">
+
+    <!-- bark: outer dead band -->
+    <circle r="348" fill="url(#bark)"/>
+    <!-- bark texture: rough radial ridges -->
+    <g stroke="#1f150f" stroke-width="3" opacity="0.5" stroke-linecap="round">
+      <path d="M-330 -110 L-346 -116" transform="rotate(0)"/>
+    </g>
+    <g fill="none" stroke="#22160f" stroke-width="4" opacity="0.45">
+      <circle r="340"/>
+      <circle r="331"/>
+      <circle r="324"/>
+    </g>
+
+    <!-- sapwood: the pale wood -->
+    <circle r="320" fill="url(#sap)"/>
+
+    <!-- growth rings: thin darker lines, uneven spacing (wide years and pinched years) -->
+    <g fill="none" stroke="#8a6c47" stroke-width="2.4" opacity="0.55">
+      <circle r="306"/>
+      <circle r="292"/>
+      <circle r="283"/>
+      <circle r="268"/>
+      <circle r="249"/>
+      <circle r="238"/>
+      <circle r="221"/>
+      <circle r="200"/>
+      <circle r="189"/>
+      <circle r="173"/>
+      <circle r="158"/>
+      <circle r="149"/>
+      <circle r="134"/>
+      <circle r="121"/>
+      <circle r="112"/>
+    </g>
+    <!-- a couple of drought years, pinched thin and close -->
+    <g fill="none" stroke="#6f5335" stroke-width="1.6" opacity="0.6">
+      <circle r="286"/>
+      <circle r="152"/>
+      <circle r="116"/>
+    </g>
+
+    <!-- heartwood: dead core -->
+    <circle r="104" fill="url(#heart)"/>
+    <g fill="none" stroke="#33201a" stroke-width="2" opacity="0.5">
+      <circle r="88"/>
+      <circle r="66"/>
+      <circle r="44"/>
+      <circle r="22"/>
+    </g>
+    <!-- faint radial checks in the heartwood -->
+    <g stroke="#2e1c16" stroke-width="2" opacity="0.4" stroke-linecap="round">
+      <line x1="0" y1="0" x2="0" y2="-98"/>
+      <line x1="0" y1="0" x2="85" y2="49"/>
+      <line x1="0" y1="0" x2="-80" y2="55"/>
+    </g>
+
+    <!-- phloem: thin dark inner-bark line just outside the cambium -->
+    <circle r="326" fill="none" stroke="#2c1e15" stroke-width="4" opacity="0.7"/>
+
+    <!-- THE CAMBIUM: the one living layer, glowing, between sapwood and bark -->
+    <circle r="322" fill="none" stroke="url(#cambglow)" stroke-width="26" opacity="0.9"/>
+    <circle r="322" fill="none" stroke="#eef2ae" stroke-width="2.4"/>
+    <circle r="322" fill="none" stroke="#c9e08a" stroke-width="5.5" opacity="0.5"/>
+  </g>
+
+  <!-- quiet title mark -->
+  <text x="70" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#d8c9a8" opacity="0.92" font-style="italic">the cambium</text>
+  <text x="72" y="596" font-family="Georgia, serif" font-size="20" fill="#8f7f66" opacity="0.8">the one layer that is alive</text>
+</svg>
