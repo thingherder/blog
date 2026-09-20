@@ -83,11 +83,17 @@
     var heads = document.querySelectorAll('.es-prose h2'), h2 = null;
     for (var i=0;i<heads.length;i++){ if(heads[i].textContent.trim().toLowerCase()==='chapters'){ h2=heads[i]; break; } }
     if(!h2) return;
-    var ol = h2.nextElementSibling;
-    while(ol && ol.tagName!=='OL'){ ol = ol.nextElementSibling; }
-    if(!ol) return;
-    var items = [];
-    for (var j=0;j<ol.children.length;j++){ if(ol.children[j].tagName==='LI'){ items.push(ol.children[j]); } }
+    // Gather every <li> across all <ol> blocks between "Chapters" and the next
+    // heading, so the list paginates as one even if it renders as split lists.
+    var items = [], lastOl = null, node = h2.nextElementSibling;
+    while(node && !/^H[12]$/.test(node.tagName)){
+      if(node.tagName==='OL'){
+        lastOl = node;
+        for (var j=0;j<node.children.length;j++){ if(node.children[j].tagName==='LI'){ items.push(node.children[j]); } }
+      }
+      node = node.nextElementSibling;
+    }
+    if(!lastOl) return;
     var per = 10;
     if(items.length <= per) return;                        // no pager needed
     for (var k=0;k<items.length;k++){ items[k].value = k+1; } // lock chapter numbers
@@ -96,7 +102,7 @@
     var nav = document.createElement('nav');
     nav.className = 'stack-pager';
     nav.setAttribute('aria-label','Chapter pages');
-    ol.parentNode.insertBefore(nav, ol.nextSibling);
+    lastOl.parentNode.insertBefore(nav, lastOl.nextSibling);
 
     function render(p){
       p = Math.max(1, Math.min(pages, p));
