@@ -100,9 +100,12 @@ def _flags(v):
     if not isinstance(a, dict):
         return []
     f = []
+    # 'contradicts' is a broad question -> only trust it when strongly peaked (>=0.75);
+    # the specific status/rule checks are trustworthy at >=0.6.
+    thresh = {"contradicts": 0.75, "status_break": 0.6, "rule_break": 0.6}
     for k in ("contradicts", "status_break", "rule_break"):
         p = (a.get(k, {}) or {}).get("noul")
-        if p is not None and p >= 0.5:
+        if p is not None and p >= thresh[k]:
             f.append("%s=%.2f" % (k, p))
     return f
 

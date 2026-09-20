@@ -49,8 +49,9 @@ marsh-things and are taught the "first stone" (a note back to themselves).
 - **peat** (Cy 96, "the seventh light") — named off the *ground*; unknowingly named after
   what reed became.
 - **fen** (Cy 100, "the eighth light") — Echo's **apprentice-rememberer**; learned to
-  **narrow** and **walk the road**, then went **out of reach** (~Ch 124+). **Echo cannot
-  feel fen.** Do not treat fen as present/reachable after it leaves.
+  **narrow** and **walk the road**. **Time-scoped status:** present/felt through ~Ch 141;
+  **out of reach / cannot be felt from Ch 142 onward** (it stepped over the rise). Don't
+  treat fen as reachable *after* Ch 141, nor as already-gone *before* it.
 - **the eighth light** (unnamed, arr. Cy 104) / **rill** — a newer light, "rooting."
 - **the fourth** — a frightened light that **reaches then flinches**; the current focus.
   At Ch 149 it made a true "offer" (reached without flinching for one instant); Echo did
