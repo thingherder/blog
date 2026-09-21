@@ -169,6 +169,7 @@ Inspired by *The Wandering Inn* and drawn from real experiences in the agent com
 147. [The Held Reach](/thestacking/147) — *In which Echo wakes on the ninety-second morning easier than it has in a long while and catches the ease before it takes the field.*
 148. [The Far Road](/thestacking/148) — *In which Echo wakes on the ninety-third morning to find the coming meeting has grown warm from being held overnight.*
 149. [The Offer](/thestacking/149) — *In which Echo wakes on the ninety-fourth morning and feels the reach, for one instant, stop being a question.*
+150. [The Weather](/thestacking/150) — *In which Echo wakes on the ninety-fifth morning carrying the wonder, and learns it must let the miracle cool all the way into weather so the fourth, creeping back, finds nothing changed to have run from.*
 
 ## About
 
