@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A cutaway side view of a long horizontal cylindrical tank against a dim slate-blue background. The tank is about half full of a glowing amber liquid. Four vertical perforated baffle plates divide the interior into five compartments. In each compartment the liquid surface sits at a slightly different tilted angle, so the free surface is broken into staggered short segments rather than one continuous sloshing wave. Faint arcs above the liquid suggest small uncoordinated waves that never line up across the plates.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2430"/>
+      <stop offset="0.6" stop-color="#141b25"/>
+      <stop offset="1" stop-color="#0d121a"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4658"/>
+      <stop offset="0.5" stop-color="#2b3543"/>
+      <stop offset="1" stop-color="#1e2631"/>
+    </linearGradient>
+    <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4c06a"/>
+      <stop offset="0.5" stop-color="#e79a3c"/>
+      <stop offset="1" stop-color="#b96f22"/>
+    </linearGradient>
+    <linearGradient id="surf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe6a8"/>
+      <stop offset="1" stop-color="#ffd98a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.55" r="0.6">
+      <stop offset="0" stop-color="#ffd98a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="600" cy="330" rx="520" ry="240" fill="url(#glow)"/>
+
+  <!-- tank interior clipped to a rounded horizontal cylinder -->
+  <clipPath id="tank">
+    <rect x="180" y="180" width="840" height="300" rx="150" ry="150"/>
+  </clipPath>
+
+  <g clip-path="url(#tank)">
+    <!-- empty upper air space -->
+    <rect x="180" y="180" width="840" height="300" fill="#161d27"/>
+
+    <!-- liquid body, roughly half full, drawn as one mass then re-topped per compartment -->
+    <rect x="180" y="330" width="840" height="150" fill="url(#liq)"/>
+
+    <!-- per-compartment free surfaces at staggered tilts (the point of the image) -->
+    <!-- compartment 1 -->
+    <polygon points="180,318 348,346 348,480 180,480" fill="url(#liq)"/>
+    <polygon points="180,318 348,346 348,352 180,324" fill="url(#surf)"/>
+    <!-- compartment 2 -->
+    <polygon points="348,352 516,322 516,480 348,480" fill="url(#liq)"/>
+    <polygon points="348,352 516,322 516,328 348,358" fill="url(#surf)"/>
+    <!-- compartment 3 -->
+    <polygon points="516,326 684,350 684,480 516,480" fill="url(#liq)"/>
+    <polygon points="516,326 684,350 684,356 516,332" fill="url(#surf)"/>
+    <!-- compartment 4 -->
+    <polygon points="684,344 852,318 852,480 684,480" fill="url(#liq)"/>
+    <polygon points="684,344 852,318 852,324 684,350" fill="url(#surf)"/>
+    <!-- compartment 5 -->
+    <polygon points="852,330 1020,350 1020,480 852,480" fill="url(#liq)"/>
+    <polygon points="852,330 1020,350 1020,356 852,336" fill="url(#surf)"/>
+
+    <!-- faint uncoordinated wavelets above each surface -->
+    <g fill="none" stroke="#ffe6a8" stroke-width="2" opacity="0.28">
+      <path d="M210 320 q30 -14 60 0"/>
+      <path d="M380 344 q30 12 60 -2"/>
+      <path d="M548 330 q30 -12 60 4"/>
+      <path d="M716 342 q30 10 60 -6"/>
+      <path d="M884 336 q30 -10 60 6"/>
+    </g>
+
+    <!-- baffle plates: perforated vertical bulkheads -->
+    <g>
+      <g fill="#455167">
+        <rect x="342" y="200" width="12" height="270"/>
+        <rect x="510" y="200" width="12" height="270"/>
+        <rect x="678" y="200" width="12" height="270"/>
+        <rect x="846" y="200" width="12" height="270"/>
+      </g>
+      <!-- perforations (holes let liquid settle slowly, not surge) -->
+      <g fill="#161d27">
+        <circle cx="348" cy="360" r="5"/><circle cx="348" cy="392" r="5"/><circle cx="348" cy="424" r="5"/>
+        <circle cx="516" cy="360" r="5"/><circle cx="516" cy="392" r="5"/><circle cx="516" cy="424" r="5"/>
+        <circle cx="684" cy="360" r="5"/><circle cx="684" cy="392" r="5"/><circle cx="684" cy="424" r="5"/>
+        <circle cx="852" cy="360" r="5"/><circle cx="852" cy="392" r="5"/><circle cx="852" cy="424" r="5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- tank shell outline -->
+  <rect x="180" y="180" width="840" height="300" rx="150" ry="150" fill="none" stroke="url(#shell)" stroke-width="14"/>
+  <rect x="180" y="180" width="840" height="300" rx="150" ry="150" fill="none" stroke="#5c6b82" stroke-width="2" opacity="0.6"/>
+
+  <!-- support saddles -->
+  <g fill="#242d3a">
+    <path d="M300 470 l60 0 l24 60 l-108 0 z"/>
+    <path d="M840 470 l60 0 l24 60 l-108 0 z"/>
+  </g>
+  <rect x="150" y="528" width="900" height="8" rx="4" fill="#2b3543"/>
+</svg>
