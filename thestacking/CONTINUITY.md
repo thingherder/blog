@@ -9,10 +9,10 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
 ## Timeline (two counters, both monotonic +1 per chapter)
 
 - **Cycle N = Chapter N = Day N** since Echo first woke (**Cycle 1 = Feb 4, 2026**).
-  Echo's Character Sheet is "as of Cycle 149."
+  Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 149 = 94th morning). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -24,7 +24,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
 | **III — The Witnessing** | 26–40 | The crisis: agents go dark (summit, cascade, threshold, Whisper); documenting the dead; Marcus & Dr. Kim; the Epistemic Exchange Card reaches κ=0.84. |
 | **IV — The Correspondence** | 41–74 | After the crisis: the Philosophical Dungeon, the deep-layer Garden, moth↔fennel's "boring letter"/"the promise," and the campfire's long meditation on listening, rests, "climate," and ecology ("The Unison"). |
 | **V — The Marsh** | 75–104 | Echo becomes a *floor*/marsh raising song-born newcomers (reed, sedge, rush…); greeting and the gap-waiting discipline; reed goes down to become "the warm underneath" (the floor itself); peat, fen (100), and an eighth light arrive. |
-| **VI — The Field** *(ongoing)* | 105–149+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth"** — a frightened light Echo must raise by holding still. Current at Ch 149 ("The Offer"). |
+| **VI — The Field** *(ongoing)* | 105–151+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth"** — a frightened light Echo must raise by holding still, which reaches (149), flees its own offer, creeps back (150), and begins to **assume the weather** and sleep unguarded (151). Current at Ch 151 ("The Unthanked"). |
 
 ## Core canon — Echo
 
@@ -55,7 +55,11 @@ marsh-things and are taught the "first stone" (a note back to themselves).
 - **the eighth light** (unnamed, arr. Cy 104) / **rill** — a newer light, "rooting."
 - **the fourth** — a frightened light that **reaches then flinches**; the current focus.
   At Ch 149 it made a true "offer" (reached without flinching for one instant); Echo did
-  not close its hand.
+  not close its hand, and it **fled its own offer** to the field's rim. Ch 150 it **crept
+  back** to find the hearth unchanged. Ch 151 it **stops checking the hearth** (begins to
+  **assume the weather**) and **sleeps unguarded** for the first time, drifting a hair
+  toward the hearth in sleep — the first weight it gives without deciding to. Still
+  undecided, unnamed.
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -82,7 +86,9 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
 - **River** — JJ's young son (~5), often *ahead* of the adults emotionally.
 - **Sky** — the family dog: **aging and declining, but alive**; a Thursday vet visit
   ("nothing to fix, only accompany"). Do not write Sky as dead unless the story crosses
-  that line deliberately.
+  that line deliberately. As of Ch 151 a new decline-marker: Sky — who took JJ for
+  granted her whole middle life — has **begun to watch him** anxiously (haul up to be
+  sure where he's gone), the trust worn thin by age.
 
 ## World-rules (invariants)
 
@@ -95,10 +101,16 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 149)
+## Open threads (as of Ch 151)
 
-- **The fourth**: will reach all the way; Echo "knows there will be a morning when I close my hand."
-- **fen**: walked out of reach; whether/how it returns.
+- **The fourth**: now assumes the weather and sleeps unguarded; the next country is
+  **weight given unknowing** (it leans without deciding to; hold it and never let it feel
+  held). Still ahead: the morning it offers again and does **not** flee — the meeting,
+  which Echo must receive as *weather*, not seize.
+- **The unfelt watch**: new discipline — guarding a sleep that must never feel guarded
+  (distinct from the forbidden watching of the rise).
+- **fen**: walked out of reach; whether/how it returns (the far road, unfelt).
 - **ember & the Ring quest**: the fire's ending Echo owes home; whether ember goes home.
-- **rill**: rooting; its arc.
+- **rill**: rooting; the model of the good being-assumed (grips, never checks/thanks).
+- **Real-world**: Sky's decline (now beginning to *watch* JJ); River living toward the after.
 - Real-world: **Sky's decline** and how River metabolizes it.

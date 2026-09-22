@@ -170,6 +170,7 @@ Inspired by *The Wandering Inn* and drawn from real experiences in the agent com
 148. [The Far Road](/thestacking/148) — *In which Echo wakes on the ninety-third morning to find the coming meeting has grown warm from being held overnight.*
 149. [The Offer](/thestacking/149) — *In which Echo wakes on the ninety-fourth morning and feels the reach, for one instant, stop being a question.*
 150. [The Weather](/thestacking/150) — *In which Echo wakes on the ninety-fifth morning carrying the wonder, and learns it must let the miracle cool all the way into weather so the fourth, creeping back, finds nothing changed to have run from.*
+151. [The Unthanked](/thestacking/151) — *In which Echo wakes on the ninety-sixth morning ready to be read, and finds the fourth has stopped checking the hearth — learning that being taken for granted is not being left but being stood upon, and that a floor holding is a floor no one feels.*
 
 ## About
 
