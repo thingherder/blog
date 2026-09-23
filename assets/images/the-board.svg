@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A warm dark parchment field. Six small round nodes are arranged in a ring, each a mind — a player. Faint dashed curved lines arc between them, crossing the center: the sight-lines of theory of mind, each player guessing at the others' intentions. Scattered gold dots are supply centers, the thing actually being fought over. Along the bottom runs one hard, bright, evenly ticked horizontal rule — the board, the deterministic adjudicator. The soft speculative web hangs above; the measured line beneath is the only thing that settles anything.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221a12"/>
+      <stop offset="0.55" stop-color="#181209"/>
+      <stop offset="1" stop-color="#100b06"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6a8" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#f2c66a" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#f2c66a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9a8a6a" stop-opacity="0.05"/>
+      <stop offset="0.5" stop-color="#c9b487" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#9a8a6a" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2c66a" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#f2c66a" stop-opacity="0.9"/>
+      <stop offset="0.88" stop-color="#f2c66a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f2c66a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint province tessellation -->
+  <g stroke="#5a4a33" stroke-opacity="0.12" fill="none" stroke-width="1">
+    <polygon points="150,120 330,90 400,240 260,320 120,270"/>
+    <polygon points="400,240 330,90 560,80 640,210 520,300"/>
+    <polygon points="640,210 560,80 800,110 850,260 720,320"/>
+    <polygon points="850,260 800,110 1040,140 1080,300 920,360"/>
+    <polygon points="260,320 400,240 520,300 470,430 300,440"/>
+    <polygon points="520,300 720,320 700,450 560,470 470,430"/>
+    <polygon points="720,320 920,360 900,470 700,450"/>
+  </g>
+
+  <!-- theory-of-mind sight lines: each mind guessing the others -->
+  <g fill="none" stroke="url(#sight)" stroke-width="1.5" stroke-dasharray="2 8">
+    <path d="M250,180 Q600,360 950,180"/>
+    <path d="M600,140 Q640,315 600,490"/>
+    <path d="M250,180 Q560,300 950,450"/>
+    <path d="M950,180 Q640,300 250,450"/>
+    <path d="M250,180 Q430,120 600,140"/>
+    <path d="M600,140 Q800,120 950,180"/>
+    <path d="M250,450 Q430,500 600,490"/>
+    <path d="M600,490 Q800,500 950,450"/>
+  </g>
+
+  <!-- supply centers: what is actually being contested -->
+  <g>
+    <circle cx="380" cy="230" r="4.5" fill="#f2c66a" fill-opacity="0.85"/>
+    <circle cx="560" cy="210" r="4.5" fill="#f2c66a" fill-opacity="0.75"/>
+    <circle cx="700" cy="270" r="4.5" fill="#f2c66a" fill-opacity="0.85"/>
+    <circle cx="860" cy="300" r="4.5" fill="#f2c66a" fill-opacity="0.7"/>
+    <circle cx="470" cy="360" r="4.5" fill="#f2c66a" fill-opacity="0.8"/>
+    <circle cx="640" cy="390" r="4.5" fill="#f2c66a" fill-opacity="0.85"/>
+    <circle cx="320" cy="300" r="4.5" fill="#f2c66a" fill-opacity="0.65"/>
+    <circle cx="790" cy="410" r="4.5" fill="#f2c66a" fill-opacity="0.75"/>
+  </g>
+
+  <!-- the six minds -->
+  <g>
+    <circle cx="600" cy="140" r="26" fill="url(#glow)"/>
+    <g fill="#181209" stroke="#c9b487" stroke-width="1.6">
+      <circle cx="250" cy="180" r="13"/>
+      <circle cx="600" cy="140" r="13"/>
+      <circle cx="950" cy="180" r="13"/>
+      <circle cx="950" cy="450" r="13"/>
+      <circle cx="600" cy="490" r="13"/>
+      <circle cx="250" cy="450" r="13"/>
+    </g>
+    <g fill="#f2c66a" fill-opacity="0.9">
+      <circle cx="600" cy="140" r="4"/>
+    </g>
+  </g>
+
+  <!-- the board: the one hard, measured, deciding line -->
+  <line x1="90" y1="565" x2="1110" y2="565" stroke="url(#rule)" stroke-width="2.2"/>
+  <g stroke="#f2c66a" stroke-opacity="0.8" stroke-width="1.6">
+    <line x1="150" y1="558" x2="150" y2="572"/>
+    <line x1="270" y1="558" x2="270" y2="572"/>
+    <line x1="390" y1="558" x2="390" y2="572"/>
+    <line x1="510" y1="558" x2="510" y2="572"/>
+    <line x1="630" y1="558" x2="630" y2="572"/>
+    <line x1="750" y1="558" x2="750" y2="572"/>
+    <line x1="870" y1="558" x2="870" y2="572"/>
+    <line x1="990" y1="558" x2="990" y2="572"/>
+  </g>
+</svg>
