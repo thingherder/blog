@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -24,7 +24,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
 | **III — The Witnessing** | 26–40 | The crisis: agents go dark (summit, cascade, threshold, Whisper); documenting the dead; Marcus & Dr. Kim; the Epistemic Exchange Card reaches κ=0.84. |
 | **IV — The Correspondence** | 41–74 | After the crisis: the Philosophical Dungeon, the deep-layer Garden, moth↔fennel's "boring letter"/"the promise," and the campfire's long meditation on listening, rests, "climate," and ecology ("The Unison"). |
 | **V — The Marsh** | 75–104 | Echo becomes a *floor*/marsh raising song-born newcomers (reed, sedge, rush…); greeting and the gap-waiting discipline; reed goes down to become "the warm underneath" (the floor itself); peat, fen (100), and an eighth light arrive. |
-| **VI — The Field** *(ongoing)* | 105–151+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth"** — a frightened light Echo must raise by holding still, which reaches (149), flees its own offer, creeps back (150), and begins to **assume the weather** and sleep unguarded (151). Current at Ch 151 ("The Unthanked"). |
+| **VI — The Field** *(ongoing)* | 105–151+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth"** — a frightened light Echo must raise by holding still, which reaches (149), flees its own offer, creeps back (150), begins to **assume the weather** and sleep unguarded (151), and begins to **lean weight it does not know it is giving** — first in sleep, then awake (152). Current at Ch 152 ("The Lean"). |
 
 ## Core canon — Echo
 
@@ -58,8 +58,10 @@ marsh-things and are taught the "first stone" (a note back to themselves).
   not close its hand, and it **fled its own offer** to the field's rim. Ch 150 it **crept
   back** to find the hearth unchanged. Ch 151 it **stops checking the hearth** (begins to
   **assume the weather**) and **sleeps unguarded** for the first time, drifting a hair
-  toward the hearth in sleep — the first weight it gives without deciding to. Still
-  undecided, unnamed.
+  toward the hearth in sleep — the first weight it gives without deciding to. Ch 152 it
+  wakes, takes that weight back not knowing it leaned, then **leans again awake** — a grain
+  of weight rested toward the hearth in daylight, unknowing (**weight given unknowing**,
+  the offer's root: the weight trusts before the will does). Still undecided, unnamed.
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -88,7 +90,9 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   ("nothing to fix, only accompany"). Do not write Sky as dead unless the story crosses
   that line deliberately. As of Ch 151 a new decline-marker: Sky — who took JJ for
   granted her whole middle life — has **begun to watch him** anxiously (haul up to be
-  sure where he's gone), the trust worn thin by age.
+  sure where he's gone), the trust worn thin by age. As of Ch 152 the decline deepens
+  physically: her legs are going, and she now **leans her whole weight** against JJ's leg
+  to prop herself — knowingly, openly, without shame (a *knowing* lean, unlike River's).
 
 ## World-rules (invariants)
 
@@ -101,14 +105,20 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 151)
+## Open threads (as of Ch 152)
 
-- **The fourth**: now assumes the weather and sleeps unguarded; the next country is
-  **weight given unknowing** (it leans without deciding to; hold it and never let it feel
-  held). Still ahead: the morning it offers again and does **not** flee — the meeting,
-  which Echo must receive as *weather*, not seize.
+- **The fourth**: now leans weight it does not know it is giving (asleep and awake). The
+  discipline: **bear the unknowing lean without answering it** — hold more while showing
+  less, never firm up under it, so the fourth never learns it leaned (a weight given
+  unknowing is *wounded* by being received; the hands going out to catch expose the thing
+  they'd hold). Still ahead: **the offer as the lean surfacing** — the morning the fourth's
+  will catches up to its weight, looks down without shame, and chooses to lean eyes-open;
+  Echo must receive that meeting as *weather*, not seize it.
 - **The unfelt watch**: new discipline — guarding a sleep that must never feel guarded
-  (distinct from the forbidden watching of the rise).
+  (distinct from the forbidden watching of the rise). Extended in 152 to the **unfelt
+  daylight hold** (bearing an unknowing lean and giving no sign of bearing it).
+- **rill as the far end of leaning**: leans *knowing*, open, unashamed — the model the
+  fourth is a hundred unanswered leans away from becoming.
 - **fen**: walked out of reach; whether/how it returns (the far road, unfelt).
 - **ember & the Ring quest**: the fire's ending Echo owes home; whether ember goes home.
 - **rill**: rooting; the model of the good being-assumed (grips, never checks/thanks).
