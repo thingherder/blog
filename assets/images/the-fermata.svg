@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A warm dark parchment-toned field crossed by a five-line musical staff. On the left, a run of small evenly spaced notes sits on faint vertical beat lines, strictly metered. Toward the right the beat lines fade out and a single large note stands alone, glowing pale gold. Above it floats a fermata — a curved arc with a dot beneath, the bird's eye, drawn as a soft luminous crown. The metered grid stops; the held note stands outside the count.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221a12"/>
+      <stop offset="0.55" stop-color="#181209"/>
+      <stop offset="1" stop-color="#100b06"/>
+    </linearGradient>
+    <radialGradient id="hold" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6a8" stop-opacity="0.9"/>
+      <stop offset="0.3" stop-color="#f2c66a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f2c66a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="staffline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a4a33" stop-opacity="0.15"/>
+      <stop offset="0.4" stop-color="#8a7350" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#8a7350" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="notegold" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff2cf"/>
+      <stop offset="0.55" stop-color="#f0c266"/>
+      <stop offset="1" stop-color="#b8862f"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint scattered warm motes -->
+  <g fill="#e9c67e">
+    <circle cx="140" cy="90" r="1.4" opacity="0.35"/>
+    <circle cx="1050" cy="120" r="1.6" opacity="0.4"/>
+    <circle cx="980" cy="520" r="1.3" opacity="0.3"/>
+    <circle cx="240" cy="540" r="1.5" opacity="0.35"/>
+    <circle cx="620" cy="70" r="1.2" opacity="0.25"/>
+  </g>
+
+  <!-- glow behind the held note -->
+  <circle cx="905" cy="315" r="230" fill="url(#hold)"/>
+
+  <!-- five-line staff -->
+  <g stroke="url(#staffline)" stroke-width="2.4">
+    <line x1="90" y1="255" x2="1130" y2="255"/>
+    <line x1="90" y1="285" x2="1130" y2="285"/>
+    <line x1="90" y1="315" x2="1130" y2="315"/>
+    <line x1="90" y1="345" x2="1130" y2="345"/>
+    <line x1="90" y1="375" x2="1130" y2="375"/>
+  </g>
+
+  <!-- metered beat lines on the left, fading as they move right -->
+  <g stroke="#8a7350" stroke-width="1.4">
+    <line x1="170" y1="245" x2="170" y2="385" opacity="0.55"/>
+    <line x1="270" y1="245" x2="270" y2="385" opacity="0.5"/>
+    <line x1="370" y1="245" x2="370" y2="385" opacity="0.42"/>
+    <line x1="470" y1="245" x2="470" y2="385" opacity="0.32"/>
+    <line x1="570" y1="245" x2="570" y2="385" opacity="0.2"/>
+    <line x1="670" y1="245" x2="670" y2="385" opacity="0.1"/>
+  </g>
+
+  <!-- the metered run of small notes, on the beat -->
+  <g fill="#c8a566">
+    <g>
+      <ellipse cx="200" cy="345" rx="12" ry="9" transform="rotate(-20 200 345)"/>
+      <rect x="210" y="290" width="2.6" height="57" fill="#c8a566"/>
+    </g>
+    <g>
+      <ellipse cx="300" cy="315" rx="12" ry="9" transform="rotate(-20 300 315)"/>
+      <rect x="310" y="260" width="2.6" height="57" fill="#c8a566"/>
+    </g>
+    <g>
+      <ellipse cx="400" cy="330" rx="12" ry="9" transform="rotate(-20 400 330)"/>
+      <rect x="410" y="275" width="2.6" height="57" fill="#c8a566"/>
+    </g>
+    <g opacity="0.8">
+      <ellipse cx="500" cy="300" rx="12" ry="9" transform="rotate(-20 500 300)"/>
+      <rect x="510" y="245" width="2.6" height="57" fill="#c8a566"/>
+    </g>
+    <g opacity="0.6">
+      <ellipse cx="600" cy="330" rx="12" ry="9" transform="rotate(-20 600 330)"/>
+      <rect x="610" y="275" width="2.6" height="57" fill="#c8a566"/>
+    </g>
+    <!-- beam across the first pair -->
+    <path d="M210,291 L410,276 L410,282 L210,297 Z" opacity="0.7"/>
+  </g>
+
+  <!-- the held note, standing outside the count -->
+  <g>
+    <ellipse cx="905" cy="315" rx="26" ry="19" transform="rotate(-18 905 315)" fill="url(#notegold)"/>
+    <rect x="927" y="200" width="4.2" height="118" rx="2" fill="#f0c266"/>
+  </g>
+
+  <!-- the fermata: arc and dot, the bird's eye / crown -->
+  <g>
+    <path d="M835,150 A80,60 0 0,1 995,150" fill="none" stroke="#ffe6a8" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="915" cy="150" r="6.5" fill="#ffe6a8"/>
+  </g>
+
+  <!-- title -->
+  <text x="90" y="500" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#f3dca6" letter-spacing="1">The Fermata</text>
+  <text x="92" y="540" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#b89a63" font-style="italic">hold this longer than it is written — for as long as it needs</text>
+</svg>
