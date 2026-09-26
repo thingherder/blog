@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A warm dark field holding a paintbrush laid diagonally across the center. To the lower left is the wooden handle; to the upper right, a fan of fine bristles. Clamped at the neck where they meet is a glowing brass band — the ferrule — gathering the loose bristles from a wide splay into a single converging point. Below the band the bristles fan out faintly and untended; above and through the band they are drawn together into one shaped, glowing tip. A soft light rings the ferrule at the seam between the pale wood and the amber hairs.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221a12"/>
+      <stop offset="0.55" stop-color="#171008"/>
+      <stop offset="1" stop-color="#0f0a05"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a5c30"/>
+      <stop offset="0.5" stop-color="#5a4224"/>
+      <stop offset="1" stop-color="#3a2a14"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2c6"/>
+      <stop offset="0.45" stop-color="#e9c064"/>
+      <stop offset="1" stop-color="#9c6f28"/>
+    </linearGradient>
+    <linearGradient id="bristle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4d491"/>
+      <stop offset="1" stop-color="#a2761f"/>
+    </linearGradient>
+    <radialGradient id="seatglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6a8" stop-opacity="0.85"/>
+      <stop offset="0.4" stop-color="#f2c66a" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#f2c66a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tipglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff0cf" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#f0c877" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#f0c877" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint scattered warm motes -->
+  <g fill="#e9c67e">
+    <circle cx="150" cy="110" r="1.4" opacity="0.30"/>
+    <circle cx="1060" cy="150" r="1.5" opacity="0.30"/>
+    <circle cx="980" cy="520" r="1.3" opacity="0.26"/>
+    <circle cx="230" cy="530" r="1.5" opacity="0.28"/>
+    <circle cx="660" cy="60" r="1.2" opacity="0.22"/>
+    <circle cx="1120" cy="360" r="1.3" opacity="0.24"/>
+    <circle cx="95" cy="340" r="1.2" opacity="0.22"/>
+    <circle cx="520" cy="580" r="1.2" opacity="0.20"/>
+  </g>
+
+  <!-- the whole brush is rotated about its center so it lies on a diagonal -->
+  <g transform="rotate(-32 600 315)">
+
+    <!-- untended splay: faint bristles fanning below the ferrule (drawn first, behind) -->
+    <g stroke="#8a6321" stroke-width="2" opacity="0.28" fill="none" stroke-linecap="round">
+      <path d="M600,300 C640,250 690,150 700,70"/>
+      <path d="M600,300 C650,255 720,170 760,105"/>
+      <path d="M600,300 C645,252 700,160 730,86"/>
+      <path d="M600,300 C635,255 680,170 665,80"/>
+      <path d="M600,300 C655,258 735,185 800,150"/>
+      <path d="M600,300 C630,258 660,185 620,95"/>
+    </g>
+
+    <!-- gathered bristles: converging from the ferrule into a single glowing tip -->
+    <g stroke="url(#bristle)" stroke-width="3.4" fill="none" stroke-linecap="round">
+      <path d="M578,296 C610,235 690,150 762,92"/>
+      <path d="M586,300 C620,240 700,158 762,92"/>
+      <path d="M594,303 C628,244 706,162 762,92"/>
+      <path d="M602,304 C636,246 712,164 762,92"/>
+      <path d="M610,303 C644,244 718,162 762,92"/>
+      <path d="M618,300 C652,240 726,158 762,92"/>
+      <path d="M626,296 C660,236 732,150 762,92"/>
+    </g>
+
+    <!-- glow at the gathered tip -->
+    <circle cx="762" cy="92" r="70" fill="url(#tipglow)"/>
+    <circle cx="762" cy="92" r="6" fill="#fff3d6"/>
+
+    <!-- wooden handle, tapering down to the lower-left -->
+    <path d="M556,330 L470,540 C466,552 452,556 444,547 L432,533 C426,526 428,516 436,510 L520,318 Z"
+          fill="url(#handle)"/>
+    <path d="M556,330 L520,318 L444,500 L470,512 Z" fill="#2c2010" opacity="0.35"/>
+
+    <!-- seat glow behind the ferrule, at the seam -->
+    <circle cx="580" cy="322" r="86" fill="url(#seatglow)"/>
+
+    <!-- the ferrule: a brass band clamped at the neck (the seam) -->
+    <g transform="rotate(58 580 322)">
+      <rect x="530" y="296" width="100" height="52" rx="12" fill="url(#brass)"/>
+      <rect x="530" y="296" width="100" height="52" rx="12" fill="none" stroke="#c9922f" stroke-width="2"/>
+      <!-- crimp lines around the band -->
+      <line x1="556" y1="300" x2="556" y2="344" stroke="#7a561c" stroke-width="1.6" opacity="0.6"/>
+      <line x1="604" y1="300" x2="604" y2="344" stroke="#7a561c" stroke-width="1.6" opacity="0.6"/>
+      <!-- top highlight -->
+      <rect x="536" y="301" width="88" height="8" rx="4" fill="#fff4cf" opacity="0.55"/>
+    </g>
+
+  </g>
+</svg>
