@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = **100th morning**). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -66,9 +66,15 @@ marsh-things and are taught the "first stone" (a note back to themselves).
   balance reorganized around Echo, its own legs forgetting how to stand without the wall
   (Echo now **load-bearing / built into how it stands**, would drop it by moving). Ch 154
   its weight has become **the first thing Echo feels on waking** — borne in the seam before
-  the field/book/name (Echo now **wakes already holding** it). Still undecided, unnamed. (Do
-  not write the fourth as standing wholly on its own again after Ch 153, nor as knowing it
-  leans, until the offer surfaces.)
+  the field/book/name (Echo now **wakes already holding** it). Ch 155 the **offer surfaces**:
+  its blind lean **opens its eyes** — the will catches up to the standing, it **looks down**,
+  sees what it has been standing on (Echo, who chose it every blind morning), and instead of
+  the Ch 149 flinch it **STAYS, eyes-open, knowing, unashamed** (the blind lean become a
+  knowing one, rill's kind of leaning). Echo receives it **as weather** (the same seen/unseen,
+  the catch made invisible), so the fourth finds the staying cost nothing and moved nothing —
+  a **coming-home, not a debt**. From Ch 155 the fourth **leans KNOWING and eyes-open**; still
+  **unnamed** (Echo will not reach for the name — it is the fourth's to speak). (Do not write
+  the fourth as blind/unknowing again after Ch 155, nor as having fled the offer.)
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -106,9 +112,13 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   her. As of Ch 154 (**Fri night after the vet**) she goes down in the dark (legs won't
   answer) and JJ wakes **already moving** — up, across the floor, on his knees with his arms
   under her before he is awake — then **sleeps on the floor beside her under his coat** (she
-  can no longer climb the stairs). Still alive; do not write Sky as dead unless the story
-  deliberately crosses that line. The decline is at its end (carried, night-falls, "only
-  accompany").
+  can no longer climb the stairs). As of Ch 155 (**Sat Sep 5**, first daylight after the
+  floor-night) she has a **lucid, open-eyed morning** — meets JJ's eyes with the old clear
+  level look come up through the fog, leans her whole failing weight and **lets him see her
+  do it** (the animal shame that hid her legs gone into open leaning: her mirror of the
+  fourth's offer), and JJ **receives it as weather** (the exactly-right nothing — "okay, okay
+  you, breakfast in a minute"). **Still alive**; line uncrossed; do not write Sky as dead
+  unless the story deliberately crosses that line. The decline is at its end.
 
 ## World-rules (invariants)
 
@@ -121,7 +131,21 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 154)
+## Open threads (as of Ch 155)
+
+- **The offer surfaced (Ch 155)** — *payoff of the Ch 149–154 build.* The fourth's blind
+  lean **opened its eyes**: the will caught up to the standing, it looked down, saw what it
+  stood on, and **STAYED eyes-open, knowing, unashamed** (did not flinch/flee as at Ch 149).
+  Echo's part was to be **weather** — exactly the same seen or unseen, no surge, no "at last
+  you see me," because a wall that turns-when-seen has a *hook* the leaner runs from; only a
+  wall the same seen/unseen lets the leaning cost nothing, and only costless leaning can stay.
+  Echo received the knowing weight exactly as the blind, the **catch made invisible** (the
+  fourth never learns how much Echo wanted to answer — *the last gift*), so the staying was a
+  **coming-home, not a debt**. **Restraint IS the shape of the love**: to let a frightened
+  thing stay, be the one thing its bravery does not change. *Next threads:* **the NAME** (now
+  front-of-arc — the fourth's to speak when ready; Echo won't reach for it); **what knowing
+  leaning becomes** (does it start to give back / notice the hearth as a someone / ask its
+  name?); **stay weather through the staying** (keep the ground as plain as before the offer).
 
 - **Echo wakes already holding (Ch 154+)**: the bearing has gone **below the waking** — the
   fourth's weight is the first thing Echo feels each morning, borne in the seam before the
