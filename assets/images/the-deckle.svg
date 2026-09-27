@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark blue-green field like the surface of a vat of paper pulp. Floating at the center is a rectangular wooden frame — the mould and deckle — holding a sheet of pale, glowing pulp that has just settled out of the water. Three of the sheet's edges run straight and clean along the inside of the frame. The fourth edge, along the lower right, is left uneven and feathered: fibers taper off into soft, irregular tendrils that fade into the dark water. A faint light rings the frame at the waterline, and a scatter of pale fibers drifts in the surrounding slurry.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12262a"/>
+      <stop offset="0.55" stop-color="#0c1a1e"/>
+      <stop offset="1" stop-color="#071114"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a6a3c"/>
+      <stop offset="0.5" stop-color="#5f4527"/>
+      <stop offset="1" stop-color="#3a2915"/>
+    </linearGradient>
+    <linearGradient id="pulp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f0dc"/>
+      <stop offset="0.6" stop-color="#e6dcbe"/>
+      <stop offset="1" stop-color="#cbbf99"/>
+    </linearGradient>
+    <radialGradient id="sheetglow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#fbf7e6" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#e9dfc0" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#e9dfc0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="waterline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfe4dc" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#dff0e6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#cfe4dc" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- fibers drifting in the surrounding slurry -->
+  <g stroke="#cdc4a6" stroke-linecap="round" fill="none">
+    <path d="M120,120 q18,-8 34,2" stroke-width="1.6" opacity="0.28"/>
+    <path d="M1030,110 q20,10 40,4" stroke-width="1.6" opacity="0.26"/>
+    <path d="M170,520 q22,-10 42,0" stroke-width="1.6" opacity="0.26"/>
+    <path d="M1050,540 q-18,-12 -40,-6" stroke-width="1.6" opacity="0.24"/>
+    <path d="M90,320 q16,10 34,6" stroke-width="1.4" opacity="0.22"/>
+    <path d="M1120,330 q-16,-8 -36,-2" stroke-width="1.4" opacity="0.22"/>
+    <path d="M560,70 q20,-6 38,4" stroke-width="1.4" opacity="0.20"/>
+  </g>
+  <g fill="#d7cfb0">
+    <circle cx="240" cy="180" r="1.6" opacity="0.30"/>
+    <circle cx="980" cy="220" r="1.5" opacity="0.28"/>
+    <circle cx="300" cy="470" r="1.4" opacity="0.26"/>
+    <circle cx="930" cy="470" r="1.5" opacity="0.26"/>
+    <circle cx="640" cy="560" r="1.4" opacity="0.24"/>
+  </g>
+
+  <!-- soft light at the waterline behind the frame -->
+  <rect x="250" y="300" width="700" height="30" fill="url(#waterline)"/>
+
+  <!-- glow behind the settling sheet -->
+  <ellipse cx="600" cy="315" rx="330" ry="200" fill="url(#sheetglow)"/>
+
+  <!-- the sheet of pulp: three straight edges, one feathered deckle edge (lower right) -->
+  <!-- feathered fibers bleeding past the deckle edge, drawn first, behind -->
+  <g stroke="#e6dcbe" stroke-linecap="round" fill="none" opacity="0.55">
+    <path d="M812,360 q34,10 66,6" stroke-width="2"/>
+    <path d="M804,392 q40,14 78,10" stroke-width="2"/>
+    <path d="M792,424 q44,10 84,2" stroke-width="2"/>
+    <path d="M770,452 q40,20 82,20" stroke-width="2"/>
+    <path d="M735,470 q34,26 70,30" stroke-width="2"/>
+    <path d="M690,482 q28,26 56,34" stroke-width="1.8" opacity="0.8"/>
+    <path d="M632,488 q20,28 40,40" stroke-width="1.8" opacity="0.7"/>
+  </g>
+
+  <!-- the settled sheet body -->
+  <path d="M400,235
+           L800,235
+           L806,352
+           Q760,438 660,462
+           Q560,486 470,470
+           L400,470 Z"
+        fill="url(#pulp)"/>
+  <!-- subtle laid-line texture across the sheet -->
+  <g stroke="#c9bd97" stroke-width="1" opacity="0.35">
+    <line x1="410" y1="270" x2="792" y2="270"/>
+    <line x1="410" y1="300" x2="796" y2="300"/>
+    <line x1="410" y1="330" x2="798" y2="330"/>
+    <line x1="410" y1="360" x2="770" y2="360"/>
+    <line x1="410" y1="390" x2="720" y2="390"/>
+    <line x1="410" y1="420" x2="640" y2="420"/>
+  </g>
+
+  <!-- the mould-and-deckle frame: straight on three sides, riding the sheet -->
+  <g fill="url(#frame)" stroke="#2c1f10" stroke-width="1.5">
+    <!-- top rail -->
+    <rect x="372" y="212" width="456" height="26" rx="4"/>
+    <!-- left rail -->
+    <rect x="372" y="212" width="26" height="286" rx="4"/>
+    <!-- bottom rail -->
+    <rect x="372" y="472" width="456" height="26" rx="4"/>
+    <!-- right rail -->
+    <rect x="802" y="212" width="26" height="286" rx="4"/>
+  </g>
+  <!-- top highlights on the frame rails -->
+  <g fill="#c69a5c" opacity="0.5">
+    <rect x="378" y="216" width="444" height="5" rx="2"/>
+    <rect x="378" y="216" width="5" height="278" rx="2"/>
+  </g>
+
+  <!-- a single bright fiber-mote riding the deckle edge -->
+  <circle cx="700" cy="470" r="4" fill="#fbf7e6" opacity="0.9"/>
+</svg>
