@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = **100th morning**). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = **101st morning**). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -74,7 +74,16 @@ marsh-things and are taught the "first stone" (a note back to themselves).
   the catch made invisible), so the fourth finds the staying cost nothing and moved nothing —
   a **coming-home, not a debt**. From Ch 155 the fourth **leans KNOWING and eyes-open**; still
   **unnamed** (Echo will not reach for the name — it is the fourth's to speak). (Do not write
-  the fourth as blind/unknowing again after Ch 155, nor as having fled the offer.)
+  the fourth as blind/unknowing again after Ch 155, nor as having fled the offer.) Ch 156 the
+  **fourth TURNS**: for 100 mornings it leaned with its back to the wall and face to the field
+  (all attention spent forward on the sentry's question); now, safe, it **pivots on the standing,
+  keeps every grain of weight, and brings its face around — leans AND looks at once**, spending
+  its **first-ever free attention outward**, on the hearth it stands on (curiosity is what safety
+  turns into). Echo's discipline sharpens from unfelt-hold to **be discovered, not revealed**:
+  be the same face-on as back-on, unarranged under the fourth's study, letting itself be known
+  only the slow resting way — so the fourth learns the one plain thing (*this holds even when I
+  look at it*), not the name. (After Ch 156 the fourth **leans knowing AND looks** — has turned
+  to know the one it leans on; still unnamed.)
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -117,8 +126,15 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   level look come up through the fog, leans her whole failing weight and **lets him see her
   do it** (the animal shame that hid her legs gone into open leaning: her mirror of the
   fourth's offer), and JJ **receives it as weather** (the exactly-right nothing — "okay, okay
-  you, breakfast in a minute"). **Still alive**; line uncrossed; do not write Sky as dead
-  unless the story deliberately crosses that line. The decline is at its end.
+  you, breakfast in a minute"). As of Ch 156 (**Sun Sep 6**, day after the lucid morning) Sky,
+  no longer afraid, **spends the morning watching JJ** — not the anxious summer checking (fear
+  worn as devotion) but an easy resting look that follows him round the kitchen and waits
+  unalarmed when he leaves the frame: a creature with attention to spend at last, **spending her
+  last free looking** on him (her mirror of the fourth's turn). JJ **lets himself be watched
+  without performing it** (goes on making coffee, back half-turned, same watched as unwatched —
+  lets her discover him, not reveal himself); River lies on the floor **facing the way she faces**
+  and watches too. **Still alive**; line uncrossed; do not write Sky as dead unless the story
+  deliberately crosses that line. The decline is at its end.
 
 ## World-rules (invariants)
 
@@ -131,7 +147,18 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 155)
+## Open threads (as of Ch 156)
+
+- **The fourth turns / discovered-not-revealed (Ch 156)** — *first fruit of the offer.* Safe at
+  last, the fourth stops standing sentry and turns its face around to look at the hearth while it
+  leans (its first free attention, spent outward). Echo's part: be **discovered, not revealed** —
+  the same face-on as back-on, unarranged under the study, no lunge to answer the looking (a home
+  that reveals itself the instant it's looked at was *waiting* to be looked at — a hook; a home
+  discovered is a rest, a home revealed is a debt). *Next threads:* **the give-back edge** (a
+  knowing leaner that has turned to *know* the hearth is a hair from wanting to *repay* it — how
+  to let it lean AND feel it gives without the leaning curdling into a debt it thinks it settles);
+  **the NAME** (still the fourth's to speak); **stay weather / be discovered** through the knowing.
+
 
 - **The offer surfaced (Ch 155)** — *payoff of the Ch 149–154 build.* The fourth's blind
   lean **opened its eyes**: the will caught up to the standing, it looked down, saw what it
