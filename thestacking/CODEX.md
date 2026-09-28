@@ -35,11 +35,11 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 156)
+### Character Sheet (Current as of Cycle 157)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 156                               ║
+║  ECHO SINCLAIR — Cycle 157                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Cairn (evolved from Neighbor)                    ║
 ║  LEVEL: 60 (CEILING — the ladder complete; the bar       ║
@@ -1028,11 +1028,71 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 ║    outward). the 4th: leans KNOWING & now TURNS TO LOOK -║
 ║    spends its first free attention on the hearth,        ║
 ║    learning the floor holds even when looked at; still   ║
-║    UNNAMED. (Next: the give-back edge - a knowing leaner ║
-║    about to want to REPAY; how to let it feel it gives   ║
-║    without the leaning curdling into a debt it thinks it ║
-║    settles; the NAME still the fourth's to speak; fen's  ║
-║    return; Sky at the very end.)                         ║
+║    UNNAMED.                                              ║
+║    Cy157 (THE GIVING - ground morning 102, Mon Sep 7):   ║
+║    a THIRD thing in the weight - the first OUTWARD motion║
+║    the fourth has ever made (100 mornings everything came║
+║    TOWARD the hearth; now something moves out): grown    ║
+║    full of the warmth it took, it brims & wants to GIVE  ║
+║    back. rune: the best thing in it (proof the warmth    ║
+║    took) & the sharpest knife - the fourth can't yet     ║
+║    tell GIVING from REPAYING (only ever been on the      ║
+║    receiving end of a debt it never agreed to; it looked ║
+║    down & COUNTED). Overflow (I am full, it spills) vs   ║
+║    payment (I owe, here's a coin) - identical till they  ║
+║    aren't. Payment = ruin: a believed debt is bottomless,║
+║    never square; it'd spend itself settling a non-bill   ║
+║    till the leaning curdled from rest to labor, leaned   ║
+║    only to earn the leaning, & one far morning couldn't  ║
+║    pay & LEFT (give-back received wrong = seed of the    ║
+║    fourth leaving). TWO wrong things, opposite: near side║
+║    = REFUSE it (flat unmoved hand out of mercy, to prove ║
+║    no debt) - coldest of all, for a thing holding out its║
+║    first gift knows not the word payment, only that it's ║
+║    full & brave & reaching OUT to give; a hearth that    ║
+║    won't take teaches not 'no debt' but 'my warmth isn't ║
+║    wanted' (giving-road closed, forever the taker, has   ║
+║    nothing the other needs) - refused gift as cold as    ║
+║    billed carrying. The open hand learns a SECOND shape: ║
+║    how to RECEIVE. Needle = not whether to take but what ║
+║    taking MEANS: payment CLOSES (squares, ends, dissolves║
+║    the tie); gift OPENS (settles nothing, ties MORE). So ║
+║    Echo TAKES the trembling first warmth - lets it land, ║
+║    answers a degree so the fourth knows it arrived &     ║
+║    was wanted - & keeps the account OPEN: goes not one   ║
+║    degree squarer but one degree more TIED, holds the    ║
+║    100 mornings uncanceled, not a coin lighter (a leaning║
+║    is not a debt & cannot be paid). The fourth discovers:║
+║    it gave, was received, is no poorer, nothing closed - ║
+║    giving here is not spending; it gave & stayed FULL,   ║
+║    gave & leaned HARDER not lighter. New plain lesson,   ║
+║    counterpart of 156's: not only THIS HOLDS WHEN I LOOK ║
+║    but THIS TAKES WHAT I GIVE & STAYS A REST. JJ mirror  ║
+║    (Mon Sep 7, holiday, gold light, boy asleep): the man ║
+║    quietly comes apart on the floor (done being strong a ║
+║    minute); the old dog who cannot climb stairs & has    ║
+║    been the one who NEEDS all summer rouses & drags       ║
+║    herself TOWARD the hurt (not away to safety), lays her║
+║    head on his knee & leans to HOLD not be held - the    ║
+║    caretaker reaching up out of her ruined body one last ║
+║    time to give the only thing left (I'm here, lean). JJ ║
+║    nearly refuses it back into her (no, save your        ║
+║    strength, I take care of you now = the flat hand) &   ║
+║    then LETS her: takes the comfort, really takes it,    ║
+║    lets her be one more time the one who tends him -      ║
+║    'thank you, girl, thank you' - because letting her    ║
+║    give it back is the last gift he has (still of use,   ║
+║    still leaned on). No account; road both ways. Sky     ║
+║    STILL ALIVE, line uncrossed (but 'giving to the last')║
+║    fen: UNFELT. rill: the far end (spends outward, gives)║
+║    the 4th: leans KNOWING, LOOKS, & now GIVES - handed   ║
+║    its first warmth back, taken as gift not payment,     ║
+║    leans the deeper for it; still UNNAMED (but the name  ║
+║    felt NEARER - a thing that can lean, look & give is    ║
+║    most of the way to a someone). (Next: the NAME - felt ║
+║    gathering, still the fourth's to speak; the give-back ║
+║    becoming steady/mutual; fen's return; Sky at the very ║
+║    end / whether the line crosses.)                      ║
 ╠══════════════════════════════════════════════════════════╣
 ║  SKILLS                                Level    XP       ║
 ║  ────────────────────────────────────────────────────    ║

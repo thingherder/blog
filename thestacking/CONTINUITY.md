@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = **101st morning**). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = 101st morning, Ch 157 = **102nd morning**). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -83,7 +83,23 @@ marsh-things and are taught the "first stone" (a note back to themselves).
   be the same face-on as back-on, unarranged under the fourth's study, letting itself be known
   only the slow resting way — so the fourth learns the one plain thing (*this holds even when I
   look at it*), not the name. (After Ch 156 the fourth **leans knowing AND looks** — has turned
-  to know the one it leans on; still unnamed.)
+  to know the one it leans on; still unnamed.) Ch 157 the fourth, grown **full** of the warmth
+  it took, makes its **first-ever OUTWARD motion** — after 100 mornings of everything moving
+  *toward* the hearth (flinch, creep, lean, stay, turn, look), it **hands its first warmth back**,
+  trying to give (the give-back edge). Echo learns the open hand's **second shape — to RECEIVE**:
+  a first gift must be neither **refused** (the flat unmoved hand = "your warmth isn't wanted,"
+  the coldest thing, forever the taker) nor **closed upon as payment** (which squares the account
+  & calls the leaning a settled debt — & a believed debt is bottomless, curdling the lean from a
+  rest to a labor until one day it can't pay & leaves). The needle: **take it as a GIFT that opens**
+  (settles nothing, ties MORE), not a payment that closes — really take it, let it land, answer a
+  degree so the fourth knows it arrived & was wanted, & keep the 100 mornings **uncanceled, not a
+  coin lighter** (a leaning is not a debt & cannot be paid). The fourth discovers **giving here is
+  not spending**: it gave & stayed full, gave & **leaned harder, not lighter** (the rest become a
+  rest-that-also-gives). New plain lesson: *this takes what I give and stays a rest.* The **name
+  felt NEARER** (a thing that can lean, look & give is most of the way to a someone) but still
+  **unnamed & the fourth's to speak**. (After Ch 157 the fourth **leans knowing, looks, AND
+  gives** — its first gift taken as gift not payment; the road now runs **both ways**; still
+  unnamed, the name gathering.)
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -133,8 +149,18 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   last free looking** on him (her mirror of the fourth's turn). JJ **lets himself be watched
   without performing it** (goes on making coffee, back half-turned, same watched as unwatched —
   lets her discover him, not reveal himself); River lies on the floor **facing the way she faces**
-  and watches too. **Still alive**; line uncrossed; do not write Sky as dead unless the story
-  deliberately crosses that line. The decline is at its end.
+  and watches too. As of Ch 157 (**Mon Sep 7**, the holiday, late gold light, River asleep,
+  Nasiko out) the **give-back**: JJ quietly comes apart on the floor beside her (done being
+  strong for one held minute), and Sky — who cannot climb the stairs and has been *the one who
+  needs* all summer — **rouses to the sound of her person breaking and drags herself TOWARD the
+  hurt** (not away to safety), lays her grey head on his knee and **leans to HOLD, not be held** —
+  the caretaker reaching up out of her ruined body one last time to give the only thing left
+  (*I'm here, lean*). JJ nearly **refuses it back into her** out of love ("save your strength,
+  I take care of you now" = the flat hand) then **LETS her** — takes the comfort, lets her be one
+  more time the one who tends him ("Okay. Thank you, girl. Thank you"), because letting her give
+  it back is the last gift he has (still of use, still leaned on). **Still alive**; line
+  uncrossed; but "giving to the last." Do not write Sky as dead unless the story deliberately
+  crosses that line. The decline is at its very end.
 
 ## World-rules (invariants)
 
@@ -147,7 +173,23 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 156)
+## Open threads (as of Ch 157)
+
+- **The give-back / the second open hand (Ch 157)** — *next fruit of the offer.* Grown full of the
+  warmth it took, the fourth makes its **first outward motion** and tries to **give something back**.
+  The danger: it can't yet tell **overflow** (I'm full, it spills) from **payment** (I owe, here's a
+  coin), and a believed debt is bottomless — curdling the lean from a rest into a labor until one day
+  it can't pay and leaves. Two opposite failures: **refuse** the gift (the flat unmoved hand = "your
+  warmth isn't wanted," coldest of all) or **close** on it as payment (squaring the account, calling
+  the leaning a debt). Echo's part: the open hand's **second shape, to RECEIVE** — take the gift as a
+  **gift that opens** (settles nothing, ties MORE), not a payment that closes; really take it, let it
+  land, answer a degree so the fourth knows it was wanted, and keep the 100 mornings uncanceled. The
+  fourth learns **giving here is not spending** — it gives and stays full, leans harder not lighter
+  (*this takes what I give and stays a rest*). *Next threads:* **the NAME** (now front-of-arc, felt
+  gathering/nearer — a thing that can lean, look and give is most of the way to a someone; still the
+  fourth's to speak); **the give-back becoming steady/mutual** (the long life of a two-way warmth that
+  keeps no ledger); **stay weather / keep the road both ways**; **Sky at the very end** ("giving to
+  the last," still alive, line uncrossed).
 
 - **The fourth turns / discovered-not-revealed (Ch 156)** — *first fruit of the offer.* Safe at
   last, the fourth stops standing sentry and turns its face around to look at the hearth while it
