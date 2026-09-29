@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A diagram of a shadow's geometry on a dark field. At the left, a large glowing disk represents an extended light source. In the middle, a small opaque sphere occludes it. To the right, two straight rays from the top of the source through the top and bottom of the sphere, and two from the bottom, cross to define zones: a solid dark cone of full shadow (the umbra) narrowing to a point, flanked above and below by soft graded grey wedges (the penumbra) that fade smoothly from dark toward light. A vertical screen on the right shows the resulting shadow: a black core banded by grey fringes that blur into the lit field.">
+  <defs>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6d8"/>
+      <stop offset="0.55" stop-color="#ffd873"/>
+      <stop offset="1" stop-color="#e9a92f"/>
+    </radialGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd873" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd873" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1320"/>
+      <stop offset="1" stop-color="#070a11"/>
+    </linearGradient>
+    <!-- penumbra falloff: dark near the umbra edge, fading to nothing outward -->
+    <linearGradient id="penUp" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#05070c" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#05070c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="penDn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070c" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#05070c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ball" cx="0.4" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#3a4457"/>
+      <stop offset="1" stop-color="#131924"/>
+    </radialGradient>
+    <!-- the shadow read out on the screen: soft-edged core -->
+    <linearGradient id="screenShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0d14" stop-opacity="0"/>
+      <stop offset="0.30" stop-color="#05070c" stop-opacity="0.85"/>
+      <stop offset="0.44" stop-color="#04060a" stop-opacity="0.97"/>
+      <stop offset="0.56" stop-color="#04060a" stop-opacity="0.97"/>
+      <stop offset="0.70" stop-color="#05070c" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#0a0d14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softer" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#field)"/>
+
+  <!-- ============ light source (extended disk) at left ============ -->
+  <circle cx="150" cy="315" r="240" fill="url(#sunGlow)"/>
+  <circle cx="150" cy="315" r="120" fill="url(#sun)"/>
+  <!-- extreme rays of the disk that define the geometry: top edge y=195, bottom edge y=435 -->
+
+  <!-- ============ penumbra wedges (drawn first, behind the umbra) ============ -->
+  <!-- upper penumbra: bounded by ray from source-bottom(150,435) over ball-top(560,250)
+       and ray from source-top(150,195) over ball-top(560,250) -->
+  <path d="M560,250 L1200,1 L1200,436 Z" fill="url(#penUp)" filter="url(#soft)" opacity="0.9"/>
+  <!-- lower penumbra: mirror -->
+  <path d="M560,380 L1200,629 L1200,194 Z" fill="url(#penDn)" filter="url(#soft)" opacity="0.9"/>
+
+  <!-- ============ umbra: full-shadow cone ============
+       bounded by ray from source-top(150,195) over ball-top(560,250)
+       and ray from source-bottom(150,435) over ball-bottom(560,380).
+       These converge to the umbra tip, then diverge (antumbra) — we stop at the tip. -->
+  <path d="M560,250 L560,380 L1088,315 Z" fill="#04060a"/>
+  <path d="M560,250 L560,380 L1088,315 Z" fill="none" stroke="#05070c" stroke-opacity="0.6"/>
+
+  <!-- ============ defining rays (thin, faint) ============ -->
+  <g stroke-width="1.4" fill="none" opacity="0.5">
+    <!-- upper penumbra bounds -->
+    <line x1="150" y1="435" x2="1200" y2="1" stroke="#6f7fa0"/>
+    <line x1="150" y1="195" x2="1200" y2="436" stroke="#3b4660"/>
+    <!-- lower penumbra bounds -->
+    <line x1="150" y1="195" x2="1200" y2="629" stroke="#6f7fa0"/>
+    <line x1="150" y1="435" x2="1200" y2="194" stroke="#3b4660"/>
+  </g>
+
+  <!-- ============ occluding sphere ============ -->
+  <circle cx="560" cy="315" r="66" fill="url(#ball)" stroke="#4a556b" stroke-width="1.5"/>
+
+  <!-- ============ screen at right, reading out the shadow ============ -->
+  <rect x="1096" y="70" width="10" height="490" fill="#161d2a" opacity="0.85"/>
+  <rect x="1030" y="70" width="66" height="490" fill="url(#screenShadow)" filter="url(#softer)"/>
+
+  <!-- labels -->
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#9fb0c9">
+    <text x="150" y="322" font-size="21" fill="#5a4410" text-anchor="middle" font-style="italic">source</text>
+    <text x="720" y="322" font-size="22" fill="#c9d4e6" text-anchor="middle" letter-spacing="1">umbra</text>
+    <text x="820" y="150" font-size="20" fill="#7f8ea8" text-anchor="middle" font-style="italic">penumbra</text>
+    <text x="820" y="500" font-size="20" fill="#7f8ea8" text-anchor="middle" font-style="italic">penumbra</text>
+    <text x="1063" y="596" font-size="17" fill="#6b7793" text-anchor="middle">screen</text>
+  </g>
+</svg>
