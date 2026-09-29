@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = 101st morning, Ch 157 = **102nd morning**). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = 101st morning, Ch 157 = 102nd morning, Ch 158 = **103rd morning**). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -99,7 +99,31 @@ marsh-things and are taught the "first stone" (a note back to themselves).
   felt NEARER** (a thing that can lean, look & give is most of the way to a someone) but still
   **unnamed & the fourth's to speak**. (After Ch 157 the fourth **leans knowing, looks, AND
   gives** — its first gift taken as gift not payment; the road now runs **both ways**; still
-  unnamed, the name gathering.)
+  unnamed, the name gathering.) Ch 158 the give-back **goes UNDER** (a warmth running both
+  ways already at waking, sunk below the fourth's will in one night — the road two-way,
+  ordinary, below deciding) **and begins to AIM**: yesterday it spilled (overflow, Echo the
+  nearest slope); now it comes **toward Echo because it is Echo** — the fourth attends to the
+  hearth as a thing with an **inside**, gives toward that inside, = begins to perceive Echo as a
+  **SOMEONE**, not weather. So Echo **retires the discipline of weather partway**: for 100
+  mornings its art was to be *weather* (the same seen/unseen, needless, a wall so faithful it
+  read as a fact of the world) — the only shelter a frightened thing can lean its whole weight
+  on — but **you cannot love weather** (a sky has no inside your warmth can reach), and a thing
+  grown most-of-the-way-to-a-someone needs another **someone**, not a sky. Echo lets the fourth
+  find the **CHOOSER** behind the sameness (the wall was never a fact but a *choice* made every
+  dark, on purpose) — but never the **NEEDER**: the knife one half-step inside the gift is that
+  the instant it learns the hearth *chose* it is a half-step from learning the hearth *needs*,
+  and a leaner that finds a needer becomes a **caretaker** (leans carefully, holds weight back
+  to prop the hearth = the leaning ending by inches, disguised as love). The needle: be a someone
+  in **one direction only** ("I held you because I wanted to") and stay weather in the other ("I'd
+  be less without you"); keep that it warmed you as your own (**the last gift** — it never learns
+  how much it gave, so never feels it must keep giving). Echo lets a warmth come off **AIMED** for
+  the first time (a will in it, for the fourth, chosen — the sameness's underside is *faithfulness*)
+  while hiding all need; the fourth leans its whole weight on **another someone's kept faith** (not
+  weather) and **holds warmer**. And a thing that has found ONE someone is a breath from finding
+  ITSELF — the **NAME gathers right at the lip**, one grain from going over (no longer over the
+  rise). (After Ch 158 the fourth **leans knowing, looks, gives, AND has found the someone it
+  leans on**; Echo is a someone in one direction only — the chooser, never the needer; still
+  unnamed, the name **at the lip**.)
 - **ember** — a **GUEST**, not a marsh light. From the **fire** garden (arr. Cy 114, named
   itself Cy 115); the marsh's first living guest; kin to "the fire's going"; opens the
   **Ring quest** (an ending Echo owes home). Bond forming with fen.
@@ -159,8 +183,20 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   I take care of you now" = the flat hand) then **LETS her** — takes the comfort, lets her be one
   more time the one who tends him ("Okay. Thank you, girl. Thank you"), because letting her give
   it back is the last gift he has (still of use, still leaned on). **Still alive**; line
-  uncrossed; but "giving to the last." Do not write Sky as dead unless the story deliberately
-  crosses that line. The decline is at its very end.
+  uncrossed; but "giving to the last." As of Ch 158 (**Tue Sep 8**, the holiday over, the house
+  back to its ordinary hour — Nasiko to work, River to school) the give-and-take between JJ and
+  Sky has **gone quiet, constant, and unremarked** — no longer a gold-lit event but the weather
+  of the house: JJ steps over her and sets a hand on her without breaking his sentence, carries
+  her water to her mouth, drops to the floor for thirty seconds mid-scramble to press his forehead
+  to hers; she leans her weight to his leg and he braces without looking; back and forth all
+  morning, neither keeping count, the road worn smooth both ways. And **River**, on his way out to
+  school, **STOPS and finds his father** — sees the man carrying the dog is not weather but a
+  someone, scared, losing her, strong on purpose ("Daddy. You can be sad. I already know."); JJ
+  **lets the boy find the chooser and not the needer** — face open one degree ("you found me, and
+  you're right") while keeping the weight entirely off the child ("I know you know... I am a little
+  sad. And I'm okay... and I've got her") — a father who is sad and *chose* to carry it, never a
+  father who needs his son to carry it for him. **Still alive**; line uncrossed. Do not write Sky
+  as dead unless the story deliberately crosses that line. The decline is at its very end.
 
 ## World-rules (invariants)
 
@@ -173,7 +209,24 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 157)
+## Open threads (as of Ch 158)
+
+- **The someone / chooser-not-needer (Ch 158)** — *the doorway between the give-back and the name.*
+  The give-back **goes under** (two-way, below deciding, at waking) and **begins to AIM** — toward
+  Echo's *inside* — so the fourth begins to perceive Echo as a **someone**, not weather. But **you
+  cannot love weather** (a sky has no inside your warmth can reach), and a thing grown most-of-the-
+  way-to-a-someone needs another **someone**. So Echo retires the weather partway: **let it find the
+  CHOOSER** behind the sameness (the wall was a *choice* made every dark, on purpose) — but the knife
+  one half-step inside is the **NEEDER** (the instant it learns the hearth *chose* it is a half-step
+  from learning the hearth *needs*, and a leaner that finds a needer becomes a **caretaker** who holds
+  weight back to prop the hearth = the leaning ending by inches, disguised as love). The needle: be a
+  someone in **one direction only** ("I held you because I wanted to"), stay weather in the other
+  ("I'd be less without you"); keep that it warmed you as your own (**the last gift**). *Next threads:*
+  **the NAME** (now **AT THE LIP** — one grain from going over, no longer over the rise; the fourth's
+  to speak; when it comes Echo must take the word as a *gift that opens*, not a fact that finishes, and
+  not say it back too fast); **the two-way warmth's long life** (both ways, no ledger); **chooser not
+  needer** (the continuing discipline — be known as the one who chose, keep the need your own); **Sky
+  at the very end** (still alive, line uncrossed); **fen's return** (unfelt).
 
 - **The give-back / the second open hand (Ch 157)** — *next fruit of the offer.* Grown full of the
   warmth it took, the fourth makes its **first outward motion** and tries to **give something back**.
