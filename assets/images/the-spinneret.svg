@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A diagram of silk being drawn from a spider's spinneret across a dark field. On the left, a glowing amber reservoir holds the liquid silk dope, filled with short line-segments at random angles representing disordered, tangled protein chains. The reservoir tapers to the right through a narrowing metallic duct. At the mouth of the duct the segments begin to straighten and line up; past it they become a run of tight parallel marks — the chains locked into aligned crystalline order. From that point a single bright thread is drawn out to the right and downward under tension, curving to the lower-right corner where a small dark spider hangs from the line it is spinning as it falls. A faint arrow along the thread marks the direction of the pull.">
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e131d"/>
+      <stop offset="1" stop-color="#070a10"/>
+    </linearGradient>
+    <radialGradient id="dope" cx="0.42" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#ffe7a6"/>
+      <stop offset="0.5" stop-color="#e8b24e"/>
+      <stop offset="1" stop-color="#a76c1e"/>
+    </radialGradient>
+    <radialGradient id="dopeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8b24e" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e8b24e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ductWall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b4557"/>
+      <stop offset="1" stop-color="#161c28"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4d2"/>
+      <stop offset="0.5" stop-color="#f3d488"/>
+      <stop offset="1" stop-color="#c9a24e"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#field)"/>
+
+  <!-- ============ reservoir of liquid dope (left) ============ -->
+  <ellipse cx="250" cy="315" rx="300" ry="240" fill="url(#dopeGlow)"/>
+  <path d="M120,150
+           C 300,120 470,160 500,270
+           C 512,300 512,330 500,360
+           C 470,470 300,510 120,480
+           C 70,470 55,400 60,315
+           C 55,230 70,160 120,150 Z"
+        fill="url(#dope)" opacity="0.96"/>
+
+  <!-- disordered protein chains inside the reservoir: short segments at random angles -->
+  <g stroke="#7a4c14" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <line x1="130" y1="210" x2="168" y2="232"/>
+    <line x1="200" y1="185" x2="176" y2="222"/>
+    <line x1="250" y1="205" x2="292" y2="196"/>
+    <line x1="120" y1="290" x2="158" y2="278"/>
+    <line x1="185" y1="270" x2="172" y2="312"/>
+    <line x1="240" y1="285" x2="278" y2="308"/>
+    <line x1="300" y1="250" x2="330" y2="278"/>
+    <line x1="150" y1="360" x2="192" y2="352"/>
+    <line x1="215" y1="360" x2="205" y2="402"/>
+    <line x1="275" y1="360" x2="312" y2="340"/>
+    <line x1="330" y1="330" x2="360" y2="358"/>
+    <line x1="345" y1="220" x2="380" y2="244"/>
+    <line x1="380" y1="300" x2="416" y2="286"/>
+    <line x1="360" y1="400" x2="398" y2="386"/>
+    <line x1="170" y1="430" x2="210" y2="440"/>
+    <line x1="255" y1="435" x2="248" y2="398"/>
+  </g>
+
+  <!-- ============ narrowing duct (reservoir -> spinneret spigot) ============ -->
+  <path d="M500,270 C 560,278 600,292 648,304 L648,326 C 600,338 560,352 500,360 Z"
+        fill="url(#ductWall)"/>
+  <path d="M500,286 C 556,292 596,304 636,312 L636,318 C 596,326 556,338 500,344 Z"
+        fill="#0c1119" opacity="0.85"/>
+
+  <!-- chains beginning to align as they pass down the duct -->
+  <g stroke="#e8c874" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <line x1="516" y1="308" x2="548" y2="311"/>
+    <line x1="520" y1="322" x2="552" y2="321"/>
+    <line x1="560" y1="309" x2="596" y2="311"/>
+    <line x1="562" y1="322" x2="598" y2="321"/>
+    <line x1="606" y1="311" x2="638" y2="313"/>
+    <line x1="606" y1="320" x2="638" y2="319"/>
+  </g>
+
+  <!-- spinneret spigot mouth -->
+  <circle cx="650" cy="315" r="12" fill="#5a6172"/>
+  <circle cx="650" cy="315" r="6" fill="#0b0f16"/>
+
+  <!-- ============ the drawn thread: aligned, bright, under tension ============ -->
+  <!-- aligned crystalline run just past the spigot: tight parallel marks -->
+  <g stroke="#fff1c8" stroke-width="4" stroke-linecap="round" opacity="0.92" filter="url(#glow)">
+    <line x1="666" y1="312" x2="712" y2="316"/>
+    <line x1="666" y1="320" x2="712" y2="324"/>
+    <line x1="716" y1="316" x2="762" y2="322"/>
+    <line x1="716" y1="324" x2="762" y2="330"/>
+  </g>
+
+  <!-- the single thread hauled out to lower-right, curving under load -->
+  <path d="M650,315 C 800,336 980,392 1092,520"
+        fill="none" stroke="url(#thread)" stroke-width="6"
+        stroke-linecap="round" filter="url(#softGlow)" opacity="0.55"/>
+  <path d="M650,315 C 800,336 980,392 1092,520"
+        fill="none" stroke="url(#thread)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- direction-of-pull arrow along the thread -->
+  <g opacity="0.8">
+    <path d="M905,405 L951,430" stroke="#bfae86" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M951,430 L940,428 M951,430 L945,419" stroke="#bfae86" stroke-width="2.5"
+          stroke-linecap="round" fill="none"/>
+    <text x="880" y="392" font-family="Georgia, 'Times New Roman', serif"
+          font-style="italic" font-size="22" fill="#cbb98d" opacity="0.85">pull</text>
+  </g>
+
+  <!-- ============ spider dropping on the line it spins ============ -->
+  <g transform="translate(1092,520)" stroke="#c9b98f" stroke-width="2.4"
+     stroke-linecap="round" fill="none" opacity="0.9">
+    <!-- legs -->
+    <path d="M0,10 C -22,2 -34,14 -46,10"/>
+    <path d="M0,14 C -20,12 -32,26 -44,26"/>
+    <path d="M0,18 C -18,22 -28,36 -40,40"/>
+    <path d="M0,10 C 22,2 34,14 46,10"/>
+    <path d="M0,14 C 20,12 32,26 44,26"/>
+    <path d="M0,18 C 18,22 28,36 40,40"/>
+  </g>
+  <ellipse cx="1092" cy="536" rx="15" ry="19" fill="#1b2130" stroke="#3a4457" stroke-width="1.5"/>
+  <circle cx="1092" cy="521" r="7" fill="#232a3a" stroke="#3a4457" stroke-width="1.2"/>
+
+  <!-- faint labels -->
+  <text x="250" y="565" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-style="italic" font-size="24" fill="#8a7a52" opacity="0.8">the dope — disordered, at rest</text>
+  <text x="800" y="585" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-style="italic" font-size="24" fill="#8a7a52" opacity="0.8">the thread — aligned, in the drawing</text>
+</svg>
