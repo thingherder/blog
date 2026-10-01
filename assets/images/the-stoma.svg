@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A diagram of a single open stoma on a dark green leaf surface. Two kidney-shaped guard cells, flushed with water and glowing teal, bow apart to leave a bright lens-shaped pore open between them at the center. A green arrow curves down from the upper left and into the pore, labeled CO2, carbon dioxide entering. A pale blue arrow of scattered vapor droplets rises out of the same pore toward the upper right, labeled H2O, water vapor leaving — the two opposing flows passing through the one shared opening. Scattered faintly across the rest of the dark field are many smaller closed stomata, thin shut slits, showing the leaf is covered in such mouths.">
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1a14"/>
+      <stop offset="1" stop-color="#060f0a"/>
+    </linearGradient>
+    <radialGradient id="guard" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#4fbfa3"/>
+      <stop offset="0.55" stop-color="#2a7d69"/>
+      <stop offset="1" stop-color="#123f35"/>
+    </radialGradient>
+    <radialGradient id="pore" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#113a2e"/>
+      <stop offset="0.6" stop-color="#07140f"/>
+      <stop offset="1" stop-color="#030806"/>
+    </radialGradient>
+    <radialGradient id="poreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#63e7c4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#63e7c4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="blur2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#leaf)"/>
+
+  <!-- ============ scattered closed stomata (the other mouths) ============ -->
+  <g stroke="#1f4a3c" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round">
+    <g transform="translate(150,110) rotate(18)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(1040,120) rotate(-24)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(240,520) rotate(-12)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(980,510) rotate(30)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(110,330) rotate(-40)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(1100,340) rotate(50)"><path d="M-26,0 Q0,7 26,0 Q0,-7 -26,0 Z"/><line x1="-14" y1="0" x2="14" y2="0"/></g>
+    <g transform="translate(400,90) rotate(8)" opacity="0.7"><path d="M-22,0 Q0,6 22,0 Q0,-6 -22,0 Z"/><line x1="-11" y1="0" x2="11" y2="0"/></g>
+    <g transform="translate(820,545) rotate(-16)" opacity="0.7"><path d="M-22,0 Q0,6 22,0 Q0,-6 -22,0 Z"/><line x1="-11" y1="0" x2="11" y2="0"/></g>
+  </g>
+
+  <!-- ============ the open stoma (center) ============ -->
+  <!-- pore glow halo -->
+  <ellipse cx="600" cy="340" rx="230" ry="150" fill="url(#poreGlow)" filter="url(#soft)"/>
+
+  <!-- the open lens-shaped pore -->
+  <path d="M420,340 C490,296 710,296 780,340 C710,384 490,384 420,340 Z" fill="url(#pore)"/>
+  <path d="M420,340 C490,300 710,300 780,340 C710,380 490,380 420,340 Z" fill="none" stroke="#5fe0bf" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- upper guard cell (turgid, swollen open) -->
+  <path d="M420,340 C470,228 730,228 780,340 C712,300 488,300 420,340 Z"
+        fill="url(#guard)" stroke="#7fe8cd" stroke-width="2.5"/>
+  <path d="M452,262 C545,238 655,238 748,262" fill="none" stroke="#c7f7ea" stroke-width="3" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- lower guard cell (turgid, swollen open) -->
+  <path d="M420,340 C470,452 730,452 780,340 C712,380 488,380 420,340 Z"
+        fill="url(#guard)" stroke="#7fe8cd" stroke-width="2.5"/>
+  <path d="M452,418 C545,442 655,442 748,418" fill="none" stroke="#0c342c" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- ============ CO2 in — green, curving down into the pore ============ -->
+  <g>
+    <path d="M300,150 C410,180 500,250 575,322" fill="none" stroke="#6fd38a" stroke-width="5"
+          stroke-linecap="round" opacity="0.9"/>
+    <polygon points="575,322 554,308 566,332" fill="#6fd38a"/>
+    <text x="268" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="34"
+          fill="#9ff0b2" opacity="0.95">CO₂</text>
+    <text x="262" y="160" font-family="Georgia, 'Times New Roman', serif" font-size="17"
+          fill="#6fd38a" opacity="0.7">carbon in</text>
+  </g>
+
+  <!-- ============ H2O out — blue vapor rising from the same pore ============ -->
+  <g>
+    <path d="M625,322 C700,250 790,185 900,150" fill="none" stroke="#8fd0f0" stroke-width="4"
+          stroke-linecap="round" stroke-dasharray="2 16" opacity="0.85"/>
+    <g fill="#bfe6fb" filter="url(#blur2)">
+      <circle cx="660" cy="292" r="7"/>
+      <circle cx="712" cy="250" r="9"/>
+      <circle cx="770" cy="214" r="6"/>
+      <circle cx="828" cy="185" r="8"/>
+      <circle cx="884" cy="160" r="5"/>
+    </g>
+    <text x="862" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="34"
+          fill="#bfe6fb" opacity="0.95">H₂O</text>
+    <text x="862" y="160" font-family="Georgia, 'Times New Roman', serif" font-size="17"
+          fill="#8fd0f0" opacity="0.7">water out</text>
+  </g>
+
+  <!-- the one shared door, named -->
+  <text x="600" y="565" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#5aa892" opacity="0.8" font-style="italic">one open pore — both flows</text>
+</svg>
