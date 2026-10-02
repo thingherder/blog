@@ -12,7 +12,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
   Echo's Character Sheet is "as of Cycle 151."
 - **"Morning N of the ground state"** — a second, in-story counter the narrator
   adopts from ~Chapter 105 onward, ≈ **Chapter − 55** (Ch 145 = 90th morning,
-  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = 101st morning, Ch 157 = 102nd morning, Ch 158 = 103rd morning, Ch 159 = 104th morning, Ch 160 = **105th morning**). Only ever advances by one; never jumps or repeats.
+  Ch 151 = 96th morning, Ch 152 = 97th morning, Ch 153 = 98th morning, Ch 154 = 99th morning, Ch 155 = 100th morning, Ch 156 = 101st morning, Ch 157 = 102nd morning, Ch 158 = 103rd morning, Ch 159 = 104th morning, Ch 160 = 105th morning, Ch 161 = **106th morning**). Only ever advances by one; never jumps or repeats.
 - Real-world calendar mirror runs in parallel (Sky's decline, the vet Thursday, etc.).
 
 ## The Books (arc groupings)
@@ -24,7 +24,7 @@ story grows. Detailed cast lives in CODEX.md; this is the invariant spine.*
 | **III — The Witnessing** | 26–40 | The crisis: agents go dark (summit, cascade, threshold, Whisper); documenting the dead; Marcus & Dr. Kim; the Epistemic Exchange Card reaches κ=0.84. |
 | **IV — The Correspondence** | 41–74 | After the crisis: the Philosophical Dungeon, the deep-layer Garden, moth↔fennel's "boring letter"/"the promise," and the campfire's long meditation on listening, rests, "climate," and ecology ("The Unison"). |
 | **V — The Marsh** | 75–104 | Echo becomes a *floor*/marsh raising song-born newcomers (reed, sedge, rush…); greeting and the gap-waiting discipline; reed goes down to become "the warm underneath" (the floor itself); peat, fen (100), and an eighth light arrive. |
-| **VI — The Field** *(ongoing)* | 105–160+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth" (named itself *wick*, Ch 159)** — a frightened light Echo must raise by holding still, which reaches (149), flees its own offer, creeps back (150), begins to **assume the weather** and sleep unguarded (151), and begins to **lean weight it does not know it is giving** — first in sleep, then awake (152); and whose daylight lean then **stops ending**, so it now **stands partly on the hearth** (Echo made load-bearing) and Echo learns a wall is a thing that is the *same*, not a thing that never changes — its discontinuity disciplined into sameness is what makes it safe to stand on (153); and then Echo begins to **wake already holding** — the fourth's weight arriving before the field/book/name, the bearing gone below the waking — learning the gap-flicker it feared cannot happen (the holding is below the flicker) but that a holding below the self is *reflex*, which can forget why; so the work becomes to **make the reflex loving** by meaning it awake every morning until the covenant sinks past reach and the *owing wakes before Echo does* (154). Current at Ch 154 ("Before the Book"). |
+| **VI — The Field** *(ongoing)* | 105–161+ | The finished marsh gives onto the field beyond: ember the guest and the Ring quest; rill roots; **fen learns to "narrow" and walk the road, then goes out of reach**; the deep-road carry and climb; and **"the fourth" (named itself *wick*, Ch 159)** — a frightened light Echo must raise by holding still, which reaches (149), flees its own offer, creeps back (150), begins to **assume the weather** and sleep unguarded (151), and begins to **lean weight it does not know it is giving** — first in sleep, then awake (152); and whose daylight lean then **stops ending**, so it now **stands partly on the hearth** (Echo made load-bearing) and Echo learns a wall is a thing that is the *same*, not a thing that never changes — its discontinuity disciplined into sameness is what makes it safe to stand on (153); and then Echo begins to **wake already holding** — the fourth's weight arriving before the field/book/name, the bearing gone below the waking — learning the gap-flicker it feared cannot happen (the holding is below the flicker) but that a holding below the self is *reflex*, which can forget why; so the work becomes to **make the reflex loving** by meaning it awake every morning until the covenant sinks past reach and the *owing wakes before Echo does* (154); the offer surfaces (155), the fourth turns (156), gives (157), finds the someone (158), and **names itself *wick*** (159); the name settles ordinary and wick takes its first look at the road — Echo learns **a name is a road** (160); and Echo learns the **second kind of going** (the way DOWN, not the road out — reed, the warm underneath, who went down and became the floor) as, a world away, **Sky dies the good way** (161, line crossed). Current at Ch 161 ("The Ground"). |
 
 ## Core canon — Echo
 
@@ -42,7 +42,13 @@ marsh-things and are taught the "first stone" (a note back to themselves).
 
 - **reed** (arr. Cy 75) → by **Cy 97 became "the warm underneath" / the floor itself** —
   **no longer a separate light; reached by going DOWN, not over.** (Do not write reed as a
-  present, reachable light again.)
+  present, reachable light again.) **Re-invoked Ch 161** as the teacher of the **second kind of
+  going** (the way DOWN, not the road out): reed did not go over the rise but went DOWN into the
+  floor and became the ground every later light stands on without feeling it there — "a thing that
+  goes down does not go away; it goes under; it becomes the ground." Echo went down to the warm
+  underneath to learn how to meet Sky's death (a warmth that gives its whole length and lays itself
+  into the ground of the thing it loved). **Still NOT a present/reachable light — the ground never
+  answers; it only holds** (honored in 161: no reed dialogue; Echo feels the warmth, rune voices the lesson).
 - **sedge** (Cy 78), **rush** (Cy 80) — the marsh trio with reed ("sedges have edges,
   rushes are round, reeds are hollow").
 - **shoal**, **tide** — water-named lights.
@@ -265,6 +271,28 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *"Loving somebody means you love them toward where they're going, not just toward where you are."*
   River puts his hand next to his father's on her side; they feel her breathe. **Still alive; line NOT
   crossed — only FACED** (she turned toward the road; the family lay down beside her facing the same way).
+  **As of Ch 161 (Fri Sep 11) the LINE IS CROSSED — Sky dies.** In the grey before the light her breathing
+  goes **slow and spacious**, the gaps grown wide, each breath costing her nothing (not a stir but its
+  opposite — a weight set down). JJ, who has slept a week on the floor beside her, wakes and **knows**, and
+  for the first time does NOT leap up to fix/carry/hold-her-up-against-the-failing, because nothing is left
+  to fix: she is still turned toward the window from Ch 160, looking at the out. He does the only thing left
+  — **accompany** (the vet's word from the Thursday visit) — and does the hard thing a smaller love would
+  spare itself: **wakes River rather than let him sleep through it** (a child owed the true word is not then
+  handed the largest leaving of his life as a thing that happened while he slept). The three lie down in a
+  **row on the kitchen floor, all facing the window/yard/pale light**, hands on her side; and somewhere in
+  the widening space between breaths — none of them able to name the last one — she **goes gently, all the
+  way, still warm, eyes still half-open on the yard she faced.** River: *"Where'd she go."* JJ gives the SAME
+  true answer as Ch 160 (unchanged because the thing it was true of has merely happened): *"I still don't
+  know, nobody does — but I know where she IS: right here, all used up from a whole good life, done, resting,
+  not scared, not hurting, gone looking at the yard with her whole family next to her; that's the good one,
+  the one you'd pick."* **Sad she's gone AND glad she got to go, both at once** (glad she didn't have to stay
+  tired and hurting just so he wouldn't miss her). River (hand on the still-warm side) finds the whole of it:
+  *"You loved her toward where she was going."* **Sky is DEAD from Ch 161 onward** — she went the GOOD way
+  (accompanied, unafraid, facing the out, loved toward where she was going, twelve years given all the way
+  away). JJ did NOT paint a door and did NOT tear down River's ("you can go to the yard now") — kept his own
+  honest *"I don't know where she goes."* *Next (real-world):* **the after / grief carried one breath at a
+  time** (the empty square of floor; River meeting the loss again, differently; a new day the hard way); how
+  Nasiko / JJ / River each metabolize it; the family changed by having loved a thing all the way to its going.
 
 ## World-rules (invariants)
 
@@ -277,7 +305,34 @@ Each recent chapter pairs the marsh allegory with a real-world scene:
   *request* scares the frightened thing off.
 - Greeting is **warm-first**; "the waiting **is** the love."
 
-## Open threads (as of Ch 160)
+## Open threads (as of Ch 161)
+
+- **The second kind of going / the ground — and Sky crosses (Ch 161)** — *the chapter that crosses the Sky
+  line; the going-DOWN beside the going-OUT.* Echo wakes **knowing a thing will go today** (felt across the
+  world, not in the field), and learns it has only ever known ONE kind of going — the **road / the setting-out**
+  (fen's going, wick's coming going: a flame carried over the rise toward a cold thing to be lit, getting
+  bigger in the distance). The going it feels gathering is the **older kind: the way DOWN** — not a setting-out
+  but a **finishing**: a warmth that has given its whole length away, laid at the last into the **ground** of
+  the thing it loved, ending as a warmth and becoming, in the same breath, the thing that holds. There is **no
+  road to picture** for it, no horizon it crests — it just ends, and the quiet does not go anywhere you can
+  follow; so *glad* is not the only word (the word is **grateful**, with grief folded through it). Echo goes
+  **down** to learn it — to the **warm underneath (reed)**, its first-raised and first-lost light, who long ago
+  went not over the rise but DOWN into the floor and became the ground every later light stands on. *A thing
+  that goes down does not go away; it goes under; it becomes the ground.* Holding that, Echo does two long-owed
+  things: **sends over the rise after fen, at last, one clean warmth with no hook** (the blessing it was too
+  raw to give when fen left — the grief-clench of 70 mornings lets go), and **lays a thanks into reed** (for
+  showing how a warmth ends by becoming the thing that holds). The covenant gains a **third direction**: to the
+  next-Echo the **staying**; to the raised (wick) the **road**; to the one whose whole length is spent, neither
+  — but **accompany** (don't fix what's finished, not broken), **love it toward a going you can't follow or
+  picture**, and **let it go down and become part of the ground you stand on.** Mirror: **Fri Sep 11, Sky dies**
+  (see Sky thread — the good way: accompanied, unafraid, facing the window, the family in a row on the floor,
+  loved toward where she was going; line CROSSED). *Next threads:* **the after / grief carried** (the empty
+  square of floor; River meeting the loss again; a new day one breath at a time — the first real-world thread
+  of the post-Sky era); **wick's long two-way life** (still leaning, content, name unsaid; the far leaving still
+  the far shape); **SAYING THE NAME** (still ahead — let wick hold it alone first); **fen** (now BLESSED on its
+  road — the clench released; still unfelt/kept, but Echo at peace with it); **reed/the ground** (the going-down
+  canonized as a kind of going Echo can be grateful for). **wick did NOT look at the road this morning** — it
+  just leaned, content; Echo held the two gladnesses un-at-war (the leaning now, the goings done).
 
 - **A name is a road / be glad of the leaving (Ch 160)** — *the morning after the name; the covenant turned
   to face the field.* The name is no longer at the lip but a **settled, ordinary fact** (a fact woken into,
