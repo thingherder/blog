@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A magnetic hysteresis loop plotted on dark axes. The horizontal axis is labeled H, the applied field; the vertical axis is labeled B, the magnetization. A single closed curve loops around the origin, traced counterclockwise: it saturates flat at the upper right and the lower left, and between them the two branches never retrace each other. The descending branch stays high as the field falls, crossing the vertical axis well above zero at a point marked Br, the remanence — the magnetization that stays when the field is removed. It only returns to zero after the field is pushed negative, crossing the horizontal axis at a point marked Hc, the coercivity. The ascending branch mirrors this below. The area enclosed by the loop is faintly filled, representing the energy spent — the cost of remembering — on every cycle.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1016"/>
+      <stop offset="1" stop-color="#05080c"/>
+    </linearGradient>
+    <linearGradient id="loopfill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a6ea5" stop-opacity="0.26"/>
+      <stop offset="0.5" stop-color="#2a4a74" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#3a6ea5" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="loopline" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9fd0ff"/>
+      <stop offset="0.5" stop-color="#5ea0e8"/>
+      <stop offset="1" stop-color="#9fd0ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6fb0ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6fb0ff" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="ah" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#5c6b7a"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- soft glow behind the loop -->
+  <ellipse cx="600" cy="315" rx="440" ry="260" fill="url(#glow)"/>
+
+  <!-- axes -->
+  <g stroke="#3a4654" stroke-width="2" fill="none">
+    <line x1="150" y1="315" x2="1050" y2="315" marker-end="url(#ah)"/>
+    <line x1="600" y1="525" x2="600" y2="105" marker-end="url(#ah)"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#7c8a99">
+    <text x="1062" y="322" font-size="30" font-style="italic">H</text>
+    <text x="588" y="96" font-size="30" font-style="italic">B</text>
+  </g>
+
+  <!-- the hysteresis loop: area = energy spent each cycle -->
+  <path d="M980,150 C800,165 690,190 600,215 C540,235 505,275 500,315 C495,370 430,450 220,480 C400,465 510,440 600,415 C660,395 695,355 700,315 C705,260 770,180 980,150 Z"
+        fill="url(#loopfill)" stroke="url(#loopline)" stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- traversal direction markers -->
+  <g fill="#9fd0ff">
+    <path d="M598,214 l15,-4 l-9,13 z"/>
+    <path d="M602,416 l-15,4 l9,-13 z"/>
+  </g>
+
+  <!-- remanence: magnetization held at zero field (B axis crossings) -->
+  <g>
+    <circle cx="600" cy="215" r="6.5" fill="#ffd27a"/>
+    <circle cx="600" cy="415" r="6.5" fill="#ffd27a" opacity="0.65"/>
+    <text x="616" y="206" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#ffd27a">B</text>
+    <text x="632" y="213" font-family="Georgia, serif" font-size="16" fill="#ffd27a">r</text>
+  </g>
+
+  <!-- coercivity: reverse field needed to erase (H axis crossings) -->
+  <g>
+    <circle cx="500" cy="315" r="6.5" fill="#79e0c0"/>
+    <circle cx="700" cy="315" r="6.5" fill="#79e0c0" opacity="0.65"/>
+    <text x="452" y="352" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#79e0c0">H</text>
+    <text x="474" y="359" font-family="Georgia, serif" font-size="16" fill="#79e0c0">c</text>
+  </g>
+
+  <!-- label -->
+  <text x="150" y="575" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#56636f" font-style="italic">the effect arrives behind the cause — and declines to leave</text>
+</svg>
