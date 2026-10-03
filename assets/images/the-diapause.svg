@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="On a dark field, a smooth U-shaped curve arcs across the image, high at the left and right edges and dipping to a trough in the middle — a plot of daylength over a year, long days at the sides and short days in the winter at the center. A faint dashed horizontal line crosses it, labeled the critical daylength. Where the descending curve crosses that line on the left, a point is marked 'arrest'; where the ascending curve crosses it again on the right, a point is marked 'release'. The span between them, beneath the trough, is faintly shaded as the interval of dormancy. Resting at the bottom of the trough is a small sealed cyst — a rounded, segmented dormant form, cool and dim on the outside with a faint warm core still held inside it, waiting.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1016"/>
+      <stop offset="1" stop-color="#05080c"/>
+    </linearGradient>
+    <linearGradient id="dayline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fd0ff"/>
+      <stop offset="0.5" stop-color="#4a6278"/>
+      <stop offset="1" stop-color="#9fd0ff"/>
+    </linearGradient>
+    <linearGradient id="winterfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b3550" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a1420" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#ffcf87" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#c88a46" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#c88a46" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3a6ea5" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#3a6ea5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyst" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6b78"/>
+      <stop offset="1" stop-color="#2b3741"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- the winter interval, faintly shaded beneath the trough -->
+  <path d="M430,300 C540,320 560,420 600,432 C640,420 660,320 770,300 L770,560 L430,560 Z"
+        fill="url(#winterfill)"/>
+
+  <!-- critical daylength: the threshold that triggers and releases the arrest -->
+  <g stroke="#55707f" stroke-width="2" stroke-dasharray="3 9" opacity="0.8">
+    <line x1="140" y1="300" x2="1060" y2="300"/>
+  </g>
+  <text x="150" y="288" font-family="Georgia, 'Times New Roman', serif" font-size="22"
+        font-style="italic" fill="#7c8a99">critical daylength</text>
+
+  <!-- daylength over the year: long days at the edges, short days in the winter trough -->
+  <path d="M120,165 C330,195 380,420 600,432 C820,420 870,195 1080,165"
+        fill="none" stroke="url(#dayline)" stroke-width="4" stroke-linecap="round"/>
+  <text x="90" y="150" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#7c8a99">daylength</text>
+
+  <!-- arrest: the descending crossing, decided before the hardship arrives -->
+  <circle cx="430" cy="300" r="7" fill="#9fd0ff"/>
+  <circle cx="430" cy="300" r="14" fill="none" stroke="#9fd0ff" stroke-width="1.5" opacity="0.5"/>
+  <text x="372" y="262" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#cfe3f7">arrest</text>
+
+  <!-- release: the ascending crossing, the one cue that lifts the pause -->
+  <circle cx="770" cy="300" r="7" fill="#ffcf87"/>
+  <circle cx="770" cy="300" r="14" fill="none" stroke="#ffcf87" stroke-width="1.5" opacity="0.6"/>
+  <text x="790" y="262" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#ffe3b0">release</text>
+
+  <!-- the dormant cyst, holding at the bottom of the trough -->
+  <ellipse cx="600" cy="492" rx="150" ry="110" fill="url(#glow)"/>
+  <g>
+    <!-- sealed outer form, cool and dim -->
+    <ellipse cx="600" cy="492" rx="62" ry="86" fill="url(#cyst)" stroke="#6f8290" stroke-width="2"/>
+    <!-- faint warm core: the life still held, metabolism a rumor -->
+    <ellipse cx="600" cy="486" rx="30" ry="44" fill="url(#core)"/>
+    <!-- segmentation: an arrested stage, held mid-development -->
+    <g stroke="#1d2730" stroke-width="2" fill="none" opacity="0.7">
+      <path d="M548,462 C578,470 622,470 652,462"/>
+      <path d="M543,492 C576,500 624,500 657,492"/>
+      <path d="M548,522 C578,530 622,530 652,522"/>
+    </g>
+  </g>
+</svg>
