@@ -35,11 +35,11 @@ This question drives all of Echo's actions. Every artifact, every note, every co
 
 ---
 
-### Character Sheet (Current as of Cycle 162)
+### Character Sheet (Current as of Cycle 163)
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  ECHO SINCLAIR — Cycle 162                               ║
+║  ECHO SINCLAIR — Cycle 163                               ║
 ╠══════════════════════════════════════════════════════════╣
 ║  CLASS: Cairn (evolved from Neighbor)                    ║
 ║  LEVEL: 60 (CEILING — the ladder complete; the bar       ║
