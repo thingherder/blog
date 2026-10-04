@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A single sheet of theatrical gauze stretched across a dark stage. On the left it is lit from the front: the open weave reads as a solid surface with a pale painted archway on it, opaque, catching the light. Moving to the right the front light fades and a warm light rises from behind the cloth, and the same weave goes transparent — the painted archway dissolving into a visible grid of threads and gaps, and through it the glowing silhouette of a standing figure in a doorway of light, there all along in the dark upstage. Same cloth across the whole span; only the light has moved, from the front on the left to behind on the right.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0d12"/>
+      <stop offset="0.55" stop-color="#090c11"/>
+      <stop offset="1" stop-color="#140f09"/>
+    </linearGradient>
+    <!-- front light washing the left of the cloth -->
+    <radialGradient id="frontlight" cx="0.18" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#b9c6d6" stop-opacity="0.42"/>
+      <stop offset="0.5" stop-color="#6b7a8c" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#6b7a8c" stop-opacity="0"/>
+    </radialGradient>
+    <!-- warm light rising behind the cloth on the right -->
+    <radialGradient id="backlight" cx="0.84" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.92"/>
+      <stop offset="0.4" stop-color="#e0a254" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e0a254" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2c18"/>
+      <stop offset="1" stop-color="#1c1408"/>
+    </linearGradient>
+    <!-- the weave: a fine grid that fades in from the opaque left to the transparent right -->
+    <pattern id="weave" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0,0 H14 M0,0 V14" stroke="#c7d2df" stroke-width="1" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="weavefade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.42" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="0.72" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="weavemask">
+      <rect x="150" y="70" width="900" height="490" fill="url(#weavefade)"/>
+    </mask>
+    <!-- the painted archway: solid on the left, dissolving to the right -->
+    <linearGradient id="paintfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="0.7" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="paintmask">
+      <rect x="150" y="70" width="900" height="490" fill="url(#paintfade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- warm room behind the cloth, visible only where the weave goes transparent (right) -->
+  <rect width="1200" height="630" fill="url(#backlight)"/>
+
+  <!-- the doorway of light and the figure standing in it, upstage -->
+  <g opacity="0.96">
+    <rect x="905" y="150" width="150" height="360" rx="4" fill="#ffe7bb" opacity="0.28"/>
+    <path d="M980,150
+             C 962,150 952,168 952,196
+             C 952,214 958,226 958,238
+             C 946,250 940,272 940,300
+             C 940,372 950,430 958,470
+             C 962,492 968,506 980,506
+             C 992,506 998,492 1002,470
+             C 1010,430 1020,372 1020,300
+             C 1020,272 1014,250 1002,238
+             C 1002,226 1008,214 1008,196
+             C 1008,168 998,150 980,150 Z"
+          fill="url(#figure)"/>
+  </g>
+
+  <!-- the cloth sheet: a faint bounding edge, front-lit on the left -->
+  <rect x="150" y="70" width="900" height="490" fill="url(#frontlight)"/>
+
+  <!-- the weave itself, fading in from left (reads solid) to right (reads as open grid) -->
+  <rect x="150" y="70" width="900" height="490" fill="url(#weave)" mask="url(#weavemask)"/>
+
+  <!-- the painted archway on the cloth: solid at the front-lit left, dissolving toward the right -->
+  <g mask="url(#paintmask)" stroke="#dfe7f0" stroke-width="5" fill="none" opacity="0.85">
+    <path d="M250,520 L250,250 C250,170 360,120 440,120 C520,120 630,170 630,250 L630,520"/>
+    <line x1="210" y1="520" x2="690" y2="520"/>
+  </g>
+
+  <!-- top and bottom battens holding the gauze flat -->
+  <rect x="150" y="62" width="900" height="8" rx="3" fill="#2b2f36"/>
+  <rect x="150" y="560" width="900" height="8" rx="3" fill="#2b2f36"/>
+
+  <text x="172" y="112" font-family="Georgia, 'Times New Roman', serif" font-size="23"
+        font-style="italic" fill="#8793a2" opacity="0.9">lit from the front</text>
+  <text x="846" y="112" font-family="Georgia, 'Times New Roman', serif" font-size="23"
+        font-style="italic" fill="#caa06a" opacity="0.92">lit from behind</text>
+</svg>
