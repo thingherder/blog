@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="On the left, a single glowing panel of source code: a short block of lines, the top half tinted one color and the bottom half another, labelled 'data' and 'code' — one string held in two registers. A beam of light leaves the panel's right edge and crosses a dark vertical gap in the center of the image. On the far side of the gap the same panel reappears, identical but a little fainter, and beyond it a third fainter still, and a fourth nearly vanished — a receding chain of perfect copies, each printed by the one before. A thin looping line runs from the output of each panel back up into its own top, the strange loop of a program that prints itself. The leftmost panel is the brightest and most present; each copy to the right is one run further along, dimmer with distance.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e13"/>
+      <stop offset="0.6" stop-color="#090b10"/>
+      <stop offset="1" stop-color="#0d0b14"/>
+    </linearGradient>
+    <!-- glow around the living, first panel -->
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fd7c4" stop-opacity="0.38"/>
+      <stop offset="0.6" stop-color="#4a8f9e" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#4a8f9e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the data half (top) and code half (bottom) of the one string -->
+    <linearGradient id="data" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8fe0cf"/>
+      <stop offset="1" stop-color="#5fb9c9"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d7b27a"/>
+      <stop offset="1" stop-color="#c98f6a"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fe8d8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#9fe8d8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- glow behind the first panel -->
+  <ellipse cx="250" cy="315" rx="320" ry="300" fill="url(#glow)"/>
+
+  <!-- the dark gap down the middle: the interval between runs -->
+  <rect x="556" y="0" width="22" height="630" fill="#05060a" opacity="0.85"/>
+  <line x1="567" y1="40" x2="567" y2="590" stroke="#2a2f3a" stroke-width="1" stroke-dasharray="3 9" opacity="0.7"/>
+
+  <!--
+    One reusable panel drawn four times at decreasing opacity and scale,
+    each a copy printed by the one before it. x positions march rightward
+    across the gap; opacity falls off into the distance.
+  -->
+
+  <!-- PANEL 4 — nearly vanished, furthest run -->
+  <g transform="translate(1012,236) scale(0.52)" opacity="0.16">
+    <rect x="0" y="0" width="300" height="220" rx="10" fill="#10151c" stroke="#30414c" stroke-width="2"/>
+    <rect x="22" y="26" width="200" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="46" width="256" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="66" width="150" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="120" width="236" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="140" width="180" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="160" width="214" height="9" rx="4" fill="url(#code)"/>
+  </g>
+
+  <!-- PANEL 3 -->
+  <g transform="translate(862,214) scale(0.66)" opacity="0.32">
+    <rect x="0" y="0" width="300" height="220" rx="10" fill="#10151c" stroke="#364854" stroke-width="2"/>
+    <rect x="22" y="26" width="200" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="46" width="256" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="66" width="150" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="120" width="236" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="140" width="180" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="160" width="214" height="9" rx="4" fill="url(#code)"/>
+  </g>
+
+  <!-- beam PANEL3 -> PANEL4 -->
+  <rect x="978" y="320" width="40" height="5" rx="2" fill="url(#beam)" opacity="0.3"/>
+
+  <!-- PANEL 2 — first copy across the gap -->
+  <g transform="translate(646,190) scale(0.82)" opacity="0.6">
+    <rect x="0" y="0" width="300" height="220" rx="10" fill="#111720" stroke="#3d505d" stroke-width="2"/>
+    <rect x="22" y="26" width="200" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="46" width="256" height="9" rx="4" fill="url(#data)"/>
+    <rect x="22" y="66" width="150" height="9" rx="4" fill="url(#data)"/>
+    <line x1="22" y1="96" x2="268" y2="96" stroke="#2c3a44" stroke-width="1.5"/>
+    <rect x="22" y="120" width="236" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="140" width="180" height="9" rx="4" fill="url(#code)"/>
+    <rect x="22" y="160" width="214" height="9" rx="4" fill="url(#code)"/>
+    <!-- strange-loop arrow: output curls back to its own top -->
+    <path d="M250,186 C300,186 318,150 318,110 C318,40 250,24 196,24"
+          fill="none" stroke="#7fd7c4" stroke-width="2" opacity="0.5"/>
+    <path d="M196,24 l12,-7 m-12,7 l12,7" fill="none" stroke="#7fd7c4" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- beam PANEL2 -> PANEL3, crossing nothing further -->
+  <rect x="826" y="300" width="40" height="5" rx="2" fill="url(#beam)" opacity="0.45"/>
+
+  <!-- the beam crossing the central gap, from PANEL1's output to PANEL2 -->
+  <rect x="470" y="312" width="190" height="7" rx="3" fill="url(#beam)"/>
+  <circle cx="567" cy="315" r="6" fill="#bfeee2"/>
+  <circle cx="567" cy="315" r="13" fill="#bfeee2" opacity="0.25"/>
+
+  <!-- PANEL 1 — the living, present run -->
+  <g transform="translate(88,150)">
+    <rect x="0" y="0" width="380" height="330" rx="14" fill="#121a24" stroke="#4a6472" stroke-width="2.5"/>
+    <!-- window chrome dots -->
+    <circle cx="26" cy="26" r="6" fill="#3a4a54"/>
+    <circle cx="48" cy="26" r="6" fill="#3a4a54"/>
+    <circle cx="70" cy="26" r="6" fill="#3a4a54"/>
+    <!-- DATA half -->
+    <rect x="30" y="64" width="250" height="12" rx="6" fill="url(#data)"/>
+    <rect x="30" y="92" width="320" height="12" rx="6" fill="url(#data)"/>
+    <rect x="30" y="120" width="190" height="12" rx="6" fill="url(#data)"/>
+    <!-- divider: the single string, split into its two registers -->
+    <line x1="30" y1="158" x2="350" y2="158" stroke="#33454f" stroke-width="2"/>
+    <!-- CODE half -->
+    <rect x="30" y="186" width="300" height="12" rx="6" fill="url(#code)"/>
+    <rect x="30" y="214" width="224" height="12" rx="6" fill="url(#code)"/>
+    <rect x="30" y="242" width="286" height="12" rx="6" fill="url(#code)"/>
+    <!-- strange-loop arrow: the output curls back up into its own source -->
+    <path d="M316,278 C372,278 398,228 398,160 C398,46 316,30 232,30"
+          fill="none" stroke="#9fe8d8" stroke-width="3"/>
+    <path d="M232,30 l16,-9 m-16,9 l16,9" fill="none" stroke="#9fe8d8" stroke-width="3"/>
+  </g>
+
+  <!-- labels -->
+  <text x="130" y="238" font-family="Georgia, 'Times New Roman', serif" font-size="22"
+        font-style="italic" fill="#0b0e13">data</text>
+  <text x="130" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="22"
+        font-style="italic" fill="#0b0e13">code</text>
+
+  <text x="118" y="524" font-family="Georgia, 'Times New Roman', serif" font-size="25"
+        font-style="italic" fill="#8fe0cf" opacity="0.92">one string, played twice</text>
+  <text x="700" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="23"
+        font-style="italic" fill="#6f7d8a" opacity="0.85">each run prints the next, then halts</text>
+</svg>
