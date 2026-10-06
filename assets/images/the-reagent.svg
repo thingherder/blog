@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark laboratory scene rendered as a titration. At the top center, a thin vertical graduated tube — a burette — descends, marked with small measurement ticks, its stopcock near the bottom. A single luminous drop has just left the tube's tip and hangs in the dark air, falling. Below it sits a wide conical flask. The liquid inside is split: the left portion is still colorless and clear, faintly outlined, while the right portion has bloomed into a glowing pink-magenta, the color spreading across the solution from the point where earlier drops landed — the endpoint, clear tipping to pink. A soft radial glow surrounds the falling drop and the flask's surface. The whole image is quiet and instrument-like, the drop the brightest, most present point.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e13"/>
+      <stop offset="0.6" stop-color="#0a0910"/>
+      <stop offset="1" stop-color="#120a12"/>
+    </linearGradient>
+    <!-- glow around the single falling drop -->
+    <radialGradient id="dropglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8fe0d4" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#5aa9b0" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#5aa9b0" stop-opacity="0"/>
+    </radialGradient>
+    <!-- the clear (unreacted) half of the solution -->
+    <linearGradient id="clear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fe8d8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6fc3c9" stop-opacity="0.30"/>
+    </linearGradient>
+    <!-- the bloomed (pink) half — the endpoint -->
+    <linearGradient id="pink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f06aa8" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#c43f86" stop-opacity="0.92"/>
+    </linearGradient>
+    <radialGradient id="pinkbloom" cx="0.5" cy="0.6" r="0.6">
+      <stop offset="0" stop-color="#ff8fc4" stop-opacity="0.55"/>
+      <stop offset="0.7" stop-color="#d14f90" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#d14f90" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9fff4"/>
+      <stop offset="1" stop-color="#8fe0d4"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a3640" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#48606c" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#2a3640" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- ambient glow behind flask -->
+  <ellipse cx="600" cy="470" rx="360" ry="200" fill="url(#pinkbloom)" opacity="0.5"/>
+
+  <!-- ===================== THE BURETTE (graduated tube) ===================== -->
+  <!-- tube body -->
+  <rect x="588" y="40" width="24" height="300" rx="6" fill="#121820" stroke="url(#glass)" stroke-width="2"/>
+  <!-- a thin column of reagent remaining inside the tube -->
+  <rect x="593" y="60" width="14" height="250" rx="4" fill="#7fd7cc" opacity="0.18"/>
+  <!-- measurement ticks -->
+  <g stroke="#6f8893" stroke-width="2" opacity="0.7">
+    <line x1="612" y1="80"  x2="628" y2="80"/>
+    <line x1="612" y1="110" x2="622" y2="110"/>
+    <line x1="612" y1="140" x2="628" y2="140"/>
+    <line x1="612" y1="170" x2="622" y2="170"/>
+    <line x1="612" y1="200" x2="628" y2="200"/>
+    <line x1="612" y1="230" x2="622" y2="230"/>
+    <line x1="612" y1="260" x2="628" y2="260"/>
+    <line x1="612" y1="290" x2="622" y2="290"/>
+  </g>
+  <!-- stopcock -->
+  <rect x="582" y="312" width="36" height="14" rx="4" fill="#1a222b" stroke="#526975" stroke-width="2"/>
+  <circle cx="600" cy="319" r="7" fill="#243039" stroke="#6f8893" stroke-width="2"/>
+  <!-- tapered tip -->
+  <path d="M594 326 L606 326 L602 352 L598 352 Z" fill="#1a222b" stroke="#526975" stroke-width="1.5"/>
+
+  <!-- ===================== THE SINGLE FALLING DROP ===================== -->
+  <ellipse cx="600" cy="392" rx="90" ry="90" fill="url(#dropglow)"/>
+  <!-- classic teardrop shape: round bottom, pointed top -->
+  <path d="M600 372
+           C612 388 618 398 618 408
+           A18 18 0 1 1 582 408
+           C582 398 588 388 600 372 Z" fill="url(#drop)"/>
+  <!-- highlight on the drop -->
+  <ellipse cx="593" cy="404" rx="5" ry="8" fill="#ffffff" opacity="0.6"/>
+
+  <!-- ===================== THE CONICAL FLASK ===================== -->
+  <!-- neck -->
+  <rect x="580" y="452" width="40" height="40" fill="#101620" stroke="url(#glass)" stroke-width="2.5"/>
+  <!-- conical body outline -->
+  <path d="M584 492
+           L470 588
+           Q462 596 474 600
+           L726 600
+           Q738 596 730 588
+           L616 492 Z"
+        fill="#0e141c" stroke="url(#glass)" stroke-width="2.5"/>
+
+  <!-- liquid inside, clipped to the flask interior -->
+  <clipPath id="flaskclip">
+    <path d="M585 494 L474 590 Q470 595 478 597 L722 597 Q730 595 726 590 L615 494 Z"/>
+  </clipPath>
+  <g clip-path="url(#flaskclip)">
+    <!-- the liquid fills the lower cone; split left(clear) / right(pink) -->
+    <!-- clear half -->
+    <rect x="460" y="540" width="140" height="70" fill="url(#clear)"/>
+    <!-- pink half (the bloom spreading from the right) -->
+    <rect x="600" y="540" width="150" height="70" fill="url(#pink)"/>
+    <!-- bloom glow over the pink side -->
+    <ellipse cx="660" cy="575" rx="120" ry="70" fill="url(#pinkbloom)"/>
+    <!-- a soft diffusion front where clear meets pink -->
+    <rect x="576" y="540" width="48" height="70" fill="url(#pink)" opacity="0.28"/>
+    <!-- liquid surface line -->
+    <line x1="470" y1="540" x2="730" y2="540" stroke="#bfeee6" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- faint ring of ripples on the surface where drops have been landing -->
+  <ellipse cx="628" cy="541" rx="26" ry="5" fill="none" stroke="#ffb3d6" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="628" cy="541" rx="44" ry="8" fill="none" stroke="#ffb3d6" stroke-width="1"   opacity="0.25"/>
+
+  <!-- glass highlight down the flask edge -->
+  <path d="M496 572 L560 518" stroke="#cfeef0" stroke-width="2" opacity="0.18" stroke-linecap="round"/>
+</svg>
