@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark drafting scene. A single long, smooth, fair curve sweeps left to right across the canvas, rising from a low point at the left, cresting near the left-center, and settling toward the right. The curve is pinned down at several points by small glowing lead weights called ducks — three of them clustered on the left where the curve bends tightly, and two more over on the right. Between the left cluster and the right pair there is a wide span of the curve with no ducks at all, gliding through open dark air, lit only by a faint diffuse glow to mark that it is unsupported there. The curve looks exactly as smooth and confident over the empty gap as it does where the ducks hold it. Faint graph-paper grid lines and small tick marks sit behind everything. The whole image is quiet, instrument-like, drawn in cool cyan light on near-black.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0d12"/>
+      <stop offset="0.55" stop-color="#090c11"/>
+      <stop offset="1" stop-color="#0c1016"/>
+    </linearGradient>
+    <!-- glow carried along the fair curve -->
+    <linearGradient id="curveink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fe6ff"/>
+      <stop offset="0.5" stop-color="#b8f4ff"/>
+      <stop offset="1" stop-color="#6fd0ef"/>
+    </linearGradient>
+    <!-- the faint glow marking the unsupported open-air span -->
+    <radialGradient id="gap" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b6c8a" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#2a4a60" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#2a4a60" stop-opacity="0"/>
+    </radialGradient>
+    <!-- glow around each pinned duck -->
+    <radialGradient id="duckglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9ff0ff" stop-opacity="0.65"/>
+      <stop offset="0.55" stop-color="#5ab6d6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#5ab6d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="duckbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff8ff"/>
+      <stop offset="0.5" stop-color="#8bd4ea"/>
+      <stop offset="1" stop-color="#2f5566"/>
+    </linearGradient>
+
+    <!-- a single lead weight ("duck"): a cast dome with a pinning point at its base -->
+    <symbol id="duck" viewBox="-26 -22 52 44" overflow="visible">
+      <circle cx="0" cy="0" r="26" fill="url(#duckglow)"/>
+      <path d="M -15,6 C -15,-9 -8,-15 0,-15 C 8,-15 15,-9 15,6 Z"
+            fill="url(#duckbody)" stroke="#dff8ff" stroke-opacity="0.5" stroke-width="1"/>
+      <ellipse cx="-4" cy="-7" rx="4.5" ry="3" fill="#ffffff" fill-opacity="0.8"/>
+      <rect x="-16" y="4" width="32" height="4" rx="2" fill="#20414f"/>
+      <!-- the pinning nub: where this duck touches the curve -->
+      <circle cx="0" cy="8" r="3.2" fill="#eafcff"/>
+    </symbol>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- faint graph-paper grid -->
+  <g stroke="#1b2a36" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="370" y1="0" x2="370" y2="630"/>
+    <line x1="560" y1="0" x2="560" y2="630"/>
+    <line x1="760" y1="0" x2="760" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <!-- the open-air span: a wide diffuse glow where no duck holds the curve -->
+  <ellipse cx="760" cy="300" rx="260" ry="150" fill="url(#gap)"/>
+  <text x="760" y="455" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#6fa6c0" fill-opacity="0.55" font-style="italic">open air — no ducks</text>
+
+  <!-- small construction ticks along the baseline -->
+  <g stroke="#2a4150" stroke-width="1.5" opacity="0.6">
+    <line x1="150" y1="560" x2="150" y2="574"/>
+    <line x1="370" y1="560" x2="370" y2="574"/>
+    <line x1="560" y1="560" x2="560" y2="574"/>
+    <line x1="960" y1="560" x2="960" y2="574"/>
+    <line x1="1080" y1="560" x2="1080" y2="574"/>
+  </g>
+
+  <!-- THE FAIR CURVE: one continuous spline, identically smooth over gap and pins alike -->
+  <!-- outer glow pass -->
+  <path d="M 100,470 C 215,435 300,360 370,300
+           C 445,235 495,232 560,232
+           C 695,232 835,300 960,342
+           C 1005,357 1045,330 1080,312
+           C 1125,288 1165,268 1200,252"
+        fill="none" stroke="#5fd0f0" stroke-opacity="0.22" stroke-width="16"
+        stroke-linecap="round"/>
+  <!-- the ink line -->
+  <path d="M 100,470 C 215,435 300,360 370,300
+           C 445,235 495,232 560,232
+           C 695,232 835,300 960,342
+           C 1005,357 1045,330 1080,312
+           C 1125,288 1165,268 1200,252"
+        fill="none" stroke="url(#curveink)" stroke-width="3.4"
+        stroke-linecap="round"/>
+
+  <!-- the ducks, pinning the curve where real knowledge is fixed -->
+  <use href="#duck" x="370" y="292"/>
+  <use href="#duck" x="560" y="224"/>
+  <use href="#duck" x="150" y="455"/>
+  <use href="#duck" x="960" y="334"/>
+  <use href="#duck" x="1080" y="304"/>
+
+  <!-- title -->
+  <text x="80" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="46"
+        fill="#dff4ff" fill-opacity="0.92">The Spline</text>
+  <text x="82" y="146" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        fill="#79b2cc" fill-opacity="0.8" font-style="italic">a fair curve through the points you pinned</text>
+</svg>
