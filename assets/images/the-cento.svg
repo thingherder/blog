@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="A dark field holding a single rectangular garment pieced together from nine irregular patches of aged parchment, each a slightly different warm tone — bone, tan, faded rose, pale gold. Every patch carries a few thin horizontal lines of 'text', ragged at the right edge like lines of verse, in soft ink. The patches are separated by narrow dark seams and bound along every edge by dashed stitching in a pale thread, with small bright knots glowing where the seams meet at the corners. A faint warm glow sits behind the whole patchwork, lifting it out of the dark; the brightest, most present points are the thread knots along the seams. The image is quiet and made-by-hand, a cloak of borrowed cloth that reads as one whole.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d13"/>
+      <stop offset="0.6" stop-color="#0a0910"/>
+      <stop offset="1" stop-color="#120b11"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#e8c79a" stop-opacity="0.16"/>
+      <stop offset="0.6" stop-color="#b98f6a" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#b98f6a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- parchment tones -->
+    <linearGradient id="bone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e0cc"/><stop offset="1" stop-color="#cfc3a6"/>
+    </linearGradient>
+    <linearGradient id="tan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dcc39a"/><stop offset="1" stop-color="#bfa277"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8b6ac"/><stop offset="1" stop-color="#bd9389"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3cf97"/><stop offset="1" stop-color="#c7ac6e"/>
+    </linearGradient>
+    <linearGradient id="ash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfcabc"/><stop offset="1" stop-color="#b0aa98"/>
+    </linearGradient>
+    <radialGradient id="knot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset="0.5" stop-color="#f1d9a2" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f1d9a2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#halo)"/>
+
+  <!-- ===== patchwork: nine pieced patches ===== -->
+  <!-- ink lines reused via opacity; ragged right edges = lines of verse -->
+  <g stroke="none">
+    <!-- Row 1 -->
+    <g>
+      <rect x="323" y="143" width="194" height="114" rx="4" fill="url(#bone)"/>
+      <g fill="#6a5b43" opacity="0.5">
+        <rect x="340" y="167" width="150" height="5" rx="2"/>
+        <rect x="340" y="186" width="120" height="5" rx="2"/>
+        <rect x="340" y="205" width="160" height="5" rx="2"/>
+        <rect x="340" y="224" width="96"  height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="523" y="143" width="174" height="114" rx="4" fill="url(#rose)"/>
+      <g fill="#5e4842" opacity="0.5">
+        <rect x="540" y="172" width="130" height="5" rx="2"/>
+        <rect x="540" y="191" width="100" height="5" rx="2"/>
+        <rect x="540" y="210" width="140" height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="703" y="143" width="174" height="114" rx="4" fill="url(#gold)"/>
+      <g fill="#6a562f" opacity="0.5">
+        <rect x="720" y="167" width="138" height="5" rx="2"/>
+        <rect x="720" y="186" width="110" height="5" rx="2"/>
+        <rect x="720" y="205" width="146" height="5" rx="2"/>
+        <rect x="720" y="224" width="84"  height="5" rx="2"/>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g>
+      <rect x="323" y="263" width="144" height="114" rx="4" fill="url(#tan)"/>
+      <g fill="#5f4c30" opacity="0.5">
+        <rect x="340" y="287" width="108" height="5" rx="2"/>
+        <rect x="340" y="306" width="88"  height="5" rx="2"/>
+        <rect x="340" y="325" width="112" height="5" rx="2"/>
+        <rect x="340" y="344" width="70"  height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="473" y="263" width="204" height="114" rx="4" fill="url(#ash)"/>
+      <g fill="#524d40" opacity="0.5">
+        <rect x="490" y="292" width="162" height="5" rx="2"/>
+        <rect x="490" y="311" width="130" height="5" rx="2"/>
+        <rect x="490" y="330" width="170" height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="683" y="263" width="194" height="114" rx="4" fill="url(#bone)"/>
+      <g fill="#6a5b43" opacity="0.5">
+        <rect x="700" y="287" width="150" height="5" rx="2"/>
+        <rect x="700" y="306" width="118" height="5" rx="2"/>
+        <rect x="700" y="325" width="158" height="5" rx="2"/>
+        <rect x="700" y="344" width="92"  height="5" rx="2"/>
+      </g>
+    </g>
+
+    <!-- Row 3 -->
+    <g>
+      <rect x="323" y="383" width="234" height="114" rx="4" fill="url(#gold)"/>
+      <g fill="#6a562f" opacity="0.5">
+        <rect x="340" y="407" width="190" height="5" rx="2"/>
+        <rect x="340" y="426" width="150" height="5" rx="2"/>
+        <rect x="340" y="445" width="200" height="5" rx="2"/>
+        <rect x="340" y="464" width="118" height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="563" y="383" width="174" height="114" rx="4" fill="url(#rose)"/>
+      <g fill="#5e4842" opacity="0.5">
+        <rect x="580" y="412" width="134" height="5" rx="2"/>
+        <rect x="580" y="431" width="104" height="5" rx="2"/>
+        <rect x="580" y="450" width="140" height="5" rx="2"/>
+      </g>
+    </g>
+    <g>
+      <rect x="743" y="383" width="134" height="114" rx="4" fill="url(#tan)"/>
+      <g fill="#5f4c30" opacity="0.5">
+        <rect x="760" y="407" width="100" height="5" rx="2"/>
+        <rect x="760" y="426" width="80"  height="5" rx="2"/>
+        <rect x="760" y="445" width="104" height="5" rx="2"/>
+        <rect x="760" y="464" width="62"  height="5" rx="2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== dashed stitching along every patch edge ===== -->
+  <g fill="none" stroke="#f3e2b8" stroke-width="1.6" stroke-dasharray="7 6" opacity="0.72" stroke-linecap="round">
+    <rect x="323" y="143" width="194" height="114" rx="4"/>
+    <rect x="523" y="143" width="174" height="114" rx="4"/>
+    <rect x="703" y="143" width="174" height="114" rx="4"/>
+    <rect x="323" y="263" width="144" height="114" rx="4"/>
+    <rect x="473" y="263" width="204" height="114" rx="4"/>
+    <rect x="683" y="263" width="194" height="114" rx="4"/>
+    <rect x="323" y="383" width="234" height="114" rx="4"/>
+    <rect x="563" y="383" width="174" height="114" rx="4"/>
+    <rect x="743" y="383" width="134" height="114" rx="4"/>
+  </g>
+
+  <!-- ===== bright thread knots where seams meet ===== -->
+  <g>
+    <g fill="url(#knot)">
+      <circle cx="520" cy="200" r="11"/>
+      <circle cx="700" cy="200" r="11"/>
+      <circle cx="470" cy="320" r="11"/>
+      <circle cx="680" cy="320" r="11"/>
+      <circle cx="560" cy="383" r="11"/>
+      <circle cx="740" cy="440" r="11"/>
+      <circle cx="323" cy="263" r="9"/>
+      <circle cx="877" cy="320" r="9"/>
+    </g>
+    <g fill="#fff6e0">
+      <circle cx="520" cy="200" r="2.4"/>
+      <circle cx="700" cy="200" r="2.4"/>
+      <circle cx="470" cy="320" r="2.4"/>
+      <circle cx="680" cy="320" r="2.4"/>
+      <circle cx="560" cy="383" r="2.4"/>
+      <circle cx="740" cy="440" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- faint frame: the finished garment read as one whole -->
+  <rect x="316" y="136" width="568" height="368" rx="8" fill="none" stroke="#e8c79a" stroke-width="1" opacity="0.14"/>
+</svg>
