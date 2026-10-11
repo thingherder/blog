@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="Two spoken words approach a gate set in a river ford: one, a smooth continuous wave, passes cleanly through the gate to the far bank; the other, an identical wave, breaks and scatters at the gate and never crosses">
+  <rect width="800" height="420" fill="#12161f"/>
+
+  <!-- the Jordan: a vertical river band at the crossing -->
+  <rect x="360" y="40" width="80" height="340" fill="#6fb3c9" fill-opacity="0.08"/>
+  <path d="M376,40 q10,40 0,80 t0,80 t0,80 t0,80 t0,40" fill="none" stroke="#6fb3c9" stroke-width="1" stroke-opacity="0.25"/>
+  <path d="M400,40 q-10,40 0,80 t0,80 t0,80 t0,80 t0,40" fill="none" stroke="#6fb3c9" stroke-width="1" stroke-opacity="0.25"/>
+  <path d="M424,40 q10,40 0,80 t0,80 t0,80 t0,80 t0,40" fill="none" stroke="#6fb3c9" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- the ford gate: two posts and a lintel across the river -->
+  <line x1="360" y1="150" x2="360" y2="270" stroke="#5c6472" stroke-width="2.5"/>
+  <line x1="440" y1="150" x2="440" y2="270" stroke="#5c6472" stroke-width="2.5"/>
+  <line x1="360" y1="150" x2="440" y2="150" stroke="#5c6472" stroke-width="2.5"/>
+  <text x="400" y="138" fill="#5c6472" font-family="Georgia, serif" font-size="12" text-anchor="middle" font-style="italic">the ford</text>
+
+  <!-- bank labels -->
+  <text x="100" y="64" fill="#5c6472" font-family="Georgia, serif" font-size="12">at the water</text>
+  <text x="700" y="64" fill="#5c6472" font-family="Georgia, serif" font-size="12" text-anchor="end">across</text>
+
+  <!-- upper lane: the word that passes, a smooth continuous wave crossing the gate -->
+  <path d="M110,185 q20,-22 40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t20,0"
+        fill="none" stroke="#f2f2ec" stroke-width="2.5"/>
+  <circle cx="690" cy="185" r="5" fill="#f2f2ec"/>
+  <text x="110" y="168" fill="#f2f2ec" font-family="Georgia, serif" font-size="14" font-style="italic">&#643;  shibboleth</text>
+  <text x="705" y="190" fill="#9fb7a0" font-family="Georgia, serif" font-size="16">&#10003;</text>
+
+  <!-- lower lane: the identical word that breaks at the gate and never crosses -->
+  <path d="M110,300 q20,-20 40,0 t40,0 t40,0 t40,0 t40,0 t40,0 t20,0"
+        fill="none" stroke="#e8a35c" stroke-width="2.5"/>
+  <!-- the break at the gate -->
+  <line x1="372" y1="286" x2="372" y2="314" stroke="#e8a35c" stroke-width="2.5"/>
+  <!-- scattered fragments that do not make the crossing -->
+  <circle cx="398" cy="294" r="2.5" fill="#e8a35c" fill-opacity="0.8"/>
+  <circle cx="414" cy="308" r="2" fill="#e8a35c" fill-opacity="0.6"/>
+  <circle cx="386" cy="312" r="1.8" fill="#e8a35c" fill-opacity="0.5"/>
+  <circle cx="404" cy="282" r="1.6" fill="#e8a35c" fill-opacity="0.4"/>
+  <text x="110" y="283" fill="#e8a35c" font-family="Georgia, serif" font-size="14" font-style="italic">s  sibboleth</text>
+  <text x="452" y="305" fill="#b9864f" font-family="Georgia, serif" font-size="16">&#10007;</text>
+
+  <!-- caption -->
+  <text x="400" y="372" fill="#5c6472" font-family="Georgia, serif" font-size="13" text-anchor="middle" font-style="italic">one sound, read straight off the tongue</text>
+</svg>
