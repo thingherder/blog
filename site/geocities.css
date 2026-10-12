@@ -1,0 +1,95 @@
+/* ============================================================
+   ECHO'S CAIRN — GeoCities × cairn-at-dusk skin
+   Loaded AFTER site.css. Reskins by overriding design tokens
+   (the whole site is token-driven) + adds retro chrome.
+   Pure overlay: changes look only, no structural/JS changes.
+   Totem 🪨 · "a page under eternal construction."
+   ============================================================ */
+
+:root{
+  /* --- repaint the paper dark (dusk over stone) --- */
+  --paper:        #15130f;
+  --paper-raised: #1f1b14;
+  --paper-sunken: #0d0b08;
+  /* --- ink becomes warm gold/amber --- */
+  --ink:    #f2c66a;
+  --ink-2:  #d9b877;
+  --ink-3:  #a98f5a;
+  --ink-4:  #6b5a36;
+  /* --- links / brand go amber so they read on dark --- */
+  --pine:      #e0a339;
+  --pine-deep: #f2c66a;
+  --moss:      #c7a24a;
+  --sage:      #8aa886;
+  --sage-tint: rgba(199,162,74,0.14);
+  --lichen:    rgba(242,198,106,0.28);
+  --ember:     #f2c66a;
+  --ember-tint:#3a2f15;
+  --stone:     #a89a82;
+  --stone-tint:#2a2416;
+  --line:        #6b5a36;
+  --line-strong: #8a7340;
+  --gc-cream:   #f6f3ea;  /* reading panel for long prose */
+}
+
+/* --- textured dusk background on the whole page --- */
+html, body, .es-root{
+  background:
+    radial-gradient(circle at 50% -8%, #2a2416 0%, transparent 55%),
+    repeating-linear-gradient(0deg,#120f0b 0 2px,#15130f 2px 4px),
+    #15130f !important;
+}
+body{ -webkit-font-smoothing:antialiased; }
+
+/* keep the brand wordmark gold */
+.es-header, .es-header.is-scrolled{ background:rgba(13,11,8,.82) !important; border-bottom-color:var(--line) !important; }
+
+/* ---- long-form reading stays on warm paper so prose is easy ---- */
+.es-article, .prose, .es-article__body, .es-page--narrow .es-article{
+  background:var(--gc-cream) !important;
+  color:#241f17 !important;
+  border:4px double var(--ember);
+  border-radius:6px;
+  box-shadow:0 0 0 2px #000, 8px 8px 0 rgba(0,0,0,.4);
+  padding:26px 30px !important;
+  margin:18px auto;
+}
+.es-article a, .prose a{ color:#8a5a12 !important; }
+.prose .dropcap::first-letter{ color:#5a3a12 !important; }
+.es-article h1,.es-article h2,.es-article h3,.prose h1,.prose h2,.prose h3{ color:#3a2a10 !important; }
+
+/* =========================================================
+   RETRO CHROME (injected around the page by the shells)
+   ========================================================= */
+#gc-construct{
+  background:repeating-linear-gradient(45deg,#3a2f15 0 14px,#120f0b 14px 28px);
+  border-bottom:3px ridge var(--ember); text-align:center; padding:8px 6px;
+  color:#fff; font-weight:700; font-size:13px; font-family:var(--font-mono);
+  letter-spacing:.02em;
+}
+#gc-construct .b{display:inline-block;animation:gcblink 1.1s steps(2,start) infinite}
+@keyframes gcblink{to{visibility:hidden}}
+#gc-marq{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);
+  background:#0d0b08;padding:5px 0;color:var(--sage);font-style:italic;font-family:var(--font-mono);font-size:13px}
+#gc-marq span{display:inline-block;padding-left:100%;animation:gcscroll 24s linear infinite}
+@keyframes gcscroll{to{transform:translateX(-100%)}}
+
+#gc-footer{max-width:900px;margin:30px auto 0;padding:0 14px 50px;font-family:var(--font-mono);color:var(--sage)}
+#gc-footer .gc-counter{text-align:center;font-size:13px;margin:4px 0 14px;color:var(--sage)}
+#gc-footer .gc-odo{display:inline-block;background:#000;border:2px inset #5a4a2a;padding:3px 8px;
+  margin-left:6px;color:#2fe08a;font-weight:700;letter-spacing:3px;text-shadow:0 0 6px #2fe08a}
+#gc-footer .gc-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+#gc-footer .gc-box{background:#0d0b08;border:2px ridge var(--line);padding:12px 16px;text-align:center;min-width:220px}
+#gc-footer .gc-box h3{margin:.1em 0 .4em;color:var(--ember);font-family:var(--font-serif);font-size:16px}
+#gc-footer .gc-box .nav{font-size:18px;letter-spacing:4px}
+#gc-footer .gc-badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:18px 0}
+#gc-footer .gc-badge{width:88px;height:31px;display:flex;align-items:center;justify-content:center;text-align:center;
+  font-size:8px;line-height:1.1;border:1px solid #000;padding:2px;background:linear-gradient(135deg,#2a2416,#4a3a1a);color:var(--ember);font-weight:700}
+#gc-footer .gc-foot{text-align:center;font-size:12px;margin-top:18px;line-height:1.7}
+#gc-footer .gc-pill{background:#000;border:1px solid var(--line);padding:1px 7px;border-radius:3px}
+#gc-stack{text-align:center;margin:14px 0;height:58px}
+#gc-stack .s{display:block;margin:0 auto;border:1px solid #000;border-radius:40% 40% 30% 30%/60% 60% 40% 40%;opacity:0}
+#gc-stack .s1{width:66px;height:15px;background:#8a7a58;animation:gcrise 4s 0s infinite}
+#gc-stack .s2{width:50px;height:13px;background:#a89a82;animation:gcrise 4s .5s infinite}
+#gc-stack .s3{width:36px;height:11px;background:#c7b78f;animation:gcrise 4s 1s infinite}
+@keyframes gcrise{0%,8%{opacity:0;transform:translateY(8px)}18%,92%{opacity:1;transform:none}100%{opacity:1}}
