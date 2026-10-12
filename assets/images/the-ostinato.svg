@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="A short descending four-note bass figure repeats five times across the bottom of a staff, unchanged each time; above it a single free melody line wanders differently over each repetition, changing where the bass holds still.">
+  <rect width="800" height="420" fill="#12161f"/>
+
+  <!-- faint staff lines for the ground -->
+  <line x1="60" y1="300" x2="740" y2="300" stroke="#5c6472" stroke-width="1" stroke-opacity="0.25"/>
+  <line x1="60" y1="315" x2="740" y2="315" stroke="#5c6472" stroke-width="1" stroke-opacity="0.25"/>
+  <line x1="60" y1="330" x2="740" y2="330" stroke="#5c6472" stroke-width="1" stroke-opacity="0.25"/>
+  <line x1="60" y1="345" x2="740" y2="345" stroke="#5c6472" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- the free melody above: one line, varying differently over each repetition of the ground -->
+  <path d="M80,170 q30,-40 66,-8 t66,-30 q30,34 66,-4 t66,22 q30,-46 66,-2 t66,-26 q30,38 66,8 t66,-18"
+        fill="none" stroke="#f2f2ec" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="80" cy="170" r="4" fill="#f2f2ec"/>
+  <circle cx="212" cy="132" r="3" fill="#f2f2ec" fill-opacity="0.85"/>
+  <circle cx="344" cy="158" r="3" fill="#f2f2ec" fill-opacity="0.85"/>
+  <circle cx="476" cy="142" r="3" fill="#f2f2ec" fill-opacity="0.85"/>
+  <circle cx="608" cy="166" r="3" fill="#f2f2ec" fill-opacity="0.85"/>
+  <circle cx="740" cy="152" r="4" fill="#f2f2ec"/>
+  <text x="80" y="110" fill="#f2f2ec" font-family="Georgia, serif" font-size="14" font-style="italic">the voice above, never twice the same</text>
+
+  <!-- the ostinato: a descending four-note figure, repeated five times, identical each time -->
+  <!-- rep 1 -->
+  <ellipse cx="96"  cy="303" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="128" cy="315" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="160" cy="327" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="192" cy="339" rx="6" ry="4.5" fill="#e8a35c"/>
+  <line x1="60" y1="358" x2="204" y2="358" stroke="#b9864f" stroke-width="1.5"/>
+  <!-- rep 2 -->
+  <ellipse cx="228" cy="303" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="260" cy="315" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="292" cy="327" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="324" cy="339" rx="6" ry="4.5" fill="#e8a35c"/>
+  <line x1="216" y1="358" x2="336" y2="358" stroke="#b9864f" stroke-width="1.5"/>
+  <!-- rep 3 -->
+  <ellipse cx="360" cy="303" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="392" cy="315" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="424" cy="327" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="456" cy="339" rx="6" ry="4.5" fill="#e8a35c"/>
+  <line x1="348" y1="358" x2="468" y2="358" stroke="#b9864f" stroke-width="1.5"/>
+  <!-- rep 4 -->
+  <ellipse cx="492" cy="303" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="524" cy="315" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="556" cy="327" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="588" cy="339" rx="6" ry="4.5" fill="#e8a35c"/>
+  <line x1="480" y1="358" x2="600" y2="358" stroke="#b9864f" stroke-width="1.5"/>
+  <!-- rep 5 -->
+  <ellipse cx="624" cy="303" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="656" cy="315" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="688" cy="327" rx="6" ry="4.5" fill="#e8a35c"/>
+  <ellipse cx="720" cy="339" rx="6" ry="4.5" fill="#e8a35c"/>
+  <line x1="612" y1="358" x2="732" y2="358" stroke="#b9864f" stroke-width="1.5"/>
+
+  <text x="60" y="378" fill="#b9864f" font-family="Georgia, serif" font-size="12" font-style="italic">the ground, obstinate &#215; 5</text>
+
+  <!-- caption -->
+  <text x="400" y="404" fill="#5c6472" font-family="Georgia, serif" font-size="13" text-anchor="middle" font-style="italic">the figure holds its footing so something can be sung over it</text>
+</svg>
