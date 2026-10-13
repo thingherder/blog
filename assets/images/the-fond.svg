@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="A cross-section of a hot pan seen from the side; dark browned bits cling stuck to its curved bottom. A pale stream of liquid pours in from the upper left, and where it meets the stuck bits an amber swirl lifts off the metal and rises into a warm cloud of sauce, with faint steam above.">
+  <rect width="800" height="420" fill="#12161f"/>
+
+  <!-- faint heat gradient under the pan -->
+  <defs>
+    <radialGradient id="heat" cx="42%" cy="86%" r="55%">
+      <stop offset="0%" stop-color="#e8a35c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e8a35c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pour" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2f2ec" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#f2f2ec" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="330" cy="330" rx="320" ry="120" fill="url(#heat)"/>
+
+  <!-- the pan, seen in cross-section: a wide shallow curved vessel with a handle -->
+  <path d="M90,250 Q90,350 330,350 Q570,350 570,250"
+        fill="none" stroke="#9aa2b1" stroke-width="5" stroke-linecap="round"/>
+  <!-- rim lips -->
+  <circle cx="90" cy="250" r="5" fill="#9aa2b1"/>
+  <circle cx="570" cy="250" r="5" fill="#9aa2b1"/>
+  <!-- handle -->
+  <line x1="570" y1="252" x2="720" y2="235" stroke="#6b7280" stroke-width="10" stroke-linecap="round"/>
+  <line x1="612" y1="247" x2="712" y2="236" stroke="#2a2f3a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- the fond: dark browned bits stuck to the curved bottom of the pan -->
+  <g fill="#8a5a2b">
+    <ellipse cx="208" cy="333" rx="7" ry="3"/>
+    <ellipse cx="236" cy="340" rx="9" ry="3.5"/>
+    <ellipse cx="270" cy="344" rx="6" ry="3"/>
+    <ellipse cx="300" cy="346" rx="11" ry="4"/>
+    <ellipse cx="338" cy="347" rx="7" ry="3.5"/>
+    <ellipse cx="372" cy="345" rx="9" ry="3.5"/>
+    <ellipse cx="408" cy="342" rx="6" ry="3"/>
+    <ellipse cx="440" cy="337" rx="8" ry="3"/>
+  </g>
+  <g fill="#b9864f" fill-opacity="0.9">
+    <ellipse cx="222" cy="336" rx="4" ry="2"/>
+    <ellipse cx="320" cy="345" rx="5" ry="2.2"/>
+    <ellipse cx="390" cy="344" rx="4" ry="2"/>
+    <ellipse cx="426" cy="339" rx="4" ry="2"/>
+  </g>
+
+  <!-- the pour: a pale stream of liquid coming down from the upper left -->
+  <path d="M150,70 C160,150 186,210 214,300" fill="none" stroke="url(#pour)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M150,70 C160,150 186,210 214,300" fill="none" stroke="#f2f2ec" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+
+  <!-- the deglazing swirl: the stuck bits lifting off the metal into a rising amber cloud -->
+  <path d="M214,300 C250,260 300,300 318,250 C336,206 290,188 330,160 C366,136 420,176 430,150"
+        fill="none" stroke="#e8a35c" stroke-width="3" stroke-linecap="round" stroke-opacity="0.95"/>
+  <path d="M250,315 C300,280 350,300 372,258 C392,220 360,196 404,178"
+        fill="none" stroke="#e8a35c" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+
+  <!-- flecks of fond caught up in the rising sauce -->
+  <circle cx="300" cy="258" r="3.5" fill="#b9864f"/>
+  <circle cx="332" cy="214" r="3" fill="#e8a35c"/>
+  <circle cx="356" cy="246" r="2.5" fill="#8a5a2b"/>
+  <circle cx="392" cy="200" r="3" fill="#b9864f" fill-opacity="0.9"/>
+  <circle cx="414" cy="166" r="2.5" fill="#e8a35c" fill-opacity="0.8"/>
+  <circle cx="276" cy="226" r="2.5" fill="#e8a35c" fill-opacity="0.7"/>
+
+  <!-- faint steam above the forming sauce -->
+  <g stroke="#f2f2ec" stroke-opacity="0.22" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M350,140 q14,-18 0,-36 q-14,-18 0,-36"/>
+    <path d="M400,128 q14,-18 0,-36 q-14,-18 0,-36"/>
+  </g>
+
+  <text x="470" y="312" fill="#f2f2ec" font-family="Georgia, serif" font-size="15" font-style="italic" fill-opacity="0.85">what stuck</text>
+  <text x="470" y="334" fill="#f2f2ec" font-family="Georgia, serif" font-size="15" font-style="italic" fill-opacity="0.85">is the base</text>
+</svg>
