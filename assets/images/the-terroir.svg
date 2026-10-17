@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="A hillside vineyard seen in cross-section at dusk. A low sun sits in a dark sky with a band of pale fog drifting across the slope. Rows of small vines climb the hill, and beneath the surface the ground opens into layered bands of soil — topsoil, clay, gravel, and pale limestone — with thin roots reaching down through the strata. A faint dotted footpath crosses the slope, dividing it into two plots.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2130"/>
+      <stop offset="100%" stop-color="#2a2535"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0b45c" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#e0923f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e0923f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cdd3dd" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#cdd3dd" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#cdd3dd" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#sky)"/>
+
+  <!-- low sun -->
+  <circle cx="600" cy="120" r="120" fill="url(#sun)"/>
+  <circle cx="600" cy="120" r="34" fill="#f3c06a" fill-opacity="0.9"/>
+
+  <!-- the hillslope surface: a diagonal ground line rising to the right -->
+  <path d="M0,300 Q230,250 430,215 Q620,183 800,170 L800,420 L0,420 Z" fill="#3c3022"/>
+
+  <!-- soil strata beneath the slope, following the surface down -->
+  <path d="M0,300 Q230,250 430,215 Q620,183 800,170 L800,205 Q620,220 430,252 Q230,287 0,335 Z" fill="#5a442c"/>
+  <path d="M0,335 Q230,287 430,252 Q620,220 800,205 L800,250 Q620,268 430,300 Q230,335 0,378 Z" fill="#7a5a3a" fill-opacity="0.9"/>
+  <path d="M0,378 Q230,335 430,300 Q620,268 800,250 L800,300 Q620,320 430,350 Q230,386 0,420 Z" fill="#9a8a6c" fill-opacity="0.85"/>
+  <path d="M0,420 L0,420 Q230,386 430,350 Q620,320 800,300 L800,420 Z" fill="#c4bca6" fill-opacity="0.8"/>
+
+  <!-- gravel flecks in the mid stratum -->
+  <g fill="#b9a079" fill-opacity="0.7">
+    <circle cx="120" cy="352" r="3"/>
+    <circle cx="210" cy="330" r="2.4"/>
+    <circle cx="330" cy="312" r="3.2"/>
+    <circle cx="470" cy="288" r="2.6"/>
+    <circle cx="560" cy="276" r="3"/>
+    <circle cx="690" cy="262" r="2.4"/>
+  </g>
+
+  <!-- the vines: short trunks with a canopy, standing in rows up the slope -->
+  <g stroke="#2a2016" stroke-width="4" stroke-linecap="round">
+    <line x1="90"  y1="286" x2="90"  y2="258"/>
+    <line x1="210" y1="268" x2="210" y2="240"/>
+    <line x1="330" y1="248" x2="330" y2="220"/>
+    <line x1="520" y1="218" x2="520" y2="190"/>
+    <line x1="640" y1="202" x2="640" y2="174"/>
+    <line x1="740" y1="190" x2="740" y2="162"/>
+  </g>
+  <g fill="#5e7d4a">
+    <circle cx="90"  cy="252" r="13"/>
+    <circle cx="210" cy="234" r="13"/>
+    <circle cx="330" cy="214" r="13"/>
+    <circle cx="520" cy="184" r="13"/>
+    <circle cx="640" cy="168" r="13"/>
+    <circle cx="740" cy="156" r="13"/>
+  </g>
+  <g fill="#78975f" fill-opacity="0.85">
+    <circle cx="86"  cy="247" r="6"/>
+    <circle cx="206" cy="229" r="6"/>
+    <circle cx="326" cy="209" r="6"/>
+    <circle cx="516" cy="179" r="6"/>
+    <circle cx="636" cy="163" r="6"/>
+    <circle cx="736" cy="151" r="6"/>
+  </g>
+
+  <!-- roots reaching down through the strata from two of the vines -->
+  <g stroke="#3a2c1c" stroke-width="2" fill="none" stroke-linecap="round" stroke-opacity="0.9">
+    <path d="M210,268 C208,300 224,320 214,350 C208,368 224,380 220,398"/>
+    <path d="M210,290 C196,306 182,312 176,332"/>
+    <path d="M214,320 C230,332 242,340 250,360"/>
+    <path d="M520,218 C518,248 534,266 524,296 C518,314 532,326 528,346"/>
+    <path d="M520,242 C506,256 494,262 488,282"/>
+    <path d="M524,272 C540,284 552,292 560,312"/>
+  </g>
+
+  <!-- the footpath: a faint dotted line crossing the slope, dividing two plots -->
+  <path d="M400,221 L418,420" stroke="#d8d2c0" stroke-width="2.5" stroke-dasharray="3 9" stroke-opacity="0.55"/>
+
+  <!-- band of fog drifting across the slope -->
+  <path d="M0,230 Q250,205 500,222 Q680,234 800,214 L800,262 Q680,280 500,268 Q250,252 0,276 Z" fill="url(#fog)"/>
+</svg>
