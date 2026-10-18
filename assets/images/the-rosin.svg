@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="A dark field crossed by a single taut violin string running left to right. A wooden bow leans diagonally across it, its hair meeting the string at one point. Just below sits an amber cake of rosin glowing softly, with a faint dust of particles lifting from it. Where bow meets string the line breaks into a sharp sawtooth stutter — the stick-slip motion — that smooths back into a steady line toward the right edge.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1a24"/>
+      <stop offset="100%" stop-color="#241d22"/>
+    </linearGradient>
+    <radialGradient id="rosinGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#f0a83a" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#d9842b" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#d9842b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rosinCake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6c15a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#b86a1e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6b4a2c"/>
+      <stop offset="100%" stop-color="#3f2a18"/>
+    </linearGradient>
+    <linearGradient id="stringfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cdd3dd" stop-opacity="0.25"/>
+      <stop offset="40%" stop-color="#e8edf4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#cdd3dd" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- soft glow around the rosin -->
+  <ellipse cx="300" cy="300" rx="260" ry="150" fill="url(#rosinGlow)"/>
+
+  <!-- the taut string: steady at the ends, broken into stick-slip sawtooth near the bow contact -->
+  <path d="M0,210 L250,210
+           L262,196 L266,224 L278,198 L282,222 L294,197 L298,223 L310,198 L314,222 L326,199 L330,221 L342,200 L346,220 L358,202 L362,218
+           L390,210 L800,210"
+        fill="none" stroke="url(#stringfade)" stroke-width="2.4"/>
+
+  <!-- faint ghost of the string's undisturbed path -->
+  <line x1="0" y1="210" x2="800" y2="210" stroke="#e8edf4" stroke-width="0.6" stroke-opacity="0.12"/>
+
+  <!-- the bow: a long wooden stick leaning across the string, with hair below it -->
+  <g>
+    <!-- stick -->
+    <path d="M120,60 L560,250" stroke="url(#wood)" stroke-width="7" stroke-linecap="round"/>
+    <!-- subtle camber highlight on the stick -->
+    <path d="M120,60 L560,250" stroke="#caa06a" stroke-width="1.4" stroke-linecap="round" stroke-opacity="0.5"/>
+    <!-- frog (the block at the lower end) -->
+    <rect x="548" y="240" width="26" height="18" rx="3" transform="rotate(23 561 249)" fill="#211812"/>
+    <!-- the hair: a near-parallel pale ribbon just below the stick, meeting the string at the contact point -->
+    <path d="M128,72 L300,210" stroke="#f4f1e6" stroke-width="2.2" stroke-opacity="0.85"/>
+    <path d="M300,210 L556,252" stroke="#f4f1e6" stroke-width="2.2" stroke-opacity="0.85"/>
+  </g>
+
+  <!-- contact point spark where hair grips string -->
+  <circle cx="300" cy="210" r="5.5" fill="#fff4dc" fill-opacity="0.9"/>
+  <circle cx="300" cy="210" r="11" fill="#f6c15a" fill-opacity="0.25"/>
+
+  <!-- the rosin cake, sitting below -->
+  <g>
+    <ellipse cx="300" cy="332" rx="78" ry="30" fill="#140f0a"/>
+    <path d="M232,318 q68,-34 136,0 q10,20 -2,34 q-66,30 -132,0 q-12,-16 -2,-34 Z" fill="url(#rosinCake)"/>
+    <!-- translucent shine across the amber -->
+    <path d="M250,316 q50,-16 100,2 q-30,10 -62,8 q-24,-2 -38,-10 Z" fill="#fff0c4" fill-opacity="0.35"/>
+  </g>
+
+  <!-- rosin dust lifting toward the contact point -->
+  <g fill="#f3cf86">
+    <circle cx="296" cy="300" r="1.8" fill-opacity="0.8"/>
+    <circle cx="312" cy="285" r="1.4" fill-opacity="0.7"/>
+    <circle cx="284" cy="278" r="1.5" fill-opacity="0.65"/>
+    <circle cx="306" cy="262" r="1.2" fill-opacity="0.6"/>
+    <circle cx="292" cy="248" r="1.3" fill-opacity="0.5"/>
+    <circle cx="300" cy="232" r="1.0" fill-opacity="0.45"/>
+    <circle cx="320" cy="300" r="1.1" fill-opacity="0.5"/>
+    <circle cx="276" cy="296" r="1.2" fill-opacity="0.55"/>
+  </g>
+</svg>
