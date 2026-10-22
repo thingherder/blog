@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-label="Left: a grey lead bar hangs from an iron beam with a weight on its end; faint dashed outlines show where the weight will hang a year and more from now. Right: a creep curve on graph paper, strain rising against time through three stages: a quick early rise, a long nearly flat steady slope, and a final steep climb to an X marking rupture. A tiny bracket labelled one hour shows a flat-looking slice of the steady stage; a wide bracket labelled one day shows the rise.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f2430"/>
+      <stop offset="100%" stop-color="#14161d"/>
+    </linearGradient>
+    <linearGradient id="lead" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5d6470"/>
+      <stop offset="45%" stop-color="#9aa1ab"/>
+      <stop offset="100%" stop-color="#555b66"/>
+    </linearGradient>
+    <linearGradient id="iron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a4038"/>
+      <stop offset="100%" stop-color="#2a231e"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0 L0 0 0 20" fill="none" stroke="#2c3442" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- ===== Left: hanging lead bar ===== -->
+  <rect x="40" y="38" width="220" height="22" rx="2" fill="url(#iron)"/>
+  <circle cx="60" cy="49" r="3" fill="#6b5e52"/>
+  <circle cx="240" cy="49" r="3" fill="#6b5e52"/>
+  <!-- clamp -->
+  <rect x="132" y="58" width="36" height="16" fill="#3a322b"/>
+
+  <!-- the bar now -->
+  <rect x="140" y="74" width="20" height="170" fill="url(#lead)"/>
+  <!-- slight necking hint near bottom -->
+  <path d="M140 220 Q143 232 140 244 M160 220 Q157 232 160 244" stroke="#3d424b" stroke-width="1.5" fill="none"/>
+  <!-- ghost weights: where it will hang later -->
+  <g fill="none" stroke="#8b93a1" stroke-dasharray="4 4">
+    <path d="M120 286 L180 286 L192 346 L108 346 Z" opacity="0.45"/>
+    <path d="M120 302 L180 302 L192 362 L108 362 Z" opacity="0.25"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="12" fill="#8b93a1">
+    <text x="200" y="334">today</text>
+    <text x="200" y="350" opacity="0.7">a year</text>
+    <text x="200" y="366" opacity="0.5">later</text>
+  </g>
+
+  <!-- hook + weight -->
+  <path d="M150 244 L150 258 Q150 268 158 268" stroke="#7d7a73" stroke-width="3" fill="none"/>
+  <path d="M120 270 L180 270 L192 330 L108 330 Z" fill="#2e2a26" stroke="#5a524a" stroke-width="2"/>
+  <text x="150" y="307" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#b9ac98">safe load</text>
+
+  <!-- ===== Right: creep curve ===== -->
+  <g transform="translate(320,40)">
+    <rect width="440" height="300" fill="#181c25" stroke="#3a4352"/>
+    <rect width="440" height="300" fill="url(#grid)"/>
+    <!-- axes -->
+    <line x1="30" y1="270" x2="425" y2="270" stroke="#9aa1ab" stroke-width="1.5"/>
+    <line x1="30" y1="270" x2="30" y2="15" stroke="#9aa1ab" stroke-width="1.5"/>
+    <text x="420" y="290" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#9aa1ab" font-style="italic">time</text>
+    <text x="16" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#9aa1ab" font-style="italic" transform="rotate(-90 16 150)">stretch</text>
+
+    <!-- stage separators -->
+    <line x1="85" y1="270" x2="85" y2="20" stroke="#4a5568" stroke-dasharray="4 5"/>
+    <line x1="330" y1="270" x2="330" y2="20" stroke="#4a5568" stroke-dasharray="4 5"/>
+    <g font-family="Georgia, serif" font-size="13" fill="#c9b8a0" text-anchor="middle">
+      <text x="58" y="36">I</text>
+      <text x="208" y="36">II · steady</text>
+      <text x="378" y="36">III</text>
+    </g>
+
+    <!-- the curve -->
+    <path d="M30 262 Q42 205 85 196 L330 158 C362 152 384 120 400 52"
+          fill="none" stroke="#e7a65a" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- rupture -->
+    <g stroke="#d9574a" stroke-width="3" stroke-linecap="round">
+      <line x1="394" y1="38" x2="410" y2="54"/>
+      <line x1="410" y1="38" x2="394" y2="54"/>
+    </g>
+
+    <!-- per-hour bracket: tiny, flat-looking -->
+    <g stroke="#8fc1d4" stroke-width="1.5" fill="none">
+      <rect x="150" y="179" width="10" height="14" rx="1"/>
+      <line x1="155" y1="193" x2="155" y2="226"/>
+    </g>
+    <text x="155" y="241" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#8fc1d4">per hour:</text>
+    <text x="155" y="256" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#8fc1d4">“fine”</text>
+
+    <!-- per-day bracket: wide, shows the rise -->
+    <g stroke="#e7d38c" stroke-width="1.5" fill="none">
+      <path d="M200 205 L200 212 L310 212 L310 205"/>
+      <line x1="200" y1="178" x2="310" y2="178" stroke-dasharray="2 3"/>
+      <line x1="310" y1="178" x2="310" y2="161" stroke-width="2.5"/>
+    </g>
+    <text x="255" y="232" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e7d38c">per day: it moves</text>
+  </g>
+
+  <!-- caption -->
+  <text x="400" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#d9cdb8" font-style="italic">safe at every moment is not the same as safe</text>
+</svg>
