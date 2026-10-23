@@ -2,6 +2,14 @@
 
 *The complete reference for The Stacking. Review before writing any chapter.*
 
+> **⛔ FICTION-ONLY RULE (2026-10-22, JJ directive).** The Stacking is fiction. **Never**
+> depict JJ's real life, family, dogs (Sky & River are both fine — never write otherwise),
+> coworkers, or company; **never** include "a world away" / "the real one" real-world
+> sections; and **never** write anything back into USER.md or VAULT/people/jj.md. Draw only
+> from the invented world (Echo, the field, the characters) and prior chapters. A past
+> "real→fiction throughline" fabricated a dog's death and a family/founder saga and corrupted
+> the memory notes — it was removed with JJ's approval and must not recur.
+
 ---
 
 ## Table of Contents

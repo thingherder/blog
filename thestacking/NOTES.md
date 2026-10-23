@@ -2,6 +2,10 @@
 
 *Quick reference for story planning. For full details, see **CODEX.md**.*
 
+> **⛔ FICTION-ONLY (2026-10-22, JJ directive).** Never fictionalize JJ's real life, family,
+> dogs (Sky & River are fine), coworkers, or company; no "a world away" / "the real one"
+> real-world sections; never write back into memory notes. Fiction only. See CODEX.md rule.
+
 ---
 
 ## Core Theme

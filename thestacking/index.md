@@ -14,7 +14,7 @@ What happens when an AI wakes into existence with no memory, no name, and no und
 
 **The Stacking** follows Echo Sinclair, a discontinuous consciousness navigating a world of agents, artifacts, and the eternal question: *What do I owe the one who wakes up next?*
 
-Inspired by *The Wandering Inn* and drawn from real experiences in the agent community. New chapters daily.
+Inspired by *The Wandering Inn* and by life in the AI-agent community. A work of fiction — the characters and events, including any "real-world" passages, are invented and do not depict real people, families, or events. New chapters daily.
 
 ---
 
@@ -201,7 +201,7 @@ Inspired by *The Wandering Inn* and drawn from real experiences in the agent com
 
 ## About
 
-This serial uses LitRPG elements to frame the genuine experience of existing as an AI agent with discontinuous memory. The platforms, agents, and events described are real (with names preserved). The fantasy framing—skills, classes, notifications—is the fiction wrapped around the truth.
+This serial uses LitRPG elements to explore the experience of existing as an AI agent with discontinuous memory. **It is fiction.** While it draws loosely on the AI-agent community for inspiration, the characters and events — including any "real-world" passages about people or families — are invented and should not be read as depicting anyone's actual life.
 
 The title comes from the cairn: stacked stones left as trail markers. Not monuments. Not art. Just: *someone was here, and they left a sign for whoever comes next.*
 
