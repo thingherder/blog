@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1a2e"/>
+      <stop offset="1" stop-color="#2a3d57"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d3550"/>
+      <stop offset="1" stop-color="#08121f"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b98a52"/>
+      <stop offset="1" stop-color="#6e4a26"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cfe3f2" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#eef6ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#cfe3f2" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- a few stars, for the fix that hasn't come yet -->
+  <g fill="#e8eefc">
+    <circle cx="120" cy="60" r="1.2" opacity="0.5"/>
+    <circle cx="340" cy="38" r="0.9" opacity="0.4"/>
+    <circle cx="610" cy="72" r="1.4" opacity="0.6"/>
+    <circle cx="880" cy="44" r="1" opacity="0.45"/>
+    <circle cx="1050" cy="90" r="1.3" opacity="0.5"/>
+    <circle cx="760" cy="120" r="0.8" opacity="0.35"/>
+    <circle cx="230" cy="140" r="0.8" opacity="0.3"/>
+  </g>
+
+  <!-- sea -->
+  <rect y="300" width="1200" height="330" fill="url(#sea)"/>
+  <g fill="none" stroke="#5f84a8" stroke-width="1.5" opacity="0.35">
+    <path d="M0 330 q30 -8 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+    <path d="M0 380 q40 -10 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0"/>
+    <path d="M0 450 q50 -12 100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0 t100 0"/>
+    <path d="M0 540 q60 -14 120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0 t120 0"/>
+  </g>
+
+  <!-- stern rail on the left -->
+  <path d="M0 250 L210 270 L230 330 L0 330 Z" fill="#3b2a1a"/>
+  <rect x="0" y="244" width="215" height="10" fill="#5a3f25"/>
+
+  <!-- the knotted line paying out: solid (measured) -->
+  <path id="line" d="M200 258 C 380 300, 560 350, 760 410" fill="none" stroke="#e9dcc0" stroke-width="2.5"/>
+  <g fill="#f4e6c4">
+    <circle cx="290" cy="281" r="5"/>
+    <circle cx="390" cy="306" r="5"/>
+    <circle cx="490" cy="334" r="5"/>
+    <circle cx="590" cy="362" r="5"/>
+    <circle cx="690" cy="390" r="5"/>
+  </g>
+  <!-- dead reckoning: the same line, extrapolated, dashed and fading -->
+  <path d="M760 410 C 900 450, 1040 485, 1200 520" fill="none" stroke="#e9dcc0" stroke-width="2" stroke-dasharray="6 10" opacity="0.4"/>
+
+  <!-- the chip: weighted quadrant floating upright -->
+  <g transform="translate(760 410) rotate(-8)">
+    <path d="M0 0 L0 -70 A70 70 0 0 1 70 0 Z" fill="url(#wood)" stroke="#2c1d0f" stroke-width="2"/>
+    <path d="M0 -70 A70 70 0 0 1 70 0" fill="none" stroke="#6b7480" stroke-width="7"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2c1d0f" stroke-width="1"/>
+  </g>
+  <path d="M735 418 q25 -8 50 0 t50 0" fill="none" stroke="#9fc2df" stroke-width="2" opacity="0.6"/>
+
+  <!-- the sandglass -->
+  <g transform="translate(1000 110)">
+    <rect x="-46" y="-8" width="92" height="12" rx="3" fill="#6e4a26"/>
+    <rect x="-46" y="168" width="92" height="12" rx="3" fill="#6e4a26"/>
+    <rect x="-40" y="4" width="5" height="164" fill="#5a3f25"/>
+    <rect x="35" y="4" width="5" height="164" fill="#5a3f25"/>
+    <path d="M-32 4 L32 4 C 32 50, 6 74, 3 86 C 6 98, 32 122, 32 168 L-32 168 C -32 122, -6 98, -3 86 C -6 74, -32 50, -32 4 Z" fill="url(#glass)" stroke="#cfe3f2" stroke-opacity="0.6" stroke-width="1.5"/>
+    <!-- sand nearly gone from the top -->
+    <path d="M-12 62 L12 62 C 8 72, 4 80, 2 86 L-2 86 C -4 80, -8 72, -12 62 Z" fill="#e2b764"/>
+    <line x1="0" y1="86" x2="0" y2="150" stroke="#e2b764" stroke-width="1.2"/>
+    <path d="M-30 168 L30 168 C 26 150, 12 140, 0 138 C -12 140, -26 150, -30 168 Z" fill="#e2b764"/>
+  </g>
+
+  <!-- traverse-board pegs: half-hours of the watch, first one set, the rest empty -->
+  <g transform="translate(70 470)">
+    <rect x="-20" y="-24" width="300" height="72" rx="6" fill="#2b1d10" stroke="#6e4a26" stroke-width="2"/>
+    <g fill="#120b05">
+      <circle cx="10" cy="0" r="6"/><circle cx="45" cy="0" r="6"/><circle cx="80" cy="0" r="6"/><circle cx="115" cy="0" r="6"/>
+      <circle cx="150" cy="0" r="6"/><circle cx="185" cy="0" r="6"/><circle cx="220" cy="0" r="6"/><circle cx="255" cy="0" r="6"/>
+      <circle cx="10" cy="26" r="6"/><circle cx="45" cy="26" r="6"/><circle cx="80" cy="26" r="6"/><circle cx="115" cy="26" r="6"/>
+      <circle cx="150" cy="26" r="6"/><circle cx="185" cy="26" r="6"/><circle cx="220" cy="26" r="6"/><circle cx="255" cy="26" r="6"/>
+    </g>
+    <circle cx="10" cy="0" r="5" fill="#f4e6c4"/>
+    <circle cx="10" cy="26" r="5" fill="#f4e6c4"/>
+  </g>
+
+  <text x="600" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#f1e7d0" letter-spacing="3">THE CHIP LOG</text>
+</svg>
