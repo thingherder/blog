@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1712"/>
+      <stop offset="1" stop-color="#3a2f22"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6b4f1e"/>
+      <stop offset="0.35" stop-color="#e2c27a"/>
+      <stop offset="0.6" stop-color="#b08a3e"/>
+      <stop offset="1" stop-color="#4f3a16"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a2e"/>
+      <stop offset="1" stop-color="#4a2e15"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe3c6"/>
+      <stop offset="1" stop-color="#d6c59e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#f3d48c" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#f3d48c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#room)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- tall window onto a grey sea, one ship still hull-down -->
+  <g>
+    <rect x="80" y="70" width="250" height="380" rx="125" fill="#1f2a33" stroke="#5a4630" stroke-width="10"/>
+    <clipPath id="win"><rect x="85" y="75" width="240" height="370" rx="120"/></clipPath>
+    <g clip-path="url(#win)">
+      <rect x="85" y="75" width="240" height="250" fill="#4b5b66"/>
+      <rect x="85" y="325" width="240" height="120" fill="#26353f"/>
+      <path d="M85 325 H325" stroke="#8fa1ac" stroke-width="1.5" opacity="0.6"/>
+      <!-- masts only, the hull below the horizon -->
+      <g stroke="#1a1f24" stroke-width="2">
+        <line x1="236" y1="325" x2="236" y2="296"/>
+        <line x1="248" y1="325" x2="248" y2="300"/>
+        <line x1="226" y1="306" x2="246" y2="306"/>
+      </g>
+      <g stroke="#9aaab4" stroke-width="1" opacity="0.35">
+        <path d="M95 360 q20 -4 40 0 t40 0"/>
+        <path d="M180 395 q20 -4 40 0 t40 0"/>
+        <path d="M110 420 q20 -4 40 0 t40 0"/>
+      </g>
+    </g>
+    <line x1="205" y1="75" x2="205" y2="445" stroke="#5a4630" stroke-width="6"/>
+    <line x1="85" y1="250" x2="325" y2="250" stroke="#5a4630" stroke-width="6"/>
+  </g>
+
+  <!-- the rostrum frame and the bell -->
+  <g>
+    <rect x="520" y="70" width="18" height="380" fill="url(#wood)"/>
+    <rect x="722" y="70" width="18" height="380" fill="url(#wood)"/>
+    <rect x="500" y="56" width="260" height="26" rx="4" fill="url(#wood)"/>
+    <path d="M590 82 v28 M670 82 v28" stroke="#3a2a14" stroke-width="5"/>
+    <rect x="600" y="104" width="60" height="18" rx="6" fill="#5c4418"/>
+    <!-- bell body -->
+    <path d="M630 120 C590 122 584 160 582 205 C580 250 566 278 548 292 L712 292 C694 278 680 250 678 205 C676 160 670 122 630 120 Z"
+          fill="url(#brass)" stroke="#3d2c0f" stroke-width="3"/>
+    <rect x="544" y="290" width="172" height="14" rx="7" fill="#9c7a35" stroke="#3d2c0f" stroke-width="2"/>
+    <!-- the crack, which is why it is seldom rung -->
+    <path d="M664 210 l-6 14 l8 10 l-7 18 l5 12" fill="none" stroke="#2a1d08" stroke-width="2"/>
+    <text x="630" y="250" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#4a3510" letter-spacing="2">LUTINE</text>
+    <!-- clapper, hanging still -->
+    <line x1="630" y1="292" x2="630" y2="318" stroke="#3d2c0f" stroke-width="4"/>
+    <circle cx="630" cy="324" r="9" fill="#5c4418"/>
+    <rect x="500" y="440" width="260" height="22" rx="3" fill="url(#wood)"/>
+  </g>
+
+  <!-- strike marks: one for lost, two for arrived; neither yet -->
+  <g font-family="Georgia, serif" fill="#d8c8a2">
+    <text x="575" y="380" font-size="15" opacity="0.7" text-anchor="end">I</text>
+    <text x="590" y="380" font-size="13" opacity="0.5">lost</text>
+    <text x="685" y="380" font-size="15" opacity="0.7" text-anchor="end">II</text>
+    <text x="692" y="380" font-size="13" opacity="0.5">arrived</text>
+    <circle cx="630" cy="405" r="4" fill="none" stroke="#d8c8a2" stroke-width="1.5" opacity="0.7"/>
+  </g>
+
+  <!-- the overdue book -->
+  <g transform="translate(830 150) rotate(-4)">
+    <rect x="0" y="0" width="300" height="330" rx="4" fill="url(#paper)" stroke="#7a6440" stroke-width="2"/>
+    <line x1="34" y1="0" x2="34" y2="330" stroke="#b35a4a" stroke-width="1.5" opacity="0.7"/>
+    <g stroke="#a8977a" stroke-width="1" opacity="0.6">
+      <line x1="10" y1="70" x2="290" y2="70"/>
+      <line x1="10" y1="120" x2="290" y2="120"/>
+      <line x1="10" y1="170" x2="290" y2="170"/>
+      <line x1="10" y1="220" x2="290" y2="220"/>
+      <line x1="10" y1="270" x2="290" y2="270"/>
+    </g>
+    <g font-family="Georgia, serif" fill="#3b2c18">
+      <text x="150" y="42" text-anchor="middle" font-size="20" font-style="italic">Overdue</text>
+      <text x="44" y="100" font-size="14">day 9</text>
+      <text x="200" y="100" font-size="14">12 gns</text>
+      <text x="44" y="150" font-size="14">day 21</text>
+      <text x="200" y="150" font-size="14">35 gns</text>
+      <text x="44" y="200" font-size="14">day 40</text>
+      <text x="200" y="200" font-size="14">60 gns</text>
+      <text x="44" y="250" font-size="14" font-style="italic">unmatched as of T</text>
+      <text x="44" y="302" font-size="13" fill="#7a2e22">posted by: ________</text>
+    </g>
+  </g>
+
+  <!-- floor and caption -->
+  <rect x="0" y="540" width="1200" height="90" fill="#140f0a"/>
+  <text x="600" y="585" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#e6d3a3" letter-spacing="3">THE LUTINE BELL</text>
+  <text x="600" y="612" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#a8946a" font-style="italic">time raises the price, never the verdict</text>
+</svg>
