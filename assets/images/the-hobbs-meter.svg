@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22262b"/>
+      <stop offset="1" stop-color="#121417"/>
+    </linearGradient>
+    <linearGradient id="bezel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b9097"/>
+      <stop offset="0.45" stop-color="#3d4248"/>
+      <stop offset="1" stop-color="#1c1f23"/>
+    </linearGradient>
+    <linearGradient id="drum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0c0d"/>
+      <stop offset="0.25" stop-color="#26292c"/>
+      <stop offset="0.5" stop-color="#2f3336"/>
+      <stop offset="0.75" stop-color="#26292c"/>
+      <stop offset="1" stop-color="#0b0c0d"/>
+    </linearGradient>
+    <linearGradient id="drumW" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a5f63"/>
+      <stop offset="0.5" stop-color="#e9e6dc"/>
+      <stop offset="1" stop-color="#5a5f63"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dial" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1d2024"/>
+      <stop offset="1" stop-color="#0c0d0f"/>
+    </radialGradient>
+  </defs>
+
+  <!-- instrument panel -->
+  <rect width="1200" height="630" fill="url(#panel)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- panel screws -->
+  <g fill="#3a3f45" stroke="#0a0b0c" stroke-width="2">
+    <circle cx="40" cy="40" r="9"/><circle cx="1160" cy="40" r="9"/>
+    <circle cx="40" cy="590" r="9"/><circle cx="1160" cy="590" r="9"/>
+  </g>
+  <g stroke="#15171a" stroke-width="2">
+    <line x1="34" y1="40" x2="46" y2="40"/><line x1="1154" y1="40" x2="1166" y2="40"/>
+    <line x1="40" y1="584" x2="40" y2="596"/><line x1="1160" y1="584" x2="1160" y2="596"/>
+  </g>
+
+  <!-- left: a tachometer whose needle has drifted, ghost needles showing small daily changes -->
+  <g transform="translate(220,250)">
+    <circle r="150" fill="url(#bezel)"/>
+    <circle r="134" fill="url(#dial)"/>
+    <g stroke="#cfcac0" stroke-width="3">
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(-120)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(-80)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(-40)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(0)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(40)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(80)"/>
+      <line x1="0" y1="-128" x2="0" y2="-112" transform="rotate(120)"/>
+    </g>
+    <path d="M 88 -99 A 132 132 0 0 1 120 -55" stroke="#2f8f4e" stroke-width="7" fill="none"/>
+    <path d="M 120 -55 A 132 132 0 0 1 131 -14" stroke="#c0392b" stroke-width="7" fill="none"/>
+    <text y="58" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#9a958b" letter-spacing="3">RPM ×100</text>
+    <!-- ghost needles: each a tiny step from the last -->
+    <g stroke="#e8c27a" stroke-linecap="round">
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(14)" stroke-opacity="0.10" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(18)" stroke-opacity="0.14" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(22)" stroke-opacity="0.19" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(26)" stroke-opacity="0.25" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(30)" stroke-opacity="0.33" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-108" transform="rotate(34)" stroke-opacity="0.45" stroke-width="4"/>
+      <line x1="0" y1="0" x2="0" y2="-112" transform="rotate(38)" stroke="#f3e6c8" stroke-width="5"/>
+    </g>
+    <circle r="12" fill="#3d4248" stroke="#0a0b0c" stroke-width="2"/>
+    <text y="196" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#8d877b">the ear: each reading, against the last</text>
+  </g>
+
+  <!-- right: the Hobbs meter itself -->
+  <g transform="translate(560,150)">
+    <!-- housing -->
+    <rect x="0" y="0" width="520" height="220" rx="26" fill="url(#bezel)"/>
+    <rect x="18" y="18" width="484" height="184" rx="16" fill="#0d0e10"/>
+    <text x="260" y="58" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#d9d4c7" letter-spacing="8">HOURS</text>
+
+    <!-- digit window: 4 dark drums + 1 white tenths drum -->
+    <rect x="58" y="80" width="404" height="96" rx="6" fill="#050506" stroke="#5c6168" stroke-width="3"/>
+    <g font-family="Courier New, monospace" font-weight="bold" font-size="64" text-anchor="middle">
+      <rect x="66" y="86" width="72" height="84" fill="url(#drum)"/>
+      <text x="102" y="150" fill="#f1ede2">0</text>
+      <rect x="146" y="86" width="72" height="84" fill="url(#drum)"/>
+      <text x="182" y="150" fill="#f1ede2">0</text>
+      <rect x="226" y="86" width="72" height="84" fill="url(#drum)"/>
+      <text x="262" y="150" fill="#f1ede2">4</text>
+      <rect x="306" y="86" width="72" height="84" fill="url(#drum)"/>
+      <text x="342" y="150" fill="#f1ede2">8</text>
+      <!-- tenths drum, mid-roll -->
+      <rect x="386" y="86" width="70" height="84" fill="url(#drumW)"/>
+      <clipPath id="tenths"><rect x="386" y="86" width="70" height="84"/></clipPath>
+      <g clip-path="url(#tenths)" fill="#111">
+        <text x="421" y="118">6</text>
+        <text x="421" y="190">7</text>
+      </g>
+    </g>
+    <line x1="382" y1="88" x2="382" y2="168" stroke="#5c6168" stroke-width="2"/>
+    <circle cx="382" cy="171" r="4" fill="#f1ede2"/>
+
+    <!-- hourglass running indicator -->
+    <g transform="translate(486,128)">
+      <path d="M -8 -16 L 8 -16 L 0 0 L 8 16 L -8 16 L 0 0 Z" fill="none" stroke="#e8c27a" stroke-width="2.5"/>
+      <path d="M -3 10 L 3 10 L 6 15 L -6 15 Z" fill="#e8c27a"/>
+    </g>
+  </g>
+
+  <!-- wire from the meter down to the oil-pressure switch -->
+  <path d="M 820 370 C 820 430, 900 420, 900 470" stroke="#7a5c2e" stroke-width="5" fill="none"/>
+  <path d="M 820 370 C 820 430, 900 420, 900 470" stroke="#c99a50" stroke-width="2" fill="none" stroke-dasharray="2 8"/>
+  <g transform="translate(900,500)">
+    <rect x="-34" y="-30" width="68" height="44" rx="6" fill="#3d4248" stroke="#0a0b0c" stroke-width="2"/>
+    <rect x="-14" y="14" width="28" height="22" fill="#5c6168"/>
+    <text y="0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#e8c27a" letter-spacing="2">OIL P</text>
+  </g>
+  <text x="820" y="586" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#8d877b">the counter: runs only when the engine really turns</text>
+
+  <!-- placard -->
+  <g transform="translate(600,80)">
+    <rect x="0" y="0" width="440" height="40" rx="4" fill="#d8cfb8"/>
+    <text x="220" y="27" text-anchor="middle" font-family="Courier New, monospace" font-size="17" font-weight="bold" fill="#2a2620" letter-spacing="2">TBO 2000 HR · ON CONDITION: SIGN</text>
+  </g>
+
+  <!-- title -->
+  <text x="220" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#efe9da">The Hobbs Meter</text>
+</svg>
