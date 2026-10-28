@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="stage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0b08"/>
+      <stop offset="1" stop-color="#15130f"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4d52"/>
+      <stop offset="0.5" stop-color="#2a2c30"/>
+      <stop offset="1" stop-color="#141518"/>
+    </linearGradient>
+    <linearGradient id="beamWhite" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff4dc" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff4dc" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="beamGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2c66a" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#e0a339" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="gelFilm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2c66a" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#e0a339" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#b9782a" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fffbef"/>
+      <stop offset="0.6" stop-color="#ffe9b8"/>
+      <stop offset="1" stop-color="#8a7340"/>
+    </radialGradient>
+    <radialGradient id="pool" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f6f3ea" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#f2c66a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f2c66a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- dark stage -->
+  <rect width="1200" height="630" fill="url(#stage)"/>
+  <g stroke="#1b1812" stroke-width="1">
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+    <line x1="0" y1="585" x2="1200" y2="585"/>
+    <line x1="0" y1="612" x2="1200" y2="612"/>
+  </g>
+
+  <!-- lighting bar -->
+  <rect x="0" y="62" width="1200" height="10" fill="#2a2c30"/>
+
+  <!-- lamp: clamp + body, angled down-right -->
+  <g transform="translate(150,72)">
+    <rect x="-6" y="0" width="12" height="40" fill="#3a3d42"/>
+    <g transform="translate(0,58) rotate(28)">
+      <rect x="-70" y="-48" width="150" height="96" rx="10" fill="url(#body)" stroke="#0a0b0c" stroke-width="2"/>
+      <g fill="#1a1b1e">
+        <rect x="-50" y="-48" width="8" height="96"/>
+        <rect x="-30" y="-48" width="8" height="96"/>
+        <rect x="-10" y="-48" width="8" height="96"/>
+      </g>
+      <!-- gel frame slot -->
+      <rect x="80" y="-60" width="16" height="120" fill="#3a3d42" stroke="#0a0b0c" stroke-width="2"/>
+      <!-- the gel, half-pulled up out of its slot -->
+      <g transform="translate(0,-40)">
+        <rect x="83" y="-56" width="10" height="112" fill="#6b5a36"/>
+        <rect x="85" y="-50" width="6" height="100" fill="url(#gelFilm)"/>
+      </g>
+      <circle cx="80" cy="0" r="40" fill="url(#lens)"/>
+    </g>
+  </g>
+
+  <!-- the beam: white where the gel is pulled, gold where it passes through -->
+  <polygon points="250,150 900,470 780,560 215,205" fill="url(#beamWhite)"/>
+  <polygon points="262,128 1080,330 960,470 250,150" fill="url(#beamGold)"/>
+
+  <!-- pale pool where the reading happens: faces kept close to white -->
+  <ellipse cx="840" cy="520" rx="210" ry="44" fill="url(#pool)"/>
+
+  <!-- a small cairn standing in the gold light -->
+  <g transform="translate(1010,430)">
+    <ellipse cx="0" cy="96" rx="60" ry="10" fill="#0a0907" opacity="0.7"/>
+    <ellipse cx="0" cy="80" rx="54" ry="18" fill="#6b5a36"/>
+    <ellipse cx="-4" cy="54" rx="42" ry="15" fill="#8a7340"/>
+    <ellipse cx="4" cy="31" rx="31" ry="12" fill="#a98f5a"/>
+    <ellipse cx="-2" cy="12" rx="21" ry="9" fill="#c7a24a"/>
+    <ellipse cx="1" cy="-4" rx="12" ry="7" fill="#f2c66a"/>
+  </g>
+
+  <!-- swatch-book fan, lower left -->
+  <g transform="translate(120,520)">
+    <g stroke="#0a0907" stroke-width="1.5">
+      <rect x="0" y="-10" width="150" height="26" rx="3" fill="#f6f3ea" transform="rotate(-38)"/>
+      <rect x="0" y="-10" width="150" height="26" rx="3" fill="#f2c66a" transform="rotate(-28)"/>
+      <rect x="0" y="-10" width="150" height="26" rx="3" fill="#e0a339" transform="rotate(-18)"/>
+      <rect x="0" y="-10" width="150" height="26" rx="3" fill="#b9782a" transform="rotate(-8)"/>
+      <rect x="0" y="-10" width="150" height="26" rx="3" fill="#2c4a7a" transform="rotate(2)"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#a89a82" stroke="#0a0907" stroke-width="1.5"/>
+  </g>
+
+  <!-- title -->
+  <text x="1150" y="140" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#f2c66a">The Gel</text>
+  <text x="1150" y="182" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="24" fill="#a98f5a">a filter can only pass what the lamp already holds</text>
+</svg>
