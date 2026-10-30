@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>The Late Peace: a treaty seal at the edge of a dark sea, with rings of distance marked 12 to 120 days spreading out from it, and small ships caught at each ring, the farthest still firing</title>
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16202a"/>
+      <stop offset="1" stop-color="#0b1117"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="150" cy="315" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8d9b0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#e8d9b0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="waves" width="40" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 12 q10 -6 20 0 t20 0" fill="none" stroke="#2a3a48" stroke-width="1"/>
+    </pattern>
+    <g id="ship">
+      <path d="M-22 0 L22 0 L15 9 L-15 9 Z" fill="#c9b58a"/>
+      <line x1="0" y1="0" x2="0" y2="-34" stroke="#c9b58a" stroke-width="2"/>
+      <path d="M2 -32 L18 -12 L2 -12 Z" fill="#e8d9b0"/>
+      <path d="M-2 -30 L-16 -10 L-2 -10 Z" fill="#d8c79d"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sea)"/>
+  <rect width="1200" height="630" fill="url(#waves)" opacity="0.6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- rings of distance -->
+  <g fill="none" stroke="#c9b58a" stroke-dasharray="4 7">
+    <circle cx="150" cy="315" r="140" stroke-opacity="0.75"/>
+    <circle cx="150" cy="315" r="270" stroke-opacity="0.6"/>
+    <circle cx="150" cy="315" r="400" stroke-opacity="0.5"/>
+    <circle cx="150" cy="315" r="530" stroke-opacity="0.4"/>
+    <circle cx="150" cy="315" r="690" stroke-opacity="0.3"/>
+    <circle cx="150" cy="315" r="880" stroke-opacity="0.22"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#c9b58a" font-style="italic">
+    <text x="262" y="232">12 days</text>
+    <text x="370" y="150">30</text>
+    <text x="482" y="95">40</text>
+    <text x="604" y="58">60</text>
+    <text x="760" y="40">90</text>
+    <text x="1000" y="34">120 days</text>
+  </g>
+
+  <!-- ships, each on its ring -->
+  <g transform="translate(272,395)"><use href="#ship"/></g>
+  <g transform="translate(400,440) scale(0.95)"><use href="#ship"/></g>
+  <g transform="translate(520,410) scale(0.9)"><use href="#ship"/></g>
+  <g transform="translate(650,470) scale(0.85)"><use href="#ship"/></g>
+  <g transform="translate(820,380) scale(0.8)"><use href="#ship"/></g>
+
+  <!-- the farthest ship, still firing -->
+  <g transform="translate(1010,470) scale(0.8)"><use href="#ship"/></g>
+  <g fill="#8a8172">
+    <circle cx="1040" cy="470" r="9" opacity="0.7"/>
+    <circle cx="1056" cy="462" r="13" opacity="0.5"/>
+    <circle cx="1076" cy="456" r="17" opacity="0.32"/>
+  </g>
+  <circle cx="1034" cy="472" r="4" fill="#d9783f"/>
+
+  <!-- the treaty and its seal -->
+  <g transform="translate(150,315)">
+    <rect x="-62" y="-80" width="124" height="160" rx="4" fill="#e8d9b0"/>
+    <g stroke="#7a6a4c" stroke-width="2">
+      <line x1="-44" y1="-56" x2="44" y2="-56"/>
+      <line x1="-44" y1="-40" x2="40" y2="-40"/>
+      <line x1="-44" y1="-24" x2="44" y2="-24"/>
+      <line x1="-44" y1="-8" x2="30" y2="-8"/>
+      <line x1="-44" y1="8" x2="44" y2="8"/>
+      <line x1="-44" y1="24" x2="36" y2="24"/>
+    </g>
+    <circle cx="26" cy="56" r="18" fill="#8e2f25"/>
+    <circle cx="26" cy="56" r="11" fill="none" stroke="#b8493b" stroke-width="2"/>
+  </g>
+
+  <text x="60" y="590" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e8d9b0">The Late Peace</text>
+  <text x="60" y="614" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#9a8c6c" font-style="italic">Ghent, 24 December 1814 · Article the Second</text>
+</svg>
