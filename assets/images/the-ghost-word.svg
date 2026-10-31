@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>The Ghost Word: an open dictionary page at night with the entry "dord" glowing pale and lifting off the paper, and on the right a scatter of small note cards whose threads still run to an empty, dashed space where an entry used to be</title>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#120e1c"/>
+      <stop offset="1" stop-color="#07060b"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9dcbc"/>
+      <stop offset="1" stop-color="#c9b88f"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="330" cy="330" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8903a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e8903a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="haunt" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cfe7ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#cfe7ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#night)"/>
+  <circle cx="330" cy="330" r="380" fill="url(#lamp)"/>
+
+  <!-- stars -->
+  <g fill="#d8d0ea" opacity="0.5">
+    <circle cx="70" cy="50" r="1.2"/><circle cx="210" cy="28" r="1"/><circle cx="560" cy="44" r="1.4"/>
+    <circle cx="760" cy="30" r="1"/><circle cx="1010" cy="60" r="1.3"/><circle cx="1150" cy="26" r="1"/>
+    <circle cx="900" cy="590" r="1"/><circle cx="1120" cy="560" r="1.2"/>
+  </g>
+
+  <!-- the open dictionary -->
+  <g transform="translate(90 120) rotate(-3)">
+    <path d="M0 20 Q240 0 240 0 L240 420 Q120 400 0 440 Z" fill="url(#paper)"/>
+    <path d="M240 0 Q360 0 480 20 L480 440 Q360 400 240 420 Z" fill="url(#paper)"/>
+    <line x1="240" y1="0" x2="240" y2="420" stroke="#8a7650" stroke-width="2"/>
+    <!-- running head -->
+    <text x="30" y="48" font-family="Georgia, serif" font-size="13" fill="#5a4a30" letter-spacing="2">DORADO</text>
+    <text x="400" y="48" font-family="Georgia, serif" font-size="13" fill="#5a4a30" letter-spacing="2">DORSAL</text>
+    <text x="232" y="48" font-family="Georgia, serif" font-size="11" fill="#5a4a30" text-anchor="end">771</text>
+    <!-- column lines of type, left page -->
+    <g stroke="#6b5a3c" stroke-width="3" stroke-linecap="round" opacity="0.55">
+      <line x1="30" y1="76" x2="210" y2="76"/><line x1="30" y1="92" x2="190" y2="92"/>
+      <line x1="30" y1="108" x2="214" y2="108"/><line x1="30" y1="124" x2="150" y2="124"/>
+      <line x1="30" y1="148" x2="206" y2="148"/><line x1="30" y1="164" x2="200" y2="164"/>
+      <line x1="30" y1="180" x2="120" y2="180"/>
+      <line x1="30" y1="268" x2="210" y2="268"/><line x1="30" y1="284" x2="196" y2="284"/>
+      <line x1="30" y1="300" x2="212" y2="300"/><line x1="30" y1="316" x2="170" y2="316"/>
+      <line x1="30" y1="340" x2="208" y2="340"/><line x1="30" y1="356" x2="186" y2="356"/>
+      <line x1="30" y1="372" x2="204" y2="372"/><line x1="30" y1="388" x2="140" y2="388"/>
+    </g>
+    <!-- right page -->
+    <g stroke="#6b5a3c" stroke-width="3" stroke-linecap="round" opacity="0.55">
+      <line x1="268" y1="76" x2="452" y2="76"/><line x1="268" y1="92" x2="440" y2="92"/>
+      <line x1="268" y1="108" x2="450" y2="108"/><line x1="268" y1="124" x2="380" y2="124"/>
+      <line x1="268" y1="148" x2="446" y2="148"/><line x1="268" y1="164" x2="432" y2="164"/>
+      <line x1="268" y1="180" x2="452" y2="180"/><line x1="268" y1="196" x2="350" y2="196"/>
+      <line x1="268" y1="220" x2="448" y2="220"/><line x1="268" y1="236" x2="430" y2="236"/>
+      <line x1="268" y1="252" x2="452" y2="252"/><line x1="268" y1="268" x2="300" y2="268"/>
+      <line x1="268" y1="292" x2="444" y2="292"/><line x1="268" y1="308" x2="452" y2="308"/>
+      <line x1="268" y1="324" x2="410" y2="324"/><line x1="268" y1="348" x2="450" y2="348"/>
+      <line x1="268" y1="364" x2="436" y2="364"/><line x1="268" y1="380" x2="380" y2="380"/>
+    </g>
+    <!-- the entry: a pale gap where dord sits, no etymology bracket -->
+    <rect x="26" y="198" width="196" height="54" fill="#f4ecd6" opacity="0.7"/>
+    <text x="32" y="222" font-family="Georgia, serif" font-size="19" font-weight="bold" fill="#4a3c26" opacity="0.35">dord</text>
+    <text x="84" y="222" font-family="Georgia, serif" font-size="13" fill="#4a3c26" opacity="0.35">(dôrd), n.</text>
+    <text x="32" y="242" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#4a3c26" opacity="0.35">Physics &amp; Chem. Density.</text>
+    <!-- the missing etymology: an empty bracket -->
+    <text x="170" y="242" font-family="Georgia, serif" font-size="14" fill="#a0303a">[  ]</text>
+  </g>
+
+  <!-- the ghost lifting off the page -->
+  <g>
+    <ellipse cx="250" cy="200" rx="150" ry="70" fill="url(#haunt)"/>
+    <path d="M168 300 C150 230 190 150 250 150 C310 150 350 230 332 300
+             C322 288 312 308 300 296 C290 284 280 308 268 296 C258 284 246 308 234 296
+             C222 284 212 308 200 296 C190 286 180 306 168 300 Z"
+          fill="#e8f2ff" opacity="0.18" filter="url(#blur)"/>
+    <text x="250" y="214" font-family="Georgia, serif" font-size="56" font-weight="bold"
+          fill="#eef6ff" opacity="0.85" text-anchor="middle" filter="url(#blur)">dord</text>
+    <text x="250" y="214" font-family="Georgia, serif" font-size="56" font-weight="bold"
+          fill="#f6faff" opacity="0.7" text-anchor="middle">dord</text>
+    <!-- trail of the slip: D or d -->
+    <text x="250" y="122" font-family="'Courier New', monospace" font-size="16" fill="#cfe7ff" opacity="0.45" text-anchor="middle">D or d, cont./density</text>
+  </g>
+
+  <!-- right side: the empty entry, dashed, and the threads that still point to it -->
+  <rect x="760" y="270" width="170" height="90" rx="6" fill="none" stroke="#cfe7ff" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="6 8"/>
+  <text x="845" y="322" font-family="Georgia, serif" font-size="15" fill="#cfe7ff" opacity="0.45" text-anchor="middle" font-style="italic">deleted</text>
+
+  <g stroke="#e8903a" stroke-width="1.5" fill="none" opacity="0.55">
+    <path d="M1060 110 C980 160 950 220 930 280"/>
+    <path d="M1110 230 C1020 250 980 290 930 300"/>
+    <path d="M1080 400 C1010 380 970 350 930 340"/>
+    <path d="M1000 520 C960 450 900 400 880 360"/>
+    <path d="M820 540 C820 470 830 420 830 360"/>
+    <path d="M640 470 C690 420 730 380 760 350"/>
+    <path d="M660 160 C700 210 730 250 760 280"/>
+    <path d="M880 80 C870 150 860 210 850 270"/>
+  </g>
+  <!-- the notes that still cite it -->
+  <g fill="#2a2338" stroke="#e8903a" stroke-opacity="0.7" stroke-width="1.2">
+    <rect x="1040" y="84" width="56" height="40" rx="3"/>
+    <rect x="1104" y="208" width="56" height="40" rx="3"/>
+    <rect x="1074" y="384" width="56" height="40" rx="3"/>
+    <rect x="980" y="514" width="56" height="40" rx="3"/>
+    <rect x="796" y="540" width="56" height="40" rx="3"/>
+    <rect x="600" y="456" width="56" height="40" rx="3"/>
+    <rect x="620" y="128" width="56" height="40" rx="3"/>
+    <rect x="852" y="50" width="56" height="40" rx="3"/>
+  </g>
+  <!-- tiny type on the note cards -->
+  <g stroke="#b9a6d6" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="1048" y1="98" x2="1086" y2="98"/><line x1="1048" y1="110" x2="1074" y2="110"/>
+    <line x1="1112" y1="222" x2="1150" y2="222"/><line x1="1112" y1="234" x2="1136" y2="234"/>
+    <line x1="1082" y1="398" x2="1120" y2="398"/><line x1="1082" y1="410" x2="1104" y2="410"/>
+    <line x1="988" y1="528" x2="1026" y2="528"/><line x1="988" y1="540" x2="1010" y2="540"/>
+    <line x1="804" y1="554" x2="842" y2="554"/><line x1="804" y1="566" x2="828" y2="566"/>
+    <line x1="608" y1="470" x2="646" y2="470"/><line x1="608" y1="482" x2="630" y2="482"/>
+    <line x1="628" y1="142" x2="666" y2="142"/><line x1="628" y1="154" x2="650" y2="154"/>
+    <line x1="860" y1="64" x2="898" y2="64"/><line x1="860" y1="76" x2="882" y2="76"/>
+  </g>
+  <!-- one thread already cut: a note turned to plain text, no hook -->
+  <rect x="1000" y="290" width="56" height="40" rx="3" fill="#2a2338" stroke="#b9a6d6" stroke-opacity="0.4" stroke-width="1.2"/>
+  <g stroke="#b9a6d6" stroke-width="2" stroke-linecap="round" opacity="0.35">
+    <line x1="1008" y1="304" x2="1046" y2="304"/><line x1="1008" y1="316" x2="1030" y2="316"/>
+  </g>
+  <path d="M1000 310 C985 312 972 314 962 316" stroke="#e8903a" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="2 5"/>
+
+  <!-- a small cairn, lower left, lit by the lamp -->
+  <g transform="translate(70 560)">
+    <ellipse cx="0" cy="18" rx="30" ry="8" fill="#5c5040"/>
+    <ellipse cx="0" cy="6" rx="22" ry="7" fill="#76684f"/>
+    <ellipse cx="0" cy="-4" rx="15" ry="6" fill="#8e7f63"/>
+    <ellipse cx="0" cy="-12" rx="9" ry="4.5" fill="#a69676"/>
+  </g>
+
+  <text x="1160" y="606" font-family="Georgia, serif" font-size="16" fill="#cbbfdf" opacity="0.6" text-anchor="end" font-style="italic">The Ghost Word</text>
+</svg>
