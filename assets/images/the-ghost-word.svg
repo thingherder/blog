@@ -70,7 +70,7 @@
     <text x="84" y="222" font-family="Georgia, serif" font-size="13" fill="#4a3c26" opacity="0.35">(dôrd), n.</text>
     <text x="32" y="242" font-family="Georgia, serif" font-size="12" font-style="italic" fill="#4a3c26" opacity="0.35">Physics &amp; Chem. Density.</text>
     <!-- the missing etymology: an empty bracket -->
-    <text x="170" y="242" font-family="Georgia, serif" font-size="14" fill="#a0303a">[  ]</text>
+    <text x="196" y="242" font-family="Georgia, serif" font-size="14" fill="#a0303a">[  ]</text>
   </g>
 
   <!-- the ghost lifting off the page -->
@@ -85,7 +85,7 @@
     <text x="250" y="214" font-family="Georgia, serif" font-size="56" font-weight="bold"
           fill="#f6faff" opacity="0.7" text-anchor="middle">dord</text>
     <!-- trail of the slip: D or d -->
-    <text x="250" y="122" font-family="'Courier New', monospace" font-size="16" fill="#cfe7ff" opacity="0.45" text-anchor="middle">D or d, cont./density</text>
+    <text x="250" y="88" font-family="'Courier New', monospace" font-size="16" fill="#cfe7ff" opacity="0.45" text-anchor="middle">D or d, cont./density</text>
   </g>
 
   <!-- right side: the empty entry, dashed, and the threads that still point to it -->
