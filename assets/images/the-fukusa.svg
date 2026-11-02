@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>The Fukusa: on a dark tatami-toned ground, a folded purple silk cloth wipes the lid of a black lacquered tea caddy beside a bamboo scoop and a tea bowl; faint steam rises; a small row of climbing numbers — 50426, 50430, 50432, 50435 — runs along the bottom like a record of the washing</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1712"/><stop offset="1" stop-color="#0c0a08"/>
+    </linearGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4630"/><stop offset="1" stop-color="#2f2c1e"/>
+    </linearGradient>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a4fb0"/><stop offset="0.5" stop-color="#6a2f92"/><stop offset="1" stop-color="#4a1f6a"/>
+    </linearGradient>
+    <linearGradient id="lacq" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0807"/><stop offset="0.35" stop-color="#2a1d16"/><stop offset="0.5" stop-color="#3b2a20"/><stop offset="1" stop-color="#080605"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a3a2a"/><stop offset="0.5" stop-color="#8b5e44"/><stop offset="1" stop-color="#4a2e20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#f3e3c0" stop-opacity="0.16"/><stop offset="1" stop-color="#f3e3c0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="200" y="40" width="800" height="460" fill="url(#glow)"/>
+
+  <!-- tatami mat with border strips -->
+  <polygon points="80,430 1120,430 1200,600 0,600" fill="url(#mat)"/>
+  <polygon points="80,430 1120,430 1124,440 76,440" fill="#1a1a14"/>
+  <g stroke="#5a5539" stroke-width="1" opacity="0.5">
+    <line x1="200" y1="440" x2="150" y2="600"/><line x1="340" y1="440" x2="310" y2="600"/>
+    <line x1="480" y1="440" x2="470" y2="600"/><line x1="620" y1="440" x2="630" y2="600"/>
+    <line x1="760" y1="440" x2="790" y2="600"/><line x1="900" y1="440" x2="950" y2="600"/>
+    <line x1="1040" y1="440" x2="1110" y2="600"/>
+  </g>
+
+  <!-- tea bowl (chawan), right -->
+  <ellipse cx="880" cy="470" rx="118" ry="16" fill="#000" opacity="0.4"/>
+  <path d="M770,370 Q775,465 880,468 Q985,465 990,370 Z" fill="url(#bowl)"/>
+  <ellipse cx="880" cy="370" rx="110" ry="22" fill="#2a1a12"/>
+  <ellipse cx="880" cy="372" rx="96" ry="16" fill="#3e5a2a"/>
+  <path d="M790,395 Q800,430 830,440" stroke="#c9a27a" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- steam -->
+  <g fill="none" stroke="#e8dcc4" stroke-width="2" stroke-linecap="round" opacity="0.25">
+    <path d="M850,345 C835,310 870,290 852,250 C840,225 860,205 850,185"/>
+    <path d="M905,345 C920,305 888,285 910,245 C922,220 900,200 912,175"/>
+  </g>
+
+  <!-- bamboo scoop (chashaku), resting in front -->
+  <g transform="rotate(-6 560 505)">
+    <path d="M400,500 L700,498 Q718,498 722,506 Q714,512 700,511 L400,510 Z" fill="#c8a868"/>
+    <rect x="540" y="498" width="6" height="13" fill="#8a6a3a"/>
+    <path d="M700,498 Q724,494 730,505 Q722,514 700,511" fill="#b8955a"/>
+  </g>
+
+  <!-- natsume (lacquer caddy), centre-left -->
+  <ellipse cx="470" cy="455" rx="88" ry="12" fill="#000" opacity="0.45"/>
+  <path d="M388,345 Q380,450 470,456 Q560,450 552,345 Z" fill="url(#lacq)"/>
+  <line x1="384" y1="352" x2="556" y2="352" stroke="#5a4030" stroke-width="1.5"/>
+  <ellipse cx="470" cy="338" rx="84" ry="22" fill="#14100d"/>
+  <ellipse cx="470" cy="334" rx="80" ry="18" fill="#2a1e17"/>
+  <path d="M410,330 Q450,322 500,326" stroke="#7a5d48" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M410,380 Q414,420 440,440" stroke="#6b5040" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- the fukusa: a folded square of purple silk, mid-wipe on the lid -->
+  <g transform="rotate(-14 470 300)">
+    <path d="M405,290 L540,282 Q552,300 546,320 L410,326 Q398,308 405,290 Z" fill="url(#silk)"/>
+    <path d="M405,290 L540,282 L535,292 L410,300 Z" fill="#a46ccc" opacity="0.7"/>
+    <path d="M412,312 L544,305" stroke="#3a1652" stroke-width="2" opacity="0.6"/>
+    <path d="M540,282 Q565,286 572,300 Q560,312 546,320" fill="#5a2880"/>
+  </g>
+  <!-- motion arcs of the wipe -->
+  <g fill="none" stroke="#c9a6e0" stroke-width="2" stroke-linecap="round" opacity="0.45">
+    <path d="M375,300 Q470,250 575,282"/>
+    <path d="M365,318 Q470,262 590,300" opacity="0.6"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="110" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#efe3c8" letter-spacing="3">The Fukusa</text>
+  <text x="600" y="152" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#b8a888">a second washing, done where it can be seen</text>
+
+  <!-- the record of the washing -->
+  <g font-family="'Courier New', monospace" font-size="18" fill="#c9b994">
+    <text x="300" y="585">07:00 · 50426</text>
+    <text x="470" y="585" opacity="0.85">07:30 · 50430</text>
+    <text x="640" y="585" opacity="0.9">08:00 · 50432</text>
+    <text x="810" y="585">09:00 · 50435</text>
+  </g>
+</svg>
