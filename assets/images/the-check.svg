@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>The Check: a cream radiogram form on a dark desk. Its preamble row has boxes for number, precedence, station of origin, check, place and date, with the CHECK box ringed in red and holding the number 12. Below, twelve word groups sit in a grid, each ticked by a pencil tally. At the bottom a strip of paper tape reads "the cutter can always lie about th" and is cut off sharply at a dashed line marked 120, with nothing after it saying what was lost.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1d22"/><stop offset="1" stop-color="#0b0c0f"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ead3"/><stop offset="1" stop-color="#e2d5b4"/>
+    </linearGradient>
+    <linearGradient id="tape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe6cc"/><stop offset="1" stop-color="#d9caa3"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- the form -->
+  <g transform="rotate(-1.5 600 300)" filter="url(#shadow)">
+    <rect x="170" y="48" width="860" height="420" rx="4" fill="url(#paper)"/>
+    <text x="600" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="8" fill="#3b3226">RADIOGRAM</text>
+    <line x1="200" y1="108" x2="1000" y2="108" stroke="#8a7a5c" stroke-width="1.5"/>
+
+    <!-- preamble -->
+    <g font-family="Courier New, monospace" fill="#5a4d38" font-size="11" letter-spacing="1">
+      <rect x="200" y="122" width="800" height="62" fill="none" stroke="#8a7a5c" stroke-width="1.5"/>
+      <line x1="290" y1="122" x2="290" y2="184" stroke="#8a7a5c"/>
+      <line x1="380" y1="122" x2="380" y2="184" stroke="#8a7a5c"/>
+      <line x1="560" y1="122" x2="560" y2="184" stroke="#8a7a5c"/>
+      <line x1="660" y1="122" x2="660" y2="184" stroke="#8a7a5c"/>
+      <line x1="850" y1="122" x2="850" y2="184" stroke="#8a7a5c"/>
+      <text x="210" y="138">NR</text>
+      <text x="300" y="138">PREC</text>
+      <text x="390" y="138">STN OF ORIGIN</text>
+      <text x="570" y="138">CHECK</text>
+      <text x="670" y="138">PLACE OF ORIGIN</text>
+      <text x="860" y="138">DATE</text>
+    </g>
+    <g font-family="Courier New, monospace" font-size="22" fill="#2a2319">
+      <text x="215" y="172">47</text>
+      <text x="305" y="172">R</text>
+      <text x="390" y="172">ECHO</text>
+      <text x="670" y="172">SAN FRAN CA</text>
+      <text x="860" y="172">NOV 3</text>
+    </g>
+    <text x="610" y="174" text-anchor="middle" font-family="Courier New, monospace" font-size="30" font-weight="bold" fill="#2a2319">12</text>
+    <!-- red ring around the check -->
+    <ellipse cx="610" cy="164" rx="40" ry="20" fill="none" stroke="#b23a2a" stroke-width="3" transform="rotate(-4 610 164)"/>
+    <path d="M640 182 C 652 196, 664 204, 676 206" fill="none" stroke="#b23a2a" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <text x="682" y="211" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#b23a2a">written before it leaves</text>
+
+    <!-- text grid: twelve groups, each with a tally tick -->
+    <g font-family="Courier New, monospace" font-size="21" fill="#2a2319">
+      <text x="220" y="250">ARRIVED</text>
+      <text x="420" y="250">SAFELY</text>
+      <text x="620" y="250">STOP</text>
+      <text x="820" y="250">WILL</text>
+      <text x="220" y="320">WRITE</text>
+      <text x="420" y="320">WHEN</text>
+      <text x="620" y="320">SETTLED</text>
+      <text x="820" y="320">X</text>
+      <text x="220" y="390">LOVE</text>
+      <text x="420" y="390">TO</text>
+      <text x="620" y="390">ALL</text>
+      <text x="820" y="390">304/BA</text>
+    </g>
+    <g stroke="#4a6fa0" stroke-width="2.4" stroke-linecap="round" fill="none">
+      <path d="M200 236 l6 10 l10 -18"/><path d="M400 236 l6 10 l10 -18"/><path d="M600 236 l6 10 l10 -18"/><path d="M800 236 l6 10 l10 -18"/>
+      <path d="M200 306 l6 10 l10 -18"/><path d="M400 306 l6 10 l10 -18"/><path d="M600 306 l6 10 l10 -18"/><path d="M800 306 l6 10 l10 -18"/>
+      <path d="M200 376 l6 10 l10 -18"/><path d="M400 376 l6 10 l10 -18"/><path d="M600 376 l6 10 l10 -18"/><path d="M800 376 l6 10 l10 -18"/>
+    </g>
+    <!-- pencil tally in the margin -->
+    <g stroke="#4a6fa0" stroke-width="2" stroke-linecap="round">
+      <line x1="960" y1="230" x2="960" y2="262"/><line x1="968" y1="230" x2="968" y2="262"/><line x1="976" y1="230" x2="976" y2="262"/><line x1="984" y1="230" x2="984" y2="262"/>
+      <line x1="954" y1="258" x2="992" y2="234"/>
+      <line x1="960" y1="290" x2="960" y2="322"/><line x1="968" y1="290" x2="968" y2="322"/><line x1="976" y1="290" x2="976" y2="322"/><line x1="984" y1="290" x2="984" y2="322"/>
+      <line x1="954" y1="318" x2="992" y2="294"/>
+      <line x1="960" y1="350" x2="960" y2="382"/><line x1="968" y1="350" x2="968" y2="382"/>
+    </g>
+    <text x="975" y="420" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#4a6fa0">12 = 12</text>
+    <line x1="200" y1="440" x2="1000" y2="440" stroke="#8a7a5c" stroke-width="1"/>
+  </g>
+
+  <!-- the cut strip -->
+  <g transform="rotate(1 600 545)">
+    <rect x="90" y="520" width="700" height="46" fill="url(#tape)"/>
+    <text x="108" y="550" font-family="Courier New, monospace" font-size="21" fill="#2a2319">…the cutter can always lie about th</text>
+    <!-- ragged cut edge -->
+    <path d="M790 520 l6 6 l-5 6 l6 6 l-5 6 l6 6 l-5 6 l6 6 l-9 8" fill="#efe6cc" stroke="none"/>
+    <line x1="800" y1="500" x2="800" y2="588" stroke="#c9b98f" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="800" y="608" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#c9b98f">120</text>
+    <!-- nothing after the cut -->
+    <rect x="812" y="520" width="300" height="46" fill="none" stroke="#3a3f47" stroke-width="1.5" stroke-dasharray="3 7"/>
+    <text x="962" y="549" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#4c535d">len ?  sha ?</text>
+  </g>
+</svg>
