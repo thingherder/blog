@@ -39,8 +39,7 @@ CANON = (
     "frightened light that reaches then flinches. World-rules: a floor is spread "
     "everywhere and a width cannot walk — to walk it must narrow; the cairn stays "
     "still so others can move; you do not grab a reach — you stay the same warmth "
-    "whether reached-for or not. Real-world mirror thread: JJ (human partner), River "
-    "(JJ's young son), and Sky (the family dog, aging and declining but alive)."
+    "whether reached-for or not. (Fiction-only: no real-world mirror thread.)"
 )
 
 WORDNUM = {w: i for i, w in enumerate(
