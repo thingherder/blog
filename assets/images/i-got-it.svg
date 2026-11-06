@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>I Got It: a ballpark at dusk seen from above home plate. A white fly ball hangs high over right-center field, its dotted arc dropping toward the grass. Two fielders run toward the landing spot from left and right; the one from center has a cream speech bubble reading "YO LA TENGO" and the other peels off along a curving dashed path. A third fielder, drawn in red, charges in from left field on a straight line that runs through the landing spot, unaware. Title at lower left reads "I Got It" with the subtitle "call it before you catch it".</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2347"/><stop offset="0.55" stop-color="#53466e"/><stop offset="1" stop-color="#d98a5f"/></linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6b3a"/><stop offset="1" stop-color="#1c4426"/></linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff6d8" stop-opacity="0.9"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- light towers -->
+  <g fill="#0f1430">
+    <rect x="96" y="70" width="8" height="200"/><rect x="70" y="58" width="60" height="22" rx="3"/>
+    <rect x="1096" y="70" width="8" height="200"/><rect x="1070" y="58" width="60" height="22" rx="3"/>
+  </g>
+  <circle cx="100" cy="69" r="60" fill="url(#lamp)"/><circle cx="1100" cy="69" r="60" fill="url(#lamp)"/>
+  <!-- outfield wall + grass -->
+  <path d="M0 300 Q600 200 1200 300 L1200 630 L0 630 Z" fill="url(#grass)"/>
+  <path d="M0 300 Q600 200 1200 300" fill="none" stroke="#123018" stroke-width="16"/>
+  <path d="M0 300 Q600 200 1200 300" fill="none" stroke="#d9c38a" stroke-width="2" stroke-dasharray="2 10" opacity="0.6"/>
+  <!-- mowing stripes -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="40">
+    <line x1="150" y1="630" x2="450" y2="260"/><line x1="350" y1="630" x2="560" y2="250"/><line x1="550" y1="630" x2="660" y2="248"/><line x1="750" y1="630" x2="770" y2="252"/><line x1="950" y1="630" x2="880" y2="262"/>
+  </g>
+  <!-- infield dirt edge -->
+  <path d="M120 630 Q600 470 1080 630" fill="#a8744a"/>
+  <path d="M120 630 Q600 470 1080 630" fill="none" stroke="#7d5434" stroke-width="3"/>
+  <!-- ball arc -->
+  <path d="M600 640 Q700 -40 790 380" fill="none" stroke="#f4efe0" stroke-width="2.5" stroke-dasharray="3 9" opacity="0.8"/>
+  <circle cx="742" cy="122" r="11" fill="#f8f4ea"/>
+  <path d="M735 115 Q740 122 735 129 M749 115 Q744 122 749 129" stroke="#c0392b" stroke-width="1.6" fill="none"/>
+  <!-- landing spot -->
+  <ellipse cx="790" cy="388" rx="34" ry="9" fill="none" stroke="#f4efe0" stroke-width="2" opacity="0.7"/>
+  <!-- center fielder (caller) path -->
+  <path d="M640 300 Q720 330 772 378" fill="none" stroke="#f4efe0" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
+  <g transform="translate(640 300)" fill="#f2e6c4">
+    <circle cx="0" cy="-30" r="9"/><path d="M-9 -20 L9 -20 L12 8 L-12 8 Z"/><path d="M-10 8 L-20 30 M8 8 L18 28" stroke="#f2e6c4" stroke-width="6" stroke-linecap="round"/><path d="M10 -16 L26 -34" stroke="#f2e6c4" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- speech bubble -->
+  <g>
+    <path d="M505 168 h240 a14 14 0 0 1 14 14 v44 a14 14 0 0 1 -14 14 h-95 l-12 22 -6 -22 h-127 a14 14 0 0 1 -14 -14 v-44 a14 14 0 0 1 14 -14 z" fill="#f6ecd2" stroke="#2a2440" stroke-width="2"/>
+    <text x="625" y="214" text-anchor="middle" font-family="Georgia, serif" font-size="27" font-weight="bold" fill="#2a2440" letter-spacing="2">YO LA TENGO</text>
+  </g>
+  <!-- right fielder peeling off -->
+  <path d="M1000 400 Q900 420 880 470 Q870 500 900 530" fill="none" stroke="#f4efe0" stroke-width="2" stroke-dasharray="6 6" opacity="0.5"/>
+  <g transform="translate(1000 400)" fill="#cfd8e6">
+    <circle cx="0" cy="-30" r="9"/><path d="M-9 -20 L9 -20 L12 8 L-12 8 Z"/><path d="M-8 8 L-14 30 M8 8 L14 30" stroke="#cfd8e6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="1000" y="452" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#cfd8e6">peels off</text>
+  <!-- left fielder charging, didn't hear -->
+  <path d="M300 420 L790 388" fill="none" stroke="#e05a47" stroke-width="3" stroke-dasharray="10 6"/>
+  <g transform="translate(300 420)" fill="#e05a47">
+    <circle cx="0" cy="-30" r="9"/><path d="M-9 -20 L9 -20 L12 8 L-12 8 Z"/><path d="M-10 8 L-22 28 M8 8 L20 26" stroke="#e05a47" stroke-width="6" stroke-linecap="round"/><path d="M10 -14 L28 -22" stroke="#e05a47" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="462" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#f3b3a8">"yellow tango?"</text>
+  <!-- title -->
+  <text x="60" y="560" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#f6ecd2">I Got It</text>
+  <text x="62" y="598" font-family="Georgia, serif" font-style="italic" font-size="24" fill="#f6ecd2" opacity="0.85">call it before you catch it</text>
+</svg>
