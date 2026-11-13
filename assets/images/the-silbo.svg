@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<title>The Silbo: a deep volcanic ravine on La Gomera in late afternoon light. On the left ridge a small figure stands with a finger in the mouth and one hand cupped beside the face; on the right ridge a second figure listens from a terrace by a white farmhouse. Across the gap runs a single bright whistled line, a pitch contour that rises, holds, dips, breaks and rises again. Far below, a dotted footpath zigzags down one side, across the stream bed, and up the other. Title at lower left reads "The Silbo" with the subtitle "a sentence across a ravine."</title>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c98b"/><stop offset="0.55" stop-color="#f6e2b8"/><stop offset="1" stop-color="#cfe0e0"/></linearGradient>
+<linearGradient id="far" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a99a8f"/><stop offset="1" stop-color="#8d8a86"/></linearGradient>
+<linearGradient id="left" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a5a3c"/><stop offset="1" stop-color="#4a3626"/></linearGradient>
+<linearGradient id="right" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b6a48"/><stop offset="1" stop-color="#553e2b"/></linearGradient>
+<linearGradient id="gorge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a3e"/><stop offset="1" stop-color="#1f2a2c"/></linearGradient>
+<filter id="glow" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="630" fill="url(#sky)"/>
+<circle cx="980" cy="120" r="46" fill="#fff4d6" opacity="0.9"/>
+<path d="M0 250 L140 200 L260 230 L420 170 L560 215 L700 160 L860 205 L1000 175 L1200 220 L1200 330 L0 330 Z" fill="url(#far)" opacity="0.55"/>
+<path d="M0 300 L120 270 L230 285 L330 260 L420 300 L500 360 L560 450 L590 630 L0 630 Z" fill="url(#left)"/>
+<path d="M1200 290 L1080 265 L960 280 L860 262 L770 300 L690 370 L640 460 L620 630 L1200 630 Z" fill="url(#right)"/>
+<path d="M500 360 L560 450 L590 630 L620 630 L640 460 L690 370 L640 400 L600 470 L585 420 Z" fill="url(#gorge)"/>
+<path d="M592 630 C596 590 604 560 606 520 C608 490 612 470 616 450" stroke="#7fa7a8" stroke-width="3" fill="none" opacity="0.7"/>
+<g stroke="#5f7d4a" stroke-width="3" fill="none" opacity="0.6">
+<path d="M40 330 h120 M60 350 h110 M30 372 h150"/>
+<path d="M900 320 h140 M920 342 h130 M890 364 h170"/>
+</g>
+<path d="M330 268 L380 300 L340 330 L430 360 L470 400 L520 430 L560 470 L590 520 L606 560 L640 520 L660 470 L700 430 L760 400 L820 360 L780 330 L860 300 L880 272" stroke="#f1e3c4" stroke-width="2.5" stroke-dasharray="3 7" fill="none" opacity="0.75"/>
+<g transform="translate(980 232)">
+<rect x="0" y="0" width="70" height="40" fill="#f7f2e6"/>
+<path d="M-6 2 L35 -22 L76 2 Z" fill="#b5523b"/>
+<rect x="28" y="16" width="14" height="24" fill="#5a4030"/>
+<rect x="8" y="10" width="12" height="10" fill="#7fa7a8"/>
+</g>
+<g fill="#2b2220">
+<circle cx="300" cy="226" r="9"/>
+<path d="M291 236 h18 l4 34 h-26 Z"/>
+<path d="M292 270 l-4 26 h7 l5 -26 Z M300 270 l5 26 h7 l-4 -26 Z"/>
+<path d="M309 240 l12 -12 l4 3 l-12 13 Z"/>
+<path d="M291 240 l-10 -14 l4 -3 l9 13 Z"/>
+</g>
+<g fill="#2b2220">
+<circle cx="930" cy="228" r="9"/>
+<path d="M921 238 h18 l4 34 h-26 Z"/>
+<path d="M922 272 l-4 26 h7 l5 -26 Z M930 272 l5 26 h7 l-4 -26 Z"/>
+<path d="M921 244 l-9 10 l3 3 l9 -10 Z"/>
+</g>
+<path d="M326 226 C360 222 380 196 410 196 L470 196 C490 196 500 214 520 214 L560 214 M580 214 C600 214 610 180 640 180 L700 180 C730 180 740 228 770 228 C810 228 830 206 860 206 L900 210"
+ stroke="#fffaf0" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+<g stroke="#fffaf0" stroke-width="2" opacity="0.6" fill="none">
+<path d="M330 214 a14 14 0 0 1 0 24"/>
+<path d="M338 208 a22 22 0 0 1 0 36"/>
+<path d="M912 216 a14 14 0 0 0 0 24"/>
+<path d="M904 210 a22 22 0 0 0 0 36"/>
+</g>
+<rect x="40" y="500" width="430" height="100" rx="6" fill="#1f1a17" opacity="0.72"/>
+<text x="64" y="556" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#fbefd6">The Silbo</text>
+<text x="66" y="586" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="#e6cfa3">a sentence across a ravine</text>
+</svg>
