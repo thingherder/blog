@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<title>The Eleven Days: an old printed almanac page for September 1752 on cream paper. The grid runs Tuesday 1, Wednesday 2, then straight to Thursday 14 and on to 30. To the right, the missing numbers 3 through 13 drift away like loose type, fading as they go. Title at lower left reads "The Eleven Days" with the subtitle "September 1752, as printed."</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2420"/><stop offset="1" stop-color="#14110f"/></linearGradient><linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e6c8"/><stop offset="1" stop-color="#e2cfa6"/></linearGradient><filter id="sh" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="6" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.55"/></filter></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<g transform="rotate(-2 370.0 260.0)">
+<rect x="70" y="40" width="600" height="440" fill="url(#paper)" filter="url(#sh)"/>
+<rect x="84" y="54" width="572" height="412" fill="none" stroke="#5a3d24" stroke-width="2"/>
+<rect x="90" y="60" width="560" height="400" fill="none" stroke="#5a3d24" stroke-width="0.8"/>
+<text x="370.0" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="6" fill="#3b2614">SEPTEMBER</text>
+<text x="370.0" y="136" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#6b4a2c">MDCCLII</text>
+<text x="151.4" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Sun</text>
+<text x="224.3" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Mon</text>
+<text x="297.1" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Tue</text>
+<text x="370.0" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Wed</text>
+<text x="442.9" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Thu</text>
+<text x="515.7" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Fri</text>
+<text x="588.6" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7a5634">Sat</text>
+<line x1="115" y1="192" x2="625.0" y2="192" stroke="#5a3d24" stroke-width="1"/>
+<text x="297.1" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">1</text>
+<text x="370.0" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#a3271b">2</text>
+<text x="442.9" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#a3271b">14</text>
+<text x="515.7" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">15</text>
+<text x="588.6" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">16</text>
+<text x="151.4" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">17</text>
+<text x="224.3" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">18</text>
+<text x="297.1" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">19</text>
+<text x="370.0" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">20</text>
+<text x="442.9" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">21</text>
+<text x="515.7" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">22</text>
+<text x="588.6" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">23</text>
+<text x="151.4" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">24</text>
+<text x="224.3" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">25</text>
+<text x="297.1" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">26</text>
+<text x="370.0" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">27</text>
+<text x="442.9" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">28</text>
+<text x="515.7" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">29</text>
+<text x="588.6" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#2e1d0f">30</text>
+<line x1="406.4" y1="202" x2="406.4" y2="262" stroke="#a3271b" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+<text x="720.0" y="170.0" transform="rotate(-25 720.0 170.0)" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#e9d9b4" opacity="0.90">3</text>
+<text x="789.7" y="210.7" transform="rotate(12 789.7 210.7)" text-anchor="middle" font-family="Georgia, serif" font-size="43" fill="#e9d9b4" opacity="0.82">4</text>
+<text x="792.3" y="295.8" transform="rotate(-1 792.3 295.8)" text-anchor="middle" font-family="Georgia, serif" font-size="41" fill="#e9d9b4" opacity="0.75">5</text>
+<text x="812.2" y="388.3" transform="rotate(-14 812.2 388.3)" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#e9d9b4" opacity="0.68">6</text>
+<text x="894.8" y="146.5" transform="rotate(23 894.8 146.5)" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#e9d9b4" opacity="0.60">7</text>
+<text x="944.0" y="249.7" transform="rotate(10 944.0 249.7)" text-anchor="middle" font-family="Georgia, serif" font-size="37" fill="#e9d9b4" opacity="0.53">8</text>
+<text x="939.0" y="320.6" transform="rotate(-3 939.0 320.6)" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#e9d9b4" opacity="0.45">9</text>
+<text x="981.5" y="369.5" transform="rotate(-16 981.5 369.5)" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#e9d9b4" opacity="0.38">10</text>
+<text x="1065.8" y="200.0" transform="rotate(21 1065.8 200.0)" text-anchor="middle" font-family="Georgia, serif" font-size="33" fill="#e9d9b4" opacity="0.30">11</text>
+<text x="1091.9" y="250.5" transform="rotate(8 1091.9 250.5)" text-anchor="middle" font-family="Georgia, serif" font-size="31" fill="#e9d9b4" opacity="0.22">12</text>
+<text x="1091.2" y="319.3" transform="rotate(-5 1091.2 319.3)" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#e9d9b4" opacity="0.15">13</text>
+<text x="70" y="560" font-family="Georgia, serif" font-size="54" fill="#f3e6c8">The Eleven Days</text>
+<text x="72" y="596" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#c9b48a">September 1752, as printed.</text>
+</svg>
