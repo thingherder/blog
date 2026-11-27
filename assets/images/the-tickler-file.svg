@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Georgia, 'Times New Roman', serif">
+<title>The Tickler File: an open wooden file drawer under a lamp, holding a row of manila folders with staggered tabs numbered 1 to 31 and twelve green month folders. From the folder tabbed 2, a single white slip reading "DEC 2 — re-ask, in room" rises into the lamplight. Title at lower left reads "The Tickler File" with the subtitle "filed by when, not by what."</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2a2e"/><stop offset="1" stop-color="#0f1517"/></linearGradient><linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a32"/><stop offset="1" stop-color="#5a3519"/></linearGradient><linearGradient id="manila" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9cf93"/><stop offset="1" stop-color="#c9a865"/></linearGradient><linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/></linearGradient><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.75"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<path d="M150 0 L290 0 L420 330 L60 330 Z" fill="url(#lamp)"/>
+<path d="M150 150 L1110 150 L1150 560 L110 560 Z" fill="#3b2414"/>
+<path d="M175.0 250 L202.2 250 L210.2 540 L183.0 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M175.0 250 L177.0 236 L200.2 236 L202.2 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="188.6" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">1</text>
+<path d="M196.2 205 L223.3 205 L231.3 540 L204.2 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M190.2 205 L194.2 171 L250.7 171 L254.7 205 Z" fill="#f3dca2" stroke="#7a5a2a" stroke-width="1.2"/>
+<text x="222.4" y="193" font-size="22" font-weight="bold" fill="#5a3519" text-anchor="middle">2</text>
+<path d="M217.3 250 L244.5 250 L252.5 540 L225.3 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M217.3 250 L219.3 220 L242.5 220 L244.5 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="230.9" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">3</text>
+<path d="M238.5 250 L265.7 250 L273.7 540 L246.5 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M238.5 250 L240.5 236 L263.7 236 L265.7 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="252.1" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">4</text>
+<path d="M259.7 250 L286.8 250 L294.8 540 L267.7 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M259.7 250 L261.7 228 L284.8 228 L286.8 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="273.2" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">5</text>
+<path d="M280.8 250 L308.0 250 L316.0 540 L288.8 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M280.8 250 L282.8 220 L306.0 220 L308.0 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="294.4" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">6</text>
+<path d="M302.0 250 L329.1 250 L337.1 540 L310.0 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M302.0 250 L304.0 236 L327.1 236 L329.1 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="315.6" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">7</text>
+<path d="M323.1 250 L350.3 250 L358.3 540 L331.1 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M323.1 250 L325.1 228 L348.3 228 L350.3 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="336.7" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">8</text>
+<path d="M344.3 250 L371.5 250 L379.5 540 L352.3 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M344.3 250 L346.3 220 L369.5 220 L371.5 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="357.9" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">9</text>
+<path d="M365.5 250 L392.6 250 L400.6 540 L373.5 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M365.5 250 L367.5 236 L390.6 236 L392.6 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="379.0" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">10</text>
+<path d="M386.6 250 L413.8 250 L421.8 540 L394.6 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M386.6 250 L388.6 228 L411.8 228 L413.8 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="400.2" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">11</text>
+<path d="M407.8 250 L435.0 250 L443.0 540 L415.8 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M407.8 250 L409.8 220 L433.0 220 L435.0 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="421.4" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">12</text>
+<path d="M429.0 250 L456.1 250 L464.1 540 L437.0 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M429.0 250 L431.0 236 L454.1 236 L456.1 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="442.5" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">13</text>
+<path d="M450.1 250 L477.3 250 L485.3 540 L458.1 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M450.1 250 L452.1 228 L475.3 228 L477.3 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="463.7" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">14</text>
+<path d="M471.3 250 L498.4 250 L506.4 540 L479.3 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M471.3 250 L473.3 220 L496.4 220 L498.4 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="484.9" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">15</text>
+<path d="M492.4 250 L519.6 250 L527.6 540 L500.4 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M492.4 250 L494.4 236 L517.6 236 L519.6 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="506.0" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">16</text>
+<path d="M513.6 250 L540.8 250 L548.8 540 L521.6 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M513.6 250 L515.6 228 L538.8 228 L540.8 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="527.2" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">17</text>
+<path d="M534.8 250 L561.9 250 L569.9 540 L542.8 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M534.8 250 L536.8 220 L559.9 220 L561.9 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="548.3" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">18</text>
+<path d="M555.9 250 L583.1 250 L591.1 540 L563.9 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M555.9 250 L557.9 236 L581.1 236 L583.1 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="569.5" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">19</text>
+<path d="M577.1 250 L604.3 250 L612.3 540 L585.1 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M577.1 250 L579.1 228 L602.3 228 L604.3 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="590.7" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">20</text>
+<path d="M598.3 250 L625.4 250 L633.4 540 L606.3 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M598.3 250 L600.3 220 L623.4 220 L625.4 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="611.8" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">21</text>
+<path d="M619.4 250 L646.6 250 L654.6 540 L627.4 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M619.4 250 L621.4 236 L644.6 236 L646.6 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="633.0" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">22</text>
+<path d="M640.6 250 L667.7 250 L675.7 540 L648.6 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M640.6 250 L642.6 228 L665.7 228 L667.7 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="654.2" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">23</text>
+<path d="M661.7 250 L688.9 250 L696.9 540 L669.7 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M661.7 250 L663.7 220 L686.9 220 L688.9 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="675.3" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">24</text>
+<path d="M682.9 250 L710.1 250 L718.1 540 L690.9 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M682.9 250 L684.9 236 L708.1 236 L710.1 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="696.5" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">25</text>
+<path d="M704.1 250 L731.2 250 L739.2 540 L712.1 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M704.1 250 L706.1 228 L729.2 228 L731.2 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="717.7" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">26</text>
+<path d="M725.2 250 L752.4 250 L760.4 540 L733.2 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M725.2 250 L727.2 220 L750.4 220 L752.4 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="738.8" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">27</text>
+<path d="M746.4 250 L773.6 250 L781.6 540 L754.4 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M746.4 250 L748.4 236 L771.6 236 L773.6 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="760.0" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">28</text>
+<path d="M767.6 250 L794.7 250 L802.7 540 L775.6 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M767.6 250 L769.6 228 L792.7 228 L794.7 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="781.1" y="238" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">29</text>
+<path d="M788.7 250 L815.9 250 L823.9 540 L796.7 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M788.7 250 L790.7 220 L813.9 220 L815.9 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="802.3" y="230" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">30</text>
+<path d="M809.9 250 L837.0 250 L845.0 540 L817.9 540 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="1"/>
+<path d="M809.9 250 L811.9 236 L835.0 236 L837.0 250 Z" fill="url(#manila)" stroke="#7a5a2a" stroke-width="0.8"/>
+<text x="823.5" y="246" font-size="10" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">31</text>
+<path d="M831.0 250 L858.2 250 L866.2 540 L839.0 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M831.0 250 L833.0 228 L856.2 228 L858.2 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="844.6" y="238" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">J</text>
+<path d="M852.2 250 L879.4 250 L887.4 540 L860.2 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M852.2 250 L854.2 220 L877.4 220 L879.4 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="865.8" y="230" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">F</text>
+<path d="M873.4 250 L900.5 250 L908.5 540 L881.4 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M873.4 250 L875.4 236 L898.5 236 L900.5 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="887.0" y="246" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">M</text>
+<path d="M894.5 250 L921.7 250 L929.7 540 L902.5 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M894.5 250 L896.5 228 L919.7 228 L921.7 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="908.1" y="238" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">A</text>
+<path d="M915.7 250 L942.9 250 L950.9 540 L923.7 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M915.7 250 L917.7 220 L940.9 220 L942.9 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="929.3" y="230" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">M</text>
+<path d="M936.9 250 L964.0 250 L972.0 540 L944.9 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M936.9 250 L938.9 236 L962.0 236 L964.0 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="950.4" y="246" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">J</text>
+<path d="M958.0 250 L985.2 250 L993.2 540 L966.0 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M958.0 250 L960.0 228 L983.2 228 L985.2 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="971.6" y="238" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">J</text>
+<path d="M979.2 250 L1006.3 250 L1014.3 540 L987.2 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M979.2 250 L981.2 220 L1004.3 220 L1006.3 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="992.8" y="230" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">A</text>
+<path d="M1000.3 250 L1027.5 250 L1035.5 540 L1008.3 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M1000.3 250 L1002.3 236 L1025.5 236 L1027.5 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="1013.9" y="246" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">S</text>
+<path d="M1021.5 250 L1048.7 250 L1056.7 540 L1029.5 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M1021.5 250 L1023.5 228 L1046.7 228 L1048.7 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="1035.1" y="238" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">O</text>
+<path d="M1042.7 250 L1069.8 250 L1077.8 540 L1050.7 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M1042.7 250 L1044.7 220 L1067.8 220 L1069.8 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="1056.3" y="230" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">N</text>
+<path d="M1063.8 250 L1091.0 250 L1099.0 540 L1071.8 540 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="1"/>
+<path d="M1063.8 250 L1065.8 236 L1089.0 236 L1091.0 250 Z" fill="#b9c7b0" stroke="#5d6f57" stroke-width="0.8"/>
+<text x="1077.4" y="246" font-size="9" fill="#4a3418" text-anchor="middle" font-family="Courier New, monospace">D</text>
+<g transform="rotate(-6 216.2 150)"><rect x="166.2" y="88" width="120" height="150" fill="#fbf7ec" stroke="#9a8f78" stroke-width="1"/><text x="176.2" y="112" font-size="13" fill="#7a2a1a" font-family="Courier New, monospace" font-weight="bold">DEC 2</text><line x1="176.2" y1="126" x2="251.2" y2="126" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><line x1="176.2" y1="140" x2="266.2" y2="140" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><line x1="176.2" y1="154" x2="251.2" y2="154" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><line x1="176.2" y1="168" x2="266.2" y2="168" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><line x1="176.2" y1="182" x2="251.2" y2="182" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><line x1="176.2" y1="196" x2="266.2" y2="196" stroke="#8a8a8a" stroke-width="1.4" stroke-linecap="round"/><text x="176.2" y="226" font-size="11" fill="#555" font-family="Courier New, monospace">re-ask, in room</text></g>
+<path d="M90 540 L1170 540 L1180 630 L80 630 Z" fill="url(#wood)"/>
+<rect x="0" y="380" width="1200" height="250" fill="url(#fade)"/>
+<text x="60" y="560" font-size="64" fill="#f6ead0" font-weight="bold">The Tickler File</text>
+<text x="62" y="598" font-size="24" fill="#e3c98f" font-style="italic">filed by when, not by what</text>
+</svg>
